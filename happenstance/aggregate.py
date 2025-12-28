@@ -457,8 +457,30 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
             if event_city and restaurant_city:
                 if event_city == restaurant_city:
                     same_city_restaurants.append(restaurant)
-                elif event_city in restaurant_city or restaurant_city in event_city:
-                    nearby_city_restaurants.append(restaurant)
+                # Allow substring match only at word boundaries to avoid false positives
+                # E.g., "troy" in "downtown troy" is OK, but "albany" in "new albany" is not
+                # Check if cities share a word boundary by looking for space before/after
+                elif restaurant_city in event_city:
+                    # Restaurant city is in event city - check word boundaries
+                    idx = event_city.find(restaurant_city)
+                    # Check if preceded by space or at start, and followed by space or at end
+                    before_ok = (idx == 0 or event_city[idx-1] == ' ')
+                    after_ok = (idx + len(restaurant_city) == len(event_city) or 
+                               event_city[idx + len(restaurant_city)] == ' ')
+                    if before_ok and after_ok:
+                        nearby_city_restaurants.append(restaurant)
+                    else:
+                        other_restaurants.append(restaurant)
+                elif event_city in restaurant_city:
+                    # Event city is in restaurant city - check word boundaries
+                    idx = restaurant_city.find(event_city)
+                    before_ok = (idx == 0 or restaurant_city[idx-1] == ' ')
+                    after_ok = (idx + len(event_city) == len(restaurant_city) or 
+                               restaurant_city[idx + len(event_city)] == ' ')
+                    if before_ok and after_ok:
+                        nearby_city_restaurants.append(restaurant)
+                    else:
+                        other_restaurants.append(restaurant)
                 else:
                     other_restaurants.append(restaurant)
             else:
