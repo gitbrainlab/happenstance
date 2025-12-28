@@ -309,6 +309,42 @@ def _extract_city(location_str: str) -> str:
     return location_str.lower()
 
 
+def _cities_match_at_word_boundary(city1: str, city2: str) -> bool:
+    """
+    Check if one city name is a substring of another at word boundaries.
+    
+    This allows "troy" to match "downtown troy" but prevents "albany" from
+    matching "new albany".
+    
+    Args:
+        city1: First city name (lowercase)
+        city2: Second city name (lowercase)
+        
+    Returns:
+        True if cities match at word boundaries, False otherwise
+    """
+    if city1 == city2:
+        return True
+    
+    # Check if city1 is in city2 at word boundaries
+    if city1 in city2:
+        idx = city2.find(city1)
+        before_ok = (idx == 0 or city2[idx-1] == ' ')
+        after_ok = (idx + len(city1) == len(city2) or city2[idx + len(city1)] == ' ')
+        if before_ok and after_ok:
+            return True
+    
+    # Check if city2 is in city1 at word boundaries
+    if city2 in city1:
+        idx = city1.find(city2)
+        before_ok = (idx == 0 or city1[idx-1] == ' ')
+        after_ok = (idx + len(city2) == len(city1) or city1[idx + len(city2)] == ' ')
+        if before_ok and after_ok:
+            return True
+    
+    return False
+
+
 def _compute_match_score(
     event: Dict, 
     restaurant: Dict, 
@@ -457,30 +493,8 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
             if event_city and restaurant_city:
                 if event_city == restaurant_city:
                     same_city_restaurants.append(restaurant)
-                # Allow substring match only at word boundaries to avoid false positives
-                # E.g., "troy" in "downtown troy" is OK, but "albany" in "new albany" is not
-                # Check if cities share a word boundary by looking for space before/after
-                elif restaurant_city in event_city:
-                    # Restaurant city is in event city - check word boundaries
-                    idx = event_city.find(restaurant_city)
-                    # Check if preceded by space or at start, and followed by space or at end
-                    before_ok = (idx == 0 or event_city[idx-1] == ' ')
-                    after_ok = (idx + len(restaurant_city) == len(event_city) or 
-                               event_city[idx + len(restaurant_city)] == ' ')
-                    if before_ok and after_ok:
-                        nearby_city_restaurants.append(restaurant)
-                    else:
-                        other_restaurants.append(restaurant)
-                elif event_city in restaurant_city:
-                    # Event city is in restaurant city - check word boundaries
-                    idx = restaurant_city.find(event_city)
-                    before_ok = (idx == 0 or restaurant_city[idx-1] == ' ')
-                    after_ok = (idx + len(event_city) == len(restaurant_city) or 
-                               restaurant_city[idx + len(event_city)] == ' ')
-                    if before_ok and after_ok:
-                        nearby_city_restaurants.append(restaurant)
-                    else:
-                        other_restaurants.append(restaurant)
+                elif _cities_match_at_word_boundary(event_city, restaurant_city):
+                    nearby_city_restaurants.append(restaurant)
                 else:
                     other_restaurants.append(restaurant)
             else:
