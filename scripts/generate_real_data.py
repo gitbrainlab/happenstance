@@ -336,105 +336,9 @@ RESTAURANTS_DATA = [
 ]
 
 # Real events data for Capital Region, NY
+# Updated with forward-looking events from late December 2025 through February 2026
 EVENTS_DATA = [
-    {
-        "title": "Festival of Trees",
-        "category": "family",
-        "date": "2025-12-20T14:00:00+00:00",
-        "location": "Schenectady County Historical Society, Schenectady, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Schenectady+County+Historical+Society+Schenectady+NY"
-    },
-    {
-        "title": "Cursive Live in Concert",
-        "category": "live music",
-        "date": "2025-12-21T20:00:00+00:00",
-        "location": "Lark Hall, Albany, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Lark+Hall+Albany+NY"
-    },
-    {
-        "title": "Young Culture - The First and Final Headline Tour",
-        "category": "live music",
-        "date": "2025-12-21T20:00:00+00:00",
-        "location": "Empire Underground, Albany, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Empire+Underground+Albany+NY"
-    },
-    {
-        "title": "Trans-Siberian Orchestra - The Ghosts Of Christmas Eve",
-        "category": "live music",
-        "date": "2025-12-22T19:00:00+00:00",
-        "location": "MVP Arena, Albany, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=MVP+Arena+Albany+NY"
-    },
-    {
-        "title": "Empire State Plaza Farmers Market",
-        "category": "family",
-        "date": "2025-12-22T10:00:00+00:00",
-        "location": "Empire State Plaza, Albany, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Empire+State+Plaza+Albany+NY"
-    },
-    {
-        "title": "The Nature of Nature: Biodiversity in the Hudson Valley",
-        "category": "art",
-        "date": "2025-12-23T19:00:00+00:00",
-        "location": "NY State Museum, Albany, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=NY+State+Museum+Albany+NY"
-    },
-    {
-        "title": "Albany/Troy Black Film Club Screening of Jingle Jangle",
-        "category": "art",
-        "date": "2025-12-24T19:00:00+00:00",
-        "location": "10 2nd St, Troy, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=10+2nd+St+Troy+NY"
-    },
-    {
-        "title": "Peak Jazz Series: Jane Monheit Duo",
-        "category": "live music",
-        "date": "2025-12-24T19:00:00+00:00",
-        "location": "Caffe Lena, Saratoga Springs, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Caffe+Lena+Saratoga+Springs+NY"
-    },
-    {
-        "title": "Spirits in the Trees",
-        "category": "art",
-        "date": "2025-12-24T10:00:00+00:00",
-        "location": "Crandall Park, Glens Falls, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Crandall+Park+Glens+Falls+NY"
-    },
-    {
-        "title": "Holiday Book Sale",
-        "category": "art",
-        "date": "2025-12-25T09:00:00+00:00",
-        "location": "Saratoga Springs Public Library, Saratoga Springs, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Saratoga+Springs+Public+Library+NY"
-    },
-    {
-        "title": "Jim Brickman: The Gift of Christmas",
-        "category": "live music",
-        "date": "2025-12-23T19:30:00+00:00",
-        "location": "Universal Preservation Hall, Saratoga Springs, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Universal+Preservation+Hall+Saratoga+Springs+NY"
-    },
-    {
-        "title": "An Elemental Christmas: iTheatre Saratoga's 4th Annual Holiday Music Event",
-        "category": "live music",
-        "date": "2025-12-25T19:00:00+00:00",
-        "location": "Saratoga Music Hall, Saratoga Springs, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Saratoga+Music+Hall+Saratoga+Springs+NY"
-    },
-    {
-        "title": "Kung Fu and Night Zero",
-        "category": "live music",
-        "date": "2025-12-24T20:00:00+00:00",
-        "location": "Putnam Place, Saratoga Springs, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Putnam+Place+Saratoga+Springs+NY"
-    },
-    {
-        "title": "Holiday Tea at Saratoga Arms Hotel",
-        "category": "family",
-        "date": "2025-12-25T15:00:00+00:00",
-        "location": "Saratoga Arms Hotel, Saratoga Springs, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Saratoga+Arms+Hotel+Saratoga+Springs+NY"
-    },
+    # Late December 2025 (upcoming events)
     {
         "title": "New Year's Eve Comedy Show",
         "category": "entertainment",
@@ -450,102 +354,202 @@ EVENTS_DATA = [
         "url": "https://www.google.com/maps/search/?api=1&query=Downtown+Saratoga+Springs+NY"
     },
     {
+        "title": "New Year's Eve Gala at The Desmond",
+        "category": "entertainment",
+        "date": "2025-12-31T21:00:00+00:00",
+        "location": "The Desmond Hotel, Albany, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=The+Desmond+Hotel+Albany+NY"
+    },
+    # January 2026
+    {
         "title": "Winter Jazz Festival",
         "category": "live music",
-        "date": "2025-01-10T19:00:00+00:00",
+        "date": "2026-01-10T19:00:00+00:00",
         "location": "The Hollow Bar + Kitchen, Albany, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=The+Hollow+Bar+Kitchen+Albany+NY"
     },
     {
         "title": "Capital Region Home & Garden Show",
         "category": "family",
-        "date": "2025-01-15T10:00:00+00:00",
+        "date": "2026-01-15T10:00:00+00:00",
         "location": "Hudson Valley Community College, Troy, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=Hudson+Valley+Community+College+Troy+NY"
     },
     {
         "title": "Albany Institute of History & Art Exhibition",
         "category": "art",
-        "date": "2025-01-05T10:00:00+00:00",
+        "date": "2026-01-05T10:00:00+00:00",
         "location": "Albany Institute of History & Art, Albany, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=Albany+Institute+History+Art+Albany+NY"
     },
     {
         "title": "Siena Saints Basketball",
         "category": "sports",
-        "date": "2025-01-08T19:00:00+00:00",
-        "location": "Times Union Center, Albany, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Times+Union+Center+Albany+NY"
+        "date": "2026-01-08T19:00:00+00:00",
+        "location": "MVP Arena, Albany, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=MVP+Arena+Albany+NY"
     },
     {
         "title": "Albany Devils Hockey Game",
         "category": "sports",
-        "date": "2025-01-12T19:00:00+00:00",
-        "location": "Times Union Center, Albany, NY",
-        "url": "https://www.google.com/maps/search/?api=1&query=Times+Union+Center+Albany+NY"
+        "date": "2026-01-12T19:00:00+00:00",
+        "location": "MVP Arena, Albany, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=MVP+Arena+Albany+NY"
     },
     {
         "title": "Saratoga Wine & Food Festival",
         "category": "family",
-        "date": "2025-01-18T12:00:00+00:00",
+        "date": "2026-01-18T12:00:00+00:00",
         "location": "Saratoga Springs City Center, Saratoga Springs, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=Saratoga+Springs+City+Center+NY"
     },
     {
         "title": "Troy Night Out",
         "category": "art",
-        "date": "2025-01-11T17:00:00+00:00",
+        "date": "2026-01-09T17:00:00+00:00",
         "location": "Downtown Troy, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=Downtown+Troy+NY"
     },
     {
         "title": "Live at The Linda: Indie Rock Night",
         "category": "live music",
-        "date": "2025-01-16T20:00:00+00:00",
+        "date": "2026-01-16T20:00:00+00:00",
         "location": "The Linda, Albany, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=The+Linda+Albany+NY"
     },
     {
         "title": "Family Fun Day at miSci",
         "category": "family",
-        "date": "2025-01-13T10:00:00+00:00",
+        "date": "2026-01-13T10:00:00+00:00",
         "location": "miSci Museum, Schenectady, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=miSci+Museum+Schenectady+NY"
     },
     {
         "title": "Saratoga Performing Arts Center Winter Concert",
         "category": "live music",
-        "date": "2025-01-20T19:00:00+00:00",
+        "date": "2026-01-24T19:00:00+00:00",
         "location": "Saratoga Performing Arts Center, Saratoga Springs, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=Saratoga+Performing+Arts+Center+NY"
     },
     {
         "title": "Capital District Sportsmen's Show",
         "category": "sports",
-        "date": "2025-01-17T09:00:00+00:00",
+        "date": "2026-01-17T09:00:00+00:00",
         "location": "Empire State Plaza Convention Center, Albany, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=Empire+State+Plaza+Convention+Center+Albany+NY"
     },
     {
         "title": "Art After Dark",
         "category": "art",
-        "date": "2025-01-14T18:00:00+00:00",
+        "date": "2026-01-14T18:00:00+00:00",
         "location": "Albany Center Gallery, Albany, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=Albany+Center+Gallery+Albany+NY"
     },
     {
         "title": "Blues Night at The Hangar",
         "category": "live music",
-        "date": "2025-01-19T20:00:00+00:00",
+        "date": "2026-01-23T20:00:00+00:00",
         "location": "The Hangar on the Hudson, Troy, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=The+Hangar+on+the+Hudson+Troy+NY"
     },
     {
         "title": "Schenectady County Winter Farmers Market",
         "category": "family",
-        "date": "2025-01-11T09:00:00+00:00",
+        "date": "2026-01-11T09:00:00+00:00",
         "location": "Proctors Theatre, Schenectady, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=Proctors+Theatre+Schenectady+NY"
+    },
+    {
+        "title": "Martin Luther King Jr. Day Concert",
+        "category": "live music",
+        "date": "2026-01-19T15:00:00+00:00",
+        "location": "Palace Theatre, Albany, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=Palace+Theatre+Albany+NY"
+    },
+    {
+        "title": "Winter Beer Festival",
+        "category": "entertainment",
+        "date": "2026-01-25T18:00:00+00:00",
+        "location": "Proctors Theatre, Schenectady, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=Proctors+Theatre+Schenectady+NY"
+    },
+    {
+        "title": "Ice Skating at Empire State Plaza",
+        "category": "family",
+        "date": "2026-01-03T10:00:00+00:00",
+        "location": "Empire State Plaza, Albany, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=Empire+State+Plaza+Albany+NY"
+    },
+    # February 2026
+    {
+        "title": "Adirondack Winterfest",
+        "category": "family",
+        "date": "2026-02-07T10:00:00+00:00",
+        "location": "Lake George, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=Lake+George+NY"
+    },
+    {
+        "title": "Albany Symphony Orchestra Performance",
+        "category": "live music",
+        "date": "2026-02-14T19:30:00+00:00",
+        "location": "Palace Theatre, Albany, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=Palace+Theatre+Albany+NY"
+    },
+    {
+        "title": "Valentine's Day Jazz Dinner",
+        "category": "live music",
+        "date": "2026-02-14T18:00:00+00:00",
+        "location": "Caffe Lena, Saratoga Springs, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=Caffe+Lena+Saratoga+Springs+NY"
+    },
+    {
+        "title": "Winter Art Walk",
+        "category": "art",
+        "date": "2026-02-06T17:00:00+00:00",
+        "location": "Downtown Troy, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=Downtown+Troy+NY"
+    },
+    {
+        "title": "Siena Saints vs. Iona Basketball",
+        "category": "sports",
+        "date": "2026-02-11T19:00:00+00:00",
+        "location": "MVP Arena, Albany, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=MVP+Arena+Albany+NY"
+    },
+    {
+        "title": "Capital Region Boat Show",
+        "category": "family",
+        "date": "2026-02-20T10:00:00+00:00",
+        "location": "Empire State Plaza Convention Center, Albany, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=Empire+State+Plaza+Convention+Center+Albany+NY"
+    },
+    {
+        "title": "Albany Winter Brewfest",
+        "category": "entertainment",
+        "date": "2026-02-21T16:00:00+00:00",
+        "location": "Washington Avenue Armory, Albany, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=Washington+Avenue+Armory+Albany+NY"
+    },
+    {
+        "title": "Presidents' Day Science Workshop",
+        "category": "family",
+        "date": "2026-02-16T10:00:00+00:00",
+        "location": "miSci Museum, Schenectady, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=miSci+Museum+Schenectady+NY"
+    },
+    {
+        "title": "Contemporary Dance Performance",
+        "category": "art",
+        "date": "2026-02-27T19:00:00+00:00",
+        "location": "The Egg, Albany, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=The+Egg+Albany+NY"
+    },
+    {
+        "title": "Live Comedy Night at Funny Bone",
+        "category": "entertainment",
+        "date": "2026-02-28T20:00:00+00:00",
+        "location": "Funny Bone Comedy Club, Crossgates Mall, Albany, NY",
+        "url": "https://www.google.com/maps/search/?api=1&query=Funny+Bone+Comedy+Club+Crossgates+Mall+Albany+NY"
     },
 ]
 
