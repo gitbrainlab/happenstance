@@ -309,6 +309,54 @@ def _extract_city(location_str: str) -> str:
     return location_str.lower()
 
 
+def _cities_match_at_word_boundary(city1: str, city2: str) -> bool:
+    """
+    Check if one city name is a substring of another at word boundaries.
+    
+    Word boundaries are defined as the start/end of the string or a space.
+    This allows "troy" to match "downtown troy" (modifier + city) but prevents
+    "troy" from matching "troyan" (substring within a word).
+    
+    Note: This will match "albany" with "new albany" since "albany" appears
+    after a space. In practice, this is acceptable because we operate within
+    a single region and don't typically have both "Albany" and "New Albany"
+    in the same dataset.
+    
+    Args:
+        city1: First city name (lowercase)
+        city2: Second city name (lowercase)
+        
+    Returns:
+        True if cities match at word boundaries, False otherwise
+        
+    Examples:
+        >>> _cities_match_at_word_boundary("troy", "downtown troy")
+        True
+        >>> _cities_match_at_word_boundary("troy", "troyan")
+        False
+    """
+    if city1 == city2:
+        return True
+    
+    # Check if city1 is in city2 at word boundaries
+    if city1 in city2:
+        idx = city2.find(city1)
+        before_ok = (idx == 0 or city2[idx-1] == ' ')
+        after_ok = (idx + len(city1) == len(city2) or city2[idx + len(city1)] == ' ')
+        if before_ok and after_ok:
+            return True
+    
+    # Check if city2 is in city1 at word boundaries
+    if city2 in city1:
+        idx = city1.find(city2)
+        before_ok = (idx == 0 or city1[idx-1] == ' ')
+        after_ok = (idx + len(city2) == len(city1) or city1[idx + len(city2)] == ' ')
+        if before_ok and after_ok:
+            return True
+    
+    return False
+
+
 def _compute_match_score(
     event: Dict, 
     restaurant: Dict, 
@@ -441,12 +489,39 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
         # Prefer nearby restaurants but allow fallback to main list
         all_restaurants = nearby_restaurants + restaurants
         
+        # Extract event city for geographic filtering
+        event_city = _extract_city(event_location)
+        
+        # Separate restaurants into same-city and other-city groups
+        # This ensures geographic proximity is prioritized over other factors
+        same_city_restaurants = []
+        nearby_city_restaurants = []
+        other_restaurants = []
+        
+        for restaurant in all_restaurants:
+            restaurant_address = restaurant.get("address", "")
+            restaurant_city = _extract_city(restaurant_address)
+            
+            if event_city and restaurant_city:
+                if event_city == restaurant_city:
+                    same_city_restaurants.append(restaurant)
+                elif _cities_match_at_word_boundary(event_city, restaurant_city):
+                    nearby_city_restaurants.append(restaurant)
+                else:
+                    other_restaurants.append(restaurant)
+            else:
+                other_restaurants.append(restaurant)
+        
+        # Prioritize: same city > nearby city > other
+        # Only consider lower priority groups if higher priority groups are empty
+        candidate_restaurants = same_city_restaurants or nearby_city_restaurants or other_restaurants
+        
         best_score = float("-inf")
         best_restaurant: Dict | None = None
         best_reason = ""
         best_distance: float | None = None
         
-        for restaurant in all_restaurants:
+        for restaurant in candidate_restaurants:
             restaurant_name = restaurant.get("name", "")
             restaurant_address = restaurant.get("address", "")
             

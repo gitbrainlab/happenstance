@@ -1,7 +1,57 @@
 """Tests for aggregate module functions."""
 from unittest.mock import MagicMock, patch
 
-from happenstance.aggregate import _build_pairings, _calculate_distance, _geocode_address
+from happenstance.aggregate import (
+    _build_pairings,
+    _calculate_distance,
+    _cities_match_at_word_boundary,
+    _geocode_address,
+)
+
+
+class TestCityMatching:
+    """Tests for city matching with word boundaries."""
+    
+    def test_exact_match(self):
+        """Test exact city name match."""
+        assert _cities_match_at_word_boundary("troy", "troy") is True
+        assert _cities_match_at_word_boundary("albany", "albany") is True
+    
+    def test_substring_with_space_prefix(self):
+        """Test substring match with space prefix (e.g., 'downtown troy')."""
+        assert _cities_match_at_word_boundary("downtown troy", "troy") is True
+        assert _cities_match_at_word_boundary("troy", "downtown troy") is True
+    
+    def test_substring_with_space_suffix(self):
+        """Test substring match with space suffix (e.g., 'troy downtown')."""
+        assert _cities_match_at_word_boundary("troy downtown", "troy") is True
+        assert _cities_match_at_word_boundary("troy", "troy downtown") is True
+    
+    def test_substring_without_word_boundary(self):
+        """Test substring matching at word boundaries.
+        
+        Note: This function considers any word-boundary match as valid.
+        For example, "albany" in "new albany" matches because "albany"
+        appears after a space. In practice, this is acceptable because:
+        1. We're operating within a single region
+        2. We don't have both "Albany" and "New Albany" in the same dataset
+        3. The primary use case is matching "downtown troy" with "troy"
+        """
+        # These DO match because they're at word boundaries
+        assert _cities_match_at_word_boundary("new albany", "albany") is True
+        assert _cities_match_at_word_boundary("albany", "new albany") is True
+        assert _cities_match_at_word_boundary("west troy", "troy") is True
+        assert _cities_match_at_word_boundary("troy", "west troy") is True
+        
+        # These don't match because they're not at word boundaries
+        # (in middle of a word)
+        assert _cities_match_at_word_boundary("troyan", "troy") is False
+        assert _cities_match_at_word_boundary("troy", "troyan") is False
+    
+    def test_no_substring(self):
+        """Test that completely different cities don't match."""
+        assert _cities_match_at_word_boundary("troy", "albany") is False
+        assert _cities_match_at_word_boundary("schenectady", "niskayuna") is False
 
 
 class TestGeocodeAddress:
@@ -181,4 +231,107 @@ class TestBuildPairings:
         assert pairings[0]["restaurant"] == "Blue Harbor Grill"
         # Distance should not be present when geocoding fails
         assert "distance_miles" not in pairings[0]
+    
+    @patch('happenstance.aggregate._geocode_address')
+    @patch('happenstance.aggregate._fetch_nearby_restaurants')
+    def test_pairings_prioritize_same_city_over_variety(self, mock_fetch_nearby, mock_geocode):
+        """Test that same-city restaurants are always preferred over different-city ones.
+        
+        This is a regression test for the issue where variety penalties could cause
+        events to be paired with restaurants in different cities (e.g., Troy Night Out
+        being paired with Mario's Pizza in Niskayuna instead of Troy restaurants).
+        """
+        mock_geocode.return_value = None  # Geocoding fails, relies on city matching
+        mock_fetch_nearby.return_value = []
+        
+        # Multiple Troy events to trigger variety penalties
+        events = [
+            {
+                "title": "Troy Night Out 1",
+                "category": "arts",
+                "location": "Downtown Troy, NY",
+                "url": "https://example.com/troy1",
+            },
+            {
+                "title": "Troy Night Out 2",
+                "category": "arts",
+                "location": "Downtown Troy, NY",
+                "url": "https://example.com/troy2",
+            },
+            {
+                "title": "Troy Night Out 3",
+                "category": "arts",
+                "location": "Downtown Troy, NY",
+                "url": "https://example.com/troy3",
+            },
+        ]
+        
+        restaurants = [
+            # Troy restaurants (should be selected for Troy events)
+            {
+                "name": "Dinosaur Bar-B-Que",
+                "cuisine": "BBQ",
+                "address": "377 River St, Troy, NY",
+                "url": "https://example.com/dino",
+            },
+            {
+                "name": "Plumb Oyster Bar",
+                "cuisine": "Seafood",
+                "address": "7 Congress St, Troy, NY",
+                "url": "https://example.com/plumb",
+            },
+            # Niskayuna restaurant (should NOT be selected for Troy events)
+            {
+                "name": "Mario's Restaurant & Pizzeria",
+                "cuisine": "Italian",
+                "address": "2850 River Rd, Niskayuna, NY",
+                "url": "https://example.com/mario",
+            },
+        ]
+        
+        cfg = {"region": "Capital Region, NY"}
+        pairings = _build_pairings(events, restaurants, cfg)
+        
+        assert len(pairings) == 3
+        
+        # All Troy events should be paired with Troy restaurants only
+        # None should be paired with Niskayuna restaurant
+        for pairing in pairings:
+            assert "Troy" in pairing["event"]
+            assert pairing["restaurant"] in ["Dinosaur Bar-B-Que", "Plumb Oyster Bar"], \
+                f"Troy event '{pairing['event']}' should not be paired with '{pairing['restaurant']}' in Niskayuna"
+    
+    @patch('happenstance.aggregate._geocode_address')
+    @patch('happenstance.aggregate._fetch_nearby_restaurants')
+    def test_pairings_fallback_to_different_city_when_no_same_city_available(self, mock_fetch_nearby, mock_geocode):
+        """Test that different-city restaurants are used when no same-city options exist."""
+        mock_geocode.return_value = None  # Geocoding fails, relies on city matching
+        mock_fetch_nearby.return_value = []
+        
+        events = [
+            {
+                "title": "Schenectady Art Walk",
+                "category": "arts",
+                "location": "Downtown Schenectady, NY",
+                "url": "https://example.com/schenectady",
+            },
+        ]
+        
+        # Only Troy restaurants available (no Schenectady restaurants)
+        restaurants = [
+            {
+                "name": "Dinosaur Bar-B-Que",
+                "cuisine": "BBQ",
+                "address": "377 River St, Troy, NY",
+                "url": "https://example.com/dino",
+            },
+        ]
+        
+        cfg = {"region": "Capital Region, NY"}
+        pairings = _build_pairings(events, restaurants, cfg)
+        
+        assert len(pairings) == 1
+        # Should still create a pairing, even though city doesn't match
+        assert pairings[0]["event"] == "Schenectady Art Walk"
+        assert pairings[0]["restaurant"] == "Dinosaur Bar-B-Que"
 
