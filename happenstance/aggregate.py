@@ -441,12 +441,39 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
         # Prefer nearby restaurants but allow fallback to main list
         all_restaurants = nearby_restaurants + restaurants
         
+        # Extract event city for geographic filtering
+        event_city = _extract_city(event_location)
+        
+        # Separate restaurants into same-city and other-city groups
+        # This ensures geographic proximity is prioritized over other factors
+        same_city_restaurants = []
+        nearby_city_restaurants = []
+        other_restaurants = []
+        
+        for restaurant in all_restaurants:
+            restaurant_address = restaurant.get("address", "")
+            restaurant_city = _extract_city(restaurant_address)
+            
+            if event_city and restaurant_city:
+                if event_city == restaurant_city:
+                    same_city_restaurants.append(restaurant)
+                elif event_city in restaurant_city or restaurant_city in event_city:
+                    nearby_city_restaurants.append(restaurant)
+                else:
+                    other_restaurants.append(restaurant)
+            else:
+                other_restaurants.append(restaurant)
+        
+        # Prioritize: same city > nearby city > other
+        # Only consider lower priority groups if higher priority groups are empty
+        candidate_restaurants = same_city_restaurants or nearby_city_restaurants or other_restaurants
+        
         best_score = float("-inf")
         best_restaurant: Dict | None = None
         best_reason = ""
         best_distance: float | None = None
         
-        for restaurant in all_restaurants:
+        for restaurant in candidate_restaurants:
             restaurant_name = restaurant.get("name", "")
             restaurant_address = restaurant.get("address", "")
             

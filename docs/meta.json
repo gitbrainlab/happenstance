@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-28T15:45:23.393952+00:00",
+  "generated_at": "2025-12-28T15:49:31.708853+00:00",
   "profile": "default",
   "region": "Capital Region, NY",
   "branding": {
@@ -20,7 +20,7 @@
   "gap_bullets": [],
   "events": {
     "items_hash": "81df52e5f4157ebfaa4f7a0ebda760c94c9130b8f6d9b89ffb973c16564c5fad",
-    "items_changed": true,
+    "items_changed": false,
     "item_count": 9
   },
   "restaurants": {
