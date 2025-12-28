@@ -9,10 +9,6 @@ from happenstance.aggregate import (
 )
 
 
-class TestGeocodeAddress:
-    """Tests for Nominatim-based geocoding."""
-
-
 class TestCityMatching:
     """Tests for city matching with word boundaries."""
     

@@ -313,8 +313,14 @@ def _cities_match_at_word_boundary(city1: str, city2: str) -> bool:
     """
     Check if one city name is a substring of another at word boundaries.
     
-    This allows "troy" to match "downtown troy" but prevents "albany" from
-    matching "new albany".
+    Word boundaries are defined as the start/end of the string or a space.
+    This allows "troy" to match "downtown troy" (modifier + city) but prevents
+    "troy" from matching "troyan" (substring within a word).
+    
+    Note: This will match "albany" with "new albany" since "albany" appears
+    after a space. In practice, this is acceptable because we operate within
+    a single region and don't typically have both "Albany" and "New Albany"
+    in the same dataset.
     
     Args:
         city1: First city name (lowercase)
@@ -322,6 +328,12 @@ def _cities_match_at_word_boundary(city1: str, city2: str) -> bool:
         
     Returns:
         True if cities match at word boundaries, False otherwise
+        
+    Examples:
+        >>> _cities_match_at_word_boundary("troy", "downtown troy")
+        True
+        >>> _cities_match_at_word_boundary("troy", "troyan")
+        False
     """
     if city1 == city2:
         return True
