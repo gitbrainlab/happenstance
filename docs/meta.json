@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-28T15:38:55.868076+00:00",
+  "generated_at": "2025-12-28T15:45:23.393952+00:00",
   "profile": "default",
   "region": "Capital Region, NY",
   "branding": {
@@ -19,9 +19,9 @@
   },
   "gap_bullets": [],
   "events": {
-    "items_hash": "e3f5b076554ef32efc93dc976a55823419dcf0615b3ba183cd8601171c9d110a",
+    "items_hash": "81df52e5f4157ebfaa4f7a0ebda760c94c9130b8f6d9b89ffb973c16564c5fad",
     "items_changed": true,
-    "item_count": 28
+    "item_count": 9
   },
   "restaurants": {
     "items_hash": "e1ed0eb3c16c9706e9f032c43a6913d3454bfedbdf1b3dcf38e9ede362b4abb2",
@@ -66,15 +66,6 @@
       "event_location": "The Hollow Bar + Kitchen, Albany, NY"
     },
     {
-      "event": "Capital Region Home & Garden Show",
-      "restaurant": "Dinosaur Bar-B-Que",
-      "match_reason": "Located in Troy",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Hudson+Valley+Community+College+Troy+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Dinosaur+Bar-B-Que+377+River+St+Troy+NY",
-      "event_date": "2026-01-15T10:00:00+00:00",
-      "event_location": "Hudson Valley Community College, Troy, NY"
-    },
-    {
       "event": "Albany Institute of History & Art Exhibition",
       "restaurant": "Toro Cantina",
       "match_reason": "Located in Albany",
@@ -93,111 +84,21 @@
       "event_location": "MVP Arena, Albany, NY"
     },
     {
-      "event": "Albany Devils Hockey Game",
-      "restaurant": "Lark Street Collective Kitchen",
-      "match_reason": "Located in Albany",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=MVP+Arena+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Lark+Street+Collective+Kitchen+258+Lark+St+Albany+NY",
-      "event_date": "2026-01-12T19:00:00+00:00",
-      "event_location": "MVP Arena, Albany, NY"
-    },
-    {
-      "event": "Saratoga Wine & Food Festival",
-      "restaurant": "The Copper Crow",
-      "match_reason": "Located in Saratoga Springs; Family-friendly american",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Saratoga+Springs+City+Center+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=The+Copper+Crow+2+Division+St+Saratoga+Springs+NY",
-      "event_date": "2026-01-18T12:00:00+00:00",
-      "event_location": "Saratoga Springs City Center, Saratoga Springs, NY"
-    },
-    {
       "event": "Troy Night Out",
-      "restaurant": "Mario's Restaurant & Pizzeria",
-      "match_reason": "Upscale italian for art events",
+      "restaurant": "Dinosaur Bar-B-Que",
+      "match_reason": "Nearby in Downtown Troy area",
       "event_url": "https://www.google.com/maps/search/?api=1&query=Downtown+Troy+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Mario's+Restaurant+Pizzeria+2850+River+Rd+Niskayuna+NY",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Dinosaur+Bar-B-Que+377+River+St+Troy+NY",
       "event_date": "2026-01-09T17:00:00+00:00",
       "event_location": "Downtown Troy, NY"
     },
     {
-      "event": "Live at The Linda: Indie Rock Night",
-      "restaurant": "Delmonico's Italian Steakhouse",
-      "match_reason": "Located in Albany; Italian pairs well with live music",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=The+Linda+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Delmonico's+Italian+Steakhouse+1553+Central+Ave+Albany+NY",
-      "event_date": "2026-01-16T20:00:00+00:00",
-      "event_location": "The Linda, Albany, NY"
-    },
-    {
-      "event": "Family Fun Day at miSci",
+      "event": "Schenectady County Winter Farmers Market",
       "restaurant": "Blue Ribbon Restaurant & Bakery",
       "match_reason": "Located in Schenectady; Family-friendly american",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=miSci+Museum+Schenectady+NY",
+      "event_url": "https://www.google.com/maps/search/?api=1&query=Proctors+Theatre+Schenectady+NY",
       "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Blue+Ribbon+Restaurant+Bakery+Schenectady+NY",
-      "event_date": "2026-01-13T10:00:00+00:00",
-      "event_location": "miSci Museum, Schenectady, NY"
-    },
-    {
-      "event": "Saratoga Performing Arts Center Winter Concert",
-      "restaurant": "Sushi Thai Garden",
-      "match_reason": "Located in Saratoga Springs; Sushi pairs well with live music; Sushi open for evening dining",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Saratoga+Performing+Arts+Center+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Sushi+Thai+Garden+1808+US-9+Saratoga+Springs+NY",
-      "event_date": "2026-01-24T19:00:00+00:00",
-      "event_location": "Saratoga Performing Arts Center, Saratoga Springs, NY"
-    },
-    {
-      "event": "Capital District Sportsmen's Show",
-      "restaurant": "Toro Cantina",
-      "match_reason": "Located in Albany; Mexican is great sports event food",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Empire+State+Plaza+Convention+Center+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Toro+Cantina+111+Washington+Ave+Ext+Albany+NY",
-      "event_date": "2026-01-17T09:00:00+00:00",
-      "event_location": "Empire State Plaza Convention Center, Albany, NY"
-    },
-    {
-      "event": "Art After Dark",
-      "restaurant": "LaZeez Restaurant",
-      "match_reason": "Located in Albany",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Albany+Center+Gallery+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=LaZeez+Restaurant+212+Central+Ave+Albany+NY",
-      "event_date": "2026-01-14T18:00:00+00:00",
-      "event_location": "Albany Center Gallery, Albany, NY"
-    },
-    {
-      "event": "Blues Night at The Hangar",
-      "restaurant": "Dinosaur Bar-B-Que",
-      "match_reason": "Located in Troy",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=The+Hangar+on+the+Hudson+Troy+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Dinosaur+Bar-B-Que+377+River+St+Troy+NY",
-      "event_date": "2026-01-23T20:00:00+00:00",
-      "event_location": "The Hangar on the Hudson, Troy, NY"
-    },
-    {
-      "event": "Schenectady County Winter Farmers Market",
-      "restaurant": "Maya Thai Bistro",
-      "match_reason": "Located in Schenectady; \u2b50 4.8 rating",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Proctors+Theatre+Schenectady+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Maya+Thai+Bistro+2015+Rosa+Rd+Schenectady+NY",
       "event_date": "2026-01-11T09:00:00+00:00",
-      "event_location": "Proctors Theatre, Schenectady, NY"
-    },
-    {
-      "event": "Martin Luther King Jr. Day Concert",
-      "restaurant": "Thai Thai Bistro",
-      "match_reason": "Located in Albany; \u2b50 4.7 rating",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Palace+Theatre+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Thai+Thai+Bistro+254+Lark+St+Albany+NY",
-      "event_date": "2026-01-19T15:00:00+00:00",
-      "event_location": "Palace Theatre, Albany, NY"
-    },
-    {
-      "event": "Winter Beer Festival",
-      "restaurant": "New China Restaurant",
-      "match_reason": "Located in Schenectady",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Proctors+Theatre+Schenectady+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=New+China+Restaurant+1334+Gerling+St+Schenectady+NY",
-      "event_date": "2026-01-25T18:00:00+00:00",
       "event_location": "Proctors Theatre, Schenectady, NY"
     },
     {
@@ -208,78 +109,6 @@
       "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Lark+Street+Collective+Kitchen+258+Lark+St+Albany+NY",
       "event_date": "2026-01-03T10:00:00+00:00",
       "event_location": "Empire State Plaza, Albany, NY"
-    },
-    {
-      "event": "Adirondack Winterfest",
-      "restaurant": "Innovo Kitchen",
-      "match_reason": "Family-friendly american; \u2b50 4.7 rating",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Lake+George+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Innovo+Kitchen+Clifton+Park+NY",
-      "event_date": "2026-02-07T10:00:00+00:00",
-      "event_location": "Lake George, NY"
-    },
-    {
-      "event": "Albany Symphony Orchestra Performance",
-      "restaurant": "Hiro's Japanese Restaurant",
-      "match_reason": "Located in Albany; Sushi pairs well with live music; Sushi open for evening dining",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Palace+Theatre+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Hiro's+Japanese+Restaurant+193+Lark+St+Albany+NY",
-      "event_date": "2026-02-14T19:30:00+00:00",
-      "event_location": "Palace Theatre, Albany, NY"
-    },
-    {
-      "event": "Valentine's Day Jazz Dinner",
-      "restaurant": "Max London's Restaurant + Bar",
-      "match_reason": "Located in Saratoga Springs; American pairs well with live music",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Caffe+Lena+Saratoga+Springs+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Max+London's+Restaurant+Bar+466+Broadway+Saratoga+Springs+NY",
-      "event_date": "2026-02-14T18:00:00+00:00",
-      "event_location": "Caffe Lena, Saratoga Springs, NY"
-    },
-    {
-      "event": "Winter Art Walk",
-      "restaurant": "15 Church Restaurant",
-      "match_reason": "Upscale american for art events; \u2b50 4.7 rating",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Downtown+Troy+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=15+Church+Restaurant+Saratoga+Springs+NY",
-      "event_date": "2026-02-06T17:00:00+00:00",
-      "event_location": "Downtown Troy, NY"
-    },
-    {
-      "event": "Siena Saints vs. Iona Basketball",
-      "restaurant": "Toro Cantina",
-      "match_reason": "Located in Albany; Mexican is great sports event food",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=MVP+Arena+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Toro+Cantina+111+Washington+Ave+Ext+Albany+NY",
-      "event_date": "2026-02-11T19:00:00+00:00",
-      "event_location": "MVP Arena, Albany, NY"
-    },
-    {
-      "event": "Capital Region Boat Show",
-      "restaurant": "Delmonico's Italian Steakhouse",
-      "match_reason": "Located in Albany; Family-friendly italian",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Empire+State+Plaza+Convention+Center+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Delmonico's+Italian+Steakhouse+1553+Central+Ave+Albany+NY",
-      "event_date": "2026-02-20T10:00:00+00:00",
-      "event_location": "Empire State Plaza Convention Center, Albany, NY"
-    },
-    {
-      "event": "Albany Winter Brewfest",
-      "restaurant": "LaZeez Restaurant",
-      "match_reason": "Located in Albany",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Washington+Avenue+Armory+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=LaZeez+Restaurant+212+Central+Ave+Albany+NY",
-      "event_date": "2026-02-21T16:00:00+00:00",
-      "event_location": "Washington Avenue Armory, Albany, NY"
-    },
-    {
-      "event": "Presidents' Day Science Workshop",
-      "restaurant": "Blue Ribbon Restaurant & Bakery",
-      "match_reason": "Located in Schenectady; Family-friendly american",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=miSci+Museum+Schenectady+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Blue+Ribbon+Restaurant+Bakery+Schenectady+NY",
-      "event_date": "2026-02-16T10:00:00+00:00",
-      "event_location": "miSci Museum, Schenectady, NY"
     }
   ],
   "guidance": "Spread recommendations across the next 2 months when available."
