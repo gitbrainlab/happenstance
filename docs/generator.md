@@ -202,22 +202,22 @@ Displayed in the UI to explain pairing logic to users.
 Override configuration via environment variables:
 
 ```bash
-# Profile selection
+# Profile to load from config/config_logic.json (default: "default")
 export PROFILE=default
 
-# Event filtering
+# Days ahead to include events (default: 14)
 export EVENT_WINDOW_DAYS=14
 
-# Search mode
+# Live search mode hint (options: "local", "remote", "disabled")
 export LIVE_SEARCH_MODE=local
 
-# Base URL (for local testing)
+# Override site base URL for local previews (default: varies by deployment)
 export BASE_URL=http://localhost:8000
 
-# Commit behavior
-export COMMIT_DATA=0  # 0 = artifact-only, 1 = commit JSON changes
+# Set to 1 to commit generated JSON to git (default: 0 = artifact-only deploy)
+export COMMIT_DATA=0
 
-# Port for local server
+# Port for local development server (default: 8000)
 export PORT=8000
 ```
 

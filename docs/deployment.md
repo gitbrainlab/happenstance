@@ -99,7 +99,8 @@ Edit `config/config_logic.json` to specify your data sources and region:
 
 **Option A: Push to main branch**
 ```bash
-git add .
+# Stage only the config file you changed
+git add config/config_logic.json
 git commit -m "Configure for my city"
 git push origin main
 ```
@@ -465,7 +466,7 @@ Warning in GitHub Pages settings.
 **Solution:**
 1. Verify DNS records using `dig yourdomain.com`
 2. Wait up to 24 hours for propagation
-3. Ensure CNAME record points to `username.github.io` (not `username.github.io/repo`)
+3. Ensure CNAME record points to `yourusername.github.io` (not `yourusername.github.io/repo`)
 
 #### Issue: "SSL certificate error"
 

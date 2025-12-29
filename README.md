@@ -192,7 +192,9 @@ Check **Settings** → **Pages** for the URL.
 
 ### Validating Scheduled Runs
 
-Your site automatically updates daily at 6 AM UTC. To verify:
+Your site automatically updates daily at 6 AM UTC. Validation ensures data is being refreshed correctly and your site remains functional.
+
+**Why validate?** Scheduled runs can fail due to API rate limits, configuration errors, or GitHub Actions issues. Regular validation helps you catch problems early.
 
 **Check GitHub Actions:**
 1. Go to **Actions** tab
@@ -201,10 +203,10 @@ Your site automatically updates daily at 6 AM UTC. To verify:
 
 **Check deployment history:**
 1. **Settings** → **Pages**
-2. View deployment timestamps
+2. View deployment timestamps - should show daily updates
 
 **Check site footer:**
-Visit your site and check the bottom:
+Visit your site and check the bottom for the update timestamp:
 ```
 Data from Your City • Updated: 2025-12-29 at 06:05 UTC
 ```
@@ -214,10 +216,11 @@ Data from Your City • Updated: 2025-12-29 at 06:05 UTC
 curl https://yourusername.github.io/happenstance/meta.json | grep generated_at
 ```
 
-**Common issues:**
-- **No scheduled runs**: GitHub may pause workflows on inactive repos - trigger manually once
-- **Run failed**: Check logs - usually API limits or errors (fixture fallback still works)
-- **Data unchanged**: Check `_meta.changed` field - if `false`, no updates were needed
+**Common issues and solutions:**
+- **No scheduled runs**: GitHub may pause workflows on inactive repos - trigger manually once to reactivate
+- **Run failed**: Check logs - usually API limits or errors (fixture fallback ensures site still works)
+- **Data unchanged**: Check `_meta.changed` field - if `false`, no updates were needed (this is normal)
+- **If validation fails**: See the detailed troubleshooting guide in [docs/deployment.md](docs/deployment.md)
 
 See [docs/deployment.md](docs/deployment.md) for detailed deployment documentation, custom domains, and troubleshooting.
 
