@@ -40,6 +40,7 @@
         "radius_km": 40,
         "limit": 10
       },
+      "event_window_days": 14,
       "target_cuisines": ["Italian", "Sushi", "BBQ", "Vegan", "Mexican", "Thai", "Chinese", "Indian"],
       "target_categories": ["live music", "art", "family", "sports"],
       "base_url": "https://evcatalyst.github.io/happenstance"

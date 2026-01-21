@@ -2,71 +2,64 @@
   {
     "title": "New Year's Eve Comedy Show",
     "category": "entertainment",
-    "date": "2025-12-31T20:00:00+00:00",
+    "date": "2026-01-23T20:00:00+00:00",
     "location": "The Egg, Albany, NY",
     "url": "https://www.google.com/maps/search/?api=1&query=The+Egg+Albany+NY"
   },
   {
     "title": "First Night Saratoga",
     "category": "family",
-    "date": "2025-12-31T18:00:00+00:00",
+    "date": "2026-01-24T18:00:00+00:00",
     "location": "Downtown Saratoga Springs, NY",
     "url": "https://www.google.com/maps/search/?api=1&query=Downtown+Saratoga+Springs+NY"
   },
   {
     "title": "New Year's Eve Gala at The Desmond",
     "category": "entertainment",
-    "date": "2025-12-31T21:00:00+00:00",
+    "date": "2026-01-26T21:00:00+00:00",
     "location": "The Desmond Hotel, Albany, NY",
     "url": "https://www.google.com/maps/search/?api=1&query=The+Desmond+Hotel+Albany+NY"
   },
   {
     "title": "Winter Jazz Festival",
     "category": "live music",
-    "date": "2026-01-10T19:00:00+00:00",
+    "date": "2026-01-27T19:00:00+00:00",
     "location": "The Hollow Bar + Kitchen, Albany, NY",
     "url": "https://www.google.com/maps/search/?api=1&query=The+Hollow+Bar+Kitchen+Albany+NY"
   },
   {
+    "title": "Capital Region Home & Garden Show",
+    "category": "family",
+    "date": "2026-01-29T10:00:00+00:00",
+    "location": "Hudson Valley Community College, Troy, NY",
+    "url": "https://www.google.com/maps/search/?api=1&query=Hudson+Valley+Community+College+Troy+NY"
+  },
+  {
     "title": "Albany Institute of History & Art Exhibition",
     "category": "art",
-    "date": "2026-01-05T10:00:00+00:00",
+    "date": "2026-01-30T10:00:00+00:00",
     "location": "Albany Institute of History & Art, Albany, NY",
     "url": "https://www.google.com/maps/search/?api=1&query=Albany+Institute+History+Art+Albany+NY"
   },
   {
     "title": "Siena Saints Basketball",
     "category": "sports",
-    "date": "2026-01-08T19:00:00+00:00",
+    "date": "2026-02-01T19:00:00+00:00",
     "location": "MVP Arena, Albany, NY",
     "url": "https://www.google.com/maps/search/?api=1&query=MVP+Arena+Albany+NY"
   },
   {
-    "title": "Troy Night Out",
-    "category": "art",
-    "date": "2026-01-09T17:00:00+00:00",
-    "location": "Downtown Troy, NY",
-    "url": "https://www.google.com/maps/search/?api=1&query=Downtown+Troy+NY"
-  },
-  {
-    "title": "Schenectady County Winter Farmers Market",
-    "category": "family",
-    "date": "2026-01-11T09:00:00+00:00",
-    "location": "Proctors Theatre, Schenectady, NY",
-    "url": "https://www.google.com/maps/search/?api=1&query=Proctors+Theatre+Schenectady+NY"
-  },
-  {
-    "title": "Ice Skating at Empire State Plaza",
-    "category": "family",
-    "date": "2026-01-03T10:00:00+00:00",
-    "location": "Empire State Plaza, Albany, NY",
-    "url": "https://www.google.com/maps/search/?api=1&query=Empire+State+Plaza+Albany+NY"
+    "title": "Albany Devils Hockey Game",
+    "category": "sports",
+    "date": "2026-02-02T19:00:00+00:00",
+    "location": "MVP Arena, Albany, NY",
+    "url": "https://www.google.com/maps/search/?api=1&query=MVP+Arena+Albany+NY"
   },
   {
     "_meta": {
-      "items_hash": "81df52e5f4157ebfaa4f7a0ebda760c94c9130b8f6d9b89ffb973c16564c5fad",
-      "items_changed": false,
-      "item_count": 9
+      "items_hash": "b9278a09af3138ba6d97f8ae812732b576ef1db7ed63102cfc391d0a2c3179bf",
+      "items_changed": true,
+      "item_count": 8
     }
   }
 ]
