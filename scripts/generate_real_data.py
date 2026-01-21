@@ -338,7 +338,7 @@ RESTAURANTS_DATA = [
 # Real events data for Capital Region, NY
 # Updated with forward-looking events from late December 2025 through February 2026
 EVENTS_DATA = [
-    # Late January 2026 (upcoming events)
+    # Late January through Early March 2026
     {
         "title": "New Year's Eve Comedy Show",
         "category": "entertainment",
@@ -360,7 +360,7 @@ EVENTS_DATA = [
         "location": "The Desmond Hotel, Albany, NY",
         "url": "https://www.google.com/maps/search/?api=1&query=The+Desmond+Hotel+Albany+NY"
     },
-    # Late January / Early February 2026
+    # Late January through Early February 2026
     {
         "title": "Winter Jazz Festival",
         "category": "live music",
