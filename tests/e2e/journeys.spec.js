@@ -67,14 +67,11 @@ test("explore renders clusters, dense rows, and real event data", async ({ page 
 });
 
 test("preference chips rerank results, highlight matches, and persist", async ({ page }) => {
-  const firstTitleBefore = await page.locator(".item-row .item-title").first().innerText();
   await page.getByRole("button", { name: "Art & Culture", exact: true }).click();
 
   await expect(page.locator(".preference-chip.active")).toContainText("Art & Culture");
   await expect(page.locator(".preference-badges").first()).toContainText("Art & Culture");
-
-  const firstTitleAfter = await page.locator(".item-row .item-title").first().innerText();
-  expect(firstTitleAfter).not.toBe(firstTitleBefore);
+  await expect(page.locator(".item-row").first()).toContainText("Art & Culture");
 
   const stored = await page.evaluate(() => localStorage.getItem("happenstance_prefs"));
   expect(JSON.parse(stored)).toContain("art-culture");

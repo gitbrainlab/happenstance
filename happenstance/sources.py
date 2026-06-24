@@ -9,6 +9,7 @@ This module provides integrations with external APIs to fetch real restaurant an
 from __future__ import annotations
 
 import json
+import math
 import os
 import re
 import urllib.parse
@@ -101,6 +102,7 @@ def fetch_google_places_restaurants(
     region: str,
     cuisine_types: List[str] | None = None,
     count: int = 20,
+    areas: List[str] | None = None,
 ) -> List[Dict]:
     """
     Fetch restaurants from Google Places API.
@@ -110,6 +112,7 @@ def fetch_google_places_restaurants(
         region: Region name for display
         cuisine_types: List of preferred cuisine types (optional)
         count: Number of restaurants to fetch
+        areas: Area labels to search for broader regional coverage
         
     Returns:
         List of restaurant dictionaries
@@ -126,84 +129,183 @@ def fetch_google_places_restaurants(
         "X-Goog-Api-Key": api_key,
         "X-Goog-FieldMask": (
             "places.id,places.displayName,places.formattedAddress,places.types,"
-            "places.rating,places.priceLevel,places.location,places.regularOpeningHours,"
-            "places.nationalPhoneNumber,places.websiteUri,places.googleMapsUri"
+            "places.primaryType,places.primaryTypeDisplayName,places.rating,places.userRatingCount,"
+            "places.priceLevel,places.location,places.regularOpeningHours,places.currentOpeningHours,"
+            "places.businessStatus,places.nationalPhoneNumber,places.websiteUri,places.googleMapsUri,"
+            "places.editorialSummary"
         ),
     }
-    
-    # Build search query
-    cuisine_query = f" {' OR '.join(cuisine_types)}" if cuisine_types else ""
-    query = f"restaurants in {city}{cuisine_query}"
-    
-    body = {
-        "textQuery": query,
-        "maxResultCount": min(count, 20),  # API limit
-    }
-    
-    try:
-        data = _make_request(
-            url,
-            headers=headers,
-            method="POST",
-            data=body
-        )
-    except ValueError as e:
-        raise ValueError(f"Google Places API request failed: {e}") from e
-    
+
     restaurants = []
-    places = data.get("places", [])
-    
-    for place in places[:count]:
-        name = place.get("displayName", {}).get("text", "Unknown")
-        address = place.get("formattedAddress", f"{city}")
-        place_id = place.get("id", "")
-        place_location = place.get("location", {})
-        
-        # Build Google Maps URL
-        url = place.get("googleMapsUri") or (
-            f"https://www.google.com/maps/place/?q=place_id:{place_id}" if place_id else f"https://www.google.com/search?q={urllib.parse.quote(name)}+{urllib.parse.quote(city)}"
-        )
-        
-        restaurant = {
-            "id": place_id or _stable_id("restaurant", name, address),
-            "name": name,
-            "cuisine": _infer_cuisine(place),
-            "address": address,
-            "url": url,
-            "match_reason": f"Popular restaurant in {city}",
+    seen: set[str] = set()
+    search_areas = _dedupe_strings([*(areas or []), city])
+    per_search_count = min(10, max(3, math.ceil(count / max(1, len(search_areas))) + 2))
+    buckets: list[list[Dict]] = []
+
+    for area in search_areas:
+        body = {
+            "textQuery": f"restaurants in {area}",
+            "maxResultCount": min(per_search_count, 20),
         }
 
-        if "latitude" in place_location and "longitude" in place_location:
-            restaurant["location"] = {
-                "lat": place_location["latitude"],
-                "lng": place_location["longitude"],
+        try:
+            data = _make_request(
+                url,
+                headers=headers,
+                method="POST",
+                data=body
+            )
+        except ValueError as e:
+            raise ValueError(f"Google Places API request failed: {e}") from e
+
+        bucket: list[Dict] = []
+        for place in data.get("places", []):
+            restaurant = _restaurant_from_google_place(place, area)
+            key = restaurant.get("google_place_id") or _stable_id(restaurant["name"], restaurant["address"])
+            if key in seen:
+                continue
+            seen.add(key)
+            bucket.append(restaurant)
+        bucket.sort(key=_restaurant_quality_score, reverse=True)
+        buckets.append(bucket)
+
+    restaurants.extend(_balanced_restaurant_selection(buckets, count))
+    if len(restaurants) < count and cuisine_types:
+        for cuisine in cuisine_types:
+            if len(restaurants) >= count:
+                break
+            body = {
+                "textQuery": f"{cuisine} restaurants in {city}",
+                "maxResultCount": min(5, count - len(restaurants), 20),
             }
-        if place.get("nationalPhoneNumber"):
-            restaurant["phone"] = place["nationalPhoneNumber"]
-        if place.get("websiteUri"):
-            restaurant["website"] = place["websiteUri"]
-        if place.get("regularOpeningHours", {}).get("weekdayDescriptions"):
-            restaurant["hours"] = place["regularOpeningHours"]["weekdayDescriptions"]
-        
-        # Add rating if available
-        if "rating" in place:
-            restaurant["rating"] = place["rating"]
-        
-        # Add price level if available
-        if "priceLevel" in place:
-            # Google uses PRICE_LEVEL_FREE, PRICE_LEVEL_INEXPENSIVE, etc.
-            price_map = {
-                "PRICE_LEVEL_FREE": 0,
-                "PRICE_LEVEL_INEXPENSIVE": 1,
-                "PRICE_LEVEL_MODERATE": 2,
-                "PRICE_LEVEL_EXPENSIVE": 3,
-                "PRICE_LEVEL_VERY_EXPENSIVE": 4,
-            }
-            restaurant["price_level"] = price_map.get(place["priceLevel"], 2)
-        
-        restaurants.append(restaurant)
-    
-    return restaurants
+            try:
+                data = _make_request(url, headers=headers, method="POST", data=body)
+            except ValueError as e:
+                raise ValueError(f"Google Places API request failed: {e}") from e
+            for place in data.get("places", []):
+                restaurant = _restaurant_from_google_place(place, city)
+                key = restaurant.get("google_place_id") or _stable_id(restaurant["name"], restaurant["address"])
+                if key in seen:
+                    continue
+                seen.add(key)
+                restaurants.append(restaurant)
+                if len(restaurants) >= count:
+                    break
+
+    return restaurants[:count]
+
+
+def _balanced_restaurant_selection(buckets: List[List[Dict]], count: int) -> List[Dict]:
+    selected: list[Dict] = []
+    max_bucket_size = max((len(bucket) for bucket in buckets), default=0)
+    for index in range(max_bucket_size):
+        for bucket in buckets:
+            if index >= len(bucket):
+                continue
+            selected.append(bucket[index])
+            if len(selected) >= count:
+                return selected
+    return selected
+
+
+def _restaurant_quality_score(restaurant: Dict) -> float:
+    try:
+        rating = float(restaurant.get("rating") or 0)
+    except (TypeError, ValueError):
+        rating = 0.0
+    try:
+        review_count = int(restaurant.get("review_count") or 0)
+    except (TypeError, ValueError):
+        review_count = 0
+    return rating * 10 + min(math.log10(review_count + 1) * 4, 12)
+
+
+def _restaurant_from_google_place(place: Dict, area: str) -> Dict:
+    name = place.get("displayName", {}).get("text", "Unknown")
+    address = place.get("formattedAddress", f"{area}")
+    place_id = place.get("id", "")
+    place_location = place.get("location", {})
+
+    # Build Google Maps URL
+    url = place.get("googleMapsUri") or (
+        f"https://www.google.com/maps/place/?q=place_id:{place_id}" if place_id else f"https://www.google.com/search?q={urllib.parse.quote(name)}+{urllib.parse.quote(area)}"
+    )
+    summary = place.get("editorialSummary", {}).get("text")
+    type_labels = _place_type_labels(place)
+
+    restaurant = {
+        "id": place_id or _stable_id("restaurant", name, address),
+        "google_place_id": place_id,
+        "name": name,
+        "cuisine": _infer_cuisine(place),
+        "address": address,
+        "url": url,
+        "match_reason": summary or f"Popular restaurant in {area}",
+        "tags": type_labels,
+    }
+
+    if "latitude" in place_location and "longitude" in place_location:
+        restaurant["location"] = {
+            "lat": place_location["latitude"],
+            "lng": place_location["longitude"],
+        }
+    if place.get("nationalPhoneNumber"):
+        restaurant["phone"] = place["nationalPhoneNumber"]
+    if place.get("websiteUri"):
+        restaurant["website"] = place["websiteUri"]
+    if place.get("regularOpeningHours", {}).get("weekdayDescriptions"):
+        restaurant["hours"] = place["regularOpeningHours"]["weekdayDescriptions"]
+    if place.get("regularOpeningHours", {}).get("openNow") is not None:
+        restaurant["open_now"] = place["regularOpeningHours"]["openNow"]
+    if place.get("currentOpeningHours", {}).get("weekdayDescriptions"):
+        restaurant["current_hours"] = place["currentOpeningHours"]["weekdayDescriptions"]
+    if place.get("businessStatus"):
+        restaurant["business_status"] = place["businessStatus"]
+
+    # Add rating if available
+    if "rating" in place:
+        restaurant["rating"] = place["rating"]
+    if "userRatingCount" in place:
+        restaurant["review_count"] = place["userRatingCount"]
+
+    # Add price level if available
+    if "priceLevel" in place:
+        # Google uses PRICE_LEVEL_FREE, PRICE_LEVEL_INEXPENSIVE, etc.
+        price_map = {
+            "PRICE_LEVEL_FREE": 0,
+            "PRICE_LEVEL_INEXPENSIVE": 1,
+            "PRICE_LEVEL_MODERATE": 2,
+            "PRICE_LEVEL_EXPENSIVE": 3,
+            "PRICE_LEVEL_VERY_EXPENSIVE": 4,
+        }
+        restaurant["price_level"] = price_map.get(place["priceLevel"], 2)
+
+    return restaurant
+
+
+def _place_type_labels(place: Dict) -> List[str]:
+    labels: list[str] = []
+    display = place.get("primaryTypeDisplayName", {}).get("text")
+    if display:
+        labels.append(display)
+    for place_type in place.get("types", []):
+        label = str(place_type).replace("_", " ").title()
+        if label and label not in labels:
+            labels.append(label)
+    return labels[:8]
+
+
+def _dedupe_strings(values: List[str]) -> List[str]:
+    seen: set[str] = set()
+    result: list[str] = []
+    for value in values:
+        text = str(value or "").strip()
+        key = text.lower()
+        if not text or key in seen:
+            continue
+        seen.add(key)
+        result.append(text)
+    return result
 
 
 def _categorize_event(event_data: Dict) -> str:

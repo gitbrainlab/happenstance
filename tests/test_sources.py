@@ -109,6 +109,7 @@ class TestCategorizeEvent:
 class TestGooglePlacesRestaurants:
     """Tests for Google Places API integration."""
     
+    @patch.dict(os.environ, {}, clear=True)
     def test_missing_api_key(self):
         """Test that missing API key raises ValueError."""
         with pytest.raises(ValueError, match="Google Places API key not provided"):
@@ -138,6 +139,41 @@ class TestGooglePlacesRestaurants:
         assert restaurants[0]["cuisine"] == "Italian"
         assert restaurants[0]["rating"] == 4.5
         assert restaurants[0]["price_level"] == 2
+
+    @patch.dict(os.environ, {"GOOGLE_PLACES_API_KEY": "test_key"})
+    @patch("happenstance.sources._make_request")
+    def test_fetch_balances_target_areas(self, mock_request):
+        """Test that regional searches sample each requested target area."""
+        def response_for_area(*_, **kwargs):
+            area = kwargs["data"]["textQuery"].replace("restaurants in ", "")
+            return {
+                "places": [
+                    {
+                        "displayName": {"text": f"{area} Bistro"},
+                        "formattedAddress": f"1 Main St, {area}, NY",
+                        "id": f"place-{area.lower().replace(' ', '-')}",
+                        "types": ["restaurant"],
+                        "rating": 4.5,
+                        "userRatingCount": 100,
+                    }
+                ]
+            }
+
+        mock_request.side_effect = response_for_area
+
+        restaurants = fetch_google_places_restaurants(
+            "Capital Region, NY",
+            "Capital Region, NY",
+            count=3,
+            areas=["Albany", "Troy", "Lake George"],
+        )
+
+        assert [restaurant["name"] for restaurant in restaurants] == [
+            "Albany Bistro",
+            "Troy Bistro",
+            "Lake George Bistro",
+        ]
+        assert mock_request.call_count == 4
 
 
 class TestTicketmasterEvents:

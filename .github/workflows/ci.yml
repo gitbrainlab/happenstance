@@ -23,6 +23,7 @@ jobs:
           TARGET_AREA: Capital Region
           SEARCH_RADIUS_MILES: "25"
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
           EVENTBRITE_API_KEY: ${{ secrets.EVENTBRITE_API_KEY }}
           AI_RESTAURANTS_DATA: ${{ secrets.AI_RESTAURANTS_DATA }}

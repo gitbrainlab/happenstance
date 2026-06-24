@@ -60,6 +60,7 @@ jobs:
           TARGET_ZIP: ${{ inputs.target_zip || vars.TARGET_ZIP }}
           SEARCH_RADIUS_MILES: ${{ inputs.search_radius_miles || vars.SEARCH_RADIUS_MILES || '25' }}
           # API keys for real data sources
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
           EVENTBRITE_API_KEY: ${{ secrets.EVENTBRITE_API_KEY }}

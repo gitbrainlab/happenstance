@@ -5,6 +5,8 @@ from happenstance.aggregate import (
     _build_pairings,
     _calculate_distance,
     _cities_match_at_word_boundary,
+    _compute_match_score,
+    _extract_city,
     _geocode_address,
     _normalize_restaurants,
 )
@@ -12,6 +14,11 @@ from happenstance.aggregate import (
 
 class TestCityMatching:
     """Tests for city matching with word boundaries."""
+
+    def test_extract_city_from_google_formatted_address(self):
+        """Test city parsing for Google addresses with state, ZIP, and country."""
+        assert _extract_city("307 Broadway, Saratoga Springs, NY 12866, USA") == "saratoga springs"
+        assert _extract_city("4 Kurosaka Ln, Lake George, NY 12845, USA") == "lake george"
     
     def test_exact_match(self):
         """Test exact city name match."""
@@ -335,6 +342,31 @@ class TestBuildPairings:
         # Should still create a pairing, even though city doesn't match
         assert pairings[0]["event"] == "Schenectady Art Walk"
         assert pairings[0]["restaurant"] == "Dinosaur Bar-B-Que"
+
+    def test_distance_penalty_prefers_nearby_restaurant_over_distant_category_fit(self):
+        """Test that a very distant restaurant does not win only on category fit."""
+        event = {
+            "title": "Regional Theatre Night",
+            "category": "art",
+            "location": "Glens Falls, NY",
+        }
+        nearby_restaurant = {
+            "name": "Nearby Bistro",
+            "cuisine": "Restaurant",
+            "address": "Lake George, NY",
+            "rating": 4.5,
+        }
+        distant_restaurant = {
+            "name": "Distant American",
+            "cuisine": "American",
+            "address": "Albany, NY",
+            "rating": 4.8,
+        }
+
+        nearby_score, _ = _compute_match_score(event, nearby_restaurant, distance_miles=7.5)
+        distant_score, _ = _compute_match_score(event, distant_restaurant, distance_miles=45.0)
+
+        assert nearby_score > distant_score
 
 
 class TestNormalizeRestaurants:

@@ -16,8 +16,8 @@ from .io import append_meta, docs_path, read_json, write_json
 from .prompting import build_gap_bullets, month_spread_guidance
 from .search import build_live_search_params
 from .sources import (
-    _infer_cuisine,
     _make_request,
+    _restaurant_from_google_place,
     fetch_ai_events,
     fetch_ai_restaurants,
     fetch_eventbrite_events,
@@ -34,16 +34,6 @@ KM_PER_MILE = 1.609344
 # Pairing algorithm constants
 EVENING_HOUR_THRESHOLD = 19  # 7 PM in 24-hour format
 VARIETY_PENALTY_MULTIPLIER = 3  # Penalty per previous use of a restaurant
-
-# Google Places price level mapping
-PRICE_LEVEL_MAP = {
-    "PRICE_LEVEL_FREE": 0,
-    "PRICE_LEVEL_INEXPENSIVE": 1,
-    "PRICE_LEVEL_MODERATE": 2,
-    "PRICE_LEVEL_EXPENSIVE": 3,
-    "PRICE_LEVEL_VERY_EXPENSIVE": 4,
-}
-
 
 def _stable_id(kind: str, *parts: object) -> str:
     raw = "-".join(str(part) for part in parts if part)
@@ -290,7 +280,13 @@ def _fetch_nearby_restaurants(event_location: str, region: str = "San Francisco"
     headers = {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": api_key,
-        "X-Goog-FieldMask": "places.displayName,places.formattedAddress,places.types,places.rating,places.priceLevel,places.id,places.location",
+        "X-Goog-FieldMask": (
+            "places.id,places.displayName,places.formattedAddress,places.types,"
+            "places.primaryType,places.primaryTypeDisplayName,places.rating,places.userRatingCount,"
+            "places.priceLevel,places.location,places.regularOpeningHours,places.currentOpeningHours,"
+            "places.businessStatus,places.nationalPhoneNumber,places.websiteUri,places.googleMapsUri,"
+            "places.editorialSummary"
+        ),
     }
     
     body = {
@@ -316,35 +312,8 @@ def _fetch_nearby_restaurants(event_location: str, region: str = "San Francisco"
     places = data.get("places", [])
     
     for place in places[:count]:
-        name = place.get("displayName", {}).get("text", "Unknown")
-        address = place.get("formattedAddress", event_location)
-        place_id = place.get("id", "")
-        
-        # Build Google Maps URL
-        url = _build_google_maps_url(place_id, name, event_location)
-        
-        restaurant = {
-            "id": place_id or _stable_id("restaurant", name, address),
-            "name": name,
-            "cuisine": _infer_cuisine(place),
-            "address": address,
-            "url": url,
-            "match_reason": "Near event location",
-        }
-        if place.get("location", {}).get("latitude") and place.get("location", {}).get("longitude"):
-            restaurant["location"] = {
-                "lat": float(place["location"]["latitude"]),
-                "lng": float(place["location"]["longitude"]),
-            }
-        
-        # Add rating if available
-        if "rating" in place:
-            restaurant["rating"] = place["rating"]
-        
-        # Add price level if available
-        if "priceLevel" in place:
-            restaurant["price_level"] = PRICE_LEVEL_MAP.get(place["priceLevel"], 2)
-        
+        restaurant = _restaurant_from_google_place(place, event_location)
+        restaurant["match_reason"] = restaurant.get("match_reason") or "Near event location"
         restaurants.append(restaurant)
     
     return restaurants
@@ -429,6 +398,11 @@ def _extract_city(location_str: str) -> str:
     
     # Common city patterns: "venue, City, STATE" or "address, City, STATE"
     parts = [p.strip() for p in location_str.split(",")]
+
+    if len(parts) >= 3 and parts[-1].strip().lower() in {"us", "usa", "united states"}:
+        state_zip = parts[-2].strip().upper()
+        if re.fullmatch(r"[A-Z]{2}(?:\s+\d{5}(?:-\d{4})?)?", state_zip):
+            return parts[-3].strip().lower()
     
     # If we have at least 2 parts, the second-to-last is usually the city
     if len(parts) >= 2:
@@ -538,6 +512,13 @@ def _compute_match_score(
             reasons.append(f"{distance_miles:.1f} mi - very close")
         elif distance_miles < 3.0:
             score += 2
+            reasons.append(f"{distance_miles:.1f} mi away")
+        elif distance_miles < 10.0:
+            score += 1
+            reasons.append(f"{distance_miles:.1f} mi drive")
+        elif distance_miles > 20.0:
+            penalty = min(10, max(2, round((distance_miles - 20.0) / 5.0) + 2))
+            score -= penalty
             reasons.append(f"{distance_miles:.1f} mi away")
 
     # Penalize restaurants that have been used multiple times (encourage variety)
@@ -853,6 +834,34 @@ def _build_clusters(events: List[Dict], restaurants: List[Dict], pairings: List[
     return clusters[:20]
 
 
+def _google_search_areas(cfg: Mapping) -> list[str]:
+    areas = []
+    for area in cfg.get("target_areas", []):
+        name = str(area.get("name") or "").strip()
+        if name and name.lower() != "capital region":
+            areas.append(name)
+    return areas
+
+
+def _merge_restaurant_sources(primary: List[Dict], fallback: List[Dict], limit: int) -> List[Dict]:
+    merged: list[Dict] = []
+    seen: set[str] = set()
+    for restaurant in [*primary, *fallback]:
+        key = str(restaurant.get("google_place_id") or restaurant.get("id") or "").lower()
+        if not key:
+            key = _stable_id("restaurant", restaurant.get("name", ""), restaurant.get("address", ""))
+        name_key = _stable_id("restaurant-name", restaurant.get("name", ""))
+        address_key = _stable_id("restaurant-address", restaurant.get("address", ""))
+        dedupe_keys = {key, name_key, address_key}
+        if seen.intersection(dedupe_keys):
+            continue
+        seen.update(dedupe_keys)
+        merged.append(restaurant)
+        if len(merged) >= limit:
+            break
+    return merged
+
+
 def _fetch_restaurants(cfg: Mapping) -> List[Dict]:
     """Fetch restaurants based on configured data source."""
     data_sources = cfg.get("data_sources", {})
@@ -860,9 +869,16 @@ def _fetch_restaurants(cfg: Mapping) -> List[Dict]:
     region = cfg["region"]
     
     if restaurant_source == "auto":
-        for source in ["google_places", "ai", "fixtures"]:
-            if source == "google_places" and not os.getenv("GOOGLE_PLACES_API_KEY"):
-                continue
+        api_config = cfg.get("api_config", {}).get("google_places", {})
+        target_count = int(api_config.get("count", 40))
+        if os.getenv("GOOGLE_PLACES_API_KEY"):
+            trial_cfg = dict(cfg)
+            trial_cfg["data_sources"] = {**data_sources, "restaurants": "google_places"}
+            google_restaurants = _fetch_restaurants(trial_cfg)
+            if google_restaurants:
+                return _merge_restaurant_sources(google_restaurants, _fixture_restaurants(region), target_count)
+
+        for source in ["ai", "fixtures"]:
             trial_cfg = dict(cfg)
             trial_cfg["data_sources"] = {**data_sources, "restaurants": source}
             restaurants = _fetch_restaurants(trial_cfg)
@@ -882,6 +898,7 @@ def _fetch_restaurants(cfg: Mapping) -> List[Dict]:
                 region=region,
                 cuisine_types=cfg.get("target_cuisines"),
                 count=api_config.get("count", 20),
+                areas=_google_search_areas(cfg),
             )
         except ValueError as e:
             print(f"Warning: Failed to fetch from Google Places API: {e}")

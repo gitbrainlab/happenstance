@@ -4,6 +4,8 @@ import os
 from pathlib import Path
 from typing import Any, Dict
 
+from .env import load_project_env
+
 CONFIG_PATH = Path(__file__).resolve().parent.parent / "config" / "config_logic.json"
 
 
@@ -14,6 +16,7 @@ def _load_raw_config() -> Dict[str, Any]:
 
 def load_config(profile: str | None = None) -> Dict[str, Any]:
     """Load a profile configuration and apply environment overrides."""
+    load_project_env()
     raw = _load_raw_config()
     profiles = raw.get("profiles", {})
     selected = profile or os.getenv("PROFILE") or "default"

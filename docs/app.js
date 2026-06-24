@@ -729,7 +729,7 @@
     const description = item.description || item.match_reason || "No description available yet.";
     const tags = asArray(item.tags);
     const saved = isSaved(type, item.id);
-    const hours = type === "restaurant" ? formatHours(item.hours) : formatEventDate(item);
+    const hours = type === "restaurant" ? formatHours(item.current_hours || item.hours) : formatEventDate(item);
 
     return `
       <div class="sheet-handle" aria-hidden="true"></div>
@@ -761,6 +761,7 @@
             </section>`
           : ""
       }
+      ${type === "restaurant" ? renderRestaurantContact(item) : ""}
       ${
         hours
           ? `<section class="sheet-section">
@@ -784,6 +785,30 @@
             ? `<ul class="pairing-list">${pairings.map((pairing) => renderPairingDetail(pairing, type)).join("")}</ul>`
             : `<p>No pairing suggestions yet.</p>`
         }
+      </section>
+    `;
+  }
+
+  function renderRestaurantContact(item) {
+    const reviewSummary = formatReviewSummary(item);
+    const links = [];
+    if (item.website) {
+      links.push(`<a class="sheet-link-button" href="${escapeAttr(item.website)}" target="_blank" rel="noopener">Website</a>`);
+    }
+    if (item.phone) {
+      links.push(`<a class="sheet-link-button" href="tel:${escapeAttr(phoneHref(item.phone))}">${escapeHTML(item.phone)}</a>`);
+    }
+    if (item.url) {
+      links.push(`<a class="sheet-link-button" href="${escapeAttr(item.url)}" target="_blank" rel="noopener">Google Maps</a>`);
+    }
+
+    if (!reviewSummary && !links.length) return "";
+
+    return `
+      <section class="sheet-section restaurant-contact">
+        <h3>Google Places</h3>
+        ${reviewSummary ? `<p>${escapeHTML(reviewSummary)}</p>` : ""}
+        ${links.length ? `<div class="sheet-link-list">${links.join("")}</div>` : ""}
       </section>
     `;
   }
@@ -1650,6 +1675,20 @@
 
   function mapUrlFor(item, address) {
     return item.url || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address || item.name)}`;
+  }
+
+  function formatReviewSummary(item) {
+    const rating = Number(item.rating);
+    const reviewCount = Number(item.review_count);
+    const ratingLabel = Number.isFinite(rating) && rating > 0 ? `${rating.toFixed(1)} rating` : "";
+    const reviewLabel = Number.isFinite(reviewCount) && reviewCount > 0
+      ? `${reviewCount.toLocaleString()} Google review${reviewCount === 1 ? "" : "s"}`
+      : "";
+    return [ratingLabel, reviewLabel].filter(Boolean).join(" from ");
+  }
+
+  function phoneHref(phone) {
+    return String(phone || "").replace(/[^\d+]/g, "");
   }
 
   function dedupeConflicts(conflicts) {
