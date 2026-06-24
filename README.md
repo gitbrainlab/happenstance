@@ -73,12 +73,13 @@ To fetch real restaurant and event data:
 
 1. Get API keys (see [docs/API_SETUP.md](docs/API_SETUP.md) for details):
    - **Google Places API** - for restaurants
+   - **Google Programmable Search** - optional Google-backed dated event discovery
    - **Ticketmaster API** - for events
-   - Both have free tiers!
 
 2. Set environment variables:
    ```bash
    export GOOGLE_PLACES_API_KEY="your_google_key"
+   export GOOGLE_CSE_ID="your_programmable_search_engine_id"
    export TICKETMASTER_API_KEY="your_ticketmaster_key"
    ```
 
@@ -87,7 +88,7 @@ To fetch real restaurant and event data:
    {
      "data_sources": {
        "restaurants": "google_places",
-       "events": "ticketmaster"
+       "events": "auto"
      }
    }
    ```
@@ -163,6 +164,7 @@ For real data, add repository secrets:
 2. Click **"New repository secret"**
 3. Add secrets:
    - `GOOGLE_PLACES_API_KEY` - for restaurants
+   - `GOOGLE_CSE_ID` - optional, for Google-backed event search
    - `TICKETMASTER_API_KEY` - for events
 
 See [docs/API_SETUP.md](docs/API_SETUP.md) for obtaining API keys (both have free tiers).
@@ -324,7 +326,7 @@ This project is open source. See the repository for license details.
 
 ## 🙏 Acknowledgments
 
-- Data sources: Google Places API, Ticketmaster API
+- Data sources: Google Places API, Google Programmable Search, Ticketmaster API
 - Geocoding: OpenStreetMap Nominatim
 - Hosting: GitHub Pages
 - Automation: GitHub Actions

@@ -147,11 +147,12 @@ config = load_config(profile)
 ↓
 Determine data sources from config:
   - restaurants: "google_places" | "ai" | "fixtures"
-  - events: "ticketmaster" | "eventbrite" | "ai" | "fixtures"
+  - events: "ticketmaster" | "eventbrite" | "google_search" | "ai" | "fixtures"
 ↓
 Call appropriate fetcher:
   - fetch_google_places_restaurants()
   - fetch_ticketmaster_events()
+  - fetch_google_search_events()
   - fetch_ai_restaurants()
   - etc.
 ↓

@@ -23,6 +23,7 @@ from .sources import (
     fetch_barpeople_events,
     fetch_eventbrite_events,
     fetch_google_places_restaurants,
+    fetch_google_search_events,
     fetch_ticketmaster_events,
 )
 from .validate import filter_events_by_window
@@ -970,10 +971,15 @@ def _fetch_events(cfg: Mapping) -> List[Dict]:
         collected: list[list[Dict]] = []
         api_config = cfg.get("api_config", {})
         target_count = int(api_config.get("events", {}).get("count", 0) or 0) or None
-        for source in ["ticketmaster", "eventbrite", "ai", "barpeople"]:
+        for source in ["ticketmaster", "eventbrite", "google_search", "ai", "barpeople"]:
             if source == "ticketmaster" and not os.getenv("TICKETMASTER_API_KEY"):
                 continue
             if source == "eventbrite" and not os.getenv("EVENTBRITE_API_KEY"):
+                continue
+            if source == "google_search" and not (
+                (os.getenv("GOOGLE_API_KEY") or os.getenv("GOOGLE_PLACES_API_KEY"))
+                and (os.getenv("GOOGLE_CSE_ID") or os.getenv("GOOGLE_SEARCH_ENGINE_ID"))
+            ):
                 continue
             trial_cfg = dict(cfg)
             trial_cfg["data_sources"] = {**data_sources, "events": source}
@@ -1018,6 +1024,23 @@ def _fetch_events(cfg: Mapping) -> List[Dict]:
             )
         except ValueError as e:
             print(f"Warning: Failed to fetch from Eventbrite API: {e}")
+            print("Falling back to fixture data")
+            return _fixture_events(region)
+    elif event_source == "google_search":
+        print(f"Fetching events from Google Programmable Search for {region}")
+        api_config = cfg.get("api_config", {}).get("google_search", {})
+        city = api_config.get("city", region)
+        try:
+            return fetch_google_search_events(
+                region=region,
+                city=city,
+                categories=cfg.get("target_categories"),
+                days_ahead=days_ahead,
+                count=api_config.get("count", 40),
+                queries=api_config.get("queries"),
+            )
+        except ValueError as e:
+            print(f"Warning: Failed to fetch from Google Programmable Search: {e}")
             print("Falling back to fixture data")
             return _fixture_events(region)
     elif event_source == "ai":

@@ -28,7 +28,7 @@ on:
         required: false
         type: choice
         default: "auto"
-        options: ["auto", "ticketmaster", "eventbrite", "barpeople", "ai", "fixtures"]
+        options: ["auto", "ticketmaster", "eventbrite", "google_search", "barpeople", "ai", "fixtures"]
   schedule:
     - cron: "17 * * * *"
 
@@ -73,6 +73,8 @@ jobs:
           # API keys for real data sources
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID || vars.GOOGLE_CSE_ID }}
+          GOOGLE_SEARCH_ENGINE_ID: ${{ secrets.GOOGLE_SEARCH_ENGINE_ID || vars.GOOGLE_SEARCH_ENGINE_ID }}
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
           EVENTBRITE_API_KEY: ${{ secrets.EVENTBRITE_API_KEY }}
           # AI API keys for direct AI-powered search

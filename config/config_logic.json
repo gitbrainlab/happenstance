@@ -30,6 +30,20 @@
           "city": "Capital Region, NY",
           "count": 80
         },
+        "google_search": {
+          "city": "Capital Region, NY",
+          "count": 80,
+          "queries": [
+            "upcoming events Capital Region NY",
+            "event calendar Albany NY",
+            "event calendar Saratoga Springs NY",
+            "event calendar Troy NY",
+            "event calendar Schenectady NY",
+            "upcoming concerts Capital Region NY",
+            "upcoming art events Capital Region NY",
+            "family events Capital Region NY"
+          ]
+        },
         "barpeople": {
           "count": 900
         },

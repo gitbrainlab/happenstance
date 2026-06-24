@@ -138,6 +138,7 @@ Profiles are defined in `config/config_logic.json` and allow different configura
 - `"fixtures"` - Demo/sample data (no API key needed) **[DEFAULT]**
 - `"ticketmaster"` - Ticketmaster API
 - `"eventbrite"` - Eventbrite API
+- `"google_search"` - Google Programmable Search results with structured event dates
 - `"ai"` - AI-powered search (Grok or OpenAI)
 
 #### API Configuration
@@ -156,6 +157,11 @@ Profiles are defined in `config/config_logic.json` and allow different configura
     "eventbrite": {
       "city": "San Francisco",
       "count": 20
+    },
+    "google_search": {
+      "city": "San Francisco",
+      "count": 20,
+      "queries": ["event calendar San Francisco"]
     },
     "ai": {
       "city": "Niskayuna, NY",

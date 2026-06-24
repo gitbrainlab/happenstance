@@ -12,6 +12,7 @@ from happenstance.sources import (
     fetch_barpeople_events,
     fetch_eventbrite_events,
     fetch_google_places_restaurants,
+    fetch_google_search_events,
     fetch_ticketmaster_events,
 )
 
@@ -228,6 +229,70 @@ class TestTicketmasterEvents:
         assert events[0]["location"] == "Test Venue"
         assert events[0]["ticket_url"] == "https://www.ticketmaster.com/event/123"
         assert events[0]["price_note"] == "$25-$75"
+
+
+class TestGoogleSearchEvents:
+    """Tests for Google Programmable Search event integration."""
+
+    @patch.dict(os.environ, {"GOOGLE_API_KEY": "test_key"}, clear=True)
+    def test_missing_search_engine_id(self):
+        """Test that missing Programmable Search Engine ID raises ValueError."""
+        with pytest.raises(ValueError, match="Google Programmable Search Engine ID not provided"):
+            fetch_google_search_events("Capital Region, NY")
+
+    @patch.dict(os.environ, {"GOOGLE_API_KEY": "test_key", "GOOGLE_CSE_ID": "search_engine"}, clear=True)
+    @patch("happenstance.sources._make_request")
+    def test_successful_structured_event_fetch(self, mock_request):
+        """Test extracting a real dated event from structured search result metadata."""
+        mock_request.return_value = {
+            "items": [
+                {
+                    "title": "Test Concert | Test Hall",
+                    "link": "https://example.com/events/test-concert",
+                    "snippet": "A live music event in Albany.",
+                    "pagemap": {
+                        "event": [
+                            {
+                                "name": "Test Concert",
+                                "startDate": "2099-07-04T19:30:00-04:00",
+                                "location": {"name": "Test Hall"},
+                                "description": "A live music event in Albany.",
+                            }
+                        ]
+                    },
+                }
+            ]
+        }
+
+        events = fetch_google_search_events(
+            "Capital Region, NY",
+            city="Albany, NY",
+            days_ahead=40000,
+        )
+
+        assert len(events) == 1
+        assert events[0]["title"] == "Test Concert"
+        assert events[0]["venue"] == "Test Hall"
+        assert events[0]["category"] == "live music"
+        assert events[0]["source"] == "Google Search"
+        assert events[0]["ticket_url"] == "https://example.com/events/test-concert"
+
+    @patch.dict(os.environ, {"GOOGLE_API_KEY": "test_key", "GOOGLE_CSE_ID": "search_engine"}, clear=True)
+    @patch("happenstance.sources._make_request")
+    def test_ignores_undated_results(self, mock_request):
+        """Test that generic venue pages do not become fake dated events."""
+        mock_request.return_value = {
+            "items": [
+                {
+                    "title": "Venue Calendar",
+                    "link": "https://example.com/calendar",
+                    "snippet": "Browse upcoming events.",
+                    "pagemap": {"metatags": [{"og:title": "Venue Calendar"}]},
+                }
+            ]
+        }
+
+        assert fetch_google_search_events("Capital Region, NY") == []
 
 
 class TestEventbriteEvents:

@@ -94,6 +94,7 @@ To test the workflow manually:
 
 Don't forget to add API keys as repository secrets for real data:
 - `GOOGLE_PLACES_API_KEY`
+- `GOOGLE_CSE_ID` (optional, enables Google-backed event search)
 - `TICKETMASTER_API_KEY`
 - `EVENTBRITE_API_KEY`
 

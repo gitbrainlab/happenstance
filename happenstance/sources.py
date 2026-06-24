@@ -2,6 +2,7 @@
 
 This module provides integrations with external APIs to fetch real restaurant and event data:
 - Google Places API for restaurants
+- Google Programmable Search for structured event pages
 - Ticketmaster API for events
 - Eventbrite API as an alternative event source
 """
@@ -604,6 +605,235 @@ def fetch_eventbrite_events(
         events.append(event)
     
     return events
+
+
+GOOGLE_SEARCH_SOURCE_NOTE = (
+    "Google Programmable Search result; event date is from structured page metadata when available."
+)
+
+
+def fetch_google_search_events(
+    region: str,
+    city: str | None = None,
+    categories: List[str] | None = None,
+    days_ahead: int = 30,
+    count: int = 20,
+    queries: List[str] | None = None,
+) -> List[Dict]:
+    """
+    Fetch dated event pages through Google Programmable Search.
+
+    This uses a Google API key plus a Programmable Search Engine ID. It only emits
+    results with structured start-date metadata so undated venue/calendar pages do
+    not become fake events.
+    """
+    api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GOOGLE_PLACES_API_KEY")
+    search_engine_id = os.getenv("GOOGLE_CSE_ID") or os.getenv("GOOGLE_SEARCH_ENGINE_ID")
+    if not api_key:
+        raise ValueError("Google API key not provided. Set GOOGLE_API_KEY or GOOGLE_PLACES_API_KEY.")
+    if not search_engine_id:
+        raise ValueError("Google Programmable Search Engine ID not provided. Set GOOGLE_CSE_ID.")
+
+    city_name = city or region
+    start = datetime.now(timezone.utc)
+    end = start + timedelta(days=days_ahead)
+    search_queries = _google_event_queries(city_name, categories, queries)
+    events: list[Dict] = []
+    seen: set[str] = set()
+
+    for query in search_queries:
+        if len(events) >= count:
+            break
+        params = {
+            "key": api_key,
+            "cx": search_engine_id,
+            "q": query,
+            "num": min(10, max(1, count - len(events))),
+        }
+        url = f"https://www.googleapis.com/customsearch/v1?{urllib.parse.urlencode(params)}"
+        try:
+            data = _make_request(url)
+        except Exception as e:
+            raise ValueError(f"Google Programmable Search API request failed: {e}") from e
+
+        for item in data.get("items", []):
+            event = _event_from_google_search_item(item, region, city_name, start, end)
+            if not event:
+                continue
+            key = str(event.get("id") or "").lower()
+            title_key = _stable_id("google-event-title", event.get("title", ""), event.get("date", ""), event.get("venue", ""))
+            if key in seen or title_key in seen:
+                continue
+            seen.update({key, title_key})
+            events.append(event)
+            if len(events) >= count:
+                break
+
+    return events
+
+
+def _google_event_queries(city_name: str, categories: List[str] | None, queries: List[str] | None) -> List[str]:
+    configured = _dedupe_strings(queries or [])
+    if configured:
+        return configured[:12]
+
+    category_terms = [category for category in _dedupe_strings(categories or []) if category not in {"bar event", "karaoke", "open mic", "trivia", "dj"}]
+    base = [
+        f"upcoming events {city_name}",
+        f"event calendar {city_name}",
+        f"things to do {city_name} events",
+    ]
+    base.extend(f"upcoming {category} events {city_name}" for category in category_terms[:6])
+    return _dedupe_strings(base)[:12]
+
+
+def _event_from_google_search_item(
+    item: Dict,
+    region: str,
+    city_name: str,
+    start: datetime,
+    end: datetime,
+) -> Dict | None:
+    records = _google_search_structured_records(item)
+    start_text = next((_structured_value(record, _GOOGLE_EVENT_DATE_FIELDS) for record in records if _structured_value(record, _GOOGLE_EVENT_DATE_FIELDS)), "")
+    event_dt = _parse_google_event_datetime(start_text)
+    if not event_dt or event_dt < start or event_dt >= end:
+        return None
+
+    title = (
+        next((_structured_value(record, _GOOGLE_EVENT_TITLE_FIELDS) for record in records if _structured_value(record, _GOOGLE_EVENT_TITLE_FIELDS)), "")
+        or str(item.get("title") or "Untitled event")
+    )
+    description = (
+        next((_structured_value(record, _GOOGLE_EVENT_DESCRIPTION_FIELDS) for record in records if _structured_value(record, _GOOGLE_EVENT_DESCRIPTION_FIELDS)), "")
+        or str(item.get("snippet") or "")
+    )
+    venue = (
+        next((_structured_value(record, _GOOGLE_EVENT_LOCATION_FIELDS) for record in records if _structured_value(record, _GOOGLE_EVENT_LOCATION_FIELDS)), "")
+        or city_name
+    )
+    link = str(item.get("link") or "")
+    title = _clean_google_search_title(title)
+    category = _infer_google_search_category(f"{title} {description}")
+
+    return {
+        "id": _stable_id("google-search", title, event_dt.isoformat(), link or venue),
+        "name": title,
+        "title": title,
+        "category": category,
+        "date": event_dt.isoformat(),
+        "time": event_dt.strftime("%H:%M") if event_dt.time() != datetime_time(0, 0) else "",
+        "venue": venue,
+        "location": venue if region.lower() in venue.lower() else f"{venue}, {region}",
+        "url": link or f"https://www.google.com/search?q={urllib.parse.quote_plus(title + ' ' + city_name)}",
+        "ticket_url": link or f"https://www.google.com/search?q={urllib.parse.quote_plus(title + ' ' + city_name)}",
+        "ticket_status": "event site",
+        "source": "Google Search",
+        "source_url": link,
+        "source_note": GOOGLE_SEARCH_SOURCE_NOTE,
+        "description": description,
+        "tags": ["google-search", category],
+    }
+
+
+_GOOGLE_EVENT_DATE_FIELDS = {
+    "startdate",
+    "startdatetime",
+    "eventstartdate",
+    "eventstart",
+    "dtstart",
+    "date",
+}
+_GOOGLE_EVENT_TITLE_FIELDS = {"name", "title", "eventname", "eventtitle"}
+_GOOGLE_EVENT_DESCRIPTION_FIELDS = {"description", "summary", "snippet"}
+_GOOGLE_EVENT_LOCATION_FIELDS = {"location", "venue", "eventlocation", "placename", "locationname"}
+
+
+def _google_search_structured_records(item: Dict) -> List[Dict]:
+    records: list[Dict] = [item]
+    pagemap = item.get("pagemap")
+    if not isinstance(pagemap, dict):
+        return records
+
+    for values in pagemap.values():
+        if isinstance(values, list):
+            records.extend(value for value in values if isinstance(value, dict))
+        elif isinstance(values, dict):
+            records.append(values)
+    return records
+
+
+def _structured_value(record: Dict, fields: set[str]) -> str:
+    for key, value in record.items():
+        normalized = re.sub(r"[^a-z0-9]+", "", str(key).lower())
+        if normalized not in fields:
+            continue
+        text = _coerce_google_value(value)
+        if text:
+            return text
+    return ""
+
+
+def _coerce_google_value(value: Any) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, dict):
+        for key in ["name", "text", "value", "address", "formattedAddress"]:
+            text = _coerce_google_value(value.get(key))
+            if text:
+                return text
+        return ""
+    if isinstance(value, list):
+        for item in value:
+            text = _coerce_google_value(item)
+            if text:
+                return text
+        return ""
+    return str(value).strip()
+
+
+def _parse_google_event_datetime(value: str) -> datetime | None:
+    text = str(value or "").strip()
+    if not text:
+        return None
+    candidates = [text]
+    if len(text) == 10 and re.match(r"\d{4}-\d{2}-\d{2}", text):
+        candidates.append(f"{text}T12:00:00")
+
+    for candidate in candidates:
+        try:
+            parsed = datetime.fromisoformat(candidate.replace("Z", "+00:00"))
+            return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
+        except ValueError:
+            pass
+
+    for fmt in ("%B %d, %Y %I:%M %p", "%B %d, %Y", "%m/%d/%Y %I:%M %p", "%m/%d/%Y"):
+        try:
+            parsed = datetime.strptime(text, fmt)
+            if "%I:%M" not in fmt:
+                parsed = parsed.replace(hour=12)
+            return parsed.replace(tzinfo=timezone.utc)
+        except ValueError:
+            pass
+    return None
+
+
+def _clean_google_search_title(title: str) -> str:
+    text = re.sub(r"\s+", " ", str(title or "")).strip()
+    return re.split(r"\s+[|•-]\s+", text, maxsplit=1)[0].strip() or "Untitled event"
+
+
+def _infer_google_search_category(text: str) -> str:
+    lower = text.lower()
+    if any(term in lower for term in ["concert", "music", "band", "orchestra", "opera", "jazz"]):
+        return "live music"
+    if any(term in lower for term in ["museum", "gallery", "art", "theatre", "theater", "ballet", "film"]):
+        return "art"
+    if any(term in lower for term in ["kids", "children", "family"]):
+        return "family"
+    if any(term in lower for term in ["game", "sports", "race", "marathon"]):
+        return "sports"
+    return "entertainment"
 
 
 BARPEOPLE_SOURCE_NOTE = "BarPeople weekly listing; call the venue to confirm."

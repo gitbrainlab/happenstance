@@ -6,6 +6,7 @@ This guide explains how to set up API keys to fetch real restaurant and event da
 
 The Happenstance app can fetch data from:
 - **Google Places API** for restaurants
+- **Google Programmable Search** for dated event pages with structured metadata (requires Search Engine ID)
 - **Ticketmaster API** for events
 - **Eventbrite API** for events (alternative)
 - **Grok API** for AI-powered search (alternative)
@@ -37,7 +38,33 @@ Edit `config/config_logic.json` to set your target city:
 }
 ```
 
-### 2. Ticketmaster API (Events)
+### 2. Google Programmable Search (Events)
+
+Google Places is strong for restaurants and venue enrichment, but it does not provide a dated event-listings feed. For Google-backed event discovery, Happenstance supports Programmable Search results and only imports results that expose a real event start date in structured metadata.
+
+**Requirements:**
+1. `GOOGLE_API_KEY` or `GOOGLE_PLACES_API_KEY`
+2. `GOOGLE_CSE_ID` or `GOOGLE_SEARCH_ENGINE_ID`
+3. Custom Search JSON API access for that Google Cloud project
+
+**Configure event search queries:**
+```json
+{
+  "api_config": {
+    "google_search": {
+      "city": "Capital Region, NY",
+      "count": 80,
+      "queries": [
+        "event calendar Albany NY",
+        "event calendar Saratoga Springs NY",
+        "upcoming concerts Capital Region NY"
+      ]
+    }
+  }
+}
+```
+
+### 3. Ticketmaster API (Events)
 
 **Get your API key:**
 1. Go to [Ticketmaster Developer Portal](https://developer.ticketmaster.com/)
@@ -57,7 +84,7 @@ Edit `config/config_logic.json`:
 }
 ```
 
-### 3. Eventbrite API (Alternative Events Source)
+### 4. Eventbrite API (Alternative Events Source)
 
 **Get your API token:**
 1. Go to [Eventbrite App Management](https://www.eventbrite.com/platform/api)
@@ -77,7 +104,7 @@ Edit `config/config_logic.json`:
 }
 ```
 
-### 4. Grok API (AI-Powered Search)
+### 5. Grok API (AI-Powered Search)
 
 **Get your API key:**
 1. Go to [x.ai API](https://x.ai/api)
@@ -85,7 +112,7 @@ Edit `config/config_logic.json`:
 
 **Note:** Requires implementing AI search functionality that calls Grok API directly.
 
-### 5. OpenAI API (AI-Powered Search)
+### 6. OpenAI API (AI-Powered Search)
 
 **Get your API key:**
 1. Go to [OpenAI Platform](https://platform.openai.com/api-keys)
@@ -99,6 +126,7 @@ Edit `config/config_logic.json`:
 2. Add your API keys:
 ```bash
 GOOGLE_PLACES_API_KEY=your_google_api_key_here
+GOOGLE_CSE_ID=your_google_programmable_search_engine_id_here
 TICKETMASTER_API_KEY=your_ticketmaster_api_key_here
 EVENTBRITE_API_KEY=your_eventbrite_token_here
 GROK_API_KEY=your_grok_api_key_here
@@ -118,6 +146,7 @@ To use real data in GitHub Pages deployments:
 2. Navigate to "Secrets and variables" → "Actions"
 3. Add the following repository secrets:
    - `GOOGLE_PLACES_API_KEY`
+   - `GOOGLE_CSE_ID` (optional, enables Google-backed event discovery)
    - `TICKETMASTER_API_KEY`
    - `EVENTBRITE_API_KEY`
    - `GROK_API_KEY` (for AI-powered search)
@@ -133,7 +162,7 @@ Edit `config/config_logic.json` to select which sources to use:
 {
   "data_sources": {
     "restaurants": "google_places",  // Options: "fixtures", "google_places", "ai"
-    "events": "ticketmaster"         // Options: "fixtures", "ticketmaster", "eventbrite", "ai"
+    "events": "ticketmaster"         // Options: "fixtures", "ticketmaster", "eventbrite", "google_search", "ai"
   }
 }
 ```
@@ -161,6 +190,10 @@ Be aware of rate limits:
 - **Google Places**: 
   - Free tier: Limited requests per day
   - See [pricing](https://developers.google.com/maps/documentation/places/web-service/usage-and-billing)
+
+- **Google Programmable Search**:
+  - Requires API key plus Search Engine ID
+  - Query limits and availability depend on the Google Custom Search JSON API status for your project
 
 - **Ticketmaster**: 
   - Free tier: 5,000 requests per day, 5 requests per second
