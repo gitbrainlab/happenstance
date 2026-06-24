@@ -76,6 +76,20 @@ test("search ahead keeps focus while typing", async ({ page }) => {
   await expect(search).toBeFocused();
 });
 
+test("barpeople source is hidden by default and can be toggled on", async ({ page }) => {
+  await page.click("#filter-toggle");
+
+  await expect(page.getByRole("button", { name: "BarPeople Hidden", exact: true })).toHaveAttribute("aria-pressed", "false");
+  await expect(page.locator('.item-row[data-type="event"][data-id^="barpeople-"]')).toHaveCount(0);
+
+  await page.getByRole("button", { name: "BarPeople Hidden", exact: true }).click();
+
+  await expect(page.getByRole("button", { name: "BarPeople On", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator('.item-row[data-type="event"][data-id^="barpeople-"]').first()).toBeVisible();
+  const stored = await page.evaluate(() => localStorage.getItem("hs_event_sources"));
+  expect(JSON.parse(stored).barpeople).toBe(true);
+});
+
 test("pwa metadata and service worker are available", async ({ page }) => {
   await expect(page.locator('link[rel="manifest"]')).toHaveAttribute("href", "manifest.webmanifest");
   await expect(page.locator('link[rel="apple-touch-icon"]')).toHaveAttribute("href", "apple-touch-icon.png");
@@ -176,6 +190,7 @@ test("timeline, saved, and plan views work from bottom tabs", async ({ page }) =
   await expect(page.locator(".timeline-day")).toHaveCount(7);
   await expect(page.locator(".timeline-slot")).not.toHaveCount(0);
   await expect(page.locator('.timeline-slot[data-type="restaurant"]')).toHaveCount(0);
+  await expect(page.locator('.timeline-slot[data-id^="barpeople-"]')).toHaveCount(0);
   await expect(page.locator(".timeline-day-header").first()).toContainText(/event/);
 
   await page.click("#tab-bar [data-view='saved']");

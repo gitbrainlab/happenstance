@@ -25,12 +25,16 @@
     target: "hs_target",
     transport: "hs_transport",
     preferences: "happenstance_prefs",
+    eventSources: "hs_event_sources",
   };
 
   const KM_PER_MILE = 1.609344;
   const NEARBY_MILES = 1;
   const EXPLORE_ROW_LIMIT = 180;
   const TRANSPORT_MODES = ["car", "uber"];
+  const EVENT_SOURCE_FILTERS = [
+    { key: "barpeople", label: "BarPeople", defaultVisible: false },
+  ];
   const pairingInsights = window.HappenstancePairingInsights;
 
   const state = {
@@ -45,6 +49,7 @@
       minRating: null,
       type: "all",
       sortBy: "default",
+      eventSources: Object.fromEntries(EVENT_SOURCE_FILTERS.map((source) => [source.key, source.defaultVisible])),
     },
     searchQuery: "",
     targetQuery: "",
@@ -243,6 +248,7 @@
     const query = state.searchQuery.trim().toLowerCase();
     let filtered = items.filter(({ item, type }) => {
       if (state.filters.type !== "all" && state.filters.type !== `${type}s`) return false;
+      if (isSuppressedBySource(type, item)) return false;
       if (query && !matchesSearch(item, query)) return false;
       if (state.filters.openNow && !isOpenNow(item)) return false;
       if (state.filters.closingSoon && !isClosingSoon(item)) return false;
@@ -1112,6 +1118,13 @@
     render();
   }
 
+  function handleSourceFilterToggle(sourceKey) {
+    if (!EVENT_SOURCE_FILTERS.some((source) => source.key === sourceKey)) return;
+    state.filters.eventSources[sourceKey] = !isEventSourceVisible(sourceKey);
+    localStorage.setItem(STORAGE_KEYS.eventSources, JSON.stringify(state.filters.eventSources));
+    render();
+  }
+
   function handleItemTap(type, id) {
     state.activeSheet = { type, id };
     render();
@@ -1354,6 +1367,13 @@
             .slice(0, 6)
             .map((area) => `<button class="chip ${state.targetAreaName === area.name ? "active" : ""}" type="button" data-action="target-chip" data-target="${escapeAttr(area.name)}">${escapeHTML(area.name)}</button>`)
             .join("")}
+          ${EVENT_SOURCE_FILTERS
+            .map((source) => {
+              const visible = isEventSourceVisible(source.key);
+              const label = `${source.label} ${visible ? "On" : "Hidden"}`;
+              return `<button class="chip source-chip ${visible ? "active" : ""}" type="button" data-action="source-filter" data-source="${escapeAttr(source.key)}" aria-pressed="${visible ? "true" : "false"}">${escapeHTML(label)}</button>`;
+            })
+            .join("")}
           ${chips
             .map(
               (chip) =>
@@ -1502,7 +1522,7 @@
     const end = addDays(start, days.length);
 
     const eventSlots = state.data.events
-      .filter((item) => item && item._type === "event")
+      .filter((item) => item && item._type === "event" && !isEventSourceSuppressed(item))
       .map((item) => {
         const window = getTimeWindow(item, "event");
         if (!window || window.open < start || window.open >= end) return null;
@@ -1535,6 +1555,14 @@
   function getVisibleClusters() {
     const ref = referenceLocation();
     return state.data.clusters
+      .map((cluster) => ({
+        ...cluster,
+        event_ids: asArray(cluster.event_ids).filter((id) => {
+          const event = getItem("event", id);
+          return event && !isEventSourceSuppressed(event);
+        }),
+      }))
+      .filter((cluster) => cluster.event_ids.length)
       .map((cluster) => {
         const center = normalizeCoords(cluster.center);
         const km = ref && center ? haversineKm(ref, center) : null;
@@ -1811,6 +1839,31 @@
       .includes(query);
   }
 
+  function isSuppressedBySource(type, item) {
+    return type === "event" && isEventSourceSuppressed(item);
+  }
+
+  function isEventSourceSuppressed(item) {
+    const sourceKey = eventSourceKey(item);
+    return Boolean(sourceKey && !isEventSourceVisible(sourceKey));
+  }
+
+  function isEventSourceVisible(sourceKey) {
+    if (!EVENT_SOURCE_FILTERS.some((source) => source.key === sourceKey)) return true;
+    return state.filters.eventSources[sourceKey] !== false;
+  }
+
+  function eventSourceKey(item) {
+    const source = String(item && item.source ? item.source : "").trim().toLowerCase();
+    const id = String(item && item.id ? item.id : "").trim().toLowerCase();
+    const sourceUrl = String((item && (item.source_url || item.url)) || "").trim().toLowerCase();
+    const tags = asArray(item && item.tags).map((tag) => String(tag).trim().toLowerCase());
+    if (source === "barpeople" || id.startsWith("barpeople-") || sourceUrl.includes("barpeople.com") || tags.includes("barpeople")) {
+      return "barpeople";
+    }
+    return "";
+  }
+
   function restaurantMeta(item) {
     return [item.cuisine, item.neighborhood || cityFromAddress(item.address), item.rating ? `⭐ ${item.rating}` : ""]
       .filter(Boolean)
@@ -1949,9 +2002,20 @@
     const storedView = localStorage.getItem(STORAGE_KEYS.view);
     const storedDensity = localStorage.getItem(STORAGE_KEYS.density);
     const storedTransport = localStorage.getItem(STORAGE_KEYS.transport);
+    const storedEventSources = localStorage.getItem(STORAGE_KEYS.eventSources);
     if (["explore", "timeline", "plan", "saved"].includes(storedView)) state.view = storedView;
     if (["compact", "comfortable"].includes(storedDensity)) state.densityMode = storedDensity;
     if (TRANSPORT_MODES.includes(storedTransport)) state.transportMode = storedTransport;
+    if (storedEventSources) {
+      try {
+        const parsed = JSON.parse(storedEventSources);
+        EVENT_SOURCE_FILTERS.forEach((source) => {
+          if (typeof parsed[source.key] === "boolean") state.filters.eventSources[source.key] = parsed[source.key];
+        });
+      } catch {
+        state.filters.eventSources = Object.fromEntries(EVENT_SOURCE_FILTERS.map((source) => [source.key, source.defaultVisible]));
+      }
+    }
   }
 
   function loadPreferenceChipsFromStorage() {
@@ -1995,6 +2059,7 @@
       if (action === "target-chip") handleTargetApply(target.dataset.target || "");
       if (action === "add-cluster-plan") handleAddClusterToPlan(target.dataset.clusterId);
       if (action === "preference") handlePreferenceToggle(target.dataset.preference || "");
+      if (action === "source-filter") handleSourceFilterToggle(target.dataset.source || "");
       if (action === "filter") {
         const rawValue = target.dataset.value;
         const value = rawValue === "" ? undefined : Number.isNaN(Number(rawValue)) ? rawValue : Number(rawValue);
