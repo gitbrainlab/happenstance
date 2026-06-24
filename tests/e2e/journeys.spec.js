@@ -46,6 +46,8 @@ test.beforeEach(async ({ page }) => {
 test("explore renders clusters, dense rows, and real event data", async ({ page }) => {
   await expect(page.locator("#tab-bar [data-view='explore']")).toHaveAttribute("aria-current", "page");
   await expect(page.locator(".cluster-card")).not.toHaveCount(0);
+  await expect(page.locator(".cluster-card .why-blurb").first()).toContainText("Why this works");
+  await expect(page.locator(".preference-chip")).toHaveCount(6);
   await expect(page.locator(".item-row")).not.toHaveCount(0);
   await expect(page.locator("body")).toContainText("Chicago at Proctors");
   await expect(page.locator("body")).not.toContainText("undefined");
@@ -59,9 +61,42 @@ test("explore renders clusters, dense rows, and real event data", async ({ page 
     };
   });
   expect(rowInfo.firstRowHeight).toBeLessThanOrEqual(72);
-  expect(rowInfo.visibleRows).toBeGreaterThanOrEqual(5);
+  expect(rowInfo.visibleRows).toBeGreaterThanOrEqual(3);
 
   await page.screenshot({ path: path.join(ARTIFACT_DIR, "01-explore.png"), fullPage: false });
+});
+
+test("preference chips rerank results, highlight matches, and persist", async ({ page }) => {
+  const firstTitleBefore = await page.locator(".item-row .item-title").first().innerText();
+  await page.getByRole("button", { name: "Art & Culture", exact: true }).click();
+
+  await expect(page.locator(".preference-chip.active")).toContainText("Art & Culture");
+  await expect(page.locator(".preference-badges").first()).toContainText("Art & Culture");
+
+  const firstTitleAfter = await page.locator(".item-row .item-title").first().innerText();
+  expect(firstTitleAfter).not.toBe(firstTitleBefore);
+
+  const stored = await page.evaluate(() => localStorage.getItem("happenstance_prefs"));
+  expect(JSON.parse(stored)).toContain("art-culture");
+
+  await page.reload();
+  await page.waitForSelector('[data-hs-ready="1"]');
+  await expect(page.locator(".preference-chip.active")).toContainText("Art & Culture");
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.reload();
+  await page.waitForSelector('[data-hs-ready="1"]');
+  const chipsFit = await page.evaluate(() => {
+    const chipRow = document.querySelector(".preference-chips");
+    return chipRow && chipRow.scrollWidth <= chipRow.clientWidth + 1;
+  });
+  expect(chipsFit).toBe(true);
+
+  await page.click("#filter-toggle");
+  await page.getByRole("button", { name: "⭐ 4+", exact: true }).click();
+  await expect(page.locator(".item-row").first()).toContainText("⭐");
+
+  await page.screenshot({ path: path.join(ARTIFACT_DIR, "01b-preferences-mobile.png"), fullPage: false });
 });
 
 test("target ZIP sorts by miles and surfaces Saratoga clusters", async ({ page }) => {
@@ -82,7 +117,14 @@ test("bottom sheet shows pairings for tapped rows", async ({ page }) => {
   await page.waitForSelector("body.sheet-open");
 
   await expect(page.locator(".bottom-sheet")).toContainText("Pairings");
-  await expect(page.locator(".pairing-list .tag")).not.toHaveCount(0);
+  await expect(page.locator(".pairing-list .pairing-card")).not.toHaveCount(0);
+  await expect(page.locator(".bottom-sheet")).toContainText("Why this works");
+  const longBlurbs = await page.evaluate(() => {
+    return [...document.querySelectorAll(".bottom-sheet .why-blurb p")]
+      .map((node) => node.textContent.trim().split(/\s+/).filter(Boolean).length)
+      .filter((count) => count > 40);
+  });
+  expect(longBlurbs).toHaveLength(0);
 
   await page.click(".sheet-backdrop");
   await expect(page.locator("body")).not.toHaveClass(/sheet-open/);

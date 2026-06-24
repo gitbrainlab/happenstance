@@ -357,6 +357,47 @@ a:hover {
   display: block;
 }
 
+.why-blurb {
+  margin-top: var(--space-2);
+  padding: var(--space-2);
+  background: color-mix(in srgb, var(--color-surface-2) 72%, transparent);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-1);
+}
+
+.why-blurb span {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--color-accent);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.why-blurb p {
+  display: block;
+  margin: 0;
+  overflow: visible;
+  color: var(--color-text);
+  white-space: normal;
+}
+
+.cluster-card .why-blurb {
+  margin-top: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+}
+
+.cluster-card .why-blurb span {
+  margin-bottom: 0;
+}
+
+.cluster-card .why-blurb p {
+  display: -webkit-box;
+  max-height: 34px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .cluster-links {
   display: flex;
   flex-wrap: wrap;
@@ -379,6 +420,36 @@ a:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.preference-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 0 var(--space-4) var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.preference-chip {
+  min-height: 34px;
+  max-width: 100%;
+  padding: 0 var(--space-2);
+  overflow: hidden;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-1);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.preference-chip.active {
+  color: var(--color-text);
+  background: var(--color-accent-dim);
+  border-color: var(--color-accent);
 }
 
 .item-row {
@@ -526,6 +597,28 @@ a:hover {
   margin-top: var(--space-1);
 }
 
+.preference-badges {
+  display: flex;
+  gap: var(--space-1);
+  max-height: 18px;
+  margin-top: var(--space-1);
+  overflow: hidden;
+}
+
+.preference-badges span {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--color-accent);
+  background: var(--color-accent-dim);
+  border-radius: var(--radius-1);
+  padding: 2px 6px;
+  font-size: var(--text-xs);
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .pairing-pill {
   flex: 0 1 auto;
   min-width: 0;
@@ -643,6 +736,31 @@ a:hover {
   color: var(--color-text);
   font-size: var(--text-sm);
   line-height: 1.45;
+}
+
+.pairing-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.pairing-card {
+  padding: var(--space-2);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2);
+}
+
+.pairing-card-title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.pairing-card p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-muted);
 }
 
 .sheet-actions {
@@ -885,6 +1003,7 @@ a:hover {
   .filter-search,
   .target-search,
   .filter-chips,
+  .preference-chips,
   .cluster-strip,
   .timeline,
   .plan {

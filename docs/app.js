@@ -23,10 +23,12 @@
     density: "hs_density",
     view: "hs_view",
     target: "hs_target",
+    preferences: "happenstance_prefs",
   };
 
   const KM_PER_MILE = 1.609344;
   const NEARBY_MILES = 1;
+  const pairingInsights = window.HappenstancePairingInsights;
 
   const state = {
     view: "explore",
@@ -46,6 +48,7 @@
     targetAreaName: "",
     targetLocation: null,
     userLocation: null,
+    preferences: [],
     data: {
       restaurants: [],
       events: [],
@@ -217,21 +220,62 @@
       return true;
     });
 
-    filtered = filtered.slice();
+    filtered = filtered.map((row) => {
+      const score = preferenceScoreFor(row.type, row.item);
+      return {
+        ...row,
+        preferenceScore: score,
+        preferenceLabels: preferenceLabelsFor(row.type, row.item),
+      };
+    });
     filtered.sort((a, b) => {
+      const preferenceSort = sortNumber(Number(b.preferenceScore || 0), Number(a.preferenceScore || 0));
+      if (state.preferences.length && state.filters.sortBy === "default" && preferenceSort !== 0) {
+        return preferenceSort;
+      }
       if (state.filters.sortBy === "distance") {
-        return sortNumber(distanceFor(a.item), distanceFor(b.item));
+        return sortNumber(distanceFor(a.item), distanceFor(b.item)) || preferenceSort;
       }
       if (state.filters.sortBy === "closing") {
-        return sortNumber(closingTimeValue(a.item), closingTimeValue(b.item));
+        return sortNumber(closingTimeValue(a.item), closingTimeValue(b.item)) || preferenceSort;
       }
       if (state.filters.sortBy === "rating") {
-        return sortNumber(Number(b.item.rating || 0), Number(a.item.rating || 0));
+        return sortNumber(Number(b.item.rating || 0), Number(a.item.rating || 0)) || preferenceSort;
       }
-      return defaultSortValue(a) - defaultSortValue(b) || a.item.name.localeCompare(b.item.name);
+      return defaultSortValue(a) - defaultSortValue(b) || preferenceSort || a.item.name.localeCompare(b.item.name);
     });
 
     return filtered;
+  }
+
+  function preferenceScoreFor(type, item) {
+    if (!pairingInsights || !state.preferences.length) return 0;
+    const km = distanceFor(item);
+    const itemScore = pairingInsights.scoreItemForPreferences(item, state.preferences, {
+      distanceMiles: Number.isFinite(km) ? kmToMiles(km) : undefined,
+    });
+    const pairingScore = getPairingsFor(type, item.id).reduce((best, pairing) => {
+      const event = type === "event" ? item : getPairedItem(pairing, type)?.item;
+      const restaurant = type === "restaurant" ? item : getPairedItem(pairing, type)?.item;
+      if (!event || !restaurant) return best;
+      return Math.max(best, pairingInsights.scorePairingForPreferences(pairing, event, restaurant, state.preferences));
+    }, 0);
+    return itemScore + pairingScore;
+  }
+
+  function preferenceLabelsFor(type, item) {
+    if (!pairingInsights || !state.preferences.length) return [];
+    const km = distanceFor(item);
+    const labels = pairingInsights.matchingPreferenceLabels(item, state.preferences, {
+      distanceMiles: Number.isFinite(km) ? kmToMiles(km) : undefined,
+    });
+    getPairingsFor(type, item.id).forEach((pairing) => {
+      const event = type === "event" ? item : getPairedItem(pairing, type)?.item;
+      const restaurant = type === "restaurant" ? item : getPairedItem(pairing, type)?.item;
+      if (!event || !restaurant) return;
+      labels.push(...pairingInsights.matchingPairingPreferenceLabels(pairing, event, restaurant, state.preferences));
+    });
+    return [...new Set(labels)].slice(0, 2);
   }
 
   function isOpenNow(item) {
@@ -381,6 +425,8 @@
           type: next.type,
           item: next.item,
           reason: pairing.reason || pairing.match_reason || "Pairs well",
+          pairing,
+          fromType: planItem.type,
           score: Number(pairing.score || 0),
         });
       });
@@ -466,7 +512,7 @@
 
   function renderExplore() {
     const rows = applyFilters(getUnifiedItems());
-    const itemRows = rows.map(({ item, type }) => renderItemRow(item, type)).join("");
+    const itemRows = rows.map(({ item, type, preferenceLabels }) => renderItemRow(item, type, { preferenceLabels })).join("");
     return `
       ${renderFilterPanel()}
       <section aria-label="Explore">
@@ -477,6 +523,7 @@
           </div>
           <span class="status-badge status-neutral">${escapeHTML(state.filters.type)}</span>
         </div>
+        ${renderPreferenceChips()}
         ${renderClusterPanel()}
         <div class="item-list">
           ${itemRows || `<div class="empty"><strong>No matches</strong><p>Adjust filters or search terms.</p></div>`}
@@ -587,12 +634,36 @@
     `;
   }
 
+  function renderPreferenceChips() {
+    if (!pairingInsights) return "";
+    return `
+      <div class="preference-chips" aria-label="Preference boosts">
+        ${pairingInsights.PREFERENCE_CHIPS.map((chip) => {
+          const active = state.preferences.includes(chip.id);
+          return `
+            <button
+              class="preference-chip ${active ? "active" : ""}"
+              type="button"
+              data-action="preference"
+              data-preference="${escapeAttr(chip.id)}"
+              aria-pressed="${active ? "true" : "false"}"
+              title="${escapeAttr(chip.prompt)}"
+            >${escapeHTML(chip.label)}</button>
+          `;
+        }).join("")}
+      </div>
+    `;
+  }
+
   function renderClusterCard(cluster) {
     const events = asArray(cluster.event_ids).map((id) => getItem("event", id)).filter(Boolean);
     const restaurants = asArray(cluster.restaurant_ids).map((id) => getItem("restaurant", id)).filter(Boolean);
     const distance = renderClusterDistance(cluster);
     const firstEvent = events[0];
     const firstRestaurant = restaurants[0];
+    const firstPairingContext = clusterPairingContexts(cluster)[0];
+    const blurb = firstPairingContext ? pairingBlurb(firstPairingContext.pairing, firstPairingContext.event, firstPairingContext.restaurant) : "";
+    const preferenceLabels = asArray(cluster._preferenceLabels).length ? cluster._preferenceLabels : clusterPreferenceLabels(cluster);
     const restaurantLinks = restaurants
       .slice(0, 3)
       .map((restaurant) => `
@@ -607,6 +678,8 @@
           <h3>${escapeHTML(cluster.title || `Head to ${cluster.area || "nearby"}`)}</h3>
           <p>${escapeHTML(cluster.reason || "Good event and dining density nearby.")}</p>
           <p>${escapeHTML([distance, firstEvent ? firstEvent.name : "", firstRestaurant ? `then ${firstRestaurant.name}` : ""].filter(Boolean).join(" · "))}</p>
+          ${preferenceLabels.length ? renderPreferenceBadges(preferenceLabels) : ""}
+          ${blurb ? renderWhyBlurb(blurb) : ""}
           ${restaurantLinks ? `<div class="cluster-links" aria-label="Restaurant details">${restaurantLinks}</div>` : ""}
         </div>
         <button class="action-button primary" type="button" data-action="add-cluster-plan" data-cluster-id="${escapeAttr(cluster.id)}">Plan</button>
@@ -620,6 +693,7 @@
     const description = item.description || item.match_reason || (type === "event" ? formatEventDate(item) : "");
     const price = renderPriceLevel(item);
     const distance = renderDistance(item);
+    const preferenceLabels = asArray(options.preferenceLabels);
     const actions = options.saved
       ? `<div class="inline-actions">
           <button class="action-button primary" type="button" data-action="add-plan" data-type="${type}" data-id="${escapeAttr(item.id)}">Add</button>
@@ -637,6 +711,7 @@
           </div>
           <div class="item-meta-line">${escapeHTML(meta)}</div>
           <div class="item-description">${escapeHTML(description || "Details pending")}</div>
+          ${preferenceLabels.length ? renderPreferenceBadges(preferenceLabels) : ""}
           ${renderPairingPills(item, type)}
         </div>
         <div class="item-aside">
@@ -819,6 +894,17 @@
   function handleDensityToggle() {
     state.densityMode = state.densityMode === "compact" ? "comfortable" : "compact";
     localStorage.setItem(STORAGE_KEYS.density, state.densityMode);
+    render();
+  }
+
+  function handlePreferenceToggle(preferenceId) {
+    if (!pairingInsights || !pairingInsights.PREFERENCE_CHIPS.some((chip) => chip.id === preferenceId)) return;
+    if (state.preferences.includes(preferenceId)) {
+      state.preferences = state.preferences.filter((id) => id !== preferenceId);
+    } else {
+      state.preferences = [...state.preferences, preferenceId];
+    }
+    localStorage.setItem(STORAGE_KEYS.preferences, JSON.stringify(state.preferences));
     render();
   }
 
@@ -1057,7 +1143,16 @@
     const name = paired ? paired.item.name : fromType === "restaurant" ? pairing.event : pairing.restaurant;
     const reason = pairing.reason || pairing.match_reason || "Pairs well";
     const walk = pairing.walk_minutes ? ` · ${pairing.walk_minutes} min walk` : "";
-    return `<li class="tag">→ ${escapeHTML(name || "Suggestion")}: ${escapeHTML(reason)}${escapeHTML(walk)}</li>`;
+    const event = fromType === "event" ? getItem("event", pairing.event_id) : paired && paired.type === "event" ? paired.item : getItem("event", pairing.event_id);
+    const restaurant = fromType === "restaurant" ? getItem("restaurant", pairing.restaurant_id) : paired && paired.type === "restaurant" ? paired.item : getItem("restaurant", pairing.restaurant_id);
+    const blurb = event && restaurant ? pairingBlurb(pairing, event, restaurant) : "";
+    return `
+      <li class="pairing-card">
+        <div class="pairing-card-title">→ ${escapeHTML(name || "Suggestion")}</div>
+        <p>${escapeHTML(reason)}${escapeHTML(walk)}</p>
+        ${blurb ? renderWhyBlurb(blurb) : ""}
+      </li>
+    `;
   }
 
   function renderTimelineSlot(slot) {
@@ -1100,12 +1195,16 @@
   }
 
   function renderSuggestion(suggestion) {
+    const event = suggestion.type === "event" ? suggestion.item : getPairedItem(suggestion.pairing, suggestion.type)?.item;
+    const restaurant = suggestion.type === "restaurant" ? suggestion.item : getPairedItem(suggestion.pairing, suggestion.type)?.item;
+    const blurb = event && restaurant ? pairingBlurb(suggestion.pairing, event, restaurant) : "";
     return `
       <article class="suggestion-card">
         <span aria-hidden="true">${suggestion.type === "restaurant" ? "◌" : "◆"}</span>
         <div>
           <h3>${escapeHTML(suggestion.item.name)}</h3>
           <p>${escapeHTML(suggestion.reason)}</p>
+          ${blurb ? renderWhyBlurb(blurb) : ""}
         </div>
         <button class="action-button primary" type="button" data-action="add-plan" data-type="${suggestion.type}" data-id="${escapeAttr(suggestion.item.id)}">Add</button>
       </article>
@@ -1185,7 +1284,14 @@
         const km = ref && center ? haversineKm(ref, center) : null;
         const targetMatch = state.targetAreaName && String(cluster.area || "").toLowerCase().includes(state.targetAreaName.toLowerCase());
         const proximityBoost = Number.isFinite(km) ? Math.max(0, 30 - km) : 0;
-        return { ...cluster, _distanceKm: km, _rank: Number(cluster.score || 0) + proximityBoost + (targetMatch ? 40 : 0) };
+        const preferenceScore = clusterPreferenceScore(cluster);
+        return {
+          ...cluster,
+          _distanceKm: km,
+          _preferenceScore: preferenceScore,
+          _preferenceLabels: clusterPreferenceLabels(cluster),
+          _rank: Number(cluster.score || 0) + proximityBoost + preferenceScore + (targetMatch ? 40 : 0),
+        };
       })
       .sort((a, b) => {
         const distanceSort = sortNumber(a._distanceKm, b._distanceKm);
@@ -1195,11 +1301,65 @@
       .slice(0, 4);
   }
 
+  function clusterPreferenceScore(cluster) {
+    if (!pairingInsights || !state.preferences.length) return 0;
+    return clusterPairingContexts(cluster).reduce((total, context) => {
+      return total + pairingInsights.scorePairingForPreferences(context.pairing, context.event, context.restaurant, state.preferences);
+    }, 0);
+  }
+
+  function clusterPreferenceLabels(cluster) {
+    if (!pairingInsights || !state.preferences.length) return asArray(cluster._preferenceLabels);
+    const labels = clusterPairingContexts(cluster).flatMap((context) => {
+      return pairingInsights.matchingPairingPreferenceLabels(context.pairing, context.event, context.restaurant, state.preferences);
+    });
+    return [...new Set(labels)].slice(0, 2);
+  }
+
+  function clusterPairingContexts(cluster) {
+    const events = asArray(cluster.event_ids).map((id) => getItem("event", id)).filter(Boolean);
+    const restaurants = asArray(cluster.restaurant_ids).map((id) => getItem("restaurant", id)).filter(Boolean);
+    const contexts = [];
+    events.forEach((event) => {
+      restaurants.forEach((restaurant) => {
+        const pairing = findPairing(event.id, restaurant.id);
+        if (pairing) contexts.push({ pairing, event, restaurant });
+      });
+    });
+    return contexts;
+  }
+
   function renderClusterDistance(cluster) {
     if (Number.isFinite(cluster._distanceKm)) return `${formatMiles(kmToMiles(cluster._distanceKm))} from ${targetLabel()}`;
     if (Number.isFinite(cluster.distance_miles_from_target)) return `${formatMiles(Number(cluster.distance_miles_from_target))} from target`;
     if (Number.isFinite(cluster.distance_km_from_target)) return `${formatMiles(kmToMiles(Number(cluster.distance_km_from_target)))} from target`;
     return "";
+  }
+
+  function findPairing(eventId, restaurantId) {
+    return state.data.pairings.find((pairing) => {
+      return sameValue(pairing.event_id, eventId) && sameValue(pairing.restaurant_id, restaurantId);
+    }) || null;
+  }
+
+  function pairingBlurb(pairing, event, restaurant) {
+    if (!pairingInsights) return "";
+    return pairingInsights.generatePairingBlurb({ pairing, event, restaurant });
+  }
+
+  function renderWhyBlurb(blurb) {
+    return `
+      <div class="why-blurb">
+        <span>Why this works</span>
+        <p>${escapeHTML(blurb)}</p>
+      </div>
+    `;
+  }
+
+  function renderPreferenceBadges(labels) {
+    const unique = [...new Set(asArray(labels))].slice(0, 2);
+    if (!unique.length) return "";
+    return `<div class="preference-badges">${unique.map((label) => `<span>${escapeHTML(label)}</span>`).join("")}</div>`;
   }
 
   function referenceLocation() {
@@ -1509,6 +1669,17 @@
     if (["compact", "comfortable"].includes(storedDensity)) state.densityMode = storedDensity;
   }
 
+  function loadPreferenceChipsFromStorage() {
+    if (!pairingInsights) return;
+    try {
+      const available = new Set(pairingInsights.PREFERENCE_CHIPS.map((chip) => chip.id));
+      const stored = JSON.parse(localStorage.getItem(STORAGE_KEYS.preferences) || "[]");
+      state.preferences = asArray(stored).filter((id) => available.has(id));
+    } catch {
+      state.preferences = [];
+    }
+  }
+
   function bindEvents() {
     els.filterToggle.addEventListener("click", handleFilterToggle);
 
@@ -1528,6 +1699,7 @@
       if (action === "use-location") requestLocation();
       if (action === "target-chip") handleTargetApply(target.dataset.target || "");
       if (action === "add-cluster-plan") handleAddClusterToPlan(target.dataset.clusterId);
+      if (action === "preference") handlePreferenceToggle(target.dataset.preference || "");
       if (action === "filter") {
         const rawValue = target.dataset.value;
         const value = rawValue === "" ? undefined : Number.isNaN(Number(rawValue)) ? rawValue : Number(rawValue);
@@ -1613,6 +1785,7 @@
 
   readPreferences();
   loadSavedFromStorage();
+  loadPreferenceChipsFromStorage();
   bindEvents();
   fetchAllData();
 })();
