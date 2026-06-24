@@ -20,6 +20,7 @@ from .sources import (
     _restaurant_from_google_place,
     fetch_ai_events,
     fetch_ai_restaurants,
+    fetch_barpeople_events,
     fetch_eventbrite_events,
     fetch_google_places_restaurants,
     fetch_ticketmaster_events,
@@ -153,6 +154,10 @@ def _normalize_events(events: List[Dict], cfg: Mapping) -> List[Dict]:
         coords = _item_coords(event)
         if coords:
             event["coordinates"] = coords
+        else:
+            known_coords = _known_coords_for_text(str(location_label), cfg)
+            if known_coords:
+                event["coordinates"] = known_coords
         area_name = _area_name_for_text(str(location_label), cfg)
         if area_name:
             event.setdefault("neighborhood", area_name)
@@ -593,13 +598,18 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
         # Get event coordinates from normalized data first; geocode only as fallback.
         event_coord_map = _item_coords(event)
         event_coords = (event_coord_map["lat"], event_coord_map["lng"]) if event_coord_map else None
-        if event_coords is None and event_location and event_location not in location_cache:
+        allow_event_geocode = event.get("source") != "BarPeople"
+        if event_coords is None and allow_event_geocode and event_location and event_location not in location_cache:
             location_cache[event_location] = _geocode_address(event_location, region=region)
         if event_coords is None:
             event_coords = location_cache.get(event_location)
         
-        # Fetch nearby restaurants for this event (only if API key available)
-        nearby_restaurants = _fetch_nearby_restaurants(event_location, region=region, count=MAX_NEARBY_RESTAURANTS_PER_EVENT)
+        nearby_lookup = bool(cfg.get("api_config", {}).get("google_places", {}).get("nearby_lookup", False))
+        nearby_restaurants = (
+            _fetch_nearby_restaurants(event_location, region=region, count=MAX_NEARBY_RESTAURANTS_PER_EVENT)
+            if nearby_lookup
+            else []
+        )
         
         # Combine nearby restaurants with the main restaurant list
         # Prefer nearby restaurants but allow fallback to main list
@@ -862,6 +872,24 @@ def _merge_restaurant_sources(primary: List[Dict], fallback: List[Dict], limit: 
     return merged
 
 
+def _merge_event_sources(sources: List[List[Dict]], limit: int | None = None) -> List[Dict]:
+    merged: list[Dict] = []
+    seen: set[str] = set()
+    for events in sources:
+        for event in events:
+            key = str(event.get("id") or "").lower()
+            if not key:
+                key = _stable_id("event", event.get("title", ""), event.get("date", ""), event.get("venue", ""), event.get("location", ""))
+            title_key = _stable_id("event-title", event.get("title", ""), event.get("date", ""), event.get("venue", ""))
+            if key in seen or title_key in seen:
+                continue
+            seen.update({key, title_key})
+            merged.append(event)
+            if limit and len(merged) >= limit:
+                return merged
+    return merged
+
+
 def _fetch_restaurants(cfg: Mapping) -> List[Dict]:
     """Fetch restaurants based on configured data source."""
     data_sources = cfg.get("data_sources", {})
@@ -876,6 +904,8 @@ def _fetch_restaurants(cfg: Mapping) -> List[Dict]:
             trial_cfg["data_sources"] = {**data_sources, "restaurants": "google_places"}
             google_restaurants = _fetch_restaurants(trial_cfg)
             if google_restaurants:
+                if len(google_restaurants) >= max(20, int(target_count * 0.75)):
+                    return google_restaurants[:target_count]
                 return _merge_restaurant_sources(google_restaurants, _fixture_restaurants(region), target_count)
 
         for source in ["ai", "fixtures"]:
@@ -931,7 +961,10 @@ def _fetch_events(cfg: Mapping) -> List[Dict]:
     days_ahead = cfg.get("event_window_days", 30)
     
     if event_source == "auto":
-        for source in ["ticketmaster", "eventbrite", "ai", "fixtures"]:
+        collected: list[list[Dict]] = []
+        api_config = cfg.get("api_config", {})
+        target_count = int(api_config.get("events", {}).get("count", 0) or 0) or None
+        for source in ["ticketmaster", "eventbrite", "ai", "barpeople"]:
             if source == "ticketmaster" and not os.getenv("TICKETMASTER_API_KEY"):
                 continue
             if source == "eventbrite" and not os.getenv("EVENTBRITE_API_KEY"):
@@ -940,7 +973,10 @@ def _fetch_events(cfg: Mapping) -> List[Dict]:
             trial_cfg["data_sources"] = {**data_sources, "events": source}
             events = _fetch_events(trial_cfg)
             if events:
-                return events
+                collected.append(events)
+        merged = _merge_event_sources(collected, target_count)
+        if merged:
+            return merged
         return _fixture_events(region)
     elif event_source == "fixtures":
         print(f"Using fixture data for events in {region}")
@@ -993,6 +1029,18 @@ def _fetch_events(cfg: Mapping) -> List[Dict]:
             print(f"Warning: Failed to fetch from AI: {e}")
             print("Falling back to fixture data")
             return _fixture_events(region)
+    elif event_source == "barpeople":
+        print(f"Fetching events from BarPeople for {region}")
+        api_config = cfg.get("api_config", {}).get("barpeople", {})
+        try:
+            return fetch_barpeople_events(
+                region=region,
+                days_ahead=days_ahead,
+                count=api_config.get("count", 120),
+            )
+        except ValueError as e:
+            print(f"Warning: Failed to fetch from BarPeople: {e}")
+            return []
     else:
         print(f"Warning: Unknown event source '{event_source}', using fixtures")
         return _fixture_events(region)
@@ -1004,6 +1052,7 @@ def aggregate(profile: str | None = None) -> Dict[str, Mapping]:
     # Fetch data from configured sources
     restaurants = _normalize_restaurants(_fetch_restaurants(cfg), cfg)
     events = _normalize_events(filter_events_by_window(_fetch_events(cfg), cfg["event_window_days"]), cfg)
+    events.sort(key=lambda event: _event_datetime(event) or datetime.max.replace(tzinfo=timezone.utc))
 
     gap_cuisines = [c for c in cfg.get("target_cuisines", []) if c not in {r["cuisine"] for r in restaurants}]
     gap_categories = [c for c in cfg.get("target_categories", []) if c not in {e["category"] for e in events}]

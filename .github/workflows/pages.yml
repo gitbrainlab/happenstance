@@ -28,7 +28,7 @@ on:
         required: false
         type: choice
         default: "auto"
-        options: ["auto", "ticketmaster", "eventbrite", "ai", "fixtures"]
+        options: ["auto", "ticketmaster", "eventbrite", "barpeople", "ai", "fixtures"]
   schedule:
     - cron: "30 10 * * *"
     - cron: "30 20 * * *"

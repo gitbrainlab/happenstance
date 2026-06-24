@@ -9,8 +9,8 @@
     "match_reason": "Gated, serene garden seating area fronts this American breakfast/lunch spot in a sandstone mansion.",
     "tags": [
       "American Restaurant",
-      "Brunch Restaurant",
       "Breakfast Restaurant",
+      "Brunch Restaurant",
       "Cafe",
       "Restaurant",
       "Food",
@@ -60,9 +60,9 @@
     "tags": [
       "Sports Bar",
       "Indoor Golf Course",
+      "Bar",
       "Golf Course",
       "Athletic Field",
-      "Bar",
       "Sports Activity Location",
       "Restaurant",
       "Food"
@@ -108,8 +108,8 @@
     "match_reason": "Popular restaurant in Troy",
     "tags": [
       "Restaurant",
-      "Point Of Interest",
       "Food",
+      "Point Of Interest",
       "Establishment"
     ],
     "location": {
@@ -200,9 +200,9 @@
     "tags": [
       "Barbecue Restaurant",
       "Sandwich Shop",
-      "Restaurant",
       "Catering Service",
       "Food Delivery",
+      "Restaurant",
       "Food",
       "Point Of Interest",
       "Service"
@@ -378,6 +378,479 @@
     "neighborhood": "Lake George"
   },
   {
+    "id": "ChIJOTtaHwDR34kRjiZbFUSWzG4",
+    "google_place_id": "ChIJOTtaHwDR34kRjiZbFUSWzG4",
+    "name": "Kitch A Vibe",
+    "cuisine": "Cafe",
+    "address": "16 Exchange St, Glens Falls, NY 12801, USA",
+    "url": "https://maps.google.com/?cid=7983921458581284494&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Glens Falls",
+    "tags": [
+      "Cafe",
+      "Lounge Bar",
+      "Brunch Restaurant",
+      "Coffee Shop",
+      "Tea House",
+      "Night Club",
+      "Bakery",
+      "Food Store"
+    ],
+    "location": {
+      "lat": 43.309326299999995,
+      "lng": -73.6453137
+    },
+    "phone": "(518) 223-0050",
+    "website": "https://www.kitchavibe.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+      "Thursday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+      "Friday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+      "Saturday: 9:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+      "Sunday: 9:00\u202fAM\u2009\u2013\u20093:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+      "Thursday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+      "Friday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+      "Saturday: 9:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+      "Sunday: 9:00\u202fAM\u2009\u2013\u20093:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.9,
+    "review_count": 198,
+    "description": "Popular restaurant in Glens Falls",
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "ChIJedVcoJfP34kRvtTm18ouBmU",
+    "google_place_id": "ChIJedVcoJfP34kRvtTm18ouBmU",
+    "name": "Spargel on 9",
+    "cuisine": "Restaurant",
+    "address": "925 US-9, Queensbury, NY 12804, USA",
+    "url": "https://maps.google.com/?cid=7279557296431486142&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Queensbury",
+    "tags": [
+      "German Restaurant",
+      "European Restaurant",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.3372094,
+      "lng": -73.6800671
+    },
+    "phone": "(518) 741-0111",
+    "website": "https://www.spargelonnine.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.8,
+    "review_count": 384,
+    "description": "Popular restaurant in Queensbury",
+    "neighborhood": "Queensbury"
+  },
+  {
+    "id": "ChIJXSHbRKJA3okR3XcZCOqWg-Y",
+    "google_place_id": "ChIJXSHbRKJA3okR3XcZCOqWg-Y",
+    "name": "Iron Roost",
+    "cuisine": "Cafe",
+    "address": "36 Front St, Ballston Spa, NY 12020, USA",
+    "url": "https://maps.google.com/?cid=16610285782574921693&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Cheery cafe with exposed-brick walls dispensing homestyle breakfast fare, plus sandwiches & salads.",
+    "tags": [
+      "Breakfast Restaurant",
+      "Brunch Restaurant",
+      "Coffee Shop",
+      "Family Restaurant",
+      "Cafe",
+      "Food Store",
+      "Store",
+      "Restaurant"
+    ],
+    "location": {
+      "lat": 43.0026522,
+      "lng": -73.84993469999999
+    },
+    "phone": "(518) 309-3535",
+    "website": "https://www.ironroost.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Wednesday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Thursday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Friday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Saturday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Wednesday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Thursday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Friday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Saturday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 1163,
+    "price_level": 2,
+    "description": "Cheery cafe with exposed-brick walls dispensing homestyle breakfast fare, plus sandwiches & salads.",
+    "neighborhood": "Ballston Spa"
+  },
+  {
+    "id": "ChIJ-z-vQqZFDhMR8h9JjBd-1Gw",
+    "google_place_id": "ChIJ-z-vQqZFDhMR8h9JjBd-1Gw",
+    "name": "AZAR",
+    "cuisine": "Restaurant",
+    "address": "Triq Manwel Dimech Tas-Sliema, Sliema SLM 1055, Malta",
+    "url": "https://maps.google.com/?cid=7842031490761826290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Malta",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 35.9100463,
+      "lng": 14.497973600000002
+    },
+    "phone": "9939 3876",
+    "website": "https://www.azarrestaurant.com/",
+    "hours": [
+      "Monday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Tuesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Wednesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Thursday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Friday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: 6:30\u2009\u2013\u20099:30\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Tuesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Wednesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Thursday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Friday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: 6:30\u2009\u2013\u20099:30\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.9,
+    "review_count": 589,
+    "description": "Popular restaurant in Malta",
+    "neighborhood": "Malta"
+  },
+  {
+    "id": "ChIJL6vgyfQN3okR3sy4ioKfYxk",
+    "google_place_id": "ChIJL6vgyfQN3okR3sy4ioKfYxk",
+    "name": "Las Margaritas Mexican Cantina",
+    "cuisine": "Restaurant",
+    "address": "710 Loudon Rd, Latham, NY 12110, USA",
+    "url": "https://maps.google.com/?cid=1829481256664485086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Latham",
+    "tags": [
+      "Restaurant",
+      "Point Of Interest",
+      "Food",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.7398044,
+      "lng": -73.7627277
+    },
+    "phone": "(518) 250-4145",
+    "website": "https://www.lasmargaritasmexicancantina.com/",
+    "hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.8,
+    "review_count": 2373,
+    "description": "Popular restaurant in Latham",
+    "neighborhood": "Latham"
+  },
+  {
+    "id": "ChIJJWcgauwR3okR1-bSA70sBcE",
+    "google_place_id": "ChIJJWcgauwR3okR1-bSA70sBcE",
+    "name": "Island Eatz",
+    "cuisine": "Pizza",
+    "address": "93 Ontario St, Cohoes, NY 12047, USA",
+    "url": "https://maps.google.com/?cid=13908572214528239319&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Cohoes",
+    "tags": [
+      "Restaurant",
+      "Gyro Restaurant",
+      "Pizza Delivery",
+      "Pizza Restaurant",
+      "Meal Delivery",
+      "Food Delivery",
+      "Meal Takeaway",
+      "Italian Restaurant"
+    ],
+    "location": {
+      "lat": 42.773190799999995,
+      "lng": -73.6883041
+    },
+    "phone": "(518) 203-6014",
+    "website": "https://islandeatzny.com/",
+    "hours": [
+      "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Friday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Friday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.8,
+    "review_count": 226,
+    "description": "Popular restaurant in Cohoes",
+    "neighborhood": "Cohoes"
+  },
+  {
+    "id": "ChIJrY7SQgAP3okRp2WEEUPo6L0",
+    "google_place_id": "ChIJrY7SQgAP3okRp2WEEUPo6L0",
+    "name": "Quechua Peruvian Restaurant",
+    "cuisine": "Restaurant",
+    "address": "1297 Broadway, Watervliet, NY 12189, USA",
+    "url": "https://maps.google.com/?cid=13684442842519594407&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Watervliet",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.722696899999995,
+      "lng": -73.7015102
+    },
+    "phone": "(518) 203-6882",
+    "website": "http://quechuaperuvianrestaurant.com/",
+    "hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.8,
+    "review_count": 287,
+    "description": "Popular restaurant in Watervliet",
+    "neighborhood": "Watervliet"
+  },
+  {
+    "id": "ChIJ69IH26_9uIkR3wGVk6y0wxs",
+    "google_place_id": "ChIJ69IH26_9uIkR3wGVk6y0wxs",
+    "name": "The Groove",
+    "cuisine": "BBQ",
+    "address": "30503 E Line Rd, Delmar, MD 21875, USA",
+    "url": "https://maps.google.com/?cid=2000641312786022879&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Delmar",
+    "tags": [
+      "Barbecue Restaurant",
+      "American Restaurant",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 38.45409550000001,
+      "lng": -75.5534455
+    },
+    "phone": "(410) 896-1922",
+    "website": "https://www.thegrooverestaurant.com/",
+    "hours": [
+      "Monday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: Closed",
+      "Wednesday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: Closed",
+      "Wednesday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.8,
+    "review_count": 376,
+    "price_level": 2,
+    "description": "Popular restaurant in Delmar",
+    "neighborhood": "Delmar"
+  },
+  {
+    "id": "ChIJwz1fWgB13okRlIfASK-s8Sw",
+    "google_place_id": "ChIJwz1fWgB13okRlIfASK-s8Sw",
+    "name": "Pretty Alright Breakfast Club",
+    "cuisine": "Restaurant",
+    "address": "39 Voorheesville Ave, Voorheesville, NY 12186, USA",
+    "url": "https://maps.google.com/?cid=3238559475895928724&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Guilderland",
+    "tags": [
+      "Breakfast Restaurant",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.652362499999995,
+      "lng": -73.9275306
+    },
+    "phone": "(518) 765-0019",
+    "website": "https://www.instagram.com/prettyalrightbreakfastclub/?hl=en",
+    "hours": [
+      "Monday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Tuesday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Wednesday: Closed",
+      "Thursday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Friday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Saturday: 6:00\u202fAM\u2009\u2013\u20091:00\u202fPM",
+      "Sunday: 6:00\u202fAM\u2009\u2013\u20091:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Tuesday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Wednesday: Closed",
+      "Thursday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Friday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Saturday: 6:00\u202fAM\u2009\u2013\u20091:00\u202fPM",
+      "Sunday: 6:00\u202fAM\u2009\u2013\u20091:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.9,
+    "review_count": 457,
+    "price_level": 2,
+    "description": "Popular restaurant in Guilderland",
+    "neighborhood": "Voorheesville"
+  },
+  {
+    "id": "ChIJk16CLAnO34kR-TFC2lShJ3Y",
+    "google_place_id": "ChIJk16CLAnO34kR-TFC2lShJ3Y",
+    "name": "Kerrie's On Broadway",
+    "cuisine": "Restaurant",
+    "address": "70 Broadway, Fort Edward, NY 12828, USA",
+    "url": "https://maps.google.com/?cid=8513951006378308089&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Fort Edward",
+    "tags": [
+      "Diner",
+      "Breakfast Restaurant",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.2649561,
+      "lng": -73.58297220000001
+    },
+    "phone": "(518) 741-0323",
+    "website": "https://www.facebook.com/KerriesonBroadway/",
+    "hours": [
+      "Monday: 6:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: 6:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Wednesday: Closed",
+      "Thursday: 6:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Friday: 6:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Saturday: 7:00\u202fAM\u2009\u2013\u20091:00\u202fPM",
+      "Sunday: 7:00\u202fAM\u2009\u2013\u20091:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 6:30\u202fAM\u2009\u2013\u20092:00\u202fPM, 4:00\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: 6:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Wednesday: Closed",
+      "Thursday: 6:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Friday: 6:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Saturday: 7:00\u202fAM\u2009\u2013\u20091:00\u202fPM",
+      "Sunday: 7:00\u202fAM\u2009\u2013\u20091:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 586,
+    "price_level": 1,
+    "description": "Popular restaurant in Fort Edward",
+    "neighborhood": "Fort Edward"
+  },
+  {
     "id": "ChIJv8aPEaYL3okRMyevurAt8wI",
     "google_place_id": "ChIJv8aPEaYL3okRMyevurAt8wI",
     "name": "Grappa '72",
@@ -525,53 +998,53 @@
     "neighborhood": "Saratoga Springs"
   },
   {
-    "id": "ChIJu7CgtmrEJIgRhQMr9TmWUMU",
-    "google_place_id": "ChIJu7CgtmrEJIgRhQMr9TmWUMU",
-    "name": "Sedona Taphouse",
-    "cuisine": "American",
-    "address": "198 E Big Beaver Rd, Troy, MI 48083, USA",
-    "url": "https://maps.google.com/?cid=14218029199279195013&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "match_reason": "Popular restaurant in Troy",
+    "id": "ChIJm0I2GKYP3okRmnb0byFKApY",
+    "google_place_id": "ChIJm0I2GKYP3okRmnb0byFKApY",
+    "name": "Dinosaur Bar-B-Que",
+    "cuisine": "BBQ",
+    "address": "377 River St, Troy, NY 12180, USA",
+    "url": "https://maps.google.com/?cid=10809283563115280026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Barbecue chain serving Southern-style meats & draft brews in a retro setting (most have live music).",
     "tags": [
+      "Barbecue Restaurant",
+      "Catering Service",
+      "Food Delivery",
       "American Restaurant",
-      "Cocktail Bar",
-      "Wine Bar",
-      "Bar",
       "Restaurant",
-      "Point Of Interest",
       "Food",
-      "Establishment"
+      "Point Of Interest",
+      "Service"
     ],
     "location": {
-      "lat": 42.5621856,
-      "lng": -83.1432133
+      "lat": 42.7345623,
+      "lng": -73.6892422
     },
-    "phone": "(248) 422-6167",
-    "website": "https://sedonataphouse.com/locations/troy-mi/",
+    "phone": "(518) 308-0400",
+    "website": "https://dinosaurbarbque.com/locations/troy",
     "hours": [
-      "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
-      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM"
+      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
-      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM"
+      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
     "rating": 4.5,
-    "review_count": 4363,
+    "review_count": 5379,
     "price_level": 2,
-    "description": "Popular restaurant in Troy",
+    "description": "Barbecue chain serving Southern-style meats & draft brews in a retro setting (most have live music).",
     "neighborhood": "Troy"
   },
   {
@@ -630,8 +1103,8 @@
     "match_reason": "Popular restaurant in Niskayuna",
     "tags": [
       "Korean Restaurant",
-      "Hot Pot Restaurant",
       "Asian Restaurant",
+      "Hot Pot Restaurant",
       "Restaurant",
       "Food",
       "Point Of Interest",
@@ -680,8 +1153,8 @@
     "tags": [
       "Restaurant",
       "Meal Takeaway",
-      "Bar",
       "American Restaurant",
+      "Bar",
       "Food",
       "Point Of Interest",
       "Establishment"
@@ -817,6 +1290,481 @@
     "neighborhood": "Lake George"
   },
   {
+    "id": "ChIJQQe4ZcjR34kRsJ_pKdQBv5s",
+    "google_place_id": "ChIJQQe4ZcjR34kRsJ_pKdQBv5s",
+    "name": "Bastard Restobar",
+    "cuisine": "Restaurant",
+    "address": "72 South St, Glens Falls, NY 12801, USA",
+    "url": "https://maps.google.com/?cid=11222690807178436528&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Glens Falls",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.3087394,
+      "lng": -73.6473433
+    },
+    "phone": "(518) 223-0290",
+    "website": "https://bastardrestobar.com/",
+    "hours": [
+      "Monday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 3:30\u2009\u2013\u20097:30\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 3:30\u2009\u2013\u20097:30\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.9,
+    "review_count": 158,
+    "description": "Popular restaurant in Glens Falls",
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "ChIJu_O1fknO34kRSGTpMTf0gMQ",
+    "google_place_id": "ChIJu_O1fknO34kRSGTpMTf0gMQ",
+    "name": "Silo Restaurant & Gift Shop",
+    "cuisine": "Restaurant",
+    "address": "537 Aviation Rd, Queensbury, NY 12804, USA",
+    "url": "https://maps.google.com/?cid=14159585746350597192&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Set in a transplanted barn, this daytime cafe offers country fare, fudge & a shop with local crafts.",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.3303764,
+      "lng": -73.68044669999999
+    },
+    "phone": "(518) 798-1900",
+    "website": "http://thesiloqueensbury.com/",
+    "hours": [
+      "Monday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Tuesday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Wednesday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Thursday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Friday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Saturday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Sunday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Tuesday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Wednesday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Thursday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Friday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Saturday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Sunday: 7:00\u202fAM\u2009\u2013\u20092:30\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.6,
+    "review_count": 2170,
+    "price_level": 2,
+    "description": "Set in a transplanted barn, this daytime cafe offers country fare, fudge & a shop with local crafts.",
+    "neighborhood": "Queensbury"
+  },
+  {
+    "id": "ChIJ99C6X6JA3okRVYIA7aQDoJ8",
+    "google_place_id": "ChIJ99C6X6JA3okRVYIA7aQDoJ8",
+    "name": "Next Door Kitchen and Bar",
+    "cuisine": "Restaurant",
+    "address": "51 Front St, Ballston Spa, NY 12020, USA",
+    "url": "https://maps.google.com/?cid=11502197455190000213&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Locally sourced comfort food & wine served in a rustic-chic eatery with reclaimed-wood decor.",
+    "tags": [
+      "Restaurant",
+      "Fine Dining Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.0023115,
+      "lng": -73.8506567
+    },
+    "phone": "(518) 309-3249",
+    "website": "https://nextdoorkitchenandbar.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 5:00\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 5:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 5:00\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 5:00\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 5:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 5:00\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 492,
+    "price_level": 2,
+    "description": "Locally sourced comfort food & wine served in a rustic-chic eatery with reclaimed-wood decor.",
+    "neighborhood": "Ballston Spa"
+  },
+  {
+    "id": "ChIJWYEUHPhODhMRe_8HbZSpjow",
+    "google_place_id": "ChIJWYEUHPhODhMRe_8HbZSpjow",
+    "name": "Venus Restaurant",
+    "cuisine": "Seafood",
+    "address": "il, Triq Gandoffli, St Paul's Bay SPB10, Malta",
+    "url": "https://maps.google.com/?cid=10128219066952318843&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Malta",
+    "tags": [
+      "Seafood Restaurant",
+      "Fine Dining Restaurant",
+      "Steak House",
+      "Mediterranean Restaurant",
+      "European Restaurant",
+      "Italian Restaurant",
+      "Restaurant",
+      "Food"
+    ],
+    "location": {
+      "lat": 35.95095310000001,
+      "lng": 14.4141205
+    },
+    "phone": "9984 6767",
+    "website": "http://venusrestaurantmalta.com/",
+    "hours": [
+      "Monday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Tuesday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Wednesday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Thursday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Friday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Saturday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Sunday: 6:00\u2009\u2013\u200910:30\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Tuesday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Wednesday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Thursday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Friday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Saturday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Sunday: 6:00\u2009\u2013\u200910:30\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.8,
+    "review_count": 1894,
+    "price_level": 2,
+    "description": "Popular restaurant in Malta",
+    "neighborhood": "Malta"
+  },
+  {
+    "id": "ChIJS8lG-9EN3okRGnVHghP3qt0",
+    "google_place_id": "ChIJS8lG-9EN3okRGnVHghP3qt0",
+    "name": "Tipsy Moose Tap & Tavern",
+    "cuisine": "Bar & Grill",
+    "address": "185 Old Loudon Rd, Latham, NY 12110, USA",
+    "url": "https://maps.google.com/?cid=15972850691585045786&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Cozy, rustic tavern featuring a menu of pub grub & craft beers, plus a patio & weekend brunch.",
+    "tags": [
+      "Bar & Grill",
+      "Bar And Grill",
+      "Bar",
+      "Restaurant",
+      "Point Of Interest",
+      "Food",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.7462544,
+      "lng": -73.7590986
+    },
+    "phone": "(518) 631-4444",
+    "website": "http://www.tipsymoosetavern.com/",
+    "hours": [
+      "Monday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Saturday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Sunday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Saturday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Sunday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.5,
+    "review_count": 2185,
+    "price_level": 2,
+    "description": "Cozy, rustic tavern featuring a menu of pub grub & craft beers, plus a patio & weekend brunch.",
+    "neighborhood": "Latham"
+  },
+  {
+    "id": "ChIJk3xsStUR3okRu_KLFygPNHM",
+    "google_place_id": "ChIJk3xsStUR3okRu_KLFygPNHM",
+    "name": "The Daisy Bar and Kitchen",
+    "cuisine": "American",
+    "address": "182 Remsen St, Cohoes, NY 12047, USA",
+    "url": "https://maps.google.com/?cid=8301276678018822843&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Cohoes",
+    "tags": [
+      "American Restaurant",
+      "Bar",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.7717095,
+      "lng": -73.7008559
+    },
+    "phone": "(518) 874-4049",
+    "website": "https://www.thedaisycohoes.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 5:00\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 5:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 5:00\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 5:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.6,
+    "review_count": 305,
+    "price_level": 2,
+    "description": "Popular restaurant in Cohoes",
+    "neighborhood": "Cohoes"
+  },
+  {
+    "id": "ChIJ_3g9weAO3okRCLATuRSw-48",
+    "google_place_id": "ChIJ_3g9weAO3okRCLATuRSw-48",
+    "name": "The Arsenal Reserve",
+    "cuisine": "Bar & Grill",
+    "address": "795 3rd Ave, Watervliet, NY 12189, USA",
+    "url": "https://maps.google.com/?cid=10375079769628979208&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Watervliet",
+    "tags": [
+      "Restaurant",
+      "Bar And Grill",
+      "Bar",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.715634,
+      "lng": -73.70441509999999
+    },
+    "phone": "(518) 874-1767",
+    "website": "http://arsenalcitytavern.com/",
+    "hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.5,
+    "review_count": 703,
+    "price_level": 2,
+    "description": "Popular restaurant in Watervliet",
+    "neighborhood": "Watervliet"
+  },
+  {
+    "id": "ChIJhbyUqkoP3IARMWDUZ0IHEJM",
+    "google_place_id": "ChIJhbyUqkoP3IARMWDUZ0IHEJM",
+    "name": "Jake's Del Mar",
+    "cuisine": "Seafood",
+    "address": "1660 Coast Blvd, Del Mar, CA 92014, USA",
+    "url": "https://maps.google.com/?cid=10596977904993984561&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Seaside eatery & bar with floor-to-ceiling windows has an upscale menu, Sunday brunch & grand views.",
+    "tags": [
+      "Seafood Restaurant",
+      "Californian Restaurant",
+      "American Restaurant",
+      "Bar",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 32.961908,
+      "lng": -117.268087
+    },
+    "phone": "(858) 755-2002",
+    "website": "http://jakesdelmar.com/",
+    "hours": [
+      "Monday: 11:30\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 10:00\u202fAM\u2009\u2013\u20098:30\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:30\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 10:00\u202fAM\u2009\u2013\u20098:30\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.6,
+    "review_count": 4023,
+    "price_level": 3,
+    "description": "Seaside eatery & bar with floor-to-ceiling windows has an upscale menu, Sunday brunch & grand views.",
+    "neighborhood": "Del Mar"
+  },
+  {
+    "id": "ChIJCzMJPa4L3okRSum9dmuSz7g",
+    "google_place_id": "ChIJCzMJPa4L3okRSum9dmuSz7g",
+    "name": "Caffe Italia Ristorante",
+    "cuisine": "Italian",
+    "address": "2080 Western Ave, Guilderland, NY 12084, USA",
+    "url": "https://maps.google.com/?cid=13317023613409159498&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "A veteran family-run standby for classic Italian dishes, from zuppa di pesce to veal parmigiana.",
+    "tags": [
+      "Italian Restaurant",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.697217099999996,
+      "lng": -73.8920783
+    },
+    "phone": "(518) 459-8029",
+    "website": "http://www.caffeitaliaalbany.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: 5:00\u2009\u2013\u20099:30\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u20099:30\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:30\u202fPM",
+      "Friday: 5:00\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 5:00\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: Closed"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: 5:00\u2009\u2013\u20099:30\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u20099:30\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:30\u202fPM",
+      "Friday: 5:00\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 5:00\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: Closed"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 584,
+    "price_level": 3,
+    "description": "A veteran family-run standby for classic Italian dishes, from zuppa di pesce to veal parmigiana.",
+    "neighborhood": "Guilderland"
+  },
+  {
+    "id": "ChIJq6pjBK3K34kRZxRgdy_2DDA",
+    "google_place_id": "ChIJq6pjBK3K34kRZxRgdy_2DDA",
+    "name": "Vested Veteran Grill",
+    "cuisine": "Restaurant",
+    "address": "3011 US-4, Hudson Falls, NY 12839, USA",
+    "url": "https://maps.google.com/?cid=3462412897267749991&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Fort Edward",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.316476099999996,
+      "lng": -73.57571999999999
+    },
+    "phone": "(518) 338-3327",
+    "website": "https://vvgrill.com/index.html",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Sunday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Sunday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 281,
+    "description": "Popular restaurant in Fort Edward",
+    "neighborhood": "Hudson Falls"
+  },
+  {
     "id": "ChIJZc9nVcML3okR31yxkMhtRbI",
     "google_place_id": "ChIJZc9nVcML3okR31yxkMhtRbI",
     "name": "Nash & Smashed (Albany, NY)",
@@ -875,9 +1823,9 @@
       "American Restaurant",
       "Vegan Restaurant",
       "Vegetarian Restaurant",
+      "Bar",
       "Live Music Venue",
       "Event Venue",
-      "Bar",
       "Restaurant",
       "Food"
     ],
@@ -959,65 +1907,17 @@
     "neighborhood": "Saratoga Springs"
   },
   {
-    "id": "ChIJm0I2GKYP3okRmnb0byFKApY",
-    "google_place_id": "ChIJm0I2GKYP3okRmnb0byFKApY",
-    "name": "Dinosaur Bar-B-Que",
-    "cuisine": "BBQ",
-    "address": "377 River St, Troy, NY 12180, USA",
-    "url": "https://maps.google.com/?cid=10809283563115280026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "match_reason": "Barbecue chain serving Southern-style meats & draft brews in a retro setting (most have live music).",
-    "tags": [
-      "Barbecue Restaurant",
-      "Catering Service",
-      "Food Delivery",
-      "American Restaurant",
-      "Restaurant",
-      "Point Of Interest",
-      "Food",
-      "Service"
-    ],
-    "location": {
-      "lat": 42.7345623,
-      "lng": -73.6892422
-    },
-    "phone": "(518) 308-0400",
-    "website": "https://dinosaurbarbque.com/locations/troy",
-    "hours": [
-      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
-    ],
-    "open_now": false,
-    "current_hours": [
-      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
-    ],
-    "business_status": "OPERATIONAL",
-    "rating": 4.5,
-    "review_count": 5379,
-    "price_level": 2,
-    "description": "Barbecue chain serving Southern-style meats & draft brews in a retro setting (most have live music).",
-    "neighborhood": "Troy"
-  },
-  {
-    "id": "ChIJJUEkcn5v3okRkWleHYCcNb0",
-    "google_place_id": "ChIJJUEkcn5v3okRkWleHYCcNb0",
-    "name": "The River Road House",
+    "id": "ChIJu7CgtmrEJIgRhQMr9TmWUMU",
+    "google_place_id": "ChIJu7CgtmrEJIgRhQMr9TmWUMU",
+    "name": "Sedona Taphouse",
     "cuisine": "American",
-    "address": "989 River Rd, Schenectady, NY 12306, USA",
-    "url": "https://maps.google.com/?cid=13633975520996518289&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "match_reason": "Popular restaurant in Schenectady",
+    "address": "198 E Big Beaver Rd, Troy, MI 48083, USA",
+    "url": "https://maps.google.com/?cid=14218029199279195013&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Troy",
     "tags": [
       "American Restaurant",
+      "Wine Bar",
+      "Cocktail Bar",
       "Bar",
       "Restaurant",
       "Food",
@@ -1025,34 +1925,83 @@
       "Establishment"
     ],
     "location": {
-      "lat": 42.8600553,
-      "lng": -74.02818169999999
+      "lat": 42.5621856,
+      "lng": -83.1432133
     },
-    "phone": "(518) 214-4136",
-    "website": "https://www.facebook.com/RiverRoadHouseBandG/",
+    "phone": "(248) 422-6167",
+    "website": "https://sedonataphouse.com/locations/troy-mi/",
     "hours": [
-      "Monday: Closed",
-      "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 12:00\u2009\u2013\u20098:00\u202fPM"
+      "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: Closed",
+      "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.5,
+    "review_count": 4363,
+    "price_level": 2,
+    "description": "Popular restaurant in Troy",
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "ChIJEXeY0zpv3okRwb0hsLACiBU",
+    "google_place_id": "ChIJEXeY0zpv3okRwb0hsLACiBU",
+    "name": "Zaffron Kitchen Schenectady",
+    "cuisine": "Mediterranean",
+    "address": "183 Nott Terrace, Schenectady, NY 12308, USA",
+    "url": "https://maps.google.com/?cid=1551493029521636801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Schenectady",
+    "tags": [
+      "Mediterranean Restaurant",
+      "Afghani Restaurant",
+      "Falafel Restaurant",
+      "Middle Eastern Restaurant",
+      "Kebab Shop",
+      "Restaurant",
+      "Food",
+      "Point Of Interest"
+    ],
+    "location": {
+      "lat": 42.811223399999996,
+      "lng": -73.93640479999999
+    },
+    "phone": "(518) 579-0009",
+    "website": "https://zaffronk.com/schenectady?utm_source=google",
+    "hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
       "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
       "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
       "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 12:00\u2009\u2013\u20098:00\u202fPM"
+      "Friday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.6,
-    "review_count": 636,
-    "price_level": 2,
+    "rating": 4.8,
+    "review_count": 186,
     "description": "Popular restaurant in Schenectady",
     "neighborhood": "Schenectady"
   },
@@ -1114,12 +2063,12 @@
     "tags": [
       "Bar & Grill",
       "Bar And Grill",
-      "Banquet Hall",
       "Sports Bar",
+      "Banquet Hall",
       "Live Music Venue",
-      "Event Venue",
       "Pub",
-      "Bar"
+      "Bar",
+      "Event Venue"
     ],
     "location": {
       "lat": 42.870789699999996,
@@ -1203,14 +2152,14 @@
     "id": "ChIJJZieAzfF34kRHSQNwibCIME",
     "google_place_id": "ChIJJZieAzfF34kRHSQNwibCIME",
     "name": "The Lagoon",
-    "cuisine": "Pizza",
+    "cuisine": "Bar & Grill",
     "address": "204 Canada St, Lake George, NY 12845, USA",
     "url": "https://maps.google.com/?cid=13916336320295019549&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "match_reason": "Laid-back eatery offering pizzas, seafood & American favorites, plus lake views & entertainment.",
     "tags": [
       "Restaurant",
-      "Pizza Restaurant",
       "Bar And Grill",
+      "Pizza Restaurant",
       "Bar",
       "Food",
       "Point Of Interest",
@@ -1247,6 +2196,481 @@
     "price_level": 2,
     "description": "Laid-back eatery offering pizzas, seafood & American favorites, plus lake views & entertainment.",
     "neighborhood": "Lake George"
+  },
+  {
+    "id": "ChIJcxGYVEHR34kR5aTXxESsxiI",
+    "google_place_id": "ChIJcxGYVEHR34kR5aTXxESsxiI",
+    "name": "Mint",
+    "cuisine": "Vegan",
+    "address": "80 Warren St, Glens Falls, NY 12801, USA",
+    "url": "https://maps.google.com/?cid=2505879654038480101&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Glens Falls",
+    "tags": [
+      "Cocktail Bar",
+      "Vegan Restaurant",
+      "Vegetarian Restaurant",
+      "Bar",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.3102735,
+      "lng": -73.6404297
+    },
+    "phone": "(518) 741-0584",
+    "website": "http://www.mint518.com/",
+    "hours": [
+      "Monday: 5:00\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Thursday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 5:00\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Thursday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 401,
+    "price_level": 2,
+    "description": "Popular restaurant in Glens Falls",
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "ChIJ53f3duTa34kRyHsj9fdz47Q",
+    "google_place_id": "ChIJ53f3duTa34kRyHsj9fdz47Q",
+    "name": "Adirondack Bar and Grill",
+    "cuisine": "Bar & Grill",
+    "address": "982 NY-149, Queensbury, NY 12804, USA",
+    "url": "https://maps.google.com/?cid=13034389255347207112&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Queensbury",
+    "tags": [
+      "Bar & Grill",
+      "Bar And Grill",
+      "Bar",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.397183999999996,
+      "lng": -73.6224788
+    },
+    "phone": "(518) 793-2325",
+    "website": "https://adirondackbarandgrill.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.2,
+    "review_count": 713,
+    "price_level": 2,
+    "description": "Popular restaurant in Queensbury",
+    "neighborhood": "Queensbury"
+  },
+  {
+    "id": "ChIJd2vNFCZB3okRUZilb6MOnWc",
+    "google_place_id": "ChIJd2vNFCZB3okRUZilb6MOnWc",
+    "name": "Speckled Pig Brewing Co.",
+    "cuisine": "Dining",
+    "address": "11-13 Washington St, Ballston Spa, NY 12020, USA",
+    "url": "https://maps.google.com/?cid=7466139852365731921&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Ballston Spa",
+    "tags": [
+      "Brewery",
+      "Food",
+      "Manufacturer",
+      "Point Of Interest",
+      "Service",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.003203899999995,
+      "lng": -73.849519
+    },
+    "phone": "(518) 288-3075",
+    "website": "https://speckledpigbrewing.com/",
+    "hours": [
+      "Monday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 4:00\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20098:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 4:00\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20098:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 224,
+    "description": "Popular restaurant in Ballston Spa",
+    "neighborhood": "Ballston Spa"
+  },
+  {
+    "id": "ChIJYbGAwadPDhMROGzgmW-Qh20",
+    "google_place_id": "ChIJYbGAwadPDhMROGzgmW-Qh20",
+    "name": "Tava Terrace",
+    "cuisine": "Restaurant",
+    "address": "103 Dawret -il - Gzejer, San Pawl il-Ba\u0127ar, Malta",
+    "url": "https://maps.google.com/?cid=7892435680987475000&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Malta",
+    "tags": [
+      "Steak House",
+      "Breakfast Restaurant",
+      "Turkish Restaurant",
+      "Bar",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 35.9536636,
+      "lng": 14.4171911
+    },
+    "phone": "7712 3446",
+    "website": "https://www.tavaterrace.com/",
+    "hours": [
+      "Monday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+    ],
+    "open_now": true,
+    "current_hours": [
+      "Monday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 1167,
+    "price_level": 2,
+    "description": "Popular restaurant in Malta",
+    "neighborhood": "Malta"
+  },
+  {
+    "id": "ChIJkR4YIEEN3okRBeRhnX2MfR8",
+    "google_place_id": "ChIJkR4YIEEN3okRBeRhnX2MfR8",
+    "name": "Innovo Kitchen",
+    "cuisine": "American",
+    "address": "1214 Troy-Schenectady Rd, Latham, NY 12110, USA",
+    "url": "https://maps.google.com/?cid=2269124258403836933&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Polished, industrial-chic outpost for burgers, brunch, New American mains & innovative cocktails.",
+    "tags": [
+      "American Restaurant",
+      "Restaurant",
+      "Point Of Interest",
+      "Food",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.771338799999995,
+      "lng": -73.8242673
+    },
+    "phone": "(518) 608-1466",
+    "website": "http://www.innovokitchen.com/",
+    "hours": [
+      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u20098:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u20098:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.4,
+    "review_count": 1541,
+    "price_level": 2,
+    "description": "Polished, industrial-chic outpost for burgers, brunch, New American mains & innovative cocktails.",
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "ChIJMbeUibgR3okRPIDyyVP4XS0",
+    "google_place_id": "ChIJMbeUibgR3okRPIDyyVP4XS0",
+    "name": "Tacos N' Stuff",
+    "cuisine": "Restaurant",
+    "address": "86 Remsen St, Cohoes, NY 12047, USA",
+    "url": "https://maps.google.com/?cid=3269041943294935100&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Cohoes",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.774560099999995,
+      "lng": -73.7015528
+    },
+    "phone": "(518) 203-6219",
+    "website": "https://www.tacosnstuff.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Saturday: 2:00\u2009\u2013\u20098:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Saturday: 2:00\u2009\u2013\u20098:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.8,
+    "review_count": 60,
+    "description": "Popular restaurant in Cohoes",
+    "neighborhood": "Cohoes"
+  },
+  {
+    "id": "ChIJ9_nhUv4O3okR1_JzSLheyAo",
+    "google_place_id": "ChIJ9_nhUv4O3okR1_JzSLheyAo",
+    "name": "Black Bear Inn",
+    "cuisine": "Bar & Grill",
+    "address": "310 19th St, Watervliet, NY 12189, USA",
+    "url": "https://maps.google.com/?cid=776975081303962327&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Watervliet",
+    "tags": [
+      "Restaurant",
+      "Bar And Grill",
+      "Sports Bar",
+      "Bar",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.7303462,
+      "lng": -73.70308949999999
+    },
+    "phone": "(518) 272-9486",
+    "website": "http://blackbearvliet.com/",
+    "hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Saturday: 12:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
+      "Sunday: 12:00\u202fPM\u2009\u2013\u20091:00\u202fAM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Saturday: 12:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
+      "Sunday: 12:00\u202fPM\u2009\u2013\u20091:00\u202fAM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.5,
+    "review_count": 540,
+    "price_level": 1,
+    "description": "Popular restaurant in Watervliet",
+    "neighborhood": "Watervliet"
+  },
+  {
+    "id": "ChIJR7vrIszh3YkRMb2VnnK8dBE",
+    "google_place_id": "ChIJR7vrIszh3YkRMb2VnnK8dBE",
+    "name": "CORAY KITCHEN",
+    "cuisine": "Restaurant",
+    "address": "360 Delaware Ave, Delmar, NY 12054, USA",
+    "url": "https://maps.google.com/?cid=1257837396416118065&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Delmar",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.6224899,
+      "lng": -73.8315422
+    },
+    "phone": "(518) 650-6033",
+    "website": "https://www.coraykitchen.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 4:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.9,
+    "review_count": 132,
+    "description": "Popular restaurant in Delmar",
+    "neighborhood": "Delmar"
+  },
+  {
+    "id": "ChIJT2Uv1bt13okRIIs9tB9dBmo",
+    "google_place_id": "ChIJT2Uv1bt13okRIIs9tB9dBmo",
+    "name": "Junior's Bar & Grill",
+    "cuisine": "Restaurant",
+    "address": "2080 Western Ave, Guilderland, NY 12084, USA",
+    "url": "https://maps.google.com/?cid=7639896208629926688&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Guilderland",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.697551499999996,
+      "lng": -73.89134229999999
+    },
+    "phone": "(518) 898-9620",
+    "website": "https://www.juniorsbarandgrill.com/",
+    "hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.5,
+    "review_count": 604,
+    "price_level": 2,
+    "description": "Popular restaurant in Guilderland",
+    "neighborhood": "Guilderland"
+  },
+  {
+    "id": "ChIJOUCDOxcK3okRurKEQBOjlBY",
+    "google_place_id": "ChIJOUCDOxcK3okRurKEQBOjlBY",
+    "name": "Grumbellies",
+    "cuisine": "Pizza",
+    "address": "159 Broadway, Fort Edward, NY 12828, USA",
+    "url": "https://maps.google.com/?cid=1627104668469736122&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Fort Edward",
+    "tags": [
+      "Pizza Restaurant",
+      "American Restaurant",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.268705499999996,
+      "lng": -73.5873718
+    },
+    "phone": "(518) 223-0713",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 220,
+    "price_level": 1,
+    "description": "Popular restaurant in Fort Edward",
+    "neighborhood": "Fort Edward"
   },
   {
     "id": "ChIJ7SGSgywL3okR1lXvheTRQ20",
@@ -1306,12 +2730,12 @@
     "match_reason": "Lively brew pub serving its own craft beers & an eclectic food menu sourced from local ingredients.",
     "tags": [
       "Brewpub",
-      "Brewery",
       "Pub",
+      "Brewery",
       "Bar",
+      "Manufacturer",
       "Restaurant",
       "Food",
-      "Manufacturer",
       "Point Of Interest"
     ],
     "location": {
@@ -1356,8 +2780,8 @@
     "match_reason": "Popular restaurant in Troy",
     "tags": [
       "Restaurant",
-      "Point Of Interest",
       "Food",
+      "Point Of Interest",
       "Establishment"
     ],
     "location": {
@@ -1392,49 +2816,50 @@
     "neighborhood": "Troy"
   },
   {
-    "id": "ChIJ5y2e6Whz3okRNXN86mQhQwY",
-    "google_place_id": "ChIJ5y2e6Whz3okRNXN86mQhQwY",
-    "name": "Grill Mediterranean Cuisine",
-    "cuisine": "Mediterranean",
-    "address": "1016 State St, Schenectady, NY 12307, USA",
-    "url": "https://maps.google.com/?cid=451241104981652277&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "match_reason": "Popular restaurant in Schenectady",
+    "id": "ChIJ3Y2xDgZu3okR6vVCsXvND18",
+    "google_place_id": "ChIJ3Y2xDgZu3okR6vVCsXvND18",
+    "name": "Johnny's",
+    "cuisine": "Italian",
+    "address": "433 State St, Schenectady, NY 12305, USA",
+    "url": "https://maps.google.com/?cid=6849919489392440810&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Casual joint serving homemade pasta & Italian staples is a draw for happy hour & pre-theater meals.",
     "tags": [
-      "Mediterranean Restaurant",
+      "Italian Restaurant",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 42.80222320000001,
-      "lng": -73.9293857
+      "lat": 42.812776,
+      "lng": -73.94134369999999
     },
-    "phone": "(518) 419-8452",
-    "website": "http://grillmediterraneancuisine.com/",
+    "phone": "(518) 982-5657",
+    "website": "https://www.johnnysdowntown.com/",
     "hours": [
-      "Monday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Tuesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Wednesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Thursday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Friday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Saturday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Sunday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      "Monday: Closed",
+      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: Closed"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Tuesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Wednesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Thursday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Friday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Saturday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Sunday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      "Monday: Closed",
+      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: Closed"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.9,
-    "review_count": 93,
-    "description": "Popular restaurant in Schenectady",
+    "rating": 4.5,
+    "review_count": 1137,
+    "price_level": 2,
+    "description": "Casual joint serving homemade pasta & Italian staples is a draw for happy hour & pre-theater meals.",
     "neighborhood": "Schenectady"
   },
   {
@@ -1626,6 +3051,471 @@
     "neighborhood": "Lake George"
   },
   {
+    "id": "ChIJQai6OgDR34kRbukUk0bUEtk",
+    "google_place_id": "ChIJQai6OgDR34kRbukUk0bUEtk",
+    "name": "Scratch Kitchen",
+    "cuisine": "American",
+    "address": "21 Ridge St, Glens Falls, NY 12801, USA",
+    "url": "https://maps.google.com/?cid=15641797855391574382&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Glens Falls",
+    "tags": [
+      "American Restaurant",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.310193299999995,
+      "lng": -73.6437332
+    },
+    "phone": "(518) 338-3641",
+    "website": "https://www.scratchgardenskitchen.com/menu?menu=lunch-menu-1#1",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Wednesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Thursday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Friday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Saturday: 9:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Wednesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Thursday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Friday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Saturday: 9:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.8,
+    "review_count": 150,
+    "description": "Popular restaurant in Glens Falls",
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "ChIJG97U01DP34kRqf7iM5mqt0I",
+    "google_place_id": "ChIJG97U01DP34kRqf7iM5mqt0I",
+    "name": "Uncle Mario's Garage",
+    "cuisine": "Restaurant",
+    "address": "1066 US-9, Queensbury, NY 12804, USA",
+    "url": "https://maps.google.com/?cid=4807498702218526377&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Queensbury",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.3457546,
+      "lng": -73.6861186
+    },
+    "phone": "(518) 636-3062",
+    "website": "https://www.unclemariosgarage.com/",
+    "hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 10:00\u202fAM\u2009\u2013\u20098:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 10:00\u202fAM\u2009\u2013\u20098:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.2,
+    "review_count": 380,
+    "price_level": 2,
+    "description": "Popular restaurant in Queensbury",
+    "neighborhood": "Queensbury"
+  },
+  {
+    "id": "ChIJk45UqaVA3okR-_1NHnH3OAw",
+    "google_place_id": "ChIJk45UqaVA3okR-_1NHnH3OAw",
+    "name": "The Factory Eatery & Spirits",
+    "cuisine": "Restaurant",
+    "address": "20 Prospect St Apt 111, Ballston Spa, NY 12020, USA",
+    "url": "https://maps.google.com/?cid=880725792362724859&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Ballston Spa",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.008216,
+      "lng": -73.8505721
+    },
+    "phone": "(518) 885-0500",
+    "website": "https://www.thefactoryeatery.com/menu",
+    "hours": [
+      "Monday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 3:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.4,
+    "review_count": 807,
+    "price_level": 2,
+    "description": "Popular restaurant in Ballston Spa",
+    "neighborhood": "Ballston Spa"
+  },
+  {
+    "id": "ChIJLb4uTDs_3okRexFVULKhc5M",
+    "google_place_id": "ChIJLb4uTDs_3okRexFVULKhc5M",
+    "name": "The Ugly Rooster Cafe",
+    "cuisine": "Restaurant",
+    "address": "2476 US-9, Malta, NY 12020, USA",
+    "url": "https://maps.google.com/?cid=10625013733121134971&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Malta",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.9706153,
+      "lng": -73.7935974
+    },
+    "phone": "(518) 899-5099",
+    "website": "http://www.theuglyrooster.com/",
+    "hours": [
+      "Monday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Tuesday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Wednesday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Thursday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Friday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Saturday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Sunday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Tuesday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Wednesday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Thursday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Friday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Saturday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Sunday: 7:00\u202fAM\u2009\u2013\u20092:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 855,
+    "price_level": 1,
+    "description": "Popular restaurant in Malta",
+    "neighborhood": "Ballston Spa"
+  },
+  {
+    "id": "ChIJ932PzM8N3okRXGmNRTckUA0",
+    "google_place_id": "ChIJ932PzM8N3okRXGmNRTckUA0",
+    "name": "Dinertime",
+    "cuisine": "Restaurant",
+    "address": "813 Loudon Rd, Latham, NY 12110, USA",
+    "url": "https://maps.google.com/?cid=959306540438612316&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Classic throwback with a retro ambiance providing homestyle American staples, plus a bakery counter.",
+    "tags": [
+      "Diner",
+      "Restaurant",
+      "Point Of Interest",
+      "Food",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.748494199999996,
+      "lng": -73.7601797
+    },
+    "phone": "(518) 785-0200",
+    "website": "https://www.dinertimeny.com/",
+    "hours": [
+      "Monday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.3,
+    "review_count": 2259,
+    "price_level": 2,
+    "description": "Classic throwback with a retro ambiance providing homestyle American staples, plus a bakery counter.",
+    "neighborhood": "Latham"
+  },
+  {
+    "id": "ChIJyXeuzCoQ3okRyRpDBjh3Ce4",
+    "google_place_id": "ChIJyXeuzCoQ3okRyRpDBjh3Ce4",
+    "name": "Smith's Public House",
+    "cuisine": "American",
+    "address": "171 Remsen St, Cohoes, NY 12047, USA",
+    "url": "https://maps.google.com/?cid=17152371738324179657&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Old-fashioned American restaurant with a long wood bar & vintage decor in a building dating to 1873.",
+    "tags": [
+      "American Restaurant",
+      "Bar",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.7720543,
+      "lng": -73.7006233
+    },
+    "phone": "(518) 203-6911",
+    "website": "https://www.smithspublichouse.com/",
+    "hours": [
+      "Monday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u200912:00\u202fAM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.3,
+    "review_count": 689,
+    "price_level": 2,
+    "description": "Old-fashioned American restaurant with a long wood bar & vintage decor in a building dating to 1873.",
+    "neighborhood": "Cohoes"
+  },
+  {
+    "id": "ChIJXd81wUlLF4gRpK7fpRIRQ7s",
+    "google_place_id": "ChIJXd81wUlLF4gRpK7fpRIRQ7s",
+    "name": "NOLA ROUX #2 Casual Cajun Eatery",
+    "cuisine": "Restaurant",
+    "address": "8567 Red Arrow Hwy, Watervliet, MI 49098, USA",
+    "url": "https://maps.google.com/?cid=13493647680322121380&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Watervliet",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.1890593,
+      "lng": -86.2506588
+    },
+    "phone": "(269) 201-7012",
+    "website": "https://nolarouxeatery.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.8,
+    "review_count": 68,
+    "price_level": 1,
+    "description": "Popular restaurant in Watervliet",
+    "neighborhood": "Watervliet"
+  },
+  {
+    "id": "ChIJ9Rih5lML3okRhq5rjP8Otp8",
+    "google_place_id": "ChIJ9Rih5lML3okRhq5rjP8Otp8",
+    "name": "Pastina",
+    "cuisine": "Italian",
+    "address": "384 Kenwood Ave, Delmar, NY 12054, USA",
+    "url": "https://maps.google.com/?cid=11508402388527197830&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Delmar",
+    "tags": [
+      "Italian Restaurant",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.6218499,
+      "lng": -73.8322803
+    },
+    "phone": "(518) 275-0395",
+    "website": "http://pastinaalbany.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 115,
+    "description": "Popular restaurant in Delmar",
+    "neighborhood": "Delmar"
+  },
+  {
+    "id": "ChIJYRzn0Ip13okR5qc9EdgrFHc",
+    "google_place_id": "ChIJYRzn0Ip13okR5qc9EdgrFHc",
+    "name": "Tacos Diablo (Guilderland)",
+    "cuisine": "Restaurant",
+    "address": "2080 Western Ave, Guilderland, NY 12084, USA",
+    "url": "https://maps.google.com/?cid=8580531397049821158&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Guilderland",
+    "tags": [
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 42.6973755,
+      "lng": -73.8916733
+    },
+    "phone": "(518) 389-6000",
+    "website": "http://tacosdiablo.com/",
+    "hours": [
+      "Monday: Closed",
+      "Tuesday: 12:00\u2009\u2013\u20097:30\u202fPM",
+      "Wednesday: 12:00\u2009\u2013\u20097:30\u202fPM",
+      "Thursday: 12:00\u2009\u2013\u20097:30\u202fPM",
+      "Friday: 12:00\u2009\u2013\u20097:30\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20097:30\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20097:30\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: Closed",
+      "Tuesday: 12:00\u2009\u2013\u20097:30\u202fPM",
+      "Wednesday: 12:00\u2009\u2013\u20097:30\u202fPM",
+      "Thursday: 12:00\u2009\u2013\u20097:30\u202fPM",
+      "Friday: 12:00\u2009\u2013\u20097:30\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20097:30\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20097:30\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 187,
+    "price_level": 1,
+    "description": "Popular restaurant in Guilderland",
+    "neighborhood": "Guilderland"
+  },
+  {
+    "id": "ChIJtcVgL9rT34kRwjPqd-K0FDs",
+    "google_place_id": "ChIJtcVgL9rT34kRwjPqd-K0FDs",
+    "name": "Cue and Brew LLC",
+    "cuisine": "Restaurant",
+    "address": "49 Broadway, Fort Edward, NY 12828, USA",
+    "url": "https://maps.google.com/?cid=4257226432539407298&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "match_reason": "Popular restaurant in Fort Edward",
+    "tags": [
+      "Sports Complex",
+      "Bar",
+      "Event Venue",
+      "Sports Activity Location",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.2642484,
+      "lng": -73.5812897
+    },
+    "phone": "(518) 307-5436",
+    "hours": [
+      "Monday: 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Saturday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Sunday: 5:00\u2009\u2013\u200911:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Saturday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Sunday: 5:00\u2009\u2013\u200911:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 5,
+    "review_count": 26,
+    "description": "Popular restaurant in Fort Edward",
+    "neighborhood": "Fort Edward"
+  },
+  {
     "id": "ChIJs_U0mDAL3okRIcdqK9vQ2fk",
     "google_place_id": "ChIJs_U0mDAL3okRIcdqK9vQ2fk",
     "name": "The Delaware Restaurant & Bar",
@@ -1731,8 +3621,8 @@
       "Restaurant",
       "Pub",
       "Bar",
-      "Point Of Interest",
       "Food",
+      "Point Of Interest",
       "Establishment"
     ],
     "location": {
@@ -1768,47 +3658,48 @@
     "neighborhood": "Troy"
   },
   {
-    "id": "ChIJaz_6Yuxv3okR64NHFgkiHHk",
-    "google_place_id": "ChIJaz_6Yuxv3okR64NHFgkiHHk",
-    "name": "Milas Restaurant & Bar",
-    "cuisine": "Restaurant",
-    "address": "500 State St, Schenectady, NY 12305, USA",
-    "url": "https://maps.google.com/?cid=8726887600361014251&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "id": "ChIJ5y2e6Whz3okRNXN86mQhQwY",
+    "google_place_id": "ChIJ5y2e6Whz3okRNXN86mQhQwY",
+    "name": "Grill Mediterranean Cuisine",
+    "cuisine": "Mediterranean",
+    "address": "1016 State St, Schenectady, NY 12307, USA",
+    "url": "https://maps.google.com/?cid=451241104981652277&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "match_reason": "Popular restaurant in Schenectady",
     "tags": [
+      "Mediterranean Restaurant",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 42.811775100000006,
-      "lng": -73.94071939999999
+      "lat": 42.80222320000001,
+      "lng": -73.9293857
     },
-    "phone": "(518) 353-7970",
-    "website": "https://www.milas-518.com/",
+    "phone": "(518) 419-8452",
+    "website": "http://grillmediterraneancuisine.com/",
     "hours": [
-      "Monday: Closed",
-      "Tuesday: 4:45\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 4:45\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 4:45\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 4:45\u2009\u2013\u20099:30\u202fPM",
-      "Saturday: 4:45\u2009\u2013\u20099:30\u202fPM",
-      "Sunday: 4:45\u2009\u2013\u20098:30\u202fPM"
+      "Monday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: Closed",
-      "Tuesday: 4:45\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 4:45\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 4:45\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 4:45\u2009\u2013\u20099:30\u202fPM",
-      "Saturday: 4:45\u2009\u2013\u20099:30\u202fPM",
-      "Sunday: 4:45\u2009\u2013\u20098:30\u202fPM"
+      "Monday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.7,
-    "review_count": 247,
+    "rating": 4.9,
+    "review_count": 93,
     "description": "Popular restaurant in Schenectady",
     "neighborhood": "Schenectady"
   },
@@ -1906,9 +3797,9 @@
   },
   {
     "_meta": {
-      "items_hash": "480ce9b1db0b8637271208e710c27abfd15437de06232d7f81b8e46d14bb4962",
+      "items_hash": "c12183f80181527fc599997485b3475850b100e5502a7d17d4176611dce3c313",
       "items_changed": true,
-      "item_count": 40
+      "item_count": 80
     }
   }
 ]

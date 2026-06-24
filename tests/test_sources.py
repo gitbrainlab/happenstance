@@ -1,5 +1,6 @@
 """Tests for data source integrations."""
 import os
+from datetime import datetime, timezone
 from unittest.mock import patch
 
 import pytest
@@ -8,6 +9,7 @@ from happenstance.sources import (
     _categorize_event,
     _infer_cuisine,
     _parse_json_from_text,
+    fetch_barpeople_events,
     fetch_eventbrite_events,
     fetch_google_places_restaurants,
     fetch_ticketmaster_events,
@@ -250,3 +252,71 @@ class TestEventbriteEvents:
         assert events[0]["title"] == "Test Event"
         assert events[0]["category"] == "live music"  # Inferred from description
         assert events[0]["location"] == "Test Venue"
+
+
+class TestBarPeopleEvents:
+    """Tests for BarPeople text listing parsing."""
+
+    def test_fetch_barpeople_dated_live_music(self):
+        html = """
+        <h2>Saratoga Springs Live Music</h2>
+        <p>6/24 5:30 PM Next Chapter- Wishing Well</p>
+        <p>6/26 7:00 PM Late Night Philosophers & DJ Tune- Night Owl</p>
+        """
+        events = fetch_barpeople_events(
+            "Capital Region, NY",
+            pages=[{"kind": "live_music", "area": "Saratoga Springs", "url": "https://www.barpeople.com/test", "html": html}],
+            now=datetime(2026, 6, 24, 12, tzinfo=timezone.utc),
+        )
+
+        assert [event["title"] for event in events] == [
+            "Next Chapter at Wishing Well",
+            "Late Night Philosophers & DJ Tune at Night Owl",
+        ]
+        assert events[0]["category"] == "live music"
+        assert events[0]["source"] == "BarPeople"
+        assert events[0]["ticket_status"] == "check venue"
+        assert events[0]["price_note"] == "Check venue"
+        assert events[0]["location"] == "Wishing Well, Saratoga Springs, NY"
+
+    def test_fetch_barpeople_weekly_bar_events(self):
+        html = """
+        <h2>Bar Events</h2>
+        <h3>Karaoke</h3>
+        <p>Wednesday:</p>
+        <p>8:00 PM Saratoga Wine Bar- (Saratoga Springs)</p>
+        <h3>Trivia</h3>
+        <p>Thursday:</p>
+        <p>Parting Glass - 6:00 PM (Saratoga Springs)</p>
+        """
+        events = fetch_barpeople_events(
+            "Capital Region, NY",
+            pages=[{"kind": "bar_events", "area": "Capital Region", "url": "https://www.barpeople.com/bar", "html": html}],
+            now=datetime(2026, 6, 24, 12, tzinfo=timezone.utc),
+        )
+
+        assert [event["title"] for event in events] == [
+            "Karaoke at Saratoga Wine Bar",
+            "Trivia at Parting Glass",
+        ]
+        assert [event["category"] for event in events] == ["karaoke", "trivia"]
+        assert events[0]["date"].startswith("2026-06-24T20:00:00")
+        assert events[1]["date"].startswith("2026-06-25T18:00:00")
+
+    def test_fetch_barpeople_dj_events(self):
+        html = """
+        <h3>DJ Events</h3>
+        <h3>Sound Bar</h3>
+        <h4>Saratoga Springs</h4>
+        <p>Friday & Saturday Nights</p>
+        """
+        events = fetch_barpeople_events(
+            "Capital Region, NY",
+            pages=[{"kind": "dj", "area": "Saratoga Springs", "url": "https://www.barpeople.com/dj", "html": html}],
+            now=datetime(2026, 6, 24, 12, tzinfo=timezone.utc),
+        )
+
+        assert [event["title"] for event in events] == ["DJ night at Sound Bar", "DJ night at Sound Bar"]
+        assert [event["category"] for event in events] == ["dj", "dj"]
+        assert events[0]["date"].startswith("2026-06-26T21:00:00")
+        assert events[1]["date"].startswith("2026-06-27T21:00:00")

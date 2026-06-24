@@ -15,7 +15,10 @@ import re
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from datetime import time as datetime_time
+from html.parser import HTMLParser
 from typing import Any, Dict, List
+from zoneinfo import ZoneInfo
 
 
 def _make_request(
@@ -50,6 +53,15 @@ def _make_request(
             return json.loads(response.read().decode())
     except Exception as e:
         raise ValueError(f"HTTP request failed: {e}") from e
+
+
+def _make_text_request(url: str, headers: Dict[str, str] | None = None) -> str:
+    req = urllib.request.Request(url, headers=headers or {})
+    try:
+        with urllib.request.urlopen(req, timeout=15) as response:
+            return response.read().decode("utf-8", errors="replace")
+    except Exception as e:
+        raise ValueError(f"HTTP text request failed: {e}") from e
 
 
 def _infer_cuisine(place_data: Dict) -> str:
@@ -541,6 +553,491 @@ def fetch_eventbrite_events(
         events.append(event)
     
     return events
+
+
+BARPEOPLE_SOURCE_NOTE = "BarPeople weekly listing; call the venue to confirm."
+BARPEOPLE_TZ = ZoneInfo("America/New_York")
+
+BARPEOPLE_PAGES = [
+    {"kind": "live_music", "area": "Saratoga Springs", "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music"},
+    {"kind": "live_music", "area": "Albany", "url": "https://www.barpeople.com/albany-county-weekly-live-music"},
+    {"kind": "live_music", "area": "Fulton County", "url": "https://www.barpeople.com/fulton-county-weekly-live-music"},
+    {"kind": "live_music", "area": "Rensselaer County", "url": "https://www.barpeople.com/rensselaer-county-weekly-live-music"},
+    {"kind": "live_music", "area": "Saratoga County", "url": "https://www.barpeople.com/saratoga-county-weekly-live-music"},
+    {"kind": "live_music", "area": "Schenectady County", "url": "https://www.barpeople.com/schenectady-county-weekly-live-music"},
+    {"kind": "live_music", "area": "Warren County", "url": "https://www.barpeople.com/warren-county-weekly-live-music"},
+    {"kind": "live_music", "area": "Washington County", "url": "https://www.barpeople.com/washington-county-weekly-live-music"},
+    {"kind": "dj", "area": "Saratoga Springs", "url": "https://www.barpeople.com/dj-events"},
+    {"kind": "bar_events", "area": "Capital Region", "url": "https://www.barpeople.com/bar-events-1"},
+]
+
+WEEKDAYS = {
+    "monday": 0,
+    "tuesday": 1,
+    "wednesday": 2,
+    "thursday": 3,
+    "friday": 4,
+    "saturday": 5,
+    "sunday": 6,
+}
+
+TIME_RE = re.compile(r"(?P<time>\d{1,2}(?::\d{2})?\s*(?:a\.?m\.?|p\.?m\.?))", re.IGNORECASE)
+DATED_BARPEOPLE_RE = re.compile(
+    r"(?P<month>\d{1,2})/(?P<day>\d{1,2})\s*(?P<time>\d{1,2}(?::\d{2})?\s*(?:a\.?m\.?|p\.?m\.?))\s*(?P<detail>.+)",
+    re.IGNORECASE,
+)
+
+
+class _VisibleTextParser(HTMLParser):
+    block_tags = {"br", "p", "div", "section", "article", "li", "h1", "h2", "h3", "h4", "h5", "h6"}
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.parts: list[str] = []
+        self._skip_depth = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag in {"script", "style", "noscript", "svg"}:
+            self._skip_depth += 1
+        if tag in self.block_tags:
+            self.parts.append("\n")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in {"script", "style", "noscript", "svg"} and self._skip_depth:
+            self._skip_depth -= 1
+        if tag in self.block_tags:
+            self.parts.append("\n")
+
+    def handle_data(self, data: str) -> None:
+        if not self._skip_depth:
+            self.parts.append(data)
+
+    def lines(self) -> list[str]:
+        text = "".join(self.parts).replace("\xa0", " ").replace("\u200d", " ")
+        return [_clean_barpeople_line(line) for line in text.splitlines() if _clean_barpeople_line(line)]
+
+
+def fetch_barpeople_events(
+    region: str,
+    days_ahead: int = 45,
+    count: int = 120,
+    pages: List[Dict] | None = None,
+    now: datetime | None = None,
+) -> List[Dict]:
+    """Fetch live music, DJ, and bar-event listings from BarPeople pages."""
+    now = (now or datetime.now(timezone.utc)).astimezone(BARPEOPLE_TZ)
+    page_specs = pages or BARPEOPLE_PAGES
+    events: list[Dict] = []
+    headers = {"User-Agent": "Happenstance/1.0 (+https://capitaldistrict.io)"}
+
+    for page in page_specs:
+        url = str(page.get("url") or "")
+        if not url:
+            continue
+        html = str(page.get("html") or "")
+        if not html:
+            try:
+                html = _make_text_request(url, headers=headers)
+            except ValueError as e:
+                print(f"Warning: Failed to fetch BarPeople page {url}: {e}")
+                continue
+        lines = _html_to_text_lines(html)
+        kind = str(page.get("kind") or "live_music")
+        if kind == "dj":
+            events.extend(_parse_barpeople_dj_page(lines, page, now, days_ahead))
+        else:
+            events.extend(_parse_barpeople_listing_page(lines, page, now, days_ahead))
+
+    events = _dedupe_events(events)
+    events.sort(key=lambda event: event["date"])
+    return events[:count]
+
+
+def _html_to_text_lines(html: str) -> list[str]:
+    parser = _VisibleTextParser()
+    parser.feed(html)
+    parser.close()
+    return parser.lines()
+
+
+def _parse_barpeople_listing_page(lines: list[str], page: Dict, now: datetime, days_ahead: int) -> list[Dict]:
+    events: list[Dict] = []
+    page_url = str(page.get("url") or "https://www.barpeople.com/")
+    page_kind = str(page.get("kind") or "live_music")
+    current_area = str(page.get("area") or "Capital Region")
+    current_activity = "live music" if page_kind == "live_music" else "bar event"
+    current_weekday: int | None = None
+
+    for line in lines:
+        activity = _barpeople_activity_heading(line)
+        if activity:
+            current_activity = activity
+            current_weekday = None
+            continue
+
+        weekday = _barpeople_weekday(line)
+        if weekday is not None:
+            current_weekday = weekday
+            continue
+
+        area = _barpeople_area_heading(line)
+        if area:
+            current_area = area
+            continue
+
+        dated = _parse_barpeople_dated_line(line, current_area, current_activity, page_url, now, days_ahead)
+        if dated:
+            events.append(dated)
+            continue
+
+        if current_weekday is not None:
+            weekly = _parse_barpeople_weekly_line(
+                line,
+                current_area,
+                current_activity,
+                current_weekday,
+                page_url,
+                now,
+                days_ahead,
+            )
+            if weekly:
+                events.append(weekly)
+
+    return events
+
+
+def _parse_barpeople_dj_page(lines: list[str], page: Dict, now: datetime, days_ahead: int) -> list[Dict]:
+    events: list[Dict] = []
+    page_url = str(page.get("url") or "https://www.barpeople.com/dj-events")
+    venue = ""
+    area = str(page.get("area") or "Saratoga Springs")
+
+    for line in lines:
+        lower = line.lower()
+        if lower in {"dj events", "events", "contact us", "stay in the loop"}:
+            continue
+        if "friday" in lower and "saturday" in lower and "night" in lower and venue:
+            for weekday in (WEEKDAYS["friday"], WEEKDAYS["saturday"]):
+                event_dt = _next_weekday_datetime(now, weekday, datetime_time(21, 0))
+                if _in_barpeople_window(event_dt, now, days_ahead):
+                    events.append(
+                        _barpeople_event(
+                            title=f"DJ night at {venue}",
+                            category="dj",
+                            event_dt=event_dt,
+                            time_label="9:00 PM",
+                            venue=venue,
+                            area=area,
+                            url=page_url,
+                            description=f"Recurring DJ night listed by BarPeople. {BARPEOPLE_SOURCE_NOTE}",
+                            tags=["barpeople", "dj", "nightlife"],
+                        )
+                    )
+            continue
+        if _looks_like_barpeople_area(line):
+            area = _title_area(line)
+            continue
+        if _looks_like_barpeople_venue(line):
+            venue = _title_area(line)
+
+    return events
+
+
+def _parse_barpeople_dated_line(
+    line: str,
+    current_area: str,
+    activity: str,
+    page_url: str,
+    now: datetime,
+    days_ahead: int,
+) -> Dict | None:
+    match = DATED_BARPEOPLE_RE.search(line)
+    if not match:
+        return None
+    event_time = _parse_barpeople_time(match.group("time"))
+    if not event_time:
+        return None
+    event_dt = _barpeople_date_for(int(match.group("month")), int(match.group("day")), event_time, now)
+    if not _in_barpeople_window(event_dt, now, days_ahead):
+        return None
+    detail = _clean_barpeople_line(match.group("detail"))
+    performer, venue = _split_barpeople_live_detail(detail)
+    if not venue:
+        return None
+    category = _barpeople_category(activity, detail)
+    return _barpeople_event(
+        title=_barpeople_title(category, performer, venue),
+        category=category,
+        event_dt=event_dt,
+        time_label=_format_barpeople_time(event_time),
+        venue=venue,
+        area=current_area,
+        url=page_url,
+        description=f"{detail}. {BARPEOPLE_SOURCE_NOTE}",
+        tags=["barpeople", category, "local"],
+    )
+
+
+def _parse_barpeople_weekly_line(
+    line: str,
+    current_area: str,
+    activity: str,
+    weekday: int,
+    page_url: str,
+    now: datetime,
+    days_ahead: int,
+) -> Dict | None:
+    match = TIME_RE.search(line)
+    if not match:
+        return None
+    event_time = _parse_barpeople_time(match.group("time"))
+    if not event_time:
+        return None
+    event_dt = _next_weekday_datetime(now, weekday, event_time)
+    if not _in_barpeople_window(event_dt, now, days_ahead):
+        return None
+
+    before = _clean_barpeople_line(line[: match.start()].strip(" -"))
+    after = _clean_barpeople_line(line[match.end() :].strip(" -"))
+    area = _parenthetical_area(line) or current_area
+    detail = _strip_parenthetical_area(_clean_barpeople_line(" ".join(part for part in [before, after] if part)))
+    if not detail:
+        return None
+
+    if activity == "live music":
+        performer, venue = _split_barpeople_live_detail(detail)
+        category = _barpeople_category(activity, detail)
+        title = _barpeople_title(category, performer, venue)
+    else:
+        venue, descriptor = _split_barpeople_bar_detail(detail)
+        category = _barpeople_category(activity, detail)
+        title = _barpeople_title(category, descriptor, venue)
+
+    if not venue:
+        return None
+    return _barpeople_event(
+        title=title,
+        category=category,
+        event_dt=event_dt,
+        time_label=_format_barpeople_time(event_time),
+        venue=venue,
+        area=area,
+        url=page_url,
+        description=f"Recurring {category} listing from BarPeople. {BARPEOPLE_SOURCE_NOTE}",
+        tags=["barpeople", category, "recurring"],
+    )
+
+
+def _barpeople_event(
+    title: str,
+    category: str,
+    event_dt: datetime,
+    time_label: str,
+    venue: str,
+    area: str,
+    url: str,
+    description: str,
+    tags: list[str],
+) -> Dict:
+    venue = _clean_barpeople_line(venue)
+    area = _title_area(area or "Capital Region")
+    location = ", ".join(part for part in [venue, area, "NY"] if part)
+    return {
+        "id": _stable_id("barpeople", title, event_dt.date().isoformat(), venue, area),
+        "name": title,
+        "title": title,
+        "category": category,
+        "date": event_dt.isoformat(),
+        "time": time_label,
+        "venue": venue,
+        "location": location,
+        "url": url,
+        "source": "BarPeople",
+        "source_url": url,
+        "source_note": BARPEOPLE_SOURCE_NOTE,
+        "description": description,
+        "tags": _dedupe_strings(tags),
+        "ticket_status": "check venue",
+        "price_note": "Check venue",
+    }
+
+
+def _barpeople_date_for(month: int, day: int, event_time: datetime_time, now: datetime) -> datetime:
+    event_dt = datetime(now.year, month, day, event_time.hour, event_time.minute, tzinfo=BARPEOPLE_TZ)
+    if event_dt < now - timedelta(days=30):
+        event_dt = event_dt.replace(year=now.year + 1)
+    return event_dt
+
+
+def _next_weekday_datetime(now: datetime, weekday: int, event_time: datetime_time) -> datetime:
+    days_until = (weekday - now.weekday()) % 7
+    candidate = datetime.combine((now + timedelta(days=days_until)).date(), event_time, tzinfo=BARPEOPLE_TZ)
+    if candidate < now:
+        candidate += timedelta(days=7)
+    return candidate
+
+
+def _in_barpeople_window(event_dt: datetime, now: datetime, days_ahead: int) -> bool:
+    return now <= event_dt <= now + timedelta(days=days_ahead)
+
+
+def _parse_barpeople_time(value: str) -> datetime_time | None:
+    text = value.lower().replace(".", "").replace(" ", "")
+    match = re.match(r"^(\d{1,2})(?::(\d{2}))?(am|pm)$", text)
+    if not match:
+        return None
+    hour = int(match.group(1))
+    minute = int(match.group(2) or 0)
+    meridiem = match.group(3)
+    if hour == 12:
+        hour = 0
+    if meridiem == "pm":
+        hour += 12
+    if hour > 23 or minute > 59:
+        return None
+    return datetime_time(hour, minute)
+
+
+def _format_barpeople_time(value: datetime_time) -> str:
+    hour = value.hour
+    minute = value.minute
+    meridiem = "AM" if hour < 12 else "PM"
+    hour12 = hour % 12 or 12
+    return f"{hour12}:{minute:02d} {meridiem}"
+
+
+def _split_barpeople_live_detail(detail: str) -> tuple[str, str]:
+    parts = _dash_parts(detail)
+    if len(parts) >= 2:
+        return " - ".join(parts[:-1]), parts[-1]
+    return detail, ""
+
+
+def _split_barpeople_bar_detail(detail: str) -> tuple[str, str]:
+    parts = _dash_parts(detail)
+    if len(parts) >= 2:
+        return parts[0], " - ".join(parts[1:])
+    return detail, ""
+
+
+def _dash_parts(value: str) -> list[str]:
+    normalized = re.sub(r"\s*[-–—]\s*", " - ", value)
+    return [part.strip() for part in normalized.split(" - ") if part.strip()]
+
+
+def _barpeople_title(category: str, performer_or_descriptor: str, venue: str) -> str:
+    performer_or_descriptor = _clean_barpeople_line(performer_or_descriptor)
+    venue = _clean_barpeople_line(venue)
+    if category == "karaoke":
+        return f"Karaoke at {venue}"
+    if category == "trivia":
+        return f"Trivia at {venue}"
+    if category == "open mic":
+        return f"Open mic at {venue}"
+    if category == "dj" and not performer_or_descriptor:
+        return f"DJ night at {venue}"
+    if performer_or_descriptor:
+        return f"{performer_or_descriptor} at {venue}"
+    return f"{category.title()} at {venue}"
+
+
+def _barpeople_category(activity: str, detail: str) -> str:
+    text = f"{activity} {detail}".lower()
+    if "trivia" in text:
+        return "trivia"
+    if "karaoke" in text:
+        return "karaoke"
+    if "open mic" in text or "open-mic" in text:
+        return "open mic"
+    if "dj" in text:
+        return "dj"
+    if "music" in text or activity == "live music":
+        return "live music"
+    return "bar event"
+
+
+def _barpeople_activity_heading(line: str) -> str | None:
+    lower = line.lower().strip(":")
+    if lower in {"karaoke", "open mic", "trivia"}:
+        return lower
+    return None
+
+
+def _barpeople_weekday(line: str) -> int | None:
+    lower = line.lower().strip(" :")
+    lower = lower.removeprefix("every ").strip()
+    return WEEKDAYS.get(lower)
+
+
+def _barpeople_area_heading(line: str) -> str | None:
+    stripped = line.strip()
+    if not stripped.endswith(":"):
+        return None
+    label = stripped[:-1].strip()
+    if "including" in label.lower():
+        return None
+    if _barpeople_weekday(label) is not None:
+        return None
+    if len(label) > 45 or not re.search(r"[A-Za-z]", label):
+        return None
+    if label.upper() == label:
+        return _title_area(label)
+    return None
+
+
+def _parenthetical_area(line: str) -> str:
+    matches = re.findall(r"\(([^()]{2,45})\)", line)
+    return _title_area(matches[-1]) if matches else ""
+
+
+def _strip_parenthetical_area(line: str) -> str:
+    return re.sub(r"\s*\([^()]{2,45}\)\s*$", "", line).strip(" -")
+
+
+def _looks_like_barpeople_area(line: str) -> bool:
+    lower = line.lower()
+    return lower in {
+        "saratoga springs",
+        "albany",
+        "troy",
+        "schenectady",
+        "clifton park",
+        "lake george",
+        "glens falls",
+        "capital region",
+    }
+
+
+def _looks_like_barpeople_venue(line: str) -> bool:
+    lower = line.lower()
+    if len(line) > 50 or len(line) < 3:
+        return False
+    blocked = {"live music", "dj events", "bar events", "other events & locations", "events", "contact us"}
+    return lower not in blocked and not TIME_RE.search(line) and "weekly" not in lower and "schedule" not in lower
+
+
+def _title_area(value: str) -> str:
+    words = str(value or "").replace("VO0R", "Voor").replace("LOUDONVILLE", "Loudonville")
+    return " ".join(part.capitalize() if not part.isupper() else part.title() for part in words.split())
+
+
+def _clean_barpeople_line(value: str) -> str:
+    value = re.sub(r"[\u200b-\u200f\u202a-\u202e]", "", str(value or ""))
+    value = value.replace("—", "-").replace("–", "-")
+    value = re.sub(r"\s+", " ", value)
+    return value.strip()
+
+
+def _dedupe_events(events: List[Dict]) -> List[Dict]:
+    result: list[Dict] = []
+    seen: set[str] = set()
+    for event in events:
+        key = _stable_id(event.get("title", ""), event.get("date", ""), event.get("venue", ""), event.get("location", ""))
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append(event)
+    return result
 
 
 # Keep AI functions for backward compatibility

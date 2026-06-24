@@ -19,7 +19,7 @@
       "api_config": {
         "google_places": {
           "city": "Capital Region, NY",
-          "count": 40
+          "count": 80
         },
         "ticketmaster": {
           "city": "Albany",
@@ -29,6 +29,9 @@
         "eventbrite": {
           "city": "Capital Region, NY",
           "count": 40
+        },
+        "barpeople": {
+          "count": 200
         },
         "ai": {
           "city": "Capital Region, NY",
@@ -110,10 +113,80 @@
           "aliases": ["adirondack"],
           "zips": ["12845"],
           "center": {"lat": 43.4262, "lng": -73.7123}
+        },
+        {
+          "id": "glens-falls",
+          "name": "Glens Falls",
+          "aliases": ["downtown glens falls"],
+          "zips": ["12801"],
+          "center": {"lat": 43.3095, "lng": -73.644}
+        },
+        {
+          "id": "queensbury",
+          "name": "Queensbury",
+          "aliases": [],
+          "zips": ["12804"],
+          "center": {"lat": 43.3536, "lng": -73.6772}
+        },
+        {
+          "id": "ballston-spa",
+          "name": "Ballston Spa",
+          "aliases": [],
+          "zips": ["12020"],
+          "center": {"lat": 43.0009, "lng": -73.8496}
+        },
+        {
+          "id": "malta",
+          "name": "Malta",
+          "aliases": [],
+          "zips": ["12020"],
+          "center": {"lat": 42.9715, "lng": -73.7929}
+        },
+        {
+          "id": "latham",
+          "name": "Latham",
+          "aliases": [],
+          "zips": ["12110"],
+          "center": {"lat": 42.747, "lng": -73.759}
+        },
+        {
+          "id": "cohoes",
+          "name": "Cohoes",
+          "aliases": [],
+          "zips": ["12047"],
+          "center": {"lat": 42.7742, "lng": -73.7001}
+        },
+        {
+          "id": "watervliet",
+          "name": "Watervliet",
+          "aliases": [],
+          "zips": ["12189"],
+          "center": {"lat": 42.7301, "lng": -73.7012}
+        },
+        {
+          "id": "delmar",
+          "name": "Delmar",
+          "aliases": [],
+          "zips": ["12054"],
+          "center": {"lat": 42.622, "lng": -73.8326}
+        },
+        {
+          "id": "guilderland",
+          "name": "Guilderland",
+          "aliases": [],
+          "zips": ["12084"],
+          "center": {"lat": 42.7045, "lng": -73.9115}
+        },
+        {
+          "id": "fort-edward",
+          "name": "Fort Edward",
+          "aliases": [],
+          "zips": ["12828"],
+          "center": {"lat": 43.267, "lng": -73.5846}
         }
       ],
       "target_cuisines": ["Italian", "Sushi", "BBQ", "Vegan", "Mexican", "Thai", "Chinese", "Indian"],
-      "target_categories": ["live music", "art", "family", "sports"],
+      "target_categories": ["live music", "dj", "karaoke", "open mic", "trivia", "bar event", "art", "family", "sports"],
       "event_window_days": 45,
       "base_url": "https://evcatalyst.github.io/happenstance"
     }

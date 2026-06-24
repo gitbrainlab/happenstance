@@ -1,5 +1,86 @@
 [
   {
+    "id": "barpeople-folk-club-kids-at-caffe-lena-2026-06-24-caffe-lena-saratoga-springs",
+    "name": "Folk Club Kids at Caffe Lena",
+    "title": "Folk Club Kids at Caffe Lena",
+    "category": "live music",
+    "date": "2026-06-24T10:30:00-04:00",
+    "time": "10:30 AM",
+    "venue": "Caffe Lena",
+    "location": "Caffe Lena, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Folk Club Kids- Caffe Lena. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-soul-city-at-van-slycks-at-rivers-casino-2026-06-24-van-slycks-at-rivers-casino-schene",
+    "name": "Soul City at Van Slycks at Rivers Casino",
+    "title": "Soul City at Van Slycks at Rivers Casino",
+    "category": "live music",
+    "date": "2026-06-24T14:00:00-04:00",
+    "time": "2:00 PM",
+    "venue": "Van Slycks at Rivers Casino",
+    "location": "Van Slycks at Rivers Casino, Schenectady, NY",
+    "url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Soul City- Van Slycks at Rivers Casino. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-fred-scheier-at-saratoga-farmers-market-at-high-rock-park-2026-06-24-saratoga-farmers-",
+    "name": "Fred Scheier at Saratoga Farmers Market At High Rock Park",
+    "title": "Fred Scheier at Saratoga Farmers Market At High Rock Park",
+    "category": "live music",
+    "date": "2026-06-24T15:00:00-04:00",
+    "time": "3:00 PM",
+    "venue": "Saratoga Farmers Market At High Rock Park",
+    "location": "Saratoga Farmers Market At High Rock Park, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Fred Scheier- Saratoga Farmers Market At High Rock Park. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
     "id": "event-chicago-proctors-2026-06-24",
     "name": "Chicago at Proctors",
     "title": "Chicago at Proctors",
@@ -21,6 +102,1290 @@
       "classic rock",
       "schenectady"
     ],
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-jillian-smith-trio-at-gaffneys-saratoga-2026-06-24-gaffneys-saratoga-saratoga-springs",
+    "name": "Jillian Smith Trio at Gaffneys Saratoga",
+    "title": "Jillian Smith Trio at Gaffneys Saratoga",
+    "category": "live music",
+    "date": "2026-06-24T17:00:00-04:00",
+    "time": "5:00 PM",
+    "venue": "Gaffneys Saratoga",
+    "location": "Gaffneys Saratoga, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Jillian Smith Trio- Gaffneys Saratoga. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-bob-fox-at-uncle-mario-s-garage-2026-06-24-uncle-mario-s-garage-queensbury",
+    "name": "Bob Fox at Uncle Mario's Garage",
+    "title": "Bob Fox at Uncle Mario's Garage",
+    "category": "live music",
+    "date": "2026-06-24T17:00:00-04:00",
+    "time": "5:00 PM",
+    "venue": "Uncle Mario's Garage",
+    "location": "Uncle Mario's Garage, Queensbury, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Bob Fox- Uncle Mario's Garage. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3536,
+      "lng": -73.6772
+    },
+    "neighborhood": "Queensbury"
+  },
+  {
+    "id": "barpeople-next-chapter-at-wishing-well-2026-06-24-wishing-well-saratoga-springs",
+    "name": "Next Chapter at Wishing Well",
+    "title": "Next Chapter at Wishing Well",
+    "category": "live music",
+    "date": "2026-06-24T17:30:00-04:00",
+    "time": "5:30 PM",
+    "venue": "Wishing Well",
+    "location": "Wishing Well, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Next Chapter- Wishing Well. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-highway-boys-at-ryan-s-wake-2026-06-24-ryan-s-wake-troy",
+    "name": "Highway Boys at Ryan's Wake",
+    "title": "Highway Boys at Ryan's Wake",
+    "category": "live music",
+    "date": "2026-06-24T17:30:00-04:00",
+    "time": "5:30 PM",
+    "venue": "Ryan's Wake",
+    "location": "Ryan's Wake, Troy, NY",
+    "url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Highway Boys- Ryan's Wake. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-jeff-brisbin-at-henry-s-tavern-2026-06-24-henry-s-tavern-ballston-spa",
+    "name": "Jeff Brisbin at Henry's Tavern",
+    "title": "Jeff Brisbin at Henry's Tavern",
+    "category": "live music",
+    "date": "2026-06-24T17:30:00-04:00",
+    "time": "5:30 PM",
+    "venue": "Henry's Tavern",
+    "location": "Henry's Tavern, Ballston Spa, NY",
+    "url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Jeff Brisbin- Henry's Tavern. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0009,
+      "lng": -73.8496
+    },
+    "neighborhood": "Ballston Spa"
+  },
+  {
+    "id": "barpeople-tim-wechgelaer-chris-carey-at-inn-at-saratoga-2026-06-24-inn-at-saratoga-saratoga-spri",
+    "name": "Tim Wechgelaer & Chris Carey at Inn at Saratoga",
+    "title": "Tim Wechgelaer & Chris Carey at Inn at Saratoga",
+    "category": "live music",
+    "date": "2026-06-24T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Inn at Saratoga",
+    "location": "Inn at Saratoga, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Tim Wechgelaer & Chris Carey- Inn at Saratoga. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-pepper-shakers-at-carsons-woodside-tavern-2026-06-24-carsons-woodside-tavern-malta",
+    "name": "Pepper Shakers at Carsons Woodside Tavern",
+    "title": "Pepper Shakers at Carsons Woodside Tavern",
+    "category": "live music",
+    "date": "2026-06-24T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Carsons Woodside Tavern",
+    "location": "Carsons Woodside Tavern, Malta, NY",
+    "url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Pepper Shakers- Carsons Woodside Tavern. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.9715,
+      "lng": -73.7929
+    },
+    "neighborhood": "Malta"
+  },
+  {
+    "id": "barpeople-matt-cosgrove-at-the-lagoon-2026-06-24-the-lagoon-lake-george",
+    "name": "Matt Cosgrove at The Lagoon",
+    "title": "Matt Cosgrove at The Lagoon",
+    "category": "live music",
+    "date": "2026-06-24T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "The Lagoon",
+    "location": "The Lagoon, Lake George, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Matt Cosgrove- The Lagoon. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.4262,
+      "lng": -73.7123
+    },
+    "neighborhood": "Lake George"
+  },
+  {
+    "id": "barpeople-karaoke-at-rookies-sport-bar-by-encore-productions-2026-06-24-rookies-sport-bar-by-enc",
+    "name": "Karaoke at Rookies Sport Bar by Encore Productions",
+    "title": "Karaoke at Rookies Sport Bar by Encore Productions",
+    "category": "karaoke",
+    "date": "2026-06-24T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Rookies Sport Bar by Encore Productions",
+    "location": "Rookies Sport Bar by Encore Productions, Schenectady, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-trivia-at-bound-by-fate-brewing-2026-06-24-bound-by-fate-brewing-schuylerville",
+    "name": "Trivia at Bound By Fate Brewing",
+    "title": "Trivia at Bound By Fate Brewing",
+    "category": "trivia",
+    "date": "2026-06-24T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Bound By Fate Brewing",
+    "location": "Bound By Fate Brewing, Schuylerville, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Schuylerville"
+  },
+  {
+    "id": "barpeople-trivia-at-active-ingredient-brewery-2026-06-24-active-ingredient-brewery-malta",
+    "name": "Trivia at Active Ingredient Brewery",
+    "title": "Trivia at Active Ingredient Brewery",
+    "category": "trivia",
+    "date": "2026-06-24T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Active Ingredient Brewery",
+    "location": "Active Ingredient Brewery, Malta, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.9715,
+      "lng": -73.7929
+    },
+    "neighborhood": "Malta"
+  },
+  {
+    "id": "barpeople-trivia-at-other-one-brewery-2026-06-24-other-one-brewery-clifton-park",
+    "name": "Trivia at Other One Brewery",
+    "title": "Trivia at Other One Brewery",
+    "category": "trivia",
+    "date": "2026-06-24T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Other One Brewery",
+    "location": "Other One Brewery, Clifton Park, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-trivia-at-electric-grinch-2026-06-24-electric-grinch-schenectady",
+    "name": "Trivia at Electric Grinch",
+    "title": "Trivia at Electric Grinch",
+    "category": "trivia",
+    "date": "2026-06-24T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Electric Grinch",
+    "location": "Electric Grinch, Schenectady, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-trivia-at-broken-loop-brewing-2026-06-24-broken-loop-brewing-colonie",
+    "name": "Trivia at Broken Loop Brewing",
+    "title": "Trivia at Broken Loop Brewing",
+    "category": "trivia",
+    "date": "2026-06-24T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Broken Loop Brewing",
+    "location": "Broken Loop Brewing, Colonie, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7179,
+      "lng": -73.8335
+    },
+    "neighborhood": "Colonie"
+  },
+  {
+    "id": "barpeople-karaoke-at-saratoga-wine-bar-2026-06-24-saratoga-wine-bar-saratoga-springs",
+    "name": "Karaoke at Saratoga Wine Bar",
+    "title": "Karaoke at Saratoga Wine Bar",
+    "category": "karaoke",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Saratoga Wine Bar",
+    "location": "Saratoga Wine Bar, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Karaoke with Erika Fallon- Saratoga Wine Bar. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-the-velma-s-at-bunker-clifton-park-2026-06-24-bunker-clifton-park-clifton-park",
+    "name": "The Velma's at Bunker Clifton Park",
+    "title": "The Velma's at Bunker Clifton Park",
+    "category": "live music",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Bunker Clifton Park",
+    "location": "Bunker Clifton Park, Clifton Park, NY",
+    "url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "The Velma's- Bunker Clifton Park. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-waren-county-ramblers-at-warrensburg-rec-concert-series-2026-06-24-warrensburg-rec-con",
+    "name": "Waren County Ramblers at Warrensburg Rec Concert Series",
+    "title": "Waren County Ramblers at Warrensburg Rec Concert Series",
+    "category": "live music",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Warrensburg Rec Concert Series",
+    "location": "Warrensburg Rec Concert Series, Warrensburgh, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Waren County Ramblers- Warrensburg Rec Concert Series. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Warrensburgh"
+  },
+  {
+    "id": "barpeople-karaoke-at-jt-maxies-by-encore-productions-2026-06-24-jt-maxies-by-encore-productions-",
+    "name": "Karaoke at JT Maxies by Encore Productions",
+    "title": "Karaoke at JT Maxies by Encore Productions",
+    "category": "karaoke",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "JT Maxies by Encore Productions",
+    "location": "JT Maxies by Encore Productions, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-karaoke-at-milton-tavern-with-cole-king-2026-06-24-milton-tavern-with-cole-king-ballst",
+    "name": "Karaoke at Milton Tavern with Cole King",
+    "title": "Karaoke at Milton Tavern with Cole King",
+    "category": "karaoke",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Milton Tavern with Cole King",
+    "location": "Milton Tavern with Cole King, Ballston Spa, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0009,
+      "lng": -73.8496
+    },
+    "neighborhood": "Ballston Spa"
+  },
+  {
+    "id": "barpeople-open-mic-at-quaters-bar-2026-06-24-quaters-bar-saratoga-springs",
+    "name": "Open mic at Quaters Bar",
+    "title": "Open mic at Quaters Bar",
+    "category": "open mic",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Quaters Bar",
+    "location": "Quaters Bar, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-open-mic-at-the-grateful-den-2026-06-24-the-grateful-den-glens-falls",
+    "name": "Open mic at The Grateful Den",
+    "title": "Open mic at The Grateful Den",
+    "category": "open mic",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "The Grateful Den",
+    "location": "The Grateful Den, Glens Falls, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-open-mic-at-kris-midcity-tavern-2026-06-24-kris-midcity-tavern-menands",
+    "name": "Open mic at Kris\u2019 Midcity Tavern",
+    "title": "Open mic at Kris\u2019 Midcity Tavern",
+    "category": "open mic",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Kris\u2019 Midcity Tavern",
+    "location": "Kris\u2019 Midcity Tavern, Menands, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Menands"
+  },
+  {
+    "id": "barpeople-open-mic-at-wicked-eatery-2026-06-24-wicked-eatery-clifton-park",
+    "name": "Open mic at Wicked Eatery",
+    "title": "Open mic at Wicked Eatery",
+    "category": "open mic",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Wicked Eatery",
+    "location": "Wicked Eatery, Clifton Park, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-open-mic-at-the-kings-inn-2026-06-24-the-kings-inn-schenectady",
+    "name": "Open mic at The Kings Inn",
+    "title": "Open mic at The Kings Inn",
+    "category": "open mic",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "The Kings Inn",
+    "location": "The Kings Inn, Schenectady, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-open-mic-at-lark-tavern-2026-06-24-lark-tavern-albany",
+    "name": "Open mic at Lark Tavern",
+    "title": "Open mic at Lark Tavern",
+    "category": "open mic",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Lark Tavern",
+    "location": "Lark Tavern, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-open-mic-at-tighes-bistro-american-2026-06-24-tighes-bistro-american-albany",
+    "name": "Open mic at Tighes Bistro American",
+    "title": "Open mic at Tighes Bistro American",
+    "category": "open mic",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Tighes Bistro American",
+    "location": "Tighes Bistro American, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-open-mic-at-slidin-dirty-featuring-danny-watson-the-slidin-dirty-band-2026-06-24-slidi",
+    "name": "Open mic at Slidin Dirty Featuring Danny Watson & The Slidin Dirty Band",
+    "title": "Open mic at Slidin Dirty Featuring Danny Watson & The Slidin Dirty Band",
+    "category": "open mic",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Slidin Dirty Featuring Danny Watson & The Slidin Dirty Band",
+    "location": "Slidin Dirty Featuring Danny Watson & The Slidin Dirty Band, Troy, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-open-mic-at-sully-s-east-2026-06-24-sully-s-east-glens-falls",
+    "name": "Open mic at Sully\u2019s East",
+    "title": "Open mic at Sully\u2019s East",
+    "category": "open mic",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Sully\u2019s East",
+    "location": "Sully\u2019s East, Glens Falls, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-trivia-at-september-too-2026-06-24-september-too-albany",
+    "name": "Trivia at September Too",
+    "title": "Trivia at September Too",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "September Too",
+    "location": "September Too, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-trivia-at-41-sports-bar-2026-06-24-41-sports-bar-troy",
+    "name": "Trivia at 41 Sports Bar",
+    "title": "Trivia at 41 Sports Bar",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "41 Sports Bar",
+    "location": "41 Sports Bar, Troy, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-trivia-at-bwp-saratoga-2026-06-24-bwp-saratoga-saratoga-springs",
+    "name": "Trivia at BWP Saratoga",
+    "title": "Trivia at BWP Saratoga",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "BWP Saratoga",
+    "location": "BWP Saratoga, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-trivia-at-tipsy-moose-2026-06-24-tipsy-moose-troy",
+    "name": "Trivia at Tipsy Moose",
+    "title": "Trivia at Tipsy Moose",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Tipsy Moose",
+    "location": "Tipsy Moose, Troy, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-trivia-at-artisanal-brew-works-2026-06-24-artisanal-brew-works-saratoga-springs",
+    "name": "Trivia at Artisanal Brew Works",
+    "title": "Trivia at Artisanal Brew Works",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Artisanal Brew Works",
+    "location": "Artisanal Brew Works, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-trivia-at-mcaddy-pub-2026-06-24-mcaddy-pub-troy",
+    "name": "Trivia at McAddy Pub",
+    "title": "Trivia at McAddy Pub",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "McAddy Pub",
+    "location": "McAddy Pub, Troy, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-trivia-at-recovery-sports-bar-2026-06-24-recovery-sports-bar-troy",
+    "name": "Trivia at Recovery Sports Bar",
+    "title": "Trivia at Recovery Sports Bar",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Recovery Sports Bar",
+    "location": "Recovery Sports Bar, Troy, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-trivia-at-local-217-2026-06-24-local-217-albany",
+    "name": "Trivia at Local 217",
+    "title": "Trivia at Local 217",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Local 217",
+    "location": "Local 217, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-trivia-at-bourbon-room-2026-06-24-bourbon-room-saratoga-springs",
+    "name": "Trivia at Bourbon Room",
+    "title": "Trivia at Bourbon Room",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Bourbon Room",
+    "location": "Bourbon Room, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-trivia-at-ships-pub-2026-06-24-ships-pub-albany",
+    "name": "Trivia at Ships Pub",
+    "title": "Trivia at Ships Pub",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Ships Pub",
+    "location": "Ships Pub, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-trivia-at-mean-max-brew-works-2026-06-24-mean-max-brew-works-glens-falls",
+    "name": "Trivia at Mean Max Brew Works",
+    "title": "Trivia at Mean Max Brew Works",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Mean Max Brew Works",
+    "location": "Mean Max Brew Works, Glens Falls, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-trivia-at-slickfin-brewery-2026-06-24-slickfin-brewery-fort-edward",
+    "name": "Trivia at Slickfin Brewery",
+    "title": "Trivia at Slickfin Brewery",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Slickfin Brewery",
+    "location": "Slickfin Brewery, Fort Edward, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.267,
+      "lng": -73.5846
+    },
+    "neighborhood": "Fort Edward"
+  },
+  {
+    "id": "barpeople-trivia-at-city-beer-hall-2026-06-24-city-beer-hall-albany",
+    "name": "Trivia at City Beer Hall",
+    "title": "Trivia at City Beer Hall",
+    "category": "trivia",
+    "date": "2026-06-24T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "City Beer Hall",
+    "location": "City Beer Hall, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-trivia-at-harvey-s-2026-06-24-harvey-s-saratoga-springs",
+    "name": "Trivia at Harvey\u2019s",
+    "title": "Trivia at Harvey\u2019s",
+    "category": "trivia",
+    "date": "2026-06-24T19:30:00-04:00",
+    "time": "7:30 PM",
+    "venue": "Harvey\u2019s",
+    "location": "Harvey\u2019s, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-open-mic-at-on-tap-bar-2026-06-24-on-tap-bar-latham",
+    "name": "Open mic at On Tap Bar",
+    "title": "Open mic at On Tap Bar",
+    "category": "open mic",
+    "date": "2026-06-24T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "On Tap Bar",
+    "location": "On Tap Bar, Latham, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.747,
+      "lng": -73.759
+    },
+    "neighborhood": "Latham"
+  },
+  {
+    "id": "barpeople-open-mic-at-play-by-play-sports-2026-06-24-play-by-play-sports-schenectady",
+    "name": "Open mic at Play by Play Sports",
+    "title": "Open mic at Play by Play Sports",
+    "category": "open mic",
+    "date": "2026-06-24T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Play by Play Sports",
+    "location": "Play by Play Sports, Schenectady, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-karaoke-at-downtown-social-2026-06-24-downtown-social-glens-falls",
+    "name": "Karaoke at Downtown Social",
+    "title": "Karaoke at Downtown Social",
+    "category": "karaoke",
+    "date": "2026-06-24T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Downtown Social",
+    "location": "Downtown Social, Glens Falls, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-karaoke-at-black-bear-inn-2026-06-24-black-bear-inn-watervliet",
+    "name": "Karaoke at Black Bear Inn",
+    "title": "Karaoke at Black Bear Inn",
+    "category": "karaoke",
+    "date": "2026-06-24T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Black Bear Inn",
+    "location": "Black Bear Inn, Watervliet, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7301,
+      "lng": -73.7012
+    },
+    "neighborhood": "Watervliet"
+  },
+  {
+    "id": "barpeople-karaoke-at-rusty-nail-by-encore-productions-2026-06-24-rusty-nail-by-encore-production",
+    "name": "Karaoke at Rusty Nail by Encore Productions",
+    "title": "Karaoke at Rusty Nail by Encore Productions",
+    "category": "karaoke",
+    "date": "2026-06-24T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Rusty Nail by Encore Productions",
+    "location": "Rusty Nail by Encore Productions, Clifton Park, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-reese-fulmer-at-mabee-farms-2026-06-25-mabee-farms-schenectady",
+    "name": "Reese Fulmer at Mabee Farms",
+    "title": "Reese Fulmer at Mabee Farms",
+    "category": "live music",
+    "date": "2026-06-25T12:00:00-04:00",
+    "time": "12:00 PM",
+    "venue": "Mabee Farms",
+    "location": "Mabee Farms, Schenectady, NY",
+    "url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Reese Fulmer- Mabee Farms. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
     "neighborhood": "Schenectady"
   },
   {
@@ -47,6 +1412,1832 @@
       "afrobeats"
     ],
     "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-faith-anne-at-shirt-factory-lawrence-stage-2026-06-25-shirt-factory-lawrence-stage-gle",
+    "name": "Faith Anne at Shirt Factory .. Lawrence Stage",
+    "title": "Faith Anne at Shirt Factory .. Lawrence Stage",
+    "category": "live music",
+    "date": "2026-06-25T16:30:00-04:00",
+    "time": "4:30 PM",
+    "venue": "Shirt Factory .. Lawrence Stage",
+    "location": "Shirt Factory .. Lawrence Stage, Glens Falls, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Faith Anne- Shirt Factory .. Lawrence Stage. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-pr-project-at-shirt-factory-cooper-stage-2026-06-25-shirt-factory-cooper-stage-glens-f",
+    "name": "PR Project at Shirt Factory ... Cooper Stage",
+    "title": "PR Project at Shirt Factory ... Cooper Stage",
+    "category": "live music",
+    "date": "2026-06-25T16:30:00-04:00",
+    "time": "4:30 PM",
+    "venue": "Shirt Factory ... Cooper Stage",
+    "location": "Shirt Factory ... Cooper Stage, Glens Falls, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "PR Project- Shirt Factory ... Cooper Stage. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-jeff-brisbin-at-franklin-square-market-2026-06-25-franklin-square-market-saratoga-spri",
+    "name": "Jeff Brisbin at Franklin Square Market",
+    "title": "Jeff Brisbin at Franklin Square Market",
+    "category": "live music",
+    "date": "2026-06-25T17:00:00-04:00",
+    "time": "5:00 PM",
+    "venue": "Franklin Square Market",
+    "location": "Franklin Square Market, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Jeff Brisbin- Franklin Square Market. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-matt-finnigan-at-the-boathouse-2026-06-25-the-boathouse-lake-george",
+    "name": "Matt Finnigan at The Boathouse",
+    "title": "Matt Finnigan at The Boathouse",
+    "category": "live music",
+    "date": "2026-06-25T17:00:00-04:00",
+    "time": "5:00 PM",
+    "venue": "The Boathouse",
+    "location": "The Boathouse, Lake George, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Matt Finnigan- The Boathouse. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.4262,
+      "lng": -73.7123
+    },
+    "neighborhood": "Lake George"
+  },
+  {
+    "id": "barpeople-tim-norm-at-uncle-mario-s-garage-2026-06-25-uncle-mario-s-garage-queensbury",
+    "name": "Tim & Norm at Uncle Mario's Garage",
+    "title": "Tim & Norm at Uncle Mario's Garage",
+    "category": "live music",
+    "date": "2026-06-25T17:00:00-04:00",
+    "time": "5:00 PM",
+    "venue": "Uncle Mario's Garage",
+    "location": "Uncle Mario's Garage, Queensbury, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Tim & Norm- Uncle Mario's Garage. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3536,
+      "lng": -73.6772
+    },
+    "neighborhood": "Queensbury"
+  },
+  {
+    "id": "barpeople-pepper-shakers-at-emma-jaynes-2026-06-25-emma-jaynes-clifton-park",
+    "name": "Pepper Shakers at Emma Jaynes",
+    "title": "Pepper Shakers at Emma Jaynes",
+    "category": "live music",
+    "date": "2026-06-25T17:30:00-04:00",
+    "time": "5:30 PM",
+    "venue": "Emma Jaynes",
+    "location": "Emma Jaynes, Clifton Park, NY",
+    "url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Pepper Shakers- Emma Jaynes. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-tim-wechgelaer-at-olde-byran-inn-2026-06-25-olde-byran-inn-saratoga-springs",
+    "name": "Tim Wechgelaer at Olde Byran Inn",
+    "title": "Tim Wechgelaer at Olde Byran Inn",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Olde Byran Inn",
+    "location": "Olde Byran Inn, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Tim Wechgelaer- Olde Byran Inn. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-eric-kufs-at-thirsty-owl-2026-06-25-thirsty-owl-saratoga-springs",
+    "name": "Eric Kufs at Thirsty Owl",
+    "title": "Eric Kufs at Thirsty Owl",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Thirsty Owl",
+    "location": "Thirsty Owl, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Eric Kufs- Thirsty Owl. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-dan-sherwin-at-treehouse-brewery-2026-06-25-treehouse-brewery-saratoga-springs",
+    "name": "Dan Sherwin at Treehouse Brewery",
+    "title": "Dan Sherwin at Treehouse Brewery",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Treehouse Brewery",
+    "location": "Treehouse Brewery, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Dan Sherwin- Treehouse Brewery. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-jeff-walton-at-inn-at-saratoga-2026-06-25-inn-at-saratoga-saratoga-springs",
+    "name": "Jeff Walton at Inn at Saratoga",
+    "title": "Jeff Walton at Inn at Saratoga",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Inn at Saratoga",
+    "location": "Inn at Saratoga, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Jeff Walton- Inn at Saratoga. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-christine-spero-at-panza-s-2026-06-25-panza-s-saratoga-springs",
+    "name": "Christine Spero at Panza's",
+    "title": "Christine Spero at Panza's",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Panza's",
+    "location": "Panza's, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Christine Spero- Panza's. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-neon-avenue-trio-at-eleven-at-lark-hall-2026-06-25-eleven-at-lark-hall-albany",
+    "name": "Neon Avenue Trio at Eleven at Lark Hall",
+    "title": "Neon Avenue Trio at Eleven at Lark Hall",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Eleven at Lark Hall",
+    "location": "Eleven at Lark Hall, Albany, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Neon Avenue Trio- Eleven at Lark Hall. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-ts-ensemble-at-gazebo-concerts-at-the-crossing-park-2026-06-25-gazebo-concerts-at-the-",
+    "name": "TS Ensemble at Gazebo Concerts At The Crossing Park",
+    "title": "TS Ensemble at Gazebo Concerts At The Crossing Park",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Gazebo Concerts At The Crossing Park",
+    "location": "Gazebo Concerts At The Crossing Park, Colonie, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "TS Ensemble- Gazebo Concerts At The Crossing Park. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7179,
+      "lng": -73.8335
+    },
+    "neighborhood": "Colonie"
+  },
+  {
+    "id": "barpeople-dan-sherwin-at-o-slattery-s-2026-06-25-o-slattery-s-delmar",
+    "name": "Dan Sherwin at O'Slattery's",
+    "title": "Dan Sherwin at O'Slattery's",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "O'Slattery's",
+    "location": "O'Slattery's, Delmar, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Dan Sherwin- O'Slattery's. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.622,
+      "lng": -73.8326
+    },
+    "neighborhood": "Delmar"
+  },
+  {
+    "id": "barpeople-jeff-grippin-at-babbling-brook-watering-hole-2026-06-25-babbling-brook-watering-hole-v",
+    "name": "Jeff Grippin at Babbling Brook Watering Hole",
+    "title": "Jeff Grippin at Babbling Brook Watering Hole",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Babbling Brook Watering Hole",
+    "location": "Babbling Brook Watering Hole, Voorheesville, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Jeff Grippin- Babbling Brook Watering Hole. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Voorheesville"
+  },
+  {
+    "id": "barpeople-open-mic-at-rustic-barn-pub-2026-06-25-rustic-barn-pub-troy",
+    "name": "Open mic at Rustic Barn Pub",
+    "title": "Open mic at Rustic Barn Pub",
+    "category": "open mic",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Rustic Barn Pub",
+    "location": "Rustic Barn Pub, Troy, NY",
+    "url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Open Mic with Matt Mirabile- Rustic Barn Pub. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-side-show-willie-at-carsons-woodside-tavern-2026-06-25-carsons-woodside-tavern-malta",
+    "name": "Side Show Willie at Carsons Woodside Tavern",
+    "title": "Side Show Willie at Carsons Woodside Tavern",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Carsons Woodside Tavern",
+    "location": "Carsons Woodside Tavern, Malta, NY",
+    "url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Side Show Willie- Carsons Woodside Tavern. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.9715,
+      "lng": -73.7929
+    },
+    "neighborhood": "Malta"
+  },
+  {
+    "id": "barpeople-roseanna-grimaldi-at-druthers-schnectady-2026-06-25-druthers-schnectady-schenectady",
+    "name": "Roseanna Grimaldi at Druthers Schnectady",
+    "title": "Roseanna Grimaldi at Druthers Schnectady",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Druthers Schnectady",
+    "location": "Druthers Schnectady, Schenectady, NY",
+    "url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Roseanna Grimaldi- Druthers Schnectady. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-pat-decker-at-blue-water-manor-2026-06-25-blue-water-manor-bolton-landing",
+    "name": "Pat Decker at Blue Water Manor",
+    "title": "Pat Decker at Blue Water Manor",
+    "category": "live music",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Blue Water Manor",
+    "location": "Blue Water Manor, Bolton Landing, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Pat Decker- Blue Water Manor. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Bolton Landing"
+  },
+  {
+    "id": "barpeople-open-mic-at-devito-s-sports-bar-2026-06-25-devito-s-sports-bar-mechanicville",
+    "name": "Open mic at Devito\u2019s Sports Bar",
+    "title": "Open mic at Devito\u2019s Sports Bar",
+    "category": "open mic",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Devito\u2019s Sports Bar",
+    "location": "Devito\u2019s Sports Bar, Mechanicville, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Mechanicville"
+  },
+  {
+    "id": "barpeople-open-mic-at-bound-by-fate-2026-06-25-bound-by-fate-schuylerville",
+    "name": "Open mic at Bound By Fate",
+    "title": "Open mic at Bound By Fate",
+    "category": "open mic",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Bound By Fate",
+    "location": "Bound By Fate, Schuylerville, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Schuylerville"
+  },
+  {
+    "id": "barpeople-open-mic-at-rustic-barn-2026-06-25-rustic-barn-troy",
+    "name": "Open mic at Rustic Barn",
+    "title": "Open mic at Rustic Barn",
+    "category": "open mic",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Rustic Barn",
+    "location": "Rustic Barn, Troy, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-open-mic-at-seven-bistro-2026-06-25-seven-bistro-clifton-park",
+    "name": "Open mic at Seven Bistro",
+    "title": "Open mic at Seven Bistro",
+    "category": "open mic",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Seven Bistro",
+    "location": "Seven Bistro, Clifton Park, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-trivia-at-wolf-hollow-brewery-2026-06-25-wolf-hollow-brewery-schenectady",
+    "name": "Trivia at Wolf Hollow Brewery",
+    "title": "Trivia at Wolf Hollow Brewery",
+    "category": "trivia",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Wolf Hollow Brewery",
+    "location": "Wolf Hollow Brewery, Schenectady, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-trivia-at-fairway-s-of-halmoon-2026-06-25-fairway-s-of-halmoon-mechanicville",
+    "name": "Trivia at Fairway\u2019s of Halmoon",
+    "title": "Trivia at Fairway\u2019s of Halmoon",
+    "category": "trivia",
+    "date": "2026-06-25T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Fairway\u2019s of Halmoon",
+    "location": "Fairway\u2019s of Halmoon, Mechanicville, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Mechanicville"
+  },
+  {
+    "id": "barpeople-trivia-at-diamond-club-at-embassy-suites-2026-06-25-diamond-club-at-embassy-suites-sar",
+    "name": "Trivia at Diamond Club at Embassy Suites",
+    "title": "Trivia at Diamond Club at Embassy Suites",
+    "category": "trivia",
+    "date": "2026-06-25T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Diamond Club at Embassy Suites",
+    "location": "Diamond Club at Embassy Suites, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Trivia Night- Diamond Club at Embassy Suites. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-tbd-at-rock-the-block-at-canal-square-2026-06-25-rock-the-block-at-canal-square-cohoes",
+    "name": "TBD at Rock The Block at Canal Square",
+    "title": "TBD at Rock The Block at Canal Square",
+    "category": "live music",
+    "date": "2026-06-25T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Rock The Block at Canal Square",
+    "location": "Rock The Block at Canal Square, Cohoes, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "TBD- Rock The Block at Canal Square. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7742,
+      "lng": -73.7001
+    },
+    "neighborhood": "Cohoes"
+  },
+  {
+    "id": "barpeople-tame-the-rooster-at-schagticoke-summer-concert-series-2026-06-25-schagticoke-summer-co",
+    "name": "Tame The Rooster at Schagticoke Summer Concert Series",
+    "title": "Tame The Rooster at Schagticoke Summer Concert Series",
+    "category": "live music",
+    "date": "2026-06-25T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Schagticoke Summer Concert Series",
+    "location": "Schagticoke Summer Concert Series, Schaghticoke, NY",
+    "url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Tame The Rooster- Schagticoke Summer Concert Series. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Schaghticoke"
+  },
+  {
+    "id": "barpeople-justin-joyner-at-peddlers-bar-bistro-2026-06-25-peddlers-bar-bistro-clifton-park",
+    "name": "Justin Joyner at Peddlers Bar & Bistro",
+    "title": "Justin Joyner at Peddlers Bar & Bistro",
+    "category": "live music",
+    "date": "2026-06-25T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Peddlers Bar & Bistro",
+    "location": "Peddlers Bar & Bistro, Clifton Park, NY",
+    "url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Justin Joyner- Peddlers Bar & Bistro. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-karaoke-at-dee-dee-s-2026-06-25-dee-dee-s-latham",
+    "name": "Karaoke at Dee Dee\u2019s",
+    "title": "Karaoke at Dee Dee\u2019s",
+    "category": "karaoke",
+    "date": "2026-06-25T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Dee Dee\u2019s",
+    "location": "Dee Dee\u2019s, Latham, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.747,
+      "lng": -73.759
+    },
+    "neighborhood": "Latham"
+  },
+  {
+    "id": "barpeople-karaoke-at-slickfin-brewery-2026-06-25-slickfin-brewery-fort-edward",
+    "name": "Karaoke at Slickfin Brewery",
+    "title": "Karaoke at Slickfin Brewery",
+    "category": "karaoke",
+    "date": "2026-06-25T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Slickfin Brewery",
+    "location": "Slickfin Brewery, Fort Edward, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.267,
+      "lng": -73.5846
+    },
+    "neighborhood": "Fort Edward"
+  },
+  {
+    "id": "barpeople-trivia-at-grateful-den-2026-06-25-grateful-den-glens-falls",
+    "name": "Trivia at Grateful Den",
+    "title": "Trivia at Grateful Den",
+    "category": "trivia",
+    "date": "2026-06-25T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Grateful Den",
+    "location": "Grateful Den, Glens Falls, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-trivia-at-fort-orange-brewing-2026-06-25-fort-orange-brewing-albany",
+    "name": "Trivia at Fort Orange Brewing",
+    "title": "Trivia at Fort Orange Brewing",
+    "category": "trivia",
+    "date": "2026-06-25T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Fort Orange Brewing",
+    "location": "Fort Orange Brewing, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-trivia-at-bogey-s-bar-and-grill-2026-06-25-bogey-s-bar-and-grill-queensberry",
+    "name": "Trivia at Bogey\u2019s Bar and Grill",
+    "title": "Trivia at Bogey\u2019s Bar and Grill",
+    "category": "trivia",
+    "date": "2026-06-25T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Bogey\u2019s Bar and Grill",
+    "location": "Bogey\u2019s Bar and Grill, Queensberry, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Queensberry"
+  },
+  {
+    "id": "barpeople-trivia-at-argyle-brewery-cambridge-2026-06-25-argyle-brewery-cambridge-cambridge",
+    "name": "Trivia at Argyle Brewery Cambridge",
+    "title": "Trivia at Argyle Brewery Cambridge",
+    "category": "trivia",
+    "date": "2026-06-25T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Argyle Brewery Cambridge",
+    "location": "Argyle Brewery Cambridge, Cambridge, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Cambridge"
+  },
+  {
+    "id": "barpeople-karaoke-at-jt-maxies-by-encore-productions-2026-06-25-jt-maxies-by-encore-productions-",
+    "name": "Karaoke at JT Maxies by Encore Productions",
+    "title": "Karaoke at JT Maxies by Encore Productions",
+    "category": "karaoke",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "JT Maxies by Encore Productions",
+    "location": "JT Maxies by Encore Productions, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-karaoke-at-sliderz-bar-and-grill-2026-06-25-sliderz-bar-and-grill-rotterdam",
+    "name": "Karaoke at Sliderz Bar and Grill",
+    "title": "Karaoke at Sliderz Bar and Grill",
+    "category": "karaoke",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Sliderz Bar and Grill",
+    "location": "Sliderz Bar and Grill, Rotterdam, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Rotterdam"
+  },
+  {
+    "id": "barpeople-karaoke-at-30-bistro-2026-06-25-30-bistro-clifton-park",
+    "name": "Karaoke at 30 Bistro",
+    "title": "Karaoke at 30 Bistro",
+    "category": "karaoke",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "30 Bistro",
+    "location": "30 Bistro, Clifton Park, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-open-mic-at-the-trap-2026-06-25-the-trap-fort-ann",
+    "name": "Open mic at The Trap",
+    "title": "Open mic at The Trap",
+    "category": "open mic",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "The Trap",
+    "location": "The Trap, Fort Ann, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Fort Ann"
+  },
+  {
+    "id": "barpeople-open-mic-at-unihog-2026-06-25-unihog-hoosic-falls",
+    "name": "Open mic at Unihog",
+    "title": "Open mic at Unihog",
+    "category": "open mic",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Unihog",
+    "location": "Unihog, Hoosic Falls, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Hoosic Falls"
+  },
+  {
+    "id": "barpeople-trivia-at-clancey-s-tavern-2026-06-25-clancey-s-tavern-saratoga-springs",
+    "name": "Trivia at Clancey\u2019s Tavern",
+    "title": "Trivia at Clancey\u2019s Tavern",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Clancey\u2019s Tavern",
+    "location": "Clancey\u2019s Tavern, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-trivia-at-tj-flightline-pub-2026-06-25-tj-flightline-pub-glenville",
+    "name": "Trivia at TJ Flightline Pub",
+    "title": "Trivia at TJ Flightline Pub",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "TJ Flightline Pub",
+    "location": "TJ Flightline Pub, Glenville, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Glenville"
+  },
+  {
+    "id": "barpeople-trivia-at-ok-social-2026-06-25-ok-social-valatie",
+    "name": "Trivia at Ok Social",
+    "title": "Trivia at Ok Social",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Ok Social",
+    "location": "Ok Social, Valatie, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Valatie"
+  },
+  {
+    "id": "barpeople-trivia-at-warbler-brewery-2026-06-25-warbler-brewery-delmar",
+    "name": "Trivia at Warbler Brewery",
+    "title": "Trivia at Warbler Brewery",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Warbler Brewery",
+    "location": "Warbler Brewery, Delmar, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.622,
+      "lng": -73.8326
+    },
+    "neighborhood": "Delmar"
+  },
+  {
+    "id": "barpeople-trivia-at-brickyard-2026-06-25-brickyard-ballston-spa",
+    "name": "Trivia at Brickyard",
+    "title": "Trivia at Brickyard",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Brickyard",
+    "location": "Brickyard, Ballston Spa, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0009,
+      "lng": -73.8496
+    },
+    "neighborhood": "Ballston Spa"
+  },
+  {
+    "id": "barpeople-trivia-at-klam-r-tavern-marina-2026-06-25-klam-r-tavern-marina-clifton-park",
+    "name": "Trivia at Klam\u2019R Tavern & Marina",
+    "title": "Trivia at Klam\u2019R Tavern & Marina",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Klam\u2019R Tavern & Marina",
+    "location": "Klam\u2019R Tavern & Marina, Clifton Park, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-trivia-at-lagooon-2026-06-25-lagooon-lake-george",
+    "name": "Trivia at Lagooon",
+    "title": "Trivia at Lagooon",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Lagooon",
+    "location": "Lagooon, Lake George, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.4262,
+      "lng": -73.7123
+    },
+    "neighborhood": "Lake George"
+  },
+  {
+    "id": "barpeople-trivia-at-northway-brewing-2026-06-25-northway-brewing-queensberry",
+    "name": "Trivia at Northway Brewing",
+    "title": "Trivia at Northway Brewing",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Northway Brewing",
+    "location": "Northway Brewing, Queensberry, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Queensberry"
+  },
+  {
+    "id": "barpeople-trivia-at-spa-city-tap-and-barrel-2026-06-25-spa-city-tap-and-barrel-saratoga-springs",
+    "name": "Trivia at Spa City Tap and Barrel",
+    "title": "Trivia at Spa City Tap and Barrel",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Spa City Tap and Barrel",
+    "location": "Spa City Tap and Barrel, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-trivia-at-fallside-brewing-2026-06-25-fallside-brewing-cohoes",
+    "name": "Trivia at Fallside Brewing",
+    "title": "Trivia at Fallside Brewing",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Fallside Brewing",
+    "location": "Fallside Brewing, Cohoes, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7742,
+      "lng": -73.7001
+    },
+    "neighborhood": "Cohoes"
+  },
+  {
+    "id": "barpeople-trivia-at-wolff-s-biergarten-2026-06-25-wolff-s-biergarten-albany",
+    "name": "Trivia at Wolff\u2019s Biergarten",
+    "title": "Trivia at Wolff\u2019s Biergarten",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Wolff\u2019s Biergarten",
+    "location": "Wolff\u2019s Biergarten, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-trivia-at-across-the-street-pub-2026-06-25-across-the-street-pub-albany",
+    "name": "Trivia at Across The Street Pub",
+    "title": "Trivia at Across The Street Pub",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Across The Street Pub",
+    "location": "Across The Street Pub, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-trivia-at-on-tap-bar-2026-06-25-on-tap-bar-lathem",
+    "name": "Trivia at On Tap Bar",
+    "title": "Trivia at On Tap Bar",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "On Tap Bar",
+    "location": "On Tap Bar, Lathem, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Lathem"
+  },
+  {
+    "id": "barpeople-trivia-at-sammy-s-cohens-2026-06-25-sammy-s-cohens-schaghticoke",
+    "name": "Trivia at Sammy\u2019s Cohens",
+    "title": "Trivia at Sammy\u2019s Cohens",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Sammy\u2019s Cohens",
+    "location": "Sammy\u2019s Cohens, Schaghticoke, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Schaghticoke"
+  },
+  {
+    "id": "barpeople-trivia-at-mohawk-taproom-2026-06-25-mohawk-taproom-schenectady",
+    "name": "Trivia at Mohawk Taproom",
+    "title": "Trivia at Mohawk Taproom",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Mohawk Taproom",
+    "location": "Mohawk Taproom, Schenectady, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-trivia-at-juniors-2026-06-25-juniors-troy",
+    "name": "Trivia at Juniors",
+    "title": "Trivia at Juniors",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Juniors",
+    "location": "Juniors, Troy, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-trivia-at-dock-brown-s-lakeside-with-jay-yager-2026-06-25-dock-brown-s-lakeside-with-j",
+    "name": "Trivia at Dock Brown\u2019s Lakeside With Jay Yager",
+    "title": "Trivia at Dock Brown\u2019s Lakeside With Jay Yager",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Dock Brown\u2019s Lakeside With Jay Yager",
+    "location": "Dock Brown\u2019s Lakeside With Jay Yager, Saratoga Lake, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-trivia-at-walt-whitman-2026-06-25-walt-whitman-saratoga-springs",
+    "name": "Trivia at Walt Whitman",
+    "title": "Trivia at Walt Whitman",
+    "category": "trivia",
+    "date": "2026-06-25T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Walt Whitman",
+    "location": "Walt Whitman, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-trivia-at-518-craft-2026-06-25-518-craft-troy",
+    "name": "Trivia at 518 Craft",
+    "title": "Trivia at 518 Craft",
+    "category": "trivia",
+    "date": "2026-06-25T19:30:00-04:00",
+    "time": "7:30 PM",
+    "venue": "518 Craft",
+    "location": "518 Craft, Troy, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-terrence-frost-at-misfit-2026-06-25-misfit-saratoga-springs",
+    "name": "Terrence Frost at Misfit",
+    "title": "Terrence Frost at Misfit",
+    "category": "live music",
+    "date": "2026-06-25T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Misfit",
+    "location": "Misfit, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Terrence Frost- Misfit. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-midnight-north-the-laura-leigh-band-at-lark-hall-2026-06-25-lark-hall-albany",
+    "name": "Midnight North & The Laura Leigh Band at Lark Hall",
+    "title": "Midnight North & The Laura Leigh Band at Lark Hall",
+    "category": "live music",
+    "date": "2026-06-25T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Lark Hall",
+    "location": "Lark Hall, Albany, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Midnight North & The Laura Leigh Band- Lark Hall. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-open-mic-at-september-s-too-2026-06-25-september-s-too-albany",
+    "name": "Open mic at September's Too",
+    "title": "Open mic at September's Too",
+    "category": "open mic",
+    "date": "2026-06-25T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "September's Too",
+    "location": "September's Too, Albany, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Open Mic- September's Too. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-karaoke-at-seven-bistro-2026-06-25-seven-bistro-clifton-park",
+    "name": "Karaoke at Seven Bistro",
+    "title": "Karaoke at Seven Bistro",
+    "category": "karaoke",
+    "date": "2026-06-25T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Seven Bistro",
+    "location": "Seven Bistro, Clifton Park, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-karaoke-at-arsenal-city-tavern-2026-06-25-arsenal-city-tavern-watervliet",
+    "name": "Karaoke at Arsenal City Tavern",
+    "title": "Karaoke at Arsenal City Tavern",
+    "category": "karaoke",
+    "date": "2026-06-25T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Arsenal City Tavern",
+    "location": "Arsenal City Tavern, Watervliet, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7301,
+      "lng": -73.7012
+    },
+    "neighborhood": "Watervliet"
+  },
+  {
+    "id": "barpeople-karaoke-at-sully-s-east-2026-06-25-sully-s-east-glens-falls",
+    "name": "Karaoke at Sully\u2019s East",
+    "title": "Karaoke at Sully\u2019s East",
+    "category": "karaoke",
+    "date": "2026-06-25T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Sully\u2019s East",
+    "location": "Sully\u2019s East, Glens Falls, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-open-mic-at-september-s-too-tavern-2026-06-25-september-s-too-tavern-colonie",
+    "name": "Open mic at September\u2019s Too Tavern",
+    "title": "Open mic at September\u2019s Too Tavern",
+    "category": "open mic",
+    "date": "2026-06-25T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "September\u2019s Too Tavern",
+    "location": "September\u2019s Too Tavern, Colonie, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7179,
+      "lng": -73.8335
+    },
+    "neighborhood": "Colonie"
+  },
+  {
+    "id": "barpeople-karaoke-at-sully-s-west-2026-06-25-sully-s-west-glens-falls",
+    "name": "Karaoke at Sully\u2019s West",
+    "title": "Karaoke at Sully\u2019s West",
+    "category": "karaoke",
+    "date": "2026-06-25T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Sully\u2019s West",
+    "location": "Sully\u2019s West, Glens Falls, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-karaoke-at-spa-city-tap-and-barrel-2026-06-25-spa-city-tap-and-barrel-saratoga-springs",
+    "name": "Karaoke at Spa City Tap and Barrel",
+    "title": "Karaoke at Spa City Tap and Barrel",
+    "category": "karaoke",
+    "date": "2026-06-25T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Spa City Tap and Barrel",
+    "location": "Spa City Tap and Barrel, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-karaoke-at-saratoga-city-tavern-2026-06-25-saratoga-city-tavern-saratoga-springs",
+    "name": "Karaoke at Saratoga City Tavern",
+    "title": "Karaoke at Saratoga City Tavern",
+    "category": "karaoke",
+    "date": "2026-06-25T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Saratoga City Tavern",
+    "location": "Saratoga City Tavern, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-pat-decker-at-kings-tavern-2026-06-26-kings-tavern-saratoga-springs",
+    "name": "Pat Decker at Kings Tavern",
+    "title": "Pat Decker at Kings Tavern",
+    "category": "live music",
+    "date": "2026-06-26T13:00:00-04:00",
+    "time": "1:00 PM",
+    "venue": "Kings Tavern",
+    "location": "Kings Tavern, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Pat Decker- Kings Tavern. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
   },
   {
     "id": "event-fence-2026-reception-2026-06-26",
@@ -94,6 +3285,1998 @@
       "glens falls"
     ],
     "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-open-mic-at-old-songs-2026-06-26-old-songs-voorheesville",
+    "name": "Open mic at Old Songs",
+    "title": "Open mic at Old Songs",
+    "category": "open mic",
+    "date": "2026-06-26T16:00:00-04:00",
+    "time": "4:00 PM",
+    "venue": "Old Songs",
+    "location": "Old Songs, Voorheesville, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Open Mic- Old Songs. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Voorheesville"
+  },
+  {
+    "id": "barpeople-matt-finnigan-at-jamo-s-pub-2026-06-26-jamo-s-pub-lake-george",
+    "name": "Matt Finnigan at Jamo's Pub",
+    "title": "Matt Finnigan at Jamo's Pub",
+    "category": "live music",
+    "date": "2026-06-26T16:00:00-04:00",
+    "time": "4:00 PM",
+    "venue": "Jamo's Pub",
+    "location": "Jamo's Pub, Lake George, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Matt Finnigan- Jamo's Pub. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.4262,
+      "lng": -73.7123
+    },
+    "neighborhood": "Lake George"
+  },
+  {
+    "id": "barpeople-josh-breden-at-adirondack-winery-tasting-room-2026-06-26-adirondack-winery-tasting-roo",
+    "name": "Josh Breden at ADirondack Winery Tasting Room",
+    "title": "Josh Breden at ADirondack Winery Tasting Room",
+    "category": "live music",
+    "date": "2026-06-26T16:00:00-04:00",
+    "time": "4:00 PM",
+    "venue": "ADirondack Winery Tasting Room",
+    "location": "ADirondack Winery Tasting Room, Queensbury, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Josh Breden- ADirondack Winery Tasting Room. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.4262,
+      "lng": -73.7123
+    },
+    "neighborhood": "Lake George"
+  },
+  {
+    "id": "barpeople-shannon-lynch-duo-at-clancys-tavern-2026-06-26-clancys-tavern-saratoga-springs",
+    "name": "Shannon Lynch Duo at Clancys Tavern",
+    "title": "Shannon Lynch Duo at Clancys Tavern",
+    "category": "live music",
+    "date": "2026-06-26T17:00:00-04:00",
+    "time": "5:00 PM",
+    "venue": "Clancys Tavern",
+    "location": "Clancys Tavern, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Shannon Lynch Duo- Clancys Tavern. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-capital-groove-at-anthony-s-by-romos-pizza-2026-06-26-anthony-s-by-romos-pizza-voorhee",
+    "name": "Capital Groove at Anthony's by Romos Pizza",
+    "title": "Capital Groove at Anthony's by Romos Pizza",
+    "category": "live music",
+    "date": "2026-06-26T17:00:00-04:00",
+    "time": "5:00 PM",
+    "venue": "Anthony's by Romos Pizza",
+    "location": "Anthony's by Romos Pizza, Voorheesville, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Capital Groove- Anthony's by Romos Pizza. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Voorheesville"
+  },
+  {
+    "id": "barpeople-closet-classics-at-s-s-farm-brewery-2026-06-26-s-s-farm-brewery-nassau",
+    "name": "Closet Classics at S&S farm Brewery",
+    "title": "Closet Classics at S&S farm Brewery",
+    "category": "live music",
+    "date": "2026-06-26T17:00:00-04:00",
+    "time": "5:00 PM",
+    "venue": "S&S farm Brewery",
+    "location": "S&S farm Brewery, Nassau, NY",
+    "url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Closet Classics- S&S farm Brewery. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Nassau"
+  },
+  {
+    "id": "barpeople-northern-borne-at-hicks-orchard-2026-06-26-hicks-orchard-granville",
+    "name": "Northern Borne at Hicks Orchard",
+    "title": "Northern Borne at Hicks Orchard",
+    "category": "live music",
+    "date": "2026-06-26T17:00:00-04:00",
+    "time": "5:00 PM",
+    "venue": "Hicks Orchard",
+    "location": "Hicks Orchard, Granville, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Northern Borne- Hicks Orchard. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Granville"
+  },
+  {
+    "id": "barpeople-margo-macero-at-becks-tavern-2026-06-26-becks-tavern-north-creek",
+    "name": "Margo Macero at Becks Tavern",
+    "title": "Margo Macero at Becks Tavern",
+    "category": "live music",
+    "date": "2026-06-26T17:30:00-04:00",
+    "time": "5:30 PM",
+    "venue": "Becks Tavern",
+    "location": "Becks Tavern, North Creek, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Margo Macero- Becks Tavern. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "North Creek"
+  },
+  {
+    "id": "barpeople-jukebox-rebellion-at-gaffney-s-2026-06-26-gaffney-s-saratoga-springs",
+    "name": "Jukebox Rebellion at Gaffney's",
+    "title": "Jukebox Rebellion at Gaffney's",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Gaffney's",
+    "location": "Gaffney's, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Jukebox Rebellion- Gaffney's. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-dan-sherwin-at-tinney-s-tavern-2026-06-26-tinney-s-tavern-saratoga-springs",
+    "name": "Dan Sherwin at Tinney's Tavern",
+    "title": "Dan Sherwin at Tinney's Tavern",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Tinney's Tavern",
+    "location": "Tinney's Tavern, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Dan Sherwin- Tinney's Tavern. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-rick-bolton-at-olde-byran-inn-2026-06-26-olde-byran-inn-saratoga-springs",
+    "name": "Rick Bolton at Olde Byran Inn",
+    "title": "Rick Bolton at Olde Byran Inn",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Olde Byran Inn",
+    "location": "Olde Byran Inn, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Rick Bolton- Olde Byran Inn. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-phillip-shaver-at-treehouse-brewery-2026-06-26-treehouse-brewery-saratoga-springs",
+    "name": "Phillip Shaver at Treehouse Brewery",
+    "title": "Phillip Shaver at Treehouse Brewery",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Treehouse Brewery",
+    "location": "Treehouse Brewery, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Phillip Shaver- Treehouse Brewery. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-rob-aronstein-at-wishing-well-2026-06-26-wishing-well-saratoga-springs",
+    "name": "Rob Aronstein at Wishing Well",
+    "title": "Rob Aronstein at Wishing Well",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Wishing Well",
+    "location": "Wishing Well, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Rob Aronstein- Wishing Well. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-kate-stano-at-inn-at-saratoga-2026-06-26-inn-at-saratoga-saratoga-springs",
+    "name": "Kate Stano at Inn at Saratoga",
+    "title": "Kate Stano at Inn at Saratoga",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Inn at Saratoga",
+    "location": "Inn at Saratoga, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Kate Stano- Inn at Saratoga. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-dads-night-out-at-spa-city-tap-barrel-2026-06-26-spa-city-tap-barrel-saratoga-springs",
+    "name": "Dads Night Out at Spa City Tap & Barrel",
+    "title": "Dads Night Out at Spa City Tap & Barrel",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Spa City Tap & Barrel",
+    "location": "Spa City Tap & Barrel, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Dads Night Out- Spa City Tap & Barrel. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-radio-junkies-at-lago-s-by-druthers-2026-06-26-lago-s-by-druthers-saratoga-springs",
+    "name": "Radio Junkies at Lago's By Druthers",
+    "title": "Radio Junkies at Lago's By Druthers",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Lago's By Druthers",
+    "location": "Lago's By Druthers, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Radio Junkies- Lago's By Druthers. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-hannah-estrlle-at-saratoga-winery-2026-06-26-saratoga-winery-saratoga-springs",
+    "name": "Hannah Estrlle at Saratoga Winery",
+    "title": "Hannah Estrlle at Saratoga Winery",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Saratoga Winery",
+    "location": "Saratoga Winery, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Hannah Estrlle- Saratoga Winery. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-the-eastern-highs-at-eleven-at-lark-hall-2026-06-26-eleven-at-lark-hall-albany",
+    "name": "The Eastern Highs at Eleven at Lark Hall",
+    "title": "The Eastern Highs at Eleven at Lark Hall",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Eleven at Lark Hall",
+    "location": "Eleven at Lark Hall, Albany, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "The Eastern Highs- Eleven at Lark Hall. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-franklin-micare-at-677-prime-2026-06-26-677-prime-albany",
+    "name": "Franklin Micare at 677 Prime",
+    "title": "Franklin Micare at 677 Prime",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "677 Prime",
+    "location": "677 Prime, Albany, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Franklin Micare- 677 Prime. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-twilight-drive-at-norte-azul-cantina-2026-06-26-norte-azul-cantina-albany",
+    "name": "Twilight Drive at Norte Azul Cantina",
+    "title": "Twilight Drive at Norte Azul Cantina",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Norte Azul Cantina",
+    "location": "Norte Azul Cantina, Albany, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Twilight Drive- Norte Azul Cantina. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-matt-cosgrove-at-the-scarlet-knife-2026-06-26-the-scarlet-knife-latham",
+    "name": "Matt Cosgrove at The Scarlet Knife",
+    "title": "Matt Cosgrove at The Scarlet Knife",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "The Scarlet Knife",
+    "location": "The Scarlet Knife, Latham, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Matt Cosgrove- The Scarlet Knife. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.747,
+      "lng": -73.759
+    },
+    "neighborhood": "Latham"
+  },
+  {
+    "id": "barpeople-working-class-band-at-babbling-brook-watering-hole-2026-06-26-babbling-brook-watering-",
+    "name": "Working Class Band at Babbling Brook Watering Hole",
+    "title": "Working Class Band at Babbling Brook Watering Hole",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Babbling Brook Watering Hole",
+    "location": "Babbling Brook Watering Hole, Voorheesville, NY",
+    "url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/albany-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Working Class Band- Babbling Brook Watering Hole. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Voorheesville"
+  },
+  {
+    "id": "barpeople-jillian-smith-azzaam-hameed-at-roosevelt-room-2026-06-26-roosevelt-room-troy",
+    "name": "Jillian Smith & Azzaam Hameed at Roosevelt Room",
+    "title": "Jillian Smith & Azzaam Hameed at Roosevelt Room",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Roosevelt Room",
+    "location": "Roosevelt Room, Troy, NY",
+    "url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Jillian Smith & Azzaam Hameed- Roosevelt Room. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-russ-kennedy-at-powers-pub-2026-06-26-powers-pub-clifton-park",
+    "name": "Russ Kennedy at Powers Pub",
+    "title": "Russ Kennedy at Powers Pub",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Powers Pub",
+    "location": "Powers Pub, Clifton Park, NY",
+    "url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Russ Kennedy- Powers Pub. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-keith-pray-trio-at-cock-bull-2026-06-26-cock-bull-galway",
+    "name": "Keith Pray Trio at Cock & Bull",
+    "title": "Keith Pray Trio at Cock & Bull",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Cock & Bull",
+    "location": "Cock & Bull, Galway, NY",
+    "url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Keith Pray Trio- Cock & Bull. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Galway"
+  },
+  {
+    "id": "barpeople-papa-rich-the-wayward-souls-at-dancing-grain-farm-brewery-2026-06-26-dancing-grain-far",
+    "name": "Papa Rich & The Wayward Souls at Dancing Grain Farm Brewery",
+    "title": "Papa Rich & The Wayward Souls at Dancing Grain Farm Brewery",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Dancing Grain Farm Brewery",
+    "location": "Dancing Grain Farm Brewery, Gansevoort, NY",
+    "url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Papa Rich & The Wayward Souls- Dancing Grain Farm Brewery. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Gansevoort"
+  },
+  {
+    "id": "barpeople-the-accents-at-carsons-woodside-tavern-2026-06-26-carsons-woodside-tavern-malta",
+    "name": "The Accents at Carsons Woodside Tavern",
+    "title": "The Accents at Carsons Woodside Tavern",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Carsons Woodside Tavern",
+    "location": "Carsons Woodside Tavern, Malta, NY",
+    "url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "The Accents- Carsons Woodside Tavern. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.9715,
+      "lng": -73.7929
+    },
+    "neighborhood": "Malta"
+  },
+  {
+    "id": "barpeople-chad-mcloughlin-trio-at-stella-s-pasta-bar-2026-06-26-stella-s-pasta-bar-schenectady",
+    "name": "Chad McLoughlin Trio at Stella's Pasta Bar",
+    "title": "Chad McLoughlin Trio at Stella's Pasta Bar",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Stella's Pasta Bar",
+    "location": "Stella's Pasta Bar, Schenectady, NY",
+    "url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Chad McLoughlin Trio- Stella's Pasta Bar. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-frank-murray-at-fort-william-henry-2026-06-26-fort-william-henry-lake-george",
+    "name": "Frank Murray at Fort William Henry",
+    "title": "Frank Murray at Fort William Henry",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Fort William Henry",
+    "location": "Fort William Henry, Lake George, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Frank Murray- Fort William Henry. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.4262,
+      "lng": -73.7123
+    },
+    "neighborhood": "Lake George"
+  },
+  {
+    "id": "barpeople-stef-solo-at-uncle-mario-s-garage-2026-06-26-uncle-mario-s-garage-queensbury",
+    "name": "Stef Solo at Uncle Mario's Garage",
+    "title": "Stef Solo at Uncle Mario's Garage",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Uncle Mario's Garage",
+    "location": "Uncle Mario's Garage, Queensbury, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Stef Solo- Uncle Mario's Garage. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3536,
+      "lng": -73.6772
+    },
+    "neighborhood": "Queensbury"
+  },
+  {
+    "id": "barpeople-derrick-forget-at-bandstand-brew-works-2026-06-26-bandstand-brew-works-warrensburgh",
+    "name": "Derrick Forget at Bandstand Brew Works",
+    "title": "Derrick Forget at Bandstand Brew Works",
+    "category": "live music",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Bandstand Brew Works",
+    "location": "Bandstand Brew Works, Warrensburgh, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Derrick Forget- Bandstand Brew Works. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Warrensburgh"
+  },
+  {
+    "id": "barpeople-trivia-at-lark-tavern-2026-06-26-lark-tavern-albany",
+    "name": "Trivia at Lark Tavern",
+    "title": "Trivia at Lark Tavern",
+    "category": "trivia",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "Lark Tavern",
+    "location": "Lark Tavern, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-trivia-at-okb-hop-farm-2026-06-26-okb-hop-farm-hudson-july-19th",
+    "name": "Trivia at OKB Hop Farm",
+    "title": "Trivia at OKB Hop Farm",
+    "category": "trivia",
+    "date": "2026-06-26T18:00:00-04:00",
+    "time": "6:00 PM",
+    "venue": "OKB Hop Farm",
+    "location": "OKB Hop Farm, Hudson July 19th, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Hudson July 19Th"
+  },
+  {
+    "id": "barpeople-jo-henley-at-artisanal-brew-works-2026-06-26-artisanal-brew-works-saratoga-springs",
+    "name": "Jo Henley at Artisanal Brew Works",
+    "title": "Jo Henley at Artisanal Brew Works",
+    "category": "live music",
+    "date": "2026-06-26T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Artisanal Brew Works",
+    "location": "Artisanal Brew Works, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Jo Henley- Artisanal Brew Works. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-pat-decker-at-diamond-club-at-embassy-suites-2026-06-26-diamond-club-at-embassy-suites",
+    "name": "Pat Decker at Diamond Club at Embassy Suites",
+    "title": "Pat Decker at Diamond Club at Embassy Suites",
+    "category": "live music",
+    "date": "2026-06-26T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Diamond Club at Embassy Suites",
+    "location": "Diamond Club at Embassy Suites, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Pat Decker- Diamond Club at Embassy Suites. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-the-hawthornes-at-salsa-latina-mexican-restaurant-2026-06-26-salsa-latina-mexican-rest",
+    "name": "The Hawthornes at Salsa Latina Mexican Restaurant",
+    "title": "The Hawthornes at Salsa Latina Mexican Restaurant",
+    "category": "live music",
+    "date": "2026-06-26T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Salsa Latina Mexican Restaurant",
+    "location": "Salsa Latina Mexican Restaurant, East & North Greenbush, NY",
+    "url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "The Hawthornes- Salsa Latina Mexican Restaurant. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "East & North Greenbush"
+  },
+  {
+    "id": "barpeople-shannon-roy-at-rustic-barn-pub-2026-06-26-rustic-barn-pub-troy",
+    "name": "Shannon Roy at Rustic Barn Pub",
+    "title": "Shannon Roy at Rustic Barn Pub",
+    "category": "live music",
+    "date": "2026-06-26T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Rustic Barn Pub",
+    "location": "Rustic Barn Pub, Troy, NY",
+    "url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Shannon Roy- Rustic Barn Pub. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7284,
+      "lng": -73.6918
+    },
+    "neighborhood": "Troy"
+  },
+  {
+    "id": "barpeople-karaoke-at-bogey-s-pub-and-grill-bay-meadows-2026-06-26-bogey-s-pub-and-grill-bay-mead",
+    "name": "Karaoke at Bogey\u2019s Pub and Grill Bay Meadows",
+    "title": "Karaoke at Bogey\u2019s Pub and Grill Bay Meadows",
+    "category": "karaoke",
+    "date": "2026-06-26T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "Bogey\u2019s Pub and Grill Bay Meadows",
+    "location": "Bogey\u2019s Pub and Grill Bay Meadows, Queensbury, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3536,
+      "lng": -73.6772
+    },
+    "neighborhood": "Queensbury"
+  },
+  {
+    "id": "barpeople-open-mic-at-rockhill-bakehouse-curren-lane-2026-06-26-rockhill-bakehouse-curren-lane-g",
+    "name": "Open mic at RockHill Bakehouse Curren Lane",
+    "title": "Open mic at RockHill Bakehouse Curren Lane",
+    "category": "open mic",
+    "date": "2026-06-26T18:30:00-04:00",
+    "time": "6:30 PM",
+    "venue": "RockHill Bakehouse Curren Lane",
+    "location": "RockHill Bakehouse Curren Lane, Glens Falls, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring open mic listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "open mic",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-bob-barker-band-at-kraverie-2026-06-26-kraverie-saratoga-springs",
+    "name": "Bob Barker Band at Kraverie",
+    "title": "Bob Barker Band at Kraverie",
+    "category": "live music",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Kraverie",
+    "location": "Kraverie, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Bob Barker Band- Kraverie. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-late-night-philosophers-dj-tune-dj-tswag-at-night-owl-2026-06-26-night-owl-saratoga-sp",
+    "name": "Late Night Philosophers & DJ Tune & DJ Tswag at Night Owl",
+    "title": "Late Night Philosophers & DJ Tune & DJ Tswag at Night Owl",
+    "category": "dj",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Night Owl",
+    "location": "Night Owl, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Late Night Philosophers & DJ Tune & DJ Tswag- Night Owl. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "dj",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-jeff-walton-at-principessa-elena-2026-06-26-principessa-elena-saratoga-springs",
+    "name": "Jeff Walton at Principessa Elena",
+    "title": "Jeff Walton at Principessa Elena",
+    "category": "live music",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Principessa Elena",
+    "location": "Principessa Elena, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Jeff Walton- Principessa Elena. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-northern-spies-band-at-holy-moses-2026-06-26-holy-moses-saratoga-springs",
+    "name": "Northern Spies Band at Holy Moses",
+    "title": "Northern Spies Band at Holy Moses",
+    "category": "live music",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Holy Moses",
+    "location": "Holy Moses, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Northern Spies Band- Holy Moses. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-radio-gold-at-panza-s-2026-06-26-panza-s-saratoga-springs",
+    "name": "Radio Gold at Panza's",
+    "title": "Radio Gold at Panza's",
+    "category": "live music",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Panza's",
+    "location": "Panza's, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Radio Gold- Panza's. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-jukebox-rebellion-at-gaffneys-saratoga-2026-06-26-gaffneys-saratoga-saratoga-springs",
+    "name": "Jukebox Rebellion at Gaffneys Saratoga",
+    "title": "Jukebox Rebellion at Gaffneys Saratoga",
+    "category": "live music",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Gaffneys Saratoga",
+    "location": "Gaffneys Saratoga, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Jukebox Rebellion- Gaffneys Saratoga. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-donna-tritico-band-at-al-s-roadhouse-2026-06-26-al-s-roadhouse-broadalbin",
+    "name": "Donna Tritico Band at Al's Roadhouse",
+    "title": "Donna Tritico Band at Al's Roadhouse",
+    "category": "live music",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Al's Roadhouse",
+    "location": "Al's Roadhouse, Broadalbin, NY",
+    "url": "https://www.barpeople.com/fulton-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/fulton-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Donna Tritico Band- Al's Roadhouse. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Broadalbin"
+  },
+  {
+    "id": "barpeople-bostyx-at-glove-theater-2026-06-26-glove-theater-gloversville",
+    "name": "Bostyx at Glove Theater",
+    "title": "Bostyx at Glove Theater",
+    "category": "live music",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Glove Theater",
+    "location": "Glove Theater, Gloversville, NY",
+    "url": "https://www.barpeople.com/fulton-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/fulton-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Bostyx- Glove Theater. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Gloversville"
+  },
+  {
+    "id": "barpeople-bro-country-at-wicked-eatery-2026-06-26-wicked-eatery-clifton-park",
+    "name": "Bro Country at Wicked Eatery",
+    "title": "Bro Country at Wicked Eatery",
+    "category": "live music",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Wicked Eatery",
+    "location": "Wicked Eatery, Clifton Park, NY",
+    "url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Bro Country- Wicked Eatery. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8656,
+      "lng": -73.7709
+    },
+    "neighborhood": "Clifton Park"
+  },
+  {
+    "id": "barpeople-josh-ashley-clevenstine-at-sully-s-west-2026-06-26-sully-s-west-glens-falls",
+    "name": "Josh & Ashley Clevenstine at Sully's West",
+    "title": "Josh & Ashley Clevenstine at Sully's West",
+    "category": "live music",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Sully's West",
+    "location": "Sully's West, Glens Falls, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Josh & Ashley Clevenstine- Sully's West. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-michelle-tyler-at-the-longhorn-restaurant-2026-06-26-the-longhorn-restaurant-lake-luze",
+    "name": "Michelle & Tyler at The Longhorn Restaurant",
+    "title": "Michelle & Tyler at The Longhorn Restaurant",
+    "category": "live music",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "The Longhorn Restaurant",
+    "location": "The Longhorn Restaurant, Lake Luzerne, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Michelle & Tyler- The Longhorn Restaurant. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Lake Luzerne"
+  },
+  {
+    "id": "barpeople-karaoke-at-jt-maxies-by-encore-productions-2026-06-26-jt-maxies-by-encore-productions-",
+    "name": "Karaoke at JT Maxies by Encore Productions",
+    "title": "Karaoke at JT Maxies by Encore Productions",
+    "category": "karaoke",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "JT Maxies by Encore Productions",
+    "location": "JT Maxies by Encore Productions, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-karaoke-at-broadway-lanes-2026-06-26-broadway-lanes-fort-edward",
+    "name": "Karaoke at Broadway Lanes",
+    "title": "Karaoke at Broadway Lanes",
+    "category": "karaoke",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Broadway Lanes",
+    "location": "Broadway Lanes, Fort Edward, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.267,
+      "lng": -73.5846
+    },
+    "neighborhood": "Fort Edward"
+  },
+  {
+    "id": "barpeople-trivia-at-fitzgeralds-steak-house-2026-06-26-fitzgeralds-steak-house-fort-edward",
+    "name": "Trivia at Fitzgeralds Steak House",
+    "title": "Trivia at Fitzgeralds Steak House",
+    "category": "trivia",
+    "date": "2026-06-26T19:00:00-04:00",
+    "time": "7:00 PM",
+    "venue": "Fitzgeralds Steak House",
+    "location": "Fitzgeralds Steak House, Fort Edward, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring trivia listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "trivia",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.267,
+      "lng": -73.5846
+    },
+    "neighborhood": "Fort Edward"
+  },
+  {
+    "id": "barpeople-aquanett-at-vapor-2026-06-26-vapor-saratoga-springs",
+    "name": "Aquanett at Vapor",
+    "title": "Aquanett at Vapor",
+    "category": "live music",
+    "date": "2026-06-26T19:30:00-04:00",
+    "time": "7:30 PM",
+    "venue": "Vapor",
+    "location": "Vapor, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Aquanett- Vapor. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-karaoke-at-bed-rock-inn-2026-06-26-bed-rock-inn-schenectady",
+    "name": "Karaoke at Bed Rock Inn",
+    "title": "Karaoke at Bed Rock Inn",
+    "category": "karaoke",
+    "date": "2026-06-26T19:30:00-04:00",
+    "time": "7:30 PM",
+    "venue": "Bed Rock Inn",
+    "location": "Bed Rock Inn, Schenectady, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-dj-mic-power-at-misfit-2026-06-26-misfit-saratoga-springs",
+    "name": "DJ Mic Power at Misfit",
+    "title": "DJ Mic Power at Misfit",
+    "category": "dj",
+    "date": "2026-06-26T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Misfit",
+    "location": "Misfit, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "DJ Mic Power- Misfit. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "dj",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-gail-ann-dorsey-at-caffe-lena-2026-06-26-caffe-lena-saratoga-springs",
+    "name": "Gail Ann Dorsey at Caffe Lena",
+    "title": "Gail Ann Dorsey at Caffe Lena",
+    "category": "live music",
+    "date": "2026-06-26T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Caffe Lena",
+    "location": "Caffe Lena, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Gail Ann Dorsey- Caffe Lena. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-art-n-shawna-at-cooperstown-distilling-saratoga-2026-06-26-cooperstown-distilling-sara",
+    "name": "Art n Shawna at Cooperstown Distilling Saratoga",
+    "title": "Art n Shawna at Cooperstown Distilling Saratoga",
+    "category": "live music",
+    "date": "2026-06-26T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Cooperstown Distilling Saratoga",
+    "location": "Cooperstown Distilling Saratoga, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Art n Shawna- Cooperstown Distilling Saratoga. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-sugar-pill-at-druthers-saratoga-2026-06-26-druthers-saratoga-saratoga-springs",
+    "name": "Sugar Pill at Druthers Saratoga",
+    "title": "Sugar Pill at Druthers Saratoga",
+    "category": "live music",
+    "date": "2026-06-26T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Druthers Saratoga",
+    "location": "Druthers Saratoga, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Sugar Pill- Druthers Saratoga. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-nicolas-stark-these-dudes-at-van-slycks-at-rivers-casino-2026-06-26-van-slycks-at-rive",
+    "name": "Nicolas Stark & These Dudes at Van Slycks at Rivers Casino",
+    "title": "Nicolas Stark & These Dudes at Van Slycks at Rivers Casino",
+    "category": "live music",
+    "date": "2026-06-26T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Van Slycks at Rivers Casino",
+    "location": "Van Slycks at Rivers Casino, Schenectady, NY",
+    "url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Nicolas Stark & These Dudes- Van Slycks at Rivers Casino. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.8142,
+      "lng": -73.9396
+    },
+    "neighborhood": "Schenectady"
+  },
+  {
+    "id": "barpeople-karaoke-at-september-too-2026-06-26-september-too-albany",
+    "name": "Karaoke at September Too",
+    "title": "Karaoke at September Too",
+    "category": "karaoke",
+    "date": "2026-06-26T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "September Too",
+    "location": "September Too, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-karaoke-at-lark-tavern-2026-06-26-lark-tavern-albany",
+    "name": "Karaoke at Lark Tavern",
+    "title": "Karaoke at Lark Tavern",
+    "category": "karaoke",
+    "date": "2026-06-26T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Lark Tavern",
+    "location": "Lark Tavern, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-karaoke-at-tres-mejas-mexican-restaurant-2026-06-26-tres-mejas-mexican-restaurant-glen",
+    "name": "Karaoke at Tres Mejas Mexican Restaurant",
+    "title": "Karaoke at Tres Mejas Mexican Restaurant",
+    "category": "karaoke",
+    "date": "2026-06-26T20:00:00-04:00",
+    "time": "8:00 PM",
+    "venue": "Tres Mejas Mexican Restaurant",
+    "location": "Tres Mejas Mexican Restaurant, Glens Falls, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-karaoke-at-lawrence-tavern-2026-06-26-lawrence-tavern-glens-falls",
+    "name": "Karaoke at Lawrence Tavern",
+    "title": "Karaoke at Lawrence Tavern",
+    "category": "karaoke",
+    "date": "2026-06-26T20:30:00-04:00",
+    "time": "8:30 PM",
+    "venue": "Lawrence Tavern",
+    "location": "Lawrence Tavern, Glens Falls, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.3095,
+      "lng": -73.644
+    },
+    "neighborhood": "Glens Falls"
+  },
+  {
+    "id": "barpeople-katalyst-at-nine-maple-2026-06-26-nine-maple-saratoga-springs",
+    "name": "Katalyst at Nine Maple",
+    "title": "Katalyst at Nine Maple",
+    "category": "live music",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Nine Maple",
+    "location": "Nine Maple, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Katalyst- Nine Maple. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-electic-rodeo-at-wildhorse-2026-06-26-wildhorse-saratoga-springs",
+    "name": "Electic Rodeo at Wildhorse",
+    "title": "Electic Rodeo at Wildhorse",
+    "category": "live music",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Wildhorse",
+    "location": "Wildhorse, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Electic Rodeo- Wildhorse. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-dirt-cheap-at-duffy-s-tavern-2026-06-26-duffy-s-tavern-lake-george",
+    "name": "Dirt Cheap at Duffy's Tavern",
+    "title": "Dirt Cheap at Duffy's Tavern",
+    "category": "live music",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Duffy's Tavern",
+    "location": "Duffy's Tavern, Lake George, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Dirt Cheap- Duffy's Tavern. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.4262,
+      "lng": -73.7123
+    },
+    "neighborhood": "Lake George"
+  },
+  {
+    "id": "barpeople-the-refrigerators-at-lake-george-beach-club-2026-06-26-lake-george-beach-club-lake-geo",
+    "name": "The Refrigerators at Lake George Beach Club",
+    "title": "The Refrigerators at Lake George Beach Club",
+    "category": "live music",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Lake George Beach Club",
+    "location": "Lake George Beach Club, Lake George, NY",
+    "url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/warren-county-weekly-live-music",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "The Refrigerators- Lake George Beach Club. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "live music",
+      "local"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.4262,
+      "lng": -73.7123
+    },
+    "neighborhood": "Lake George"
+  },
+  {
+    "id": "barpeople-dj-night-at-sound-bar-2026-06-26-sound-bar-saratoga-springs",
+    "name": "DJ night at Sound Bar",
+    "title": "DJ night at Sound Bar",
+    "category": "dj",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Sound Bar",
+    "location": "Sound Bar, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/dj-events",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/dj-events",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring DJ night listed by BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "dj",
+      "nightlife"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-dj-night-at-night-owl-2026-06-26-night-owl-saratoga-springs",
+    "name": "DJ night at Night Owl",
+    "title": "DJ night at Night Owl",
+    "category": "dj",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Night Owl",
+    "location": "Night Owl, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/dj-events",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/dj-events",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring DJ night listed by BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "dj",
+      "nightlife"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-dj-night-at-the-misfit-2026-06-26-the-misfit-saratoga-springs",
+    "name": "DJ night at The Misfit",
+    "title": "DJ night at The Misfit",
+    "category": "dj",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "The Misfit",
+    "location": "The Misfit, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/dj-events",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/dj-events",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring DJ night listed by BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "dj",
+      "nightlife"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-karaoke-at-duffy-s-tavern-2026-06-26-duffy-s-tavern-lake-george",
+    "name": "Karaoke at Duffy\u2019s Tavern",
+    "title": "Karaoke at Duffy\u2019s Tavern",
+    "category": "karaoke",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Duffy\u2019s Tavern",
+    "location": "Duffy\u2019s Tavern, Lake George, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.4262,
+      "lng": -73.7123
+    },
+    "neighborhood": "Lake George"
+  },
+  {
+    "id": "barpeople-karaoke-at-bourbon-street-by-encore-productions-2026-06-26-bourbon-street-by-encore-pr",
+    "name": "Karaoke at Bourbon Street by Encore Productions",
+    "title": "Karaoke at Bourbon Street by Encore Productions",
+    "category": "karaoke",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Bourbon Street by Encore Productions",
+    "location": "Bourbon Street by Encore Productions, Albany, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    },
+    "neighborhood": "Albany"
+  },
+  {
+    "id": "barpeople-karaoke-at-kings-tavern-2026-06-26-kings-tavern-saratoga-springs",
+    "name": "Karaoke at Kings Tavern",
+    "title": "Karaoke at Kings Tavern",
+    "category": "karaoke",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "Kings Tavern",
+    "location": "Kings Tavern, Saratoga Springs, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 43.0831,
+      "lng": -73.7846
+    },
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "barpeople-karaoke-at-tj-s-flightline-by-encore-productions-2026-06-26-tj-s-flightline-by-encore-",
+    "name": "Karaoke at TJ\u2019s Flightline by Encore Productions",
+    "title": "Karaoke at TJ\u2019s Flightline by Encore Productions",
+    "category": "karaoke",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "TJ\u2019s Flightline by Encore Productions",
+    "location": "TJ\u2019s Flightline by Encore Productions, Rotterdam, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "neighborhood": "Rotterdam"
+  },
+  {
+    "id": "barpeople-karaoke-at-jp-s-bar-lounge-2026-06-26-jp-s-bar-lounge-cohoes",
+    "name": "Karaoke at JP\u2019s Bar & Lounge",
+    "title": "Karaoke at JP\u2019s Bar & Lounge",
+    "category": "karaoke",
+    "date": "2026-06-26T21:00:00-04:00",
+    "time": "9:00 PM",
+    "venue": "JP\u2019s Bar & Lounge",
+    "location": "JP\u2019s Bar & Lounge, Cohoes, NY",
+    "url": "https://www.barpeople.com/bar-events-1",
+    "source": "BarPeople",
+    "source_url": "https://www.barpeople.com/bar-events-1",
+    "source_note": "BarPeople weekly listing; call the venue to confirm.",
+    "description": "Recurring karaoke listing from BarPeople. BarPeople weekly listing; call the venue to confirm.",
+    "tags": [
+      "barpeople",
+      "karaoke",
+      "recurring"
+    ],
+    "ticket_status": "check venue",
+    "price_note": "Check venue",
+    "coordinates": {
+      "lat": 42.7742,
+      "lng": -73.7001
+    },
+    "neighborhood": "Cohoes"
   },
   {
     "id": "event-albany-institute-blanche-lazzell-2026-06-27",
@@ -266,9 +5449,9 @@
   },
   {
     "_meta": {
-      "items_hash": "9b114544c6a4e869c2bd8584437c69632965b850f99ff842c40228942b39c07e",
+      "items_hash": "67e8047f4c430be97ceef148e1982924b5cd17f700f06f15ab5f2a5d57d76ab4",
       "items_changed": false,
-      "item_count": 11
+      "item_count": 208
     }
   }
 ]
