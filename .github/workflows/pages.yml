@@ -50,7 +50,19 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
+      - name: Detect Google Places credentials
+        id: google_places
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+        run: |
+          if [ -n "$GOOGLE_API_KEY$GOOGLE_PLACES_API_KEY" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Generate data using real APIs
+        if: steps.google_places.outputs.available == 'true'
         env:
           PROFILE: ${{ vars.PROFILE || 'default' }}
           RESTAURANT_SOURCE: ${{ inputs.restaurant_source || vars.RESTAURANT_SOURCE || 'auto' }}
@@ -70,6 +82,10 @@ jobs:
           AI_RESTAURANTS_DATA: ${{ secrets.AI_RESTAURANTS_DATA }}
           AI_EVENTS_DATA: ${{ secrets.AI_EVENTS_DATA }}
         run: python -m happenstance.cli aggregate
+      - name: Preserve checked-in rich data without Google credentials
+        if: steps.google_places.outputs.available != 'true'
+        run: |
+          echo "::warning::GOOGLE_API_KEY or GOOGLE_PLACES_API_KEY is not configured; deploying checked-in docs data instead of generating a downgraded feed."
       - name: Validate generated freshness
         run: |
           python - <<'PY'
@@ -79,10 +95,14 @@ jobs:
           from pathlib import Path
 
           events = json.loads(Path("docs/events.json").read_text())
+          restaurants = json.loads(Path("docs/restaurants.json").read_text())
           meta = json.loads(Path("docs/meta.json").read_text())
           items = [item for item in events if "_meta" not in item]
+          restaurant_items = [item for item in restaurants if "_meta" not in item]
           if not items:
               sys.exit("No events generated; refusing to deploy stale/empty feed")
+          if not restaurant_items:
+              sys.exit("No restaurants generated; refusing to deploy stale/empty feed")
 
           now = datetime.now(timezone.utc)
           cutoff = now + timedelta(days=45)
@@ -104,6 +124,10 @@ jobs:
           generated_at = datetime.fromisoformat(meta["generated_at"].replace("Z", "+00:00"))
           if now - generated_at > timedelta(minutes=75):
               sys.exit("Generated metadata timestamp is stale")
+
+          google_restaurants = sum(1 for item in restaurant_items if item.get("google_place_id"))
+          if google_restaurants < 40:
+              sys.exit(f"Only {google_restaurants} Google Places restaurants generated; refusing to deploy downgraded feed")
           print(f"Freshness validation passed for {len(items)} events")
           PY
       - name: Configure GitHub Pages

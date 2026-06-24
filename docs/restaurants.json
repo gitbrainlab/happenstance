@@ -64,9 +64,9 @@
     "tags": [
       "Sports Bar",
       "Indoor Golf Course",
+      "Bar",
       "Golf Course",
       "Athletic Field",
-      "Bar",
       "Sports Activity Location",
       "Restaurant",
       "Food"
@@ -209,13 +209,13 @@
     "match_reason": "Popular restaurant in Niskayuna",
     "tags": [
       "Barbecue Restaurant",
-      "Sandwich Shop",
       "Catering Service",
+      "Sandwich Shop",
       "Food Delivery",
-      "Service",
       "Restaurant",
       "Food",
-      "Point Of Interest"
+      "Point Of Interest",
+      "Service"
     ],
     "location": {
       "lat": 42.816378,
@@ -405,12 +405,12 @@
     "match_reason": "Popular restaurant in Glens Falls",
     "tags": [
       "Cafe",
-      "Lounge Bar",
-      "Brunch Restaurant",
       "Coffee Shop",
       "Tea House",
+      "Lounge Bar",
       "Night Club",
       "Bakery",
+      "Brunch Restaurant",
       "Food Store"
     ],
     "location": {
@@ -505,13 +505,13 @@
     "match_reason": "Cheery cafe with exposed-brick walls dispensing homestyle breakfast fare, plus sandwiches & salads.",
     "tags": [
       "Breakfast Restaurant",
-      "Coffee Shop",
-      "Brunch Restaurant",
       "Family Restaurant",
+      "Coffee Shop",
       "Cafe",
+      "Brunch Restaurant",
       "Food Store",
-      "Store",
-      "Restaurant"
+      "Restaurant",
+      "Food"
     ],
     "location": {
       "lat": 43.0026522,
@@ -546,50 +546,49 @@
     "neighborhood": "Ballston Spa"
   },
   {
-    "id": "ChIJAxh6xkNFDhMRAL--neGzlDQ",
-    "google_place_id": "ChIJAxh6xkNFDhMRAL--neGzlDQ",
-    "name": "Georgia Restaurant",
+    "id": "ChIJ-z-vQqZFDhMR8h9JjBd-1Gw",
+    "google_place_id": "ChIJ-z-vQqZFDhMR8h9JjBd-1Gw",
+    "name": "AZAR",
     "cuisine": "Restaurant",
-    "address": "123 Main Street, St Julian's STJ 1011, Malta",
-    "url": "https://maps.google.com/?cid=3788850968120966912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "menu_url": "https://www.google.com/search?q=Georgia+Restaurant+menu+123+Main+Street%2C+St+Julian%27s+STJ+1011%2C+Malta",
+    "address": "Triq Manwel Dimech Tas-Sliema, Sliema SLM 1055, Malta",
+    "url": "https://maps.google.com/?cid=7842031490761826290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=AZAR+menu+Triq+Manwel+Dimech+Tas-Sliema%2C+Sliema+SLM+1055%2C+Malta",
     "menu_status": "search",
     "match_reason": "Popular restaurant in Malta",
     "tags": [
       "Restaurant",
-      "Eastern European Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 35.9186207,
-      "lng": 14.490726100000002
+      "lat": 35.9100463,
+      "lng": 14.497973600000002
     },
-    "phone": "9937 5363",
-    "website": "http://www.georgianmalta.com/",
+    "phone": "9939 3876",
+    "website": "https://www.azarrestaurant.com/",
     "hours": [
-      "Monday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Tuesday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Wednesday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Thursday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Friday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Saturday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Sunday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      "Monday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Tuesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Wednesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Thursday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Friday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: 6:30\u2009\u2013\u20099:30\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Tuesday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Wednesday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Thursday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Friday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Saturday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Sunday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      "Monday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Tuesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Wednesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Thursday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Friday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: 6:30\u2009\u2013\u20099:30\u202fPM"
     ],
     "business_status": "OPERATIONAL",
     "rating": 4.9,
-    "review_count": 3052,
+    "review_count": 589,
     "description": "Popular restaurant in Malta",
     "neighborhood": "Malta"
   },
@@ -652,13 +651,13 @@
     "match_reason": "Popular restaurant in Cohoes",
     "tags": [
       "Restaurant",
-      "Pizza Restaurant",
       "Gyro Restaurant",
       "Pizza Delivery",
-      "Italian Restaurant",
+      "Pizza Restaurant",
       "Meal Delivery",
+      "Food Delivery",
       "Meal Takeaway",
-      "Food Delivery"
+      "Italian Restaurant"
     ],
     "location": {
       "lat": 42.773190799999995,
@@ -991,52 +990,53 @@
     "neighborhood": "Albany"
   },
   {
-    "id": "ChIJm4xRdto53okRho4LkTFzdkE",
-    "google_place_id": "ChIJm4xRdto53okRho4LkTFzdkE",
-    "name": "Osteria Danny",
-    "cuisine": "Italian",
-    "address": "26 Henry St, Saratoga Springs, NY 12866, USA",
-    "url": "https://maps.google.com/?cid=4717084316441218694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "menu_url": "https://www.google.com/search?q=Osteria+Danny+menu+26+Henry+St%2C+Saratoga+Springs%2C+NY+12866%2C+USA",
+    "id": "ChIJ-QP97GI33okR164n9U7ZKAU",
+    "google_place_id": "ChIJ-QP97GI33okR164n9U7ZKAU",
+    "name": "Olde Bryan Inn",
+    "cuisine": "American",
+    "address": "123 Maple Ave, Saratoga Springs, NY 12866, USA",
+    "url": "https://maps.google.com/?cid=371785902401760983&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Olde+Bryan+Inn+menu+123+Maple+Ave%2C+Saratoga+Springs%2C+NY+12866%2C+USA",
     "menu_status": "search",
-    "match_reason": "Trattoria featuring modern & classic Italian fare, including pastas & mains, in a convivial space.",
+    "match_reason": "Old stone house with Revolutionary-era ties now supplying sandwiches, steaks & hearty American fare.",
     "tags": [
-      "Italian Restaurant",
+      "American Restaurant",
+      "Bar",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 43.079745599999995,
-      "lng": -73.7829299
+      "lat": 43.0870878,
+      "lng": -73.7809592
     },
-    "phone": "(518) 709-5221",
-    "website": "http://www.osteriadanny.com/",
+    "phone": "(518) 587-2990",
+    "website": "http://www.oldebryaninn.com/",
     "hours": [
-      "Monday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 5:00\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 5:00\u2009\u2013\u200910:00\u202fPM"
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 5:00\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 5:00\u2009\u2013\u200910:00\u202fPM"
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.7,
-    "review_count": 609,
-    "price_level": 3,
-    "description": "Trattoria featuring modern & classic Italian fare, including pastas & mains, in a convivial space.",
+    "rating": 4.6,
+    "review_count": 3283,
+    "price_level": 2,
+    "description": "Old stone house with Revolutionary-era ties now supplying sandwiches, steaks & hearty American fare.",
     "neighborhood": "Saratoga Springs"
   },
   {
@@ -1051,8 +1051,8 @@
     "match_reason": "Popular restaurant in Troy",
     "tags": [
       "American Restaurant",
-      "Cocktail Bar",
       "Wine Bar",
+      "Cocktail Bar",
       "Bar",
       "Restaurant",
       "Food",
@@ -1202,9 +1202,9 @@
     "match_reason": "Popular restaurant in Clifton Park",
     "tags": [
       "Restaurant",
+      "American Restaurant",
       "Meal Takeaway",
       "Bar",
-      "American Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
@@ -1245,7 +1245,7 @@
     "id": "ChIJbwX4mnUN3okRl_RO0otpKuw",
     "google_place_id": "ChIJbwX4mnUN3okRl_RO0otpKuw",
     "name": "MOSU",
-    "cuisine": "Korean",
+    "cuisine": "Sushi",
     "address": "111 Wolf Rd Ste 1, Albany, NY 12205, USA",
     "url": "https://maps.google.com/?cid=17017530191222600855&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "menu_url": "https://www.google.com/search?q=MOSU+menu+111+Wolf+Rd+Ste+1%2C+Albany%2C+NY+12205%2C+USA",
@@ -1253,12 +1253,12 @@
     "match_reason": "Asian-style BBQ & Chinese hot pot are matched by craft cocktails at this upscale, artful restaurant.",
     "tags": [
       "Asian Restaurant",
+      "Yakiniku Restaurant",
       "Korean Barbecue Restaurant",
       "Hot Pot Restaurant",
-      "Yakiniku Restaurant",
+      "Japanese Restaurant",
       "Korean Restaurant",
       "Bar",
-      "Japanese Restaurant",
       "Restaurant"
     ],
     "location": {
@@ -1344,54 +1344,49 @@
     "neighborhood": "Lake George"
   },
   {
-    "id": "ChIJQQkGpfbR34kRBSVPp1cqRpQ",
-    "google_place_id": "ChIJQQkGpfbR34kRBSVPp1cqRpQ",
-    "name": "Common Roots Brewing Company",
+    "id": "ChIJQQe4ZcjR34kRsJ_pKdQBv5s",
+    "google_place_id": "ChIJQQe4ZcjR34kRsJ_pKdQBv5s",
+    "name": "Bastard Restobar",
     "cuisine": "Restaurant",
-    "address": "58 Saratoga Ave, South Glens Falls, NY 12803, USA",
-    "url": "https://maps.google.com/?cid=10684273721940583685&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "menu_url": "https://www.google.com/search?q=Common+Roots+Brewing+Company+menu+58+Saratoga+Ave%2C+South+Glens+Falls%2C+NY+12803%2C+USA",
+    "address": "72 South St, Glens Falls, NY 12801, USA",
+    "url": "https://maps.google.com/?cid=11222690807178436528&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Bastard+Restobar+menu+72+South+St%2C+Glens+Falls%2C+NY+12801%2C+USA",
     "menu_status": "search",
     "match_reason": "Popular restaurant in Glens Falls",
     "tags": [
-      "Brewpub",
-      "Event Venue",
-      "Pub",
-      "Bar",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 43.2952392,
-      "lng": -73.6365465
+      "lat": 43.3087394,
+      "lng": -73.6473433
     },
-    "phone": "(518) 409-8248",
-    "website": "http://www.commonrootsbrewing.com/",
+    "phone": "(518) 223-0290",
+    "website": "https://bastardrestobar.com/",
     "hours": [
-      "Monday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 12:00\u2009\u2013\u200910:00\u202fPM",
-      "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
+      "Monday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 3:30\u2009\u2013\u20097:30\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 12:00\u2009\u2013\u200910:00\u202fPM",
-      "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
+      "Monday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 3:30\u2009\u2013\u20097:30\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.6,
-    "review_count": 1009,
-    "price_level": 2,
+    "rating": 4.9,
+    "review_count": 158,
     "description": "Popular restaurant in Glens Falls",
     "neighborhood": "Glens Falls"
   },
@@ -1493,49 +1488,54 @@
     "neighborhood": "Ballston Spa"
   },
   {
-    "id": "ChIJ-z-vQqZFDhMR8h9JjBd-1Gw",
-    "google_place_id": "ChIJ-z-vQqZFDhMR8h9JjBd-1Gw",
-    "name": "AZAR",
-    "cuisine": "Restaurant",
-    "address": "Triq Manwel Dimech Tas-Sliema, Sliema SLM 1055, Malta",
-    "url": "https://maps.google.com/?cid=7842031490761826290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "menu_url": "https://www.google.com/search?q=AZAR+menu+Triq+Manwel+Dimech+Tas-Sliema%2C+Sliema+SLM+1055%2C+Malta",
+    "id": "ChIJWYEUHPhODhMRe_8HbZSpjow",
+    "google_place_id": "ChIJWYEUHPhODhMRe_8HbZSpjow",
+    "name": "Venus Restaurant",
+    "cuisine": "Seafood",
+    "address": "il, Triq Gandoffli, St Paul's Bay SPB10, Malta",
+    "url": "https://maps.google.com/?cid=10128219066952318843&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Venus+Restaurant+menu+il%2C+Triq+Gandoffli%2C+St+Paul%27s+Bay+SPB10%2C+Malta",
     "menu_status": "search",
     "match_reason": "Popular restaurant in Malta",
     "tags": [
+      "Seafood Restaurant",
+      "Mediterranean Restaurant",
+      "Fine Dining Restaurant",
+      "Steak House",
+      "Italian Restaurant",
+      "European Restaurant",
       "Restaurant",
-      "Food",
-      "Point Of Interest",
-      "Establishment"
+      "Food"
     ],
     "location": {
-      "lat": 35.9100463,
-      "lng": 14.497973600000002
+      "lat": 35.95095310000001,
+      "lng": 14.4141205
     },
-    "phone": "9939 3876",
-    "website": "https://www.azarrestaurant.com/",
+    "phone": "9984 6767",
+    "website": "http://venusrestaurantmalta.com/",
     "hours": [
-      "Monday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Tuesday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Wednesday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Thursday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Friday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Saturday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Sunday: 6:30\u2009\u2013\u20099:30\u202fPM"
+      "Monday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Tuesday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Wednesday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Thursday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Friday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Saturday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Sunday: 6:00\u2009\u2013\u200910:30\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Tuesday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Wednesday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Thursday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Friday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Saturday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Sunday: 6:30\u2009\u2013\u20099:30\u202fPM"
+      "Monday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Tuesday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Wednesday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Thursday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Friday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Saturday: 6:00\u2009\u2013\u200910:30\u202fPM",
+      "Sunday: 6:00\u2009\u2013\u200910:30\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.9,
-    "review_count": 589,
+    "rating": 4.8,
+    "review_count": 1894,
+    "price_level": 2,
     "description": "Popular restaurant in Malta",
     "neighborhood": "Malta"
   },
@@ -1703,8 +1703,8 @@
     "tags": [
       "Seafood Restaurant",
       "Californian Restaurant",
-      "American Restaurant",
       "Bar",
+      "American Restaurant",
       "Restaurant",
       "Food",
       "Point Of Interest",
@@ -1901,9 +1901,9 @@
       "American Restaurant",
       "Vegan Restaurant",
       "Vegetarian Restaurant",
-      "Bar",
       "Live Music Venue",
       "Event Venue",
+      "Bar",
       "Restaurant",
       "Food"
     ],
@@ -1940,53 +1940,50 @@
     "neighborhood": "Albany"
   },
   {
-    "id": "ChIJ-QP97GI33okR164n9U7ZKAU",
-    "google_place_id": "ChIJ-QP97GI33okR164n9U7ZKAU",
-    "name": "Olde Bryan Inn",
-    "cuisine": "American",
-    "address": "123 Maple Ave, Saratoga Springs, NY 12866, USA",
-    "url": "https://maps.google.com/?cid=371785902401760983&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "menu_url": "https://www.google.com/search?q=Olde+Bryan+Inn+menu+123+Maple+Ave%2C+Saratoga+Springs%2C+NY+12866%2C+USA",
+    "id": "ChIJ-7NnDjk53okREX6JRluvX9Q",
+    "google_place_id": "ChIJ-7NnDjk53okREX6JRluvX9Q",
+    "name": "Kindred",
+    "cuisine": "Restaurant",
+    "address": "84 Henry St, Saratoga Springs, NY 12866, USA",
+    "url": "https://maps.google.com/?cid=15303142865388535313&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Kindred+menu+84+Henry+St%2C+Saratoga+Springs%2C+NY+12866%2C+USA",
     "menu_status": "search",
-    "match_reason": "Old stone house with Revolutionary-era ties now supplying sandwiches, steaks & hearty American fare.",
+    "match_reason": "Popular restaurant in Saratoga Springs",
     "tags": [
-      "American Restaurant",
-      "Bar",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 43.0870878,
-      "lng": -73.7809592
+      "lat": 43.0822088,
+      "lng": -73.782121
     },
-    "phone": "(518) 587-2990",
-    "website": "http://www.oldebryaninn.com/",
+    "phone": "(518) 886-1198",
+    "website": "https://www.kindredsaratoga.com/",
     "hours": [
       "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
-      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM"
+      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
+      "Saturday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
+      "Sunday: Closed"
     ],
     "open_now": false,
     "current_hours": [
       "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
-      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM"
+      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
+      "Saturday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
+      "Sunday: Closed"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.6,
-    "review_count": 3283,
-    "price_level": 2,
-    "description": "Old stone house with Revolutionary-era ties now supplying sandwiches, steaks & hearty American fare.",
+    "rating": 4.8,
+    "review_count": 130,
+    "description": "Popular restaurant in Saratoga Springs",
     "neighborhood": "Saratoga Springs"
   },
   {
@@ -2001,10 +1998,10 @@
     "match_reason": "Barbecue chain serving Southern-style meats & draft brews in a retro setting (most have live music).",
     "tags": [
       "Barbecue Restaurant",
-      "American Restaurant",
-      "Restaurant",
       "Catering Service",
       "Food Delivery",
+      "American Restaurant",
+      "Restaurant",
       "Food",
       "Point Of Interest",
       "Service"
@@ -2153,11 +2150,11 @@
     "tags": [
       "Bar & Grill",
       "Bar And Grill",
-      "Sports Bar",
       "Banquet Hall",
+      "Sports Bar",
       "Pub",
-      "Bar",
       "Live Music Venue",
+      "Bar",
       "Event Venue"
     ],
     "location": {
@@ -2244,7 +2241,7 @@
     "id": "ChIJJZieAzfF34kRHSQNwibCIME",
     "google_place_id": "ChIJJZieAzfF34kRHSQNwibCIME",
     "name": "The Lagoon",
-    "cuisine": "Pizza",
+    "cuisine": "Bar & Grill",
     "address": "204 Canada St, Lake George, NY 12845, USA",
     "url": "https://maps.google.com/?cid=13916336320295019549&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "menu_url": "https://www.google.com/search?q=The+Lagoon+menu+204+Canada+St%2C+Lake+George%2C+NY+12845%2C+USA",
@@ -2252,8 +2249,8 @@
     "match_reason": "Laid-back eatery offering pizzas, seafood & American favorites, plus lake views & entertainment.",
     "tags": [
       "Restaurant",
-      "Pizza Restaurant",
       "Bar And Grill",
+      "Pizza Restaurant",
       "Bar",
       "Food",
       "Point Of Interest",
@@ -2292,49 +2289,54 @@
     "neighborhood": "Lake George"
   },
   {
-    "id": "ChIJQQe4ZcjR34kRsJ_pKdQBv5s",
-    "google_place_id": "ChIJQQe4ZcjR34kRsJ_pKdQBv5s",
-    "name": "Bastard Restobar",
-    "cuisine": "Restaurant",
-    "address": "72 South St, Glens Falls, NY 12801, USA",
-    "url": "https://maps.google.com/?cid=11222690807178436528&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "menu_url": "https://www.google.com/search?q=Bastard+Restobar+menu+72+South+St%2C+Glens+Falls%2C+NY+12801%2C+USA",
+    "id": "ChIJcxGYVEHR34kR5aTXxESsxiI",
+    "google_place_id": "ChIJcxGYVEHR34kR5aTXxESsxiI",
+    "name": "Mint",
+    "cuisine": "Vegan",
+    "address": "80 Warren St, Glens Falls, NY 12801, USA",
+    "url": "https://maps.google.com/?cid=2505879654038480101&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Mint+menu+80+Warren+St%2C+Glens+Falls%2C+NY+12801%2C+USA",
     "menu_status": "search",
     "match_reason": "Popular restaurant in Glens Falls",
     "tags": [
+      "Cocktail Bar",
+      "Vegan Restaurant",
+      "Vegetarian Restaurant",
+      "Bar",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 43.3087394,
-      "lng": -73.6473433
+      "lat": 43.3102735,
+      "lng": -73.6404297
     },
-    "phone": "(518) 223-0290",
-    "website": "https://bastardrestobar.com/",
+    "phone": "(518) 741-0584",
+    "website": "http://www.mint518.com/",
     "hours": [
-      "Monday: 4:30\u2009\u2013\u20098:00\u202fPM",
-      "Tuesday: Closed",
-      "Wednesday: Closed",
-      "Thursday: 4:30\u2009\u2013\u20098:00\u202fPM",
-      "Friday: 4:30\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 4:30\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 3:30\u2009\u2013\u20097:30\u202fPM"
+      "Monday: 5:00\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Thursday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 4:30\u2009\u2013\u20098:00\u202fPM",
-      "Tuesday: Closed",
-      "Wednesday: Closed",
-      "Thursday: 4:30\u2009\u2013\u20098:00\u202fPM",
-      "Friday: 4:30\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 4:30\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 3:30\u2009\u2013\u20097:30\u202fPM"
+      "Monday: 5:00\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Thursday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.9,
-    "review_count": 158,
+    "rating": 4.7,
+    "review_count": 401,
+    "price_level": 2,
     "description": "Popular restaurant in Glens Falls",
     "neighborhood": "Glens Falls"
   },
@@ -2401,8 +2403,8 @@
     "match_reason": "Popular restaurant in Ballston Spa",
     "tags": [
       "Brewery",
-      "Manufacturer",
       "Food",
+      "Manufacturer",
       "Point Of Interest",
       "Service",
       "Establishment"
@@ -2450,8 +2452,8 @@
     "match_reason": "Popular restaurant in Malta",
     "tags": [
       "Steak House",
-      "Breakfast Restaurant",
       "Turkish Restaurant",
+      "Breakfast Restaurant",
       "Bar",
       "Restaurant",
       "Food",
@@ -2598,8 +2600,8 @@
     "match_reason": "Popular restaurant in Watervliet",
     "tags": [
       "Restaurant",
-      "Bar And Grill",
       "Sports Bar",
+      "Bar And Grill",
       "Bar",
       "Food",
       "Point Of Interest",
@@ -2832,50 +2834,55 @@
     "neighborhood": "Albany"
   },
   {
-    "id": "ChIJ-7NnDjk53okREX6JRluvX9Q",
-    "google_place_id": "ChIJ-7NnDjk53okREX6JRluvX9Q",
-    "name": "Kindred",
+    "id": "ChIJP-GoINE53okRMhKuV5jYycY",
+    "google_place_id": "ChIJP-GoINE53okRMhKuV5jYycY",
+    "name": "Druthers Brewing Company",
     "cuisine": "Restaurant",
-    "address": "84 Henry St, Saratoga Springs, NY 12866, USA",
-    "url": "https://maps.google.com/?cid=15303142865388535313&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "menu_url": "https://www.google.com/search?q=Kindred+menu+84+Henry+St%2C+Saratoga+Springs%2C+NY+12866%2C+USA",
+    "address": "381 Broadway, Saratoga Springs, NY 12866, USA",
+    "url": "https://maps.google.com/?cid=14324218238646227506&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Druthers+Brewing+Company+menu+381+Broadway%2C+Saratoga+Springs%2C+NY+12866%2C+USA",
     "menu_status": "search",
-    "match_reason": "Popular restaurant in Saratoga Springs",
+    "match_reason": "Lively brew pub serving its own craft beers & an eclectic food menu sourced from local ingredients.",
     "tags": [
+      "Brewpub",
+      "Pub",
+      "Brewery",
+      "Bar",
+      "Manufacturer",
       "Restaurant",
       "Food",
-      "Point Of Interest",
-      "Establishment"
+      "Point Of Interest"
     ],
     "location": {
-      "lat": 43.0822088,
-      "lng": -73.782121
+      "lat": 43.0808898,
+      "lng": -73.7860269
     },
-    "phone": "(518) 886-1198",
-    "website": "https://www.kindredsaratoga.com/",
+    "phone": "(518) 306-5275",
+    "website": "http://www.druthersbrewing.com/",
     "hours": [
-      "Monday: Closed",
-      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Thursday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Friday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
-      "Saturday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
-      "Sunday: Closed"
+      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: Closed",
-      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Thursday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Friday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
-      "Saturday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
-      "Sunday: Closed"
+      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.8,
-    "review_count": 130,
-    "description": "Popular restaurant in Saratoga Springs",
+    "rating": 4.4,
+    "review_count": 1258,
+    "price_level": 2,
+    "description": "Lively brew pub serving its own craft beers & an eclectic food menu sourced from local ingredients.",
     "neighborhood": "Saratoga Springs"
   },
   {
@@ -3122,104 +3129,98 @@
     "neighborhood": "Colonie"
   },
   {
-    "id": "ChIJO251AVDE34kR-yAPd-1WX30",
-    "google_place_id": "ChIJO251AVDE34kR-yAPd-1WX30",
-    "name": "Lake George Beach Club",
-    "cuisine": "American",
-    "address": "3 Montcalm St, Lake George, NY 12845, USA",
-    "url": "https://maps.google.com/?cid=9034034955433222395&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "menu_url": "https://www.google.com/search?q=Lake+George+Beach+Club+menu+3+Montcalm+St%2C+Lake+George%2C+NY+12845%2C+USA",
+    "id": "ChIJLZDyknTb34kRCYbpEaSr1S4",
+    "google_place_id": "ChIJLZDyknTb34kRCYbpEaSr1S4",
+    "name": "Antonio's Bayside Bistro",
+    "cuisine": "Italian",
+    "address": "2999 NY-9L, Lake George, NY 12845, USA",
+    "url": "https://maps.google.com/?cid=3374792216947557897&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Antonio%27s+Bayside+Bistro+menu+2999+NY-9L%2C+Lake+George%2C+NY+12845%2C+USA",
     "menu_status": "search",
-    "match_reason": "Lively 2-story haunt on the water featuring classic American dishes, live music & TVs for sports.",
+    "match_reason": "Popular restaurant in Lake George",
     "tags": [
-      "American Restaurant",
-      "Bar",
+      "Italian Restaurant",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 43.424354199999996,
-      "lng": -73.7122791
+      "lat": 43.441549599999995,
+      "lng": -73.6496198
     },
-    "phone": "(518) 685-5418",
-    "website": "http://www.lakegeorgebeachclub.com/",
+    "phone": "(518) 656-5225",
+    "website": "https://antoniosbayside.com/",
     "hours": [
-      "Monday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Thursday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Friday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Saturday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Sunday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
+      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Thursday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Friday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Saturday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Sunday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
+      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.3,
-    "review_count": 1901,
-    "price_level": 2,
-    "description": "Lively 2-story haunt on the water featuring classic American dishes, live music & TVs for sports.",
+    "rating": 4.5,
+    "review_count": 225,
+    "description": "Popular restaurant in Lake George",
     "neighborhood": "Lake George"
   },
   {
-    "id": "ChIJcxGYVEHR34kR5aTXxESsxiI",
-    "google_place_id": "ChIJcxGYVEHR34kR5aTXxESsxiI",
-    "name": "Mint",
-    "cuisine": "Vegan",
-    "address": "80 Warren St, Glens Falls, NY 12801, USA",
-    "url": "https://maps.google.com/?cid=2505879654038480101&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "menu_url": "https://www.google.com/search?q=Mint+menu+80+Warren+St%2C+Glens+Falls%2C+NY+12801%2C+USA",
+    "id": "ChIJQai6OgDR34kRbukUk0bUEtk",
+    "google_place_id": "ChIJQai6OgDR34kRbukUk0bUEtk",
+    "name": "Scratch Kitchen",
+    "cuisine": "American",
+    "address": "21 Ridge St, Glens Falls, NY 12801, USA",
+    "url": "https://maps.google.com/?cid=15641797855391574382&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Scratch+Kitchen+menu+21+Ridge+St%2C+Glens+Falls%2C+NY+12801%2C+USA",
     "menu_status": "search",
     "match_reason": "Popular restaurant in Glens Falls",
     "tags": [
-      "Cocktail Bar",
-      "Vegan Restaurant",
-      "Vegetarian Restaurant",
-      "Bar",
+      "American Restaurant",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 43.3102735,
-      "lng": -73.6404297
+      "lat": 43.310193299999995,
+      "lng": -73.6437332
     },
-    "phone": "(518) 741-0584",
-    "website": "http://www.mint518.com/",
+    "phone": "(518) 338-3641",
+    "website": "https://www.scratchgardenskitchen.com/menu?menu=lunch-menu-1#1",
     "hours": [
-      "Monday: 5:00\u2009\u2013\u20098:00\u202fPM",
-      "Tuesday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Wednesday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Thursday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
+      "Monday: Closed",
+      "Tuesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Wednesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Thursday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Friday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Saturday: 9:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Sunday: Closed"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 5:00\u2009\u2013\u20098:00\u202fPM",
-      "Tuesday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Wednesday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Thursday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
+      "Monday: Closed",
+      "Tuesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Wednesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Thursday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Friday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
+      "Saturday: 9:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
+      "Sunday: Closed"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.7,
-    "review_count": 401,
-    "price_level": 2,
+    "rating": 4.8,
+    "review_count": 150,
     "description": "Popular restaurant in Glens Falls",
     "neighborhood": "Glens Falls"
   },
@@ -3622,8 +3623,8 @@
     "match_reason": "Popular restaurant in Fort Edward",
     "tags": [
       "Sports Complex",
-      "Bar",
       "Event Venue",
+      "Bar",
       "Sports Activity Location",
       "Restaurant",
       "Food",
@@ -3953,7 +3954,7 @@
   },
   {
     "_meta": {
-      "items_hash": "c91176409e62c6e7c1d1efa1688bf128a92af5d707e1fa79a6159263f2e92acb",
+      "items_hash": "11b592e5ad2edd4a8657976472901a32b72d1f111d2f52c50d66a9574f503b6f",
       "items_changed": true,
       "item_count": 80
     }
