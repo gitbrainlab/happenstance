@@ -6,6 +6,7 @@ from happenstance.aggregate import (
     _calculate_distance,
     _cities_match_at_word_boundary,
     _geocode_address,
+    _normalize_restaurants,
 )
 
 
@@ -335,3 +336,32 @@ class TestBuildPairings:
         assert pairings[0]["event"] == "Schenectady Art Walk"
         assert pairings[0]["restaurant"] == "Dinosaur Bar-B-Que"
 
+
+class TestNormalizeRestaurants:
+    """Tests for restaurant normalization."""
+
+    def test_address_does_not_become_town_center_coordinates(self):
+        """Known target areas should not create fake venue coordinates."""
+        cfg = {
+            "region": "Capital Region, NY",
+            "target_areas": [
+                {
+                    "id": "saratoga",
+                    "name": "Saratoga Springs",
+                    "aliases": ["saratoga"],
+                    "center": {"lat": 43.0831, "lng": -73.7846},
+                }
+            ],
+        }
+        restaurants = [
+            {
+                "name": "No Coordinates Cafe",
+                "cuisine": "American",
+                "address": "1 Main St, Saratoga Springs, NY",
+                "url": "https://example.com",
+            }
+        ]
+
+        normalized = _normalize_restaurants(restaurants, cfg)
+
+        assert "location" not in normalized[0]

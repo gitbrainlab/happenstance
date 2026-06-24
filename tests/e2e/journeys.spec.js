@@ -59,7 +59,7 @@ test("explore renders clusters, dense rows, and real event data", async ({ page 
     };
   });
   expect(rowInfo.firstRowHeight).toBeLessThanOrEqual(72);
-  expect(rowInfo.visibleRows).toBeGreaterThanOrEqual(6);
+  expect(rowInfo.visibleRows).toBeGreaterThanOrEqual(5);
 
   await page.screenshot({ path: path.join(ARTIFACT_DIR, "01-explore.png"), fullPage: false });
 });
@@ -92,6 +92,7 @@ test("bottom sheet shows pairings for tapped rows", async ({ page }) => {
 test("timeline, saved, and plan views work from bottom tabs", async ({ page }) => {
   await page.click("#tab-bar [data-view='timeline']");
   await expect(page.locator("#tab-bar [data-view='timeline']")).toHaveAttribute("aria-current", "page");
+  await expect(page.locator(".timeline-day")).toHaveCount(7);
   await expect(page.locator(".timeline-slot")).not.toHaveCount(0);
 
   await page.click("#tab-bar [data-view='saved']");
@@ -109,6 +110,12 @@ test("cluster plan button creates a restaurant plus event plan", async ({ page }
   await page.click("#filter-toggle");
   await page.fill('[data-action="target-input"]', "12866");
   await page.click('[data-action="apply-target"]');
+  await page.locator(".cluster-card .cluster-link").first().click();
+  await page.waitForSelector("body.sheet-open");
+  await expect(page.locator(".bottom-sheet")).toContainText("Address");
+  await page.click(".sheet-backdrop");
+  await expect(page.locator("body")).not.toHaveClass(/sheet-open/);
+
   await page.locator(".cluster-card [data-action='add-cluster-plan']").first().click();
 
   await expect(page.locator("#tab-bar [data-view='plan']")).toHaveAttribute("aria-current", "page");

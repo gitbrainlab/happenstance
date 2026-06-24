@@ -8,7 +8,7 @@
  * - Inline bottom sheet for item detail (replaces full-page detail view)
  * - Plan view: multi-item itinerary builder with live distance, conflict detection,
  *   and pairing suggestions pulled from meta.json pairings data
- * - Timeline view: chronological display of events + restaurant hours across the day
+ * - Timeline view: chronological display of events + restaurant hours across the week
  * - Saved view: localStorage-backed favorites with one-tap plan addition
  * - Pairing context shown lightly in Explore rows (max 2 pills, never dominates)
  * - Haversine distance calculation from simulated/real user location
@@ -486,34 +486,22 @@
   }
 
   function renderTimeline() {
-    const slots = buildTimelineSlots();
+    const days = buildWeekTimelineDays();
+    const slots = days.flatMap((day) => day.slots);
     if (slots.length === 0) {
-      return `<div class="empty"><strong>No timeline items</strong><p>Events need a date, and restaurants need parseable hours.</p></div>`;
+      return `<div class="empty"><strong>No timeline items this week</strong><p>Events need dates, and restaurants need parseable hours.</p></div>`;
     }
 
-    const hours = buildTimelineHours(slots);
     return `
       <section aria-label="Timeline">
         <div class="view-heading">
           <div>
             <h2>Timeline</h2>
-            <p>Events and parseable restaurant hours by start time.</p>
+            <p>Next seven days by local start time.</p>
           </div>
         </div>
         <div class="timeline">
-          ${hours
-            .map((hour) => {
-              const hourSlots = slots.filter((slot) => slot.hour === hour);
-              return `
-                <div class="timeline-hour">
-                  <div class="timeline-time">${escapeHTML(formatHour(hour))}</div>
-                  <div class="timeline-stack">
-                    ${hourSlots.map(renderTimelineSlot).join("")}
-                  </div>
-                </div>
-              `;
-            })
-            .join("")}
+          ${days.map(renderTimelineDay).join("")}
         </div>
       </section>
     `;
@@ -605,12 +593,21 @@
     const distance = renderClusterDistance(cluster);
     const firstEvent = events[0];
     const firstRestaurant = restaurants[0];
+    const restaurantLinks = restaurants
+      .slice(0, 3)
+      .map((restaurant) => `
+        <button class="cluster-link" type="button" data-action="open-sheet" data-type="restaurant" data-id="${escapeAttr(restaurant.id)}">
+          ${escapeHTML(truncate(restaurant.name, 22))}
+        </button>
+      `)
+      .join("");
     return `
       <article class="cluster-card">
         <div>
           <h3>${escapeHTML(cluster.title || `Head to ${cluster.area || "nearby"}`)}</h3>
           <p>${escapeHTML(cluster.reason || "Good event and dining density nearby.")}</p>
           <p>${escapeHTML([distance, firstEvent ? firstEvent.name : "", firstRestaurant ? `then ${firstRestaurant.name}` : ""].filter(Boolean).join(" · "))}</p>
+          ${restaurantLinks ? `<div class="cluster-links" aria-label="Restaurant details">${restaurantLinks}</div>` : ""}
         </div>
         <button class="action-button primary" type="button" data-action="add-cluster-plan" data-cluster-id="${escapeAttr(cluster.id)}">Plan</button>
       </article>
@@ -728,8 +725,9 @@
             <h3>${escapeHTML(item.name)}</h3>
             <p>${escapeHTML(planItem.type === "restaurant" ? restaurantMeta(item) : eventMeta(item))}</p>
           </div>
-          <div>
+          <div class="plan-card-actions">
             ${renderOpenStatus(item)}
+            <button class="action-button" type="button" data-action="open-sheet" data-type="${planItem.type}" data-id="${escapeAttr(item.id)}">Details</button>
             <button class="action-button danger" type="button" data-action="remove-plan" data-index="${index}" aria-label="Remove">×</button>
           </div>
         </div>
@@ -1072,6 +1070,26 @@
     `;
   }
 
+  function renderTimelineDay(day) {
+    const dateLabel = day.date.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+    const countLabel = `${day.slots.length} item${day.slots.length === 1 ? "" : "s"}`;
+    return `
+      <section class="timeline-day" aria-label="${escapeAttr(dateLabel)}">
+        <div class="timeline-day-header">
+          <h3>${escapeHTML(dateLabel)}</h3>
+          <span>${escapeHTML(countLabel)}</span>
+        </div>
+        <div class="timeline-stack">
+          ${
+            day.slots.length
+              ? day.slots.map(renderTimelineSlot).join("")
+              : `<div class="timeline-empty">No scheduled items</div>`
+          }
+        </div>
+      </section>
+    `;
+  }
+
   function renderPlanConnector(current, next) {
     const km = haversineKm(getCoords(current), getCoords(next));
     if (!Number.isFinite(km)) return `<div class="connector">Walk time unavailable</div>`;
@@ -1105,40 +1123,51 @@
     return `${livePlan.length} item${livePlan.length === 1 ? "" : "s"} · ${totalWalk} · ${range}`;
   }
 
-  function buildTimelineSlots() {
-    const restaurantSlots = state.data.restaurants
-      .map((item) => {
-        const hours = parseHours(item.hours);
-        if (!hours) return null;
+  function buildWeekTimelineDays() {
+    const start = startOfLocalDay(new Date());
+    const days = Array.from({ length: 7 }, (_, index) => ({
+      date: addDays(start, index),
+      slots: [],
+    }));
+    const end = addDays(start, days.length);
+
+    const restaurantSlots = state.data.restaurants.flatMap((item) => {
+      const hours = parseHours(item.hours);
+      if (!hours) return [];
+      return days.map((day) => {
+        const open = copyTimeToDay(day.date, hours.open);
+        const close = copyTimeToDay(day.date, hours.close);
+        if (close <= open) close.setDate(close.getDate() + 1);
         return {
           type: "restaurant",
           item,
-          hour: hours.open.getHours(),
-          duration: `${formatTime(hours.open)}-${formatTime(hours.close)}`,
+          start: open,
+          duration: `${formatTime(open)}-${formatTime(close)}`,
         };
-      })
-      .filter(Boolean);
+      });
+    });
 
     const eventSlots = state.data.events
       .map((item) => {
         const window = getTimeWindow(item, "event");
-        if (!window) return null;
+        if (!window || window.open < start || window.open >= end) return null;
         return {
           type: "event",
           item,
-          hour: window.open.getHours(),
+          start: window.open,
           duration: item.duration_minutes ? `${item.duration_minutes} min` : displayTimeForEvent(item),
         };
       })
       .filter(Boolean);
 
-    return [...restaurantSlots, ...eventSlots].sort((a, b) => a.hour - b.hour || a.item.name.localeCompare(b.item.name));
-  }
+    [...restaurantSlots, ...eventSlots]
+      .sort((a, b) => a.start - b.start || a.item.name.localeCompare(b.item.name))
+      .forEach((slot) => {
+        const index = Math.round((startOfLocalDay(slot.start) - start) / 86400000);
+        if (days[index]) days[index].slots.push(slot);
+      });
 
-  function buildTimelineHours(slots) {
-    const base = Array.from({ length: 17 }, (_, index) => (10 + index) % 24);
-    const extra = slots.map((slot) => slot.hour).filter((hour) => !base.includes(hour));
-    return [...new Set([...extra, ...base])].sort((a, b) => timelineOrder(a) - timelineOrder(b));
+    return days;
   }
 
   function getUnifiedItems() {
@@ -1414,6 +1443,24 @@
   function extractTime(value) {
     const match = String(value || "").match(/T(\d{2}:\d{2})/);
     return match ? match[1] : "";
+  }
+
+  function startOfLocalDay(date) {
+    const copy = new Date(date);
+    copy.setHours(0, 0, 0, 0);
+    return copy;
+  }
+
+  function addDays(date, days) {
+    const copy = new Date(date);
+    copy.setDate(copy.getDate() + days);
+    return copy;
+  }
+
+  function copyTimeToDay(day, time) {
+    const copy = new Date(day);
+    copy.setHours(time.getHours(), time.getMinutes(), 0, 0);
+    return copy;
   }
 
   function formatTimeString(value) {

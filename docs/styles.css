@@ -328,7 +328,7 @@ a:hover {
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: var(--space-3);
-  min-height: 68px;
+  min-height: 96px;
   padding: var(--space-2);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -354,7 +354,31 @@ a:hover {
 }
 
 .cluster-card p + p {
-  display: none;
+  display: block;
+}
+
+.cluster-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+  overflow: hidden;
+}
+
+.cluster-link {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 30px;
+  padding: 0 var(--space-2);
+  overflow: hidden;
+  color: var(--color-text);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-1);
+  font-size: var(--text-xs);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .item-row {
@@ -651,29 +675,36 @@ a:hover {
 }
 
 .timeline {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  align-items: start;
+  gap: var(--space-3);
   padding: var(--space-4);
 }
 
-.timeline-hour {
-  position: relative;
-  display: grid;
-  grid-template-columns: 52px minmax(0, 1fr);
-  gap: var(--space-3);
-  min-height: 72px;
+.timeline-day {
+  min-width: 0;
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2);
 }
 
-.timeline-hour::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 58px;
-  width: 1px;
-  background: var(--color-border);
+.timeline-day-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
 }
 
-.timeline-time {
+.timeline-day-header h3 {
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+.timeline-day-header span {
   color: var(--color-text-muted);
   font-size: var(--text-xs);
 }
@@ -683,12 +714,13 @@ a:hover {
   flex-direction: column;
   gap: var(--space-2);
   min-width: 0;
+  padding: var(--space-2);
 }
 
 .timeline-slot {
   position: relative;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
   gap: var(--space-2);
   min-height: var(--tap-min);
@@ -714,7 +746,19 @@ a:hover {
 }
 
 .timeline-duration {
+  grid-column: 2;
   color: var(--color-text-muted);
+  font-size: var(--text-xs);
+}
+
+.timeline-empty {
+  display: flex;
+  align-items: center;
+  min-height: var(--tap-min);
+  padding: var(--space-2);
+  color: var(--color-text-muted);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-2);
   font-size: var(--text-xs);
 }
 
@@ -754,6 +798,16 @@ a:hover {
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   gap: var(--space-2);
+}
+
+.plan-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-1);
+  max-width: 142px;
+  min-width: 0;
 }
 
 .plan-card h3,

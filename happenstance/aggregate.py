@@ -100,17 +100,17 @@ def _area_name_for_text(text: str, cfg: Mapping) -> str:
     return city.title() if city else ""
 
 
-def _item_coords(item: Mapping, cfg: Mapping | None = None) -> Dict[str, float] | None:
-    direct = (
+def _item_coords(item: Mapping) -> Dict[str, float] | None:
+    return (
         _coords_from_value(item.get("location"))
         or _coords_from_value(item.get("coordinates"))
         or _coords_from_value(item.get("coords"))
     )
-    if direct:
-        return direct
-    if cfg:
-        return _known_coords_for_text(str(item.get("address") or item.get("location") or item.get("venue") or ""), cfg)
-    return None
+
+
+def _item_area_coords(item: Mapping, cfg: Mapping) -> Dict[str, float] | None:
+    text = str(item.get("address") or item.get("venue") or item.get("location") or "")
+    return _known_coords_for_text(text, cfg)
 
 
 def _distance_km(a: Mapping | None, b: Mapping | None) -> float | None:
@@ -139,7 +139,7 @@ def _normalize_restaurants(restaurants: List[Dict], cfg: Mapping) -> List[Dict]:
         area_name = _area_name_for_text(address, cfg)
         if area_name:
             restaurant.setdefault("neighborhood", area_name)
-        coords = _item_coords(restaurant, cfg)
+        coords = _item_coords(restaurant)
         if coords:
             restaurant["location"] = coords
         normalized.append(restaurant)
@@ -160,7 +160,7 @@ def _normalize_events(events: List[Dict], cfg: Mapping) -> List[Dict]:
         event.setdefault("url", f"https://www.google.com/search?q={urllib.parse.quote(title)}")
         if not event.get("time"):
             event["time"] = _parse_event_time(str(event.get("date", "")))
-        coords = _item_coords(event, cfg)
+        coords = _item_coords(event)
         if coords:
             event["coordinates"] = coords
         area_name = _area_name_for_text(str(location_label), cfg)
@@ -610,7 +610,7 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
         event_location = event.get("location", "")
         
         # Get event coordinates from normalized data first; geocode only as fallback.
-        event_coord_map = _item_coords(event, cfg)
+        event_coord_map = _item_coords(event)
         event_coords = (event_coord_map["lat"], event_coord_map["lng"]) if event_coord_map else None
         if event_coords is None and event_location and event_location not in location_cache:
             location_cache[event_location] = _geocode_address(event_location, region=region)
@@ -662,7 +662,7 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
             
             # Calculate distance if both coordinates are available
             distance_miles = None
-            restaurant_coord_map = _item_coords(restaurant, cfg)
+            restaurant_coord_map = _item_coords(restaurant)
             restaurant_coords = (restaurant_coord_map["lat"], restaurant_coord_map["lng"]) if restaurant_coord_map else None
             if event_coords and restaurant_coords is None and restaurant_address:
                 if restaurant_address not in location_cache:
@@ -753,7 +753,7 @@ def _same_area(item: Mapping, area: str) -> bool:
 
 
 def _cluster_restaurants(area: str, event_items: List[Mapping], restaurants: List[Mapping], pairing_restaurant_ids: set[str], cfg: Mapping) -> List[Mapping]:
-    event_coords = [_item_coords(event, cfg) for event in event_items]
+    event_coords = [_item_coords(event) for event in event_items]
     event_coords = [coords for coords in event_coords if coords]
 
     candidates: list[tuple[float, Mapping]] = []
@@ -764,7 +764,7 @@ def _cluster_restaurants(area: str, event_items: List[Mapping], restaurants: Lis
             score += 20
         if _same_area(restaurant, area):
             score += 10
-        rcoords = _item_coords(restaurant, cfg)
+        rcoords = _item_coords(restaurant)
         distances = [_distance_km(rcoords, ecoords) for ecoords in event_coords]
         distances = [km for km in distances if km is not None]
         if distances:
@@ -822,7 +822,7 @@ def _build_clusters(events: List[Dict], restaurants: List[Dict], pairings: List[
             continue
 
         first_dt = _event_datetime(event_items[0]) or now
-        center = _item_coords(event_items[0], cfg) or _known_coords_for_text(area, cfg)
+        center = _item_coords(event_items[0]) or _item_area_coords(event_items[0], cfg) or _known_coords_for_text(area, cfg)
         target_km = _distance_km(target_center, center) if target_center and center else None
         label = _date_label(first_dt, now)
         score = len(event_items) * 10 + len(restaurant_items) * 2

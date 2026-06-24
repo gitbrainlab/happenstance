@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T04:34:43.240463+00:00",
+  "generated_at": "2026-06-24T05:07:15.603402+00:00",
   "profile": "default",
   "region": "Capital Region, NY",
   "branding": {
@@ -164,8 +164,8 @@
     "item_count": 11
   },
   "restaurants": {
-    "items_hash": "b344b63a401425567abd56469aa1e78c6ba8b07576eca18d407ebb71edf7ef74",
-    "items_changed": false,
+    "items_hash": "db1e6c776f49703e8a206eda4baddb23c02c568bb4d8385dc4a8f8b446f4c640",
+    "items_changed": true,
     "item_count": 35
   },
   "pairings": [
@@ -174,32 +174,32 @@
       "restaurant_id": "restaurant-blue-ribbon-restaurant-bakery-1801-state-st-schenectady-ny-7",
       "event": "Chicago at Proctors",
       "restaurant": "Blue Ribbon Restaurant & Bakery",
-      "score": 21,
-      "match_reason": "Located in Schenectady; 0.0 mi - walking distance; American pairs well with live music",
-      "reason": "Located in Schenectady; 0.0 mi - walking distance; American pairs well with live music",
+      "score": 15,
+      "match_reason": "Located in Schenectady; 2.9 mi away; American pairs well with live music",
+      "reason": "Located in Schenectady; 2.9 mi away; American pairs well with live music",
       "event_url": "https://www.timesunion.com/music/article/chicago-band-coming-upstate-new-york-tour-21858163.php",
       "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Blue+Ribbon+Restaurant+Bakery+Schenectady+NY",
       "event_date": "2026-06-24T19:30:00+00:00",
       "event_location": "Proctors Theatre, Schenectady, NY",
-      "distance_miles": 0.0,
-      "distance_km": 0.0,
-      "walk_minutes": 1
+      "distance_miles": 2.9,
+      "distance_km": 4.73,
+      "walk_minutes": 57
     },
     {
       "event_id": "event-alive-at-five-afrobeats-2026-06-25",
-      "restaurant_id": "restaurant-delmonico-s-italian-steakhouse-1553-central-ave-albany-ny-9",
+      "restaurant_id": "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
       "event": "Alive at Five: Afrobeats Night",
-      "restaurant": "Delmonico's Italian Steakhouse",
+      "restaurant": "Hiro's Japanese Restaurant",
       "score": 18,
-      "match_reason": "Located in Albany; 1.0 mi - very close; Italian pairs well with live music",
-      "reason": "Located in Albany; 1.0 mi - very close; Italian pairs well with live music",
+      "match_reason": "Located in Albany; 1.1 mi - very close; Sushi pairs well with live music",
+      "reason": "Located in Albany; 1.1 mi - very close; Sushi pairs well with live music",
       "event_url": "https://www.timesunion.com/music/article/b-o-b-alive-at-five-albany-22309982.php",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Delmonico's+Italian+Steakhouse+1553+Central+Ave+Albany+NY",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Hiro's+Japanese+Restaurant+193+Lark+St+Albany+NY",
       "event_date": "2026-06-25T17:00:00+00:00",
       "event_location": "Warehouse District, Albany, NY",
-      "distance_miles": 1.0,
-      "distance_km": 1.58,
-      "walk_minutes": 19
+      "distance_miles": 1.1,
+      "distance_km": 1.76,
+      "walk_minutes": 21
     },
     {
       "event_id": "event-fence-2026-reception-2026-06-26",
@@ -207,15 +207,15 @@
       "event": "Fence 2026 Opening Reception",
       "restaurant": "Dinosaur Bar-B-Que",
       "score": 18,
-      "match_reason": "Located in Troy; 0.0 mi - walking distance",
-      "reason": "Located in Troy; 0.0 mi - walking distance",
+      "match_reason": "Located in Troy; 0.4 mi - walking distance",
+      "reason": "Located in Troy; 0.4 mi - walking distance",
       "event_url": "https://www.timesunion.com/preview/article/events-albany-area-les-claypool-capital-pride-22297802.php",
       "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Dinosaur+Bar-B-Que+377+River+St+Troy+NY",
       "event_date": "2026-06-26T18:00:00+00:00",
       "event_location": "The Arts Center of the Capital Region, Troy, NY",
-      "distance_miles": 0.0,
-      "distance_km": 0.0,
-      "walk_minutes": 1
+      "distance_miles": 0.4,
+      "distance_km": 0.72,
+      "walk_minutes": 9
     },
     {
       "event_id": "event-job-adirondack-theatre-festival-2026-06-26",
@@ -229,25 +229,25 @@
       "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Mario's+Restaurant+Pizzeria+2850+River+Rd+Niskayuna+NY",
       "event_date": "2026-06-26T19:30:00+00:00",
       "event_location": "Charles R. Wood Theater, Glens Falls, NY",
-      "distance_miles": 38.0,
-      "distance_km": 61.14,
-      "walk_minutes": 734
+      "distance_miles": 36.7,
+      "distance_km": 59.02,
+      "walk_minutes": 708
     },
     {
       "event_id": "event-albany-institute-blanche-lazzell-2026-06-27",
-      "restaurant_id": "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
+      "restaurant_id": "restaurant-thai-thai-bistro-254-lark-st-albany-ny-13",
       "event": "Blanche Lazzell: Becoming an American Modernist",
-      "restaurant": "Hiro's Japanese Restaurant",
+      "restaurant": "Thai Thai Bistro",
       "score": 19,
-      "match_reason": "Located in Albany; 0.0 mi - walking distance",
-      "reason": "Located in Albany; 0.0 mi - walking distance",
+      "match_reason": "Located in Albany; 0.5 mi - walking distance; \u2b50 4.7 rating",
+      "reason": "Located in Albany; 0.5 mi - walking distance; \u2b50 4.7 rating",
       "event_url": "https://www.timesunion.com/preview/article/events-albany-area-les-claypool-capital-pride-22297802.php",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Hiro's+Japanese+Restaurant+193+Lark+St+Albany+NY",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Thai+Thai+Bistro+254+Lark+St+Albany+NY",
       "event_date": "2026-06-27T10:00:00+00:00",
       "event_location": "Albany Institute of History & Art, Albany, NY",
-      "distance_miles": 0.0,
-      "distance_km": 0.0,
-      "walk_minutes": 1
+      "distance_miles": 0.5,
+      "distance_km": 0.8,
+      "walk_minutes": 10
     },
     {
       "event_id": "event-fence-2026-exhibition-2026-06-27",
@@ -255,95 +255,95 @@
       "event": "Fence 2026 Exhibition",
       "restaurant": "Dinosaur Bar-B-Que",
       "score": 15,
-      "match_reason": "Located in Troy; 0.0 mi - walking distance",
-      "reason": "Located in Troy; 0.0 mi - walking distance",
+      "match_reason": "Located in Troy; 0.4 mi - walking distance",
+      "reason": "Located in Troy; 0.4 mi - walking distance",
       "event_url": "https://www.timesunion.com/preview/article/events-albany-area-les-claypool-capital-pride-22297802.php",
       "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Dinosaur+Bar-B-Que+377+River+St+Troy+NY",
       "event_date": "2026-06-27T12:00:00+00:00",
       "event_location": "The Arts Center of the Capital Region, Troy, NY",
-      "distance_miles": 0.0,
-      "distance_km": 0.0,
-      "walk_minutes": 1
+      "distance_miles": 0.4,
+      "distance_km": 0.72,
+      "walk_minutes": 9
     },
     {
       "event_id": "event-nycb-innovators-icons-spac-2026-07-08",
-      "restaurant_id": "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
+      "restaurant_id": "restaurant-villa-valenti-153-s-broadway-saratoga-springs-ny-29",
       "event": "New York City Ballet: Innovators & Icons",
-      "restaurant": "Osteria Danny",
-      "score": 15,
-      "match_reason": "Located in Saratoga Springs; 2.2 mi away; Upscale italian for art events; \u2b50 4.8 rating",
-      "reason": "Located in Saratoga Springs; 2.2 mi away; Upscale italian for art events; \u2b50 4.8 rating",
+      "restaurant": "Villa Valenti",
+      "score": 17,
+      "match_reason": "Located in Saratoga Springs; 1.4 mi - very close; Upscale italian for art events",
+      "reason": "Located in Saratoga Springs; 1.4 mi - very close; Upscale italian for art events",
       "event_url": "https://www.timesunion.com/theater/article/new-york-city-ballet-brings-new-tiler-peck-work-21349620.php",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Osteria+Danny+26+Henry+St+Saratoga+Springs+NY",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Villa+Valenti+153+S+Broadway+Saratoga+Springs+NY",
       "event_date": "2026-07-08T19:30:00+00:00",
       "event_location": "Saratoga Performing Arts Center, Saratoga Springs, NY",
-      "distance_miles": 2.2,
-      "distance_km": 3.53,
-      "walk_minutes": 42
+      "distance_miles": 1.4,
+      "distance_km": 2.26,
+      "walk_minutes": 27
     },
     {
       "event_id": "event-nycb-midsummer-spac-2026-07-09",
-      "restaurant_id": "restaurant-the-copper-crow-2-division-st-saratoga-springs-ny-25",
+      "restaurant_id": "restaurant-pj-s-bar-b-qsa-1-kaydeross-ave-w-saratoga-springs-ny-19",
       "event": "New York City Ballet: A Midsummer Night's Dream",
-      "restaurant": "The Copper Crow",
-      "score": 15,
-      "match_reason": "Located in Saratoga Springs; 2.2 mi away; Upscale american for art events",
-      "reason": "Located in Saratoga Springs; 2.2 mi away; Upscale american for art events",
+      "restaurant": "PJ's BAR-B-QSA",
+      "score": 16,
+      "match_reason": "Located in Saratoga Springs; 1.2 mi - very close",
+      "reason": "Located in Saratoga Springs; 1.2 mi - very close",
       "event_url": "https://www.timesunion.com/theater/article/new-york-city-ballet-brings-new-tiler-peck-work-21349620.php",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=The+Copper+Crow+2+Division+St+Saratoga+Springs+NY",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=PJ's+BAR-B-QSA+1+Kaydeross+Ave+W+Saratoga+Springs+NY",
       "event_date": "2026-07-09T19:30:00+00:00",
       "event_location": "Saratoga Performing Arts Center, Saratoga Springs, NY",
-      "distance_miles": 2.2,
-      "distance_km": 3.53,
-      "walk_minutes": 42
+      "distance_miles": 1.2,
+      "distance_km": 1.91,
+      "walk_minutes": 23
     },
     {
       "event_id": "event-cms-dvorak-spac-2026-07-12",
-      "restaurant_id": "restaurant-sushi-thai-garden-1808-us-9-saratoga-springs-ny-18",
+      "restaurant_id": "restaurant-sake-cafe-415-broadway-saratoga-springs-ny-28",
       "event": "Chamber Music Society: Dvorak Quintet",
-      "restaurant": "Sushi Thai Garden",
+      "restaurant": "Sake Cafe",
       "score": 19,
-      "match_reason": "Located in Saratoga Springs; 0.9 mi - very close; Sushi pairs well with live music; Sushi open for evening dining",
-      "reason": "Located in Saratoga Springs; 0.9 mi - very close; Sushi pairs well with live music; Sushi open for evening dining",
+      "match_reason": "Located in Saratoga Springs; 1.0 mi - very close; Sushi pairs well with live music; Sushi open for evening dining",
+      "reason": "Located in Saratoga Springs; 1.0 mi - very close; Sushi pairs well with live music; Sushi open for evening dining",
       "event_url": "https://www.timesunion.com/music/article/spac-announces-lincoln-center-summer-season-21199168.php",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Sushi+Thai+Garden+1808+US-9+Saratoga+Springs+NY",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Sake+Cafe+415+Broadway+Saratoga+Springs+NY",
       "event_date": "2026-07-12T19:00:00+00:00",
       "event_location": "Arthur Zankel Music Center, Saratoga Springs, NY",
-      "distance_miles": 0.9,
-      "distance_km": 1.47,
-      "walk_minutes": 18
+      "distance_miles": 1.0,
+      "distance_km": 1.6,
+      "walk_minutes": 19
     },
     {
       "event_id": "event-train-barenaked-ladies-spac-2026-07-22",
-      "restaurant_id": "restaurant-sake-cafe-415-broadway-saratoga-springs-ny-28",
+      "restaurant_id": "restaurant-sushi-thai-garden-1808-us-9-saratoga-springs-ny-18",
       "event": "Train and Barenaked Ladies",
-      "restaurant": "Sake Cafe",
+      "restaurant": "Sushi Thai Garden",
       "score": 16,
-      "match_reason": "Located in Saratoga Springs; 2.2 mi away; Sushi pairs well with live music; Sushi open for evening dining",
-      "reason": "Located in Saratoga Springs; 2.2 mi away; Sushi pairs well with live music; Sushi open for evening dining",
+      "match_reason": "Located in Saratoga Springs; 1.6 mi away; Sushi pairs well with live music; Sushi open for evening dining",
+      "reason": "Located in Saratoga Springs; 1.6 mi away; Sushi pairs well with live music; Sushi open for evening dining",
       "event_url": "https://www.timesunion.com/music/article/train-barenaked-ladies-tour-saratoga-2026-21152353.php",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Sake+Cafe+415+Broadway+Saratoga+Springs+NY",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Sushi+Thai+Garden+1808+US-9+Saratoga+Springs+NY",
       "event_date": "2026-07-22T19:00:00+00:00",
       "event_location": "Saratoga Performing Arts Center, Saratoga Springs, NY",
-      "distance_miles": 2.2,
-      "distance_km": 3.53,
-      "walk_minutes": 42
+      "distance_miles": 1.6,
+      "distance_km": 2.59,
+      "walk_minutes": 31
     },
     {
       "event_id": "event-guns-n-roses-spac-2026-07-26",
-      "restaurant_id": "restaurant-max-london-s-restaurant-bar-466-broadway-saratoga-springs-ny-26",
+      "restaurant_id": "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
       "event": "Guns N' Roses at SPAC",
-      "restaurant": "Max London's Restaurant + Bar",
+      "restaurant": "Osteria Danny",
       "score": 15,
-      "match_reason": "Located in Saratoga Springs; 2.2 mi away; American pairs well with live music",
-      "reason": "Located in Saratoga Springs; 2.2 mi away; American pairs well with live music",
+      "match_reason": "Located in Saratoga Springs; 2.0 mi away; Italian pairs well with live music; \u2b50 4.8 rating",
+      "reason": "Located in Saratoga Springs; 2.0 mi away; Italian pairs well with live music; \u2b50 4.8 rating",
       "event_url": "https://www.timesunion.com/music/article/guns-n-roses-bring-world-tour-spac-2026-21204762.php",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Max+London's+Restaurant+Bar+466+Broadway+Saratoga+Springs+NY",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Osteria+Danny+26+Henry+St+Saratoga+Springs+NY",
       "event_date": "2026-07-26T19:00:00+00:00",
       "event_location": "Saratoga Performing Arts Center, Saratoga Springs, NY",
-      "distance_miles": 2.2,
-      "distance_km": 3.53,
-      "walk_minutes": 42
+      "distance_miles": 2.0,
+      "distance_km": 3.29,
+      "walk_minutes": 39
     }
   ],
   "clusters": [
@@ -366,8 +366,8 @@
         "restaurant-blue-ribbon-restaurant-bakery-1801-state-st-schenectady-ny-7",
         "restaurant-maya-thai-bistro-2015-rosa-rd-schenectady-ny-3",
         "restaurant-new-china-restaurant-1334-gerling-st-schenectady-ny-5",
-        "restaurant-volcano-asian-bbq-hot-pot-2309-nott-st-e-niskayuna-ny-4",
-        "restaurant-meat-company-2321-nott-st-e-niskayuna-ny-1"
+        "restaurant-tequila-s-mexican-bar-grill-2305-nott-st-niskayuna-ny-2",
+        "restaurant-volcano-asian-bbq-hot-pot-2309-nott-st-e-niskayuna-ny-4"
       ],
       "distance_km_from_target": 23.4,
       "distance_miles_from_target": 14.5
@@ -388,10 +388,10 @@
         "event-albany-institute-blanche-lazzell-2026-06-27"
       ],
       "restaurant_ids": [
-        "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
         "restaurant-thai-thai-bistro-254-lark-st-albany-ny-13",
+        "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
         "restaurant-lark-street-collective-kitchen-258-lark-st-albany-ny-16",
-        "restaurant-delmonico-s-italian-steakhouse-1553-central-ave-albany-ny-9",
+        "restaurant-lazeez-restaurant-212-central-ave-albany-ny-15",
         "restaurant-toro-cantina-111-washington-ave-ext-albany-ny-12"
       ],
       "distance_km_from_target": 0.0,
@@ -413,10 +413,10 @@
         "event-alive-at-five-afrobeats-2026-06-25"
       ],
       "restaurant_ids": [
-        "restaurant-delmonico-s-italian-steakhouse-1553-central-ave-albany-ny-9",
-        "restaurant-thai-thai-bistro-254-lark-st-albany-ny-13",
         "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
+        "restaurant-thai-thai-bistro-254-lark-st-albany-ny-13",
         "restaurant-lark-street-collective-kitchen-258-lark-st-albany-ny-16",
+        "restaurant-lazeez-restaurant-212-central-ave-albany-ny-15",
         "restaurant-toro-cantina-111-washington-ave-ext-albany-ny-12"
       ],
       "distance_km_from_target": 1.58,
@@ -442,7 +442,7 @@
         "restaurant-thai-thai-bistro-254-lark-st-albany-ny-13",
         "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
         "restaurant-lark-street-collective-kitchen-258-lark-st-albany-ny-16",
-        "restaurant-delmonico-s-italian-steakhouse-1553-central-ave-albany-ny-9"
+        "restaurant-lazeez-restaurant-212-central-ave-albany-ny-15"
       ],
       "distance_km_from_target": 9.94,
       "distance_miles_from_target": 6.2
@@ -467,7 +467,7 @@
         "restaurant-thai-thai-bistro-254-lark-st-albany-ny-13",
         "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
         "restaurant-lark-street-collective-kitchen-258-lark-st-albany-ny-16",
-        "restaurant-delmonico-s-italian-steakhouse-1553-central-ave-albany-ny-9"
+        "restaurant-lazeez-restaurant-212-central-ave-albany-ny-15"
       ],
       "distance_km_from_target": 9.94,
       "distance_miles_from_target": 6.2
@@ -488,11 +488,11 @@
         "event-nycb-innovators-icons-spac-2026-07-08"
       ],
       "restaurant_ids": [
+        "restaurant-villa-valenti-153-s-broadway-saratoga-springs-ny-29",
+        "restaurant-pj-s-bar-b-qsa-1-kaydeross-ave-w-saratoga-springs-ny-19",
         "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
         "restaurant-karavalli-regional-cuisine-of-india-47-caroline-st-saratoga-springs-ny-23",
-        "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27",
-        "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33",
-        "restaurant-pj-s-bar-b-qsa-1-kaydeross-ave-w-saratoga-springs-ny-19"
+        "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27"
       ],
       "distance_km_from_target": 44.97,
       "distance_miles_from_target": 27.9
@@ -513,11 +513,11 @@
         "event-nycb-midsummer-spac-2026-07-09"
       ],
       "restaurant_ids": [
-        "restaurant-the-copper-crow-2-division-st-saratoga-springs-ny-25",
+        "restaurant-pj-s-bar-b-qsa-1-kaydeross-ave-w-saratoga-springs-ny-19",
         "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
         "restaurant-karavalli-regional-cuisine-of-india-47-caroline-st-saratoga-springs-ny-23",
         "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27",
-        "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33"
+        "restaurant-sushi-thai-garden-1808-us-9-saratoga-springs-ny-18"
       ],
       "distance_km_from_target": 44.97,
       "distance_miles_from_target": 27.9
@@ -538,11 +538,11 @@
         "event-cms-dvorak-spac-2026-07-12"
       ],
       "restaurant_ids": [
-        "restaurant-sushi-thai-garden-1808-us-9-saratoga-springs-ny-18",
-        "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
-        "restaurant-karavalli-regional-cuisine-of-india-47-caroline-st-saratoga-springs-ny-23",
+        "restaurant-sake-cafe-415-broadway-saratoga-springs-ny-28",
+        "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33",
         "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27",
-        "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33"
+        "restaurant-jacob-anthony-s-american-grille-38-high-rock-ave-saratoga-springs-ny-34",
+        "restaurant-max-london-s-restaurant-bar-466-broadway-saratoga-springs-ny-26"
       ],
       "distance_km_from_target": 49.4,
       "distance_miles_from_target": 30.7
@@ -563,11 +563,11 @@
         "event-train-barenaked-ladies-spac-2026-07-22"
       ],
       "restaurant_ids": [
-        "restaurant-sake-cafe-415-broadway-saratoga-springs-ny-28",
+        "restaurant-sushi-thai-garden-1808-us-9-saratoga-springs-ny-18",
+        "restaurant-pj-s-bar-b-qsa-1-kaydeross-ave-w-saratoga-springs-ny-19",
         "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
         "restaurant-karavalli-regional-cuisine-of-india-47-caroline-st-saratoga-springs-ny-23",
-        "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27",
-        "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33"
+        "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27"
       ],
       "distance_km_from_target": 44.97,
       "distance_miles_from_target": 27.9
@@ -588,11 +588,11 @@
         "event-guns-n-roses-spac-2026-07-26"
       ],
       "restaurant_ids": [
-        "restaurant-max-london-s-restaurant-bar-466-broadway-saratoga-springs-ny-26",
         "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
+        "restaurant-pj-s-bar-b-qsa-1-kaydeross-ave-w-saratoga-springs-ny-19",
         "restaurant-karavalli-regional-cuisine-of-india-47-caroline-st-saratoga-springs-ny-23",
         "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27",
-        "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33"
+        "restaurant-sushi-thai-garden-1808-us-9-saratoga-springs-ny-18"
       ],
       "distance_km_from_target": 44.97,
       "distance_miles_from_target": 27.9

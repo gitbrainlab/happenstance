@@ -3,566 +3,566 @@
     "name": "Mario's Restaurant & Pizzeria",
     "cuisine": "Italian",
     "address": "2850 River Rd, Niskayuna, NY",
+    "location": {
+      "lat": 42.803226,
+      "lng": -73.861929
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Mario's+Restaurant+Pizzeria+2850+River+Rd+Niskayuna+NY",
     "match_reason": "Classic Italian and pizza, neighborhood favorite",
     "rating": 4.5,
     "price_level": 2,
     "id": "restaurant-mario-s-restaurant-pizzeria-2850-river-rd-niskayuna-ny",
     "description": "Classic Italian and pizza, neighborhood favorite",
-    "neighborhood": "Niskayuna",
-    "location": {
-      "lat": 42.7798,
-      "lng": -73.8457
-    }
+    "neighborhood": "Niskayuna"
   },
   {
     "name": "Meat & Company",
     "cuisine": "BBQ",
     "address": "2321 Nott St E, Niskayuna, NY",
+    "location": {
+      "lat": 42.816615,
+      "lng": -73.889916
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Meat+Company+2321+Nott+St+E+Niskayuna+NY",
     "match_reason": "Excellent brisket, ribs, wings, and sides",
     "rating": 4.8,
     "price_level": 2,
     "id": "restaurant-meat-company-2321-nott-st-e-niskayuna-ny-1",
     "description": "Excellent brisket, ribs, wings, and sides",
-    "neighborhood": "Niskayuna",
-    "location": {
-      "lat": 42.7798,
-      "lng": -73.8457
-    }
+    "neighborhood": "Niskayuna"
   },
   {
     "name": "Tequila's Mexican Bar & Grill",
     "cuisine": "Mexican",
     "address": "2305 Nott St, Niskayuna, NY",
+    "location": {
+      "lat": 42.815558,
+      "lng": -73.892128
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Tequila's+Mexican+Bar+Grill+2305+Nott+St+Niskayuna+NY",
     "match_reason": "Authentic flavors and friendly service",
     "rating": 4.1,
     "price_level": 2,
     "id": "restaurant-tequila-s-mexican-bar-grill-2305-nott-st-niskayuna-ny-2",
     "description": "Authentic flavors and friendly service",
-    "neighborhood": "Niskayuna",
-    "location": {
-      "lat": 42.7798,
-      "lng": -73.8457
-    }
+    "neighborhood": "Niskayuna"
   },
   {
     "name": "Maya Thai Bistro",
     "cuisine": "Thai",
     "address": "2015 Rosa Rd, Schenectady, NY",
+    "location": {
+      "lat": 42.82479,
+      "lng": -73.911229
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Maya+Thai+Bistro+2015+Rosa+Rd+Schenectady+NY",
     "match_reason": "Crafted Thai cuisine, crab rangoons recommended",
     "rating": 4.8,
     "price_level": 2,
     "id": "restaurant-maya-thai-bistro-2015-rosa-rd-schenectady-ny-3",
     "description": "Crafted Thai cuisine, crab rangoons recommended",
-    "neighborhood": "Schenectady",
-    "location": {
-      "lat": 42.8142,
-      "lng": -73.9396
-    }
+    "neighborhood": "Schenectady"
   },
   {
     "name": "VOLCANO Asian BBQ & Hot Pot",
     "cuisine": "Asian",
     "address": "2309 Nott St E, Niskayuna, NY",
+    "location": {
+      "lat": 42.816615,
+      "lng": -73.889916
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=VOLCANO+Asian+BBQ+Hot+Pot+2309+Nott+St+E+Niskayuna+NY",
     "match_reason": "Hot pot and Asian BBQ for group dining",
     "rating": 4.9,
     "price_level": 2,
     "id": "restaurant-volcano-asian-bbq-hot-pot-2309-nott-st-e-niskayuna-ny-4",
     "description": "Hot pot and Asian BBQ for group dining",
-    "neighborhood": "Niskayuna",
-    "location": {
-      "lat": 42.7798,
-      "lng": -73.8457
-    }
+    "neighborhood": "Niskayuna"
   },
   {
     "name": "New China Restaurant",
     "cuisine": "Chinese",
     "address": "1334 Gerling St, Schenectady, NY",
+    "location": {
+      "lat": 42.82338,
+      "lng": -73.910228
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=New+China+Restaurant+1334+Gerling+St+Schenectady+NY",
     "match_reason": "Consistent quality and friendly service",
     "rating": 4.3,
     "price_level": 1,
     "id": "restaurant-new-china-restaurant-1334-gerling-st-schenectady-ny-5",
     "description": "Consistent quality and friendly service",
-    "neighborhood": "Schenectady",
-    "location": {
-      "lat": 42.8142,
-      "lng": -73.9396
-    }
+    "neighborhood": "Schenectady"
   },
   {
     "name": "Karma Bistro",
     "cuisine": "Vegan",
     "address": "2321 Nott St E, Niskayuna, NY",
+    "location": {
+      "lat": 42.816615,
+      "lng": -73.889916
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Karma+Bistro+2321+Nott+St+E+Niskayuna+NY",
     "match_reason": "Poke bowls and noodle dishes, vegan options available",
     "rating": 4.6,
     "price_level": 2,
     "id": "restaurant-karma-bistro-2321-nott-st-e-niskayuna-ny-6",
     "description": "Poke bowls and noodle dishes, vegan options available",
-    "neighborhood": "Niskayuna",
-    "location": {
-      "lat": 42.7798,
-      "lng": -73.8457
-    }
+    "neighborhood": "Niskayuna"
   },
   {
     "name": "Blue Ribbon Restaurant & Bakery",
     "cuisine": "American",
     "address": "1801 State St, Schenectady, NY",
+    "location": {
+      "lat": 42.78072,
+      "lng": -73.903881
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Blue+Ribbon+Restaurant+Bakery+Schenectady+NY",
     "match_reason": "Popular breakfast and American classics",
     "rating": 4.5,
     "price_level": 2,
     "id": "restaurant-blue-ribbon-restaurant-bakery-1801-state-st-schenectady-ny-7",
     "description": "Popular breakfast and American classics",
-    "neighborhood": "Schenectady",
-    "location": {
-      "lat": 42.8142,
-      "lng": -73.9396
-    }
+    "neighborhood": "Schenectady"
   },
   {
     "name": "Innovo Kitchen",
     "cuisine": "American",
     "address": "28 Clifton Country Rd, Clifton Park, NY",
+    "location": {
+      "lat": 42.863593,
+      "lng": -73.780744
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Innovo+Kitchen+Clifton+Park+NY",
     "match_reason": "Modern American with creative local menu",
     "rating": 4.7,
     "price_level": 3,
     "id": "restaurant-innovo-kitchen-28-clifton-country-rd-clifton-park-ny-8",
     "description": "Modern American with creative local menu",
-    "neighborhood": "Clifton Park",
-    "location": {
-      "lat": 42.8656,
-      "lng": -73.7709
-    }
+    "neighborhood": "Clifton Park"
   },
   {
     "name": "Delmonico's Italian Steakhouse",
     "cuisine": "Italian",
     "address": "1553 Central Ave, Albany, NY",
+    "location": {
+      "lat": 42.714945,
+      "lng": -73.829094
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Delmonico's+Italian+Steakhouse+1553+Central+Ave+Albany+NY",
     "match_reason": "Classic Italian-American fare and steaks",
     "rating": 4.5,
     "price_level": 3,
     "id": "restaurant-delmonico-s-italian-steakhouse-1553-central-ave-albany-ny-9",
     "description": "Classic Italian-American fare and steaks",
-    "neighborhood": "Albany",
-    "location": {
-      "lat": 42.6526,
-      "lng": -73.7562
-    }
+    "neighborhood": "Albany"
   },
   {
     "name": "Hiro's Japanese Restaurant",
     "cuisine": "Sushi",
     "address": "193 Lark St, Albany, NY",
+    "location": {
+      "lat": 42.656459,
+      "lng": -73.763879
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Hiro's+Japanese+Restaurant+193+Lark+St+Albany+NY",
     "match_reason": "Renowned for fresh sushi and rolls",
     "rating": 4.6,
     "price_level": 2,
     "id": "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
     "description": "Renowned for fresh sushi and rolls",
-    "neighborhood": "Albany",
-    "location": {
-      "lat": 42.6526,
-      "lng": -73.7562
-    }
+    "neighborhood": "Albany"
   },
   {
     "name": "Dinosaur Bar-B-Que",
     "cuisine": "BBQ",
     "address": "377 River St, Troy, NY",
+    "location": {
+      "lat": 42.734618,
+      "lng": -73.689269
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Dinosaur+Bar-B-Que+377+River+St+Troy+NY",
     "match_reason": "Famous chain with Southern BBQ classics",
     "rating": 4.4,
     "price_level": 2,
     "id": "restaurant-dinosaur-bar-b-que-377-river-st-troy-ny-11",
     "description": "Famous chain with Southern BBQ classics",
-    "neighborhood": "Troy",
-    "location": {
-      "lat": 42.7284,
-      "lng": -73.6918
-    }
+    "neighborhood": "Troy"
   },
   {
     "name": "Toro Cantina",
     "cuisine": "Mexican",
     "address": "111 Washington Ave Ext, Albany, NY",
+    "location": {
+      "lat": 42.691575,
+      "lng": -73.84463
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Toro+Cantina+111+Washington+Ave+Ext+Albany+NY",
     "match_reason": "Modern, lively Mexican eatery with cocktails",
     "rating": 4.5,
     "price_level": 2,
     "id": "restaurant-toro-cantina-111-washington-ave-ext-albany-ny-12",
     "description": "Modern, lively Mexican eatery with cocktails",
-    "neighborhood": "Albany",
-    "location": {
-      "lat": 42.6526,
-      "lng": -73.7562
-    }
+    "neighborhood": "Albany"
   },
   {
     "name": "Thai Thai Bistro",
     "cuisine": "Thai",
     "address": "254 Lark St, Albany, NY",
+    "location": {
+      "lat": 42.654092,
+      "lng": -73.765805
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Thai+Thai+Bistro+254+Lark+St+Albany+NY",
     "match_reason": "Authentic Thai menu items",
     "rating": 4.7,
     "price_level": 2,
     "id": "restaurant-thai-thai-bistro-254-lark-st-albany-ny-13",
     "description": "Authentic Thai menu items",
-    "neighborhood": "Albany",
-    "location": {
-      "lat": 42.6526,
-      "lng": -73.7562
-    }
+    "neighborhood": "Albany"
   },
   {
     "name": "Hong Kong Bakery & Bistro",
     "cuisine": "Chinese",
     "address": "8 Wolf Rd, Colonie, NY",
+    "location": {
+      "lat": 42.709509,
+      "lng": -73.82181
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Hong+Kong+Bakery+Bistro+8+Wolf+Rd+Colonie+NY",
     "match_reason": "Handmade dim sum and bakery items",
     "rating": 4.5,
     "price_level": 2,
     "id": "restaurant-hong-kong-bakery-bistro-8-wolf-rd-colonie-ny-14",
     "description": "Handmade dim sum and bakery items",
-    "neighborhood": "Colonie",
-    "location": {
-      "lat": 42.7179,
-      "lng": -73.8335
-    }
+    "neighborhood": "Colonie"
   },
   {
     "name": "LaZeez Restaurant",
     "cuisine": "Indian",
     "address": "212 Central Ave, Albany, NY",
+    "location": {
+      "lat": 42.662195,
+      "lng": -73.770248
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=LaZeez+Restaurant+212+Central+Ave+Albany+NY",
     "match_reason": "Indian and Pakistani classics, vegan-friendly",
     "rating": 4.4,
     "price_level": 2,
     "id": "restaurant-lazeez-restaurant-212-central-ave-albany-ny-15",
     "description": "Indian and Pakistani classics, vegan-friendly",
-    "neighborhood": "Albany",
-    "location": {
-      "lat": 42.6526,
-      "lng": -73.7562
-    }
+    "neighborhood": "Albany"
   },
   {
     "name": "Lark Street Collective Kitchen",
     "cuisine": "Vegan",
     "address": "258 Lark St, Albany, NY",
+    "location": {
+      "lat": 42.65401,
+      "lng": -73.76589
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Lark+Street+Collective+Kitchen+258+Lark+St+Albany+NY",
     "match_reason": "Vegan and vegetarian options in a hip setting",
     "rating": 4.6,
     "price_level": 2,
     "id": "restaurant-lark-street-collective-kitchen-258-lark-st-albany-ny-16",
     "description": "Vegan and vegetarian options in a hip setting",
-    "neighborhood": "Albany",
-    "location": {
-      "lat": 42.6526,
-      "lng": -73.7562
-    }
+    "neighborhood": "Albany"
   },
   {
     "name": "Osteria Danny",
     "cuisine": "Italian",
     "address": "26 Henry St, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.079748,
+      "lng": -73.782922
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Osteria+Danny+26+Henry+St+Saratoga+Springs+NY",
     "match_reason": "Intimate, rustic and inventive Italian fare",
     "rating": 4.8,
     "price_level": 3,
     "id": "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
     "description": "Intimate, rustic and inventive Italian fare",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Sushi Thai Garden",
     "cuisine": "Sushi",
     "address": "1808 US-9, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.074337,
+      "lng": -73.787377
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Sushi+Thai+Garden+1808+US-9+Saratoga+Springs+NY",
     "match_reason": "Sushi and Thai combo, consistently popular",
     "rating": 4.5,
     "price_level": 2,
     "id": "restaurant-sushi-thai-garden-1808-us-9-saratoga-springs-ny-18",
     "description": "Sushi and Thai combo, consistently popular",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "PJ's BAR-B-QSA",
     "cuisine": "BBQ",
     "address": "1 Kaydeross Ave W, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.042549,
+      "lng": -73.790215
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=PJ's+BAR-B-QSA+1+Kaydeross+Ave+W+Saratoga+Springs+NY",
     "match_reason": "Famous for regional BBQ styles",
     "rating": 4.6,
     "price_level": 2,
     "id": "restaurant-pj-s-bar-b-qsa-1-kaydeross-ave-w-saratoga-springs-ny-19",
     "description": "Famous for regional BBQ styles",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Cantina",
     "cuisine": "Mexican",
     "address": "408 Broadway, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.081638,
+      "lng": -73.785026
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Cantina+408+Broadway+Saratoga+Springs+NY",
     "match_reason": "Trendy spot, extensive margaritas and tacos",
     "rating": 4.4,
     "price_level": 2,
     "id": "restaurant-cantina-408-broadway-saratoga-springs-ny-20",
     "description": "Trendy spot, extensive margaritas and tacos",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Thai Basil",
     "cuisine": "Thai",
     "address": "368 Broadway, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.080692,
+      "lng": -73.785377
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Thai+Basil+368+Broadway+Saratoga+Springs+NY",
     "match_reason": "Authentic Thai dishes, curries and noodles",
     "rating": 4.6,
     "price_level": 2,
     "id": "restaurant-thai-basil-368-broadway-saratoga-springs-ny-21",
     "description": "Authentic Thai dishes, curries and noodles",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Great Tang Chinese Restaurant",
     "cuisine": "Chinese",
     "address": "60 West Ave, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.081138,
+      "lng": -73.803571
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Great+Tang+Chinese+Restaurant+60+West+Ave+Saratoga+Springs+NY",
     "match_reason": "Fresh, flavorful Chinese cuisine",
     "rating": 4.5,
     "price_level": 2,
     "id": "restaurant-great-tang-chinese-restaurant-60-west-ave-saratoga-springs-ny-22",
     "description": "Fresh, flavorful Chinese cuisine",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Karavalli Regional Cuisine of India",
     "cuisine": "Indian",
     "address": "47 Caroline St, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.08191,
+      "lng": -73.782692
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Karavalli+Regional+Cuisine+India+47+Caroline+St+Saratoga+Springs+NY",
     "match_reason": "Well-reviewed for its diverse Indian menu",
     "rating": 4.7,
     "price_level": 2,
     "id": "restaurant-karavalli-regional-cuisine-of-india-47-caroline-st-saratoga-springs-ny-23",
     "description": "Well-reviewed for its diverse Indian menu",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Four Seasons Natural Foods",
     "cuisine": "Vegan",
     "address": "33 Phila St, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.08064,
+      "lng": -73.784336
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Four+Seasons+Natural+Foods+33+Phila+St+Saratoga+Springs+NY",
     "match_reason": "Vegan deli, casual eatery, and grocery",
     "rating": 4.5,
     "price_level": 1,
     "id": "restaurant-four-seasons-natural-foods-33-phila-st-saratoga-springs-ny-24",
     "description": "Vegan deli, casual eatery, and grocery",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "The Copper Crow",
     "cuisine": "American",
     "address": "2 Division St, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.082041,
+      "lng": -73.788343
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=The+Copper+Crow+2+Division+St+Saratoga+Springs+NY",
     "match_reason": "Upscale American with craft cocktails",
     "rating": 4.6,
     "price_level": 3,
     "id": "restaurant-the-copper-crow-2-division-st-saratoga-springs-ny-25",
     "description": "Upscale American with craft cocktails",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Max London's Restaurant + Bar",
     "cuisine": "American",
     "address": "466 Broadway, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.082953,
+      "lng": -73.784668
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Max+London's+Restaurant+Bar+466+Broadway+Saratoga+Springs+NY",
     "match_reason": "Farm-to-table American cuisine",
     "rating": 4.5,
     "price_level": 3,
     "id": "restaurant-max-london-s-restaurant-bar-466-broadway-saratoga-springs-ny-26",
     "description": "Farm-to-table American cuisine",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "15 Church Restaurant",
     "cuisine": "American",
     "address": "15 Church St, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.083601,
+      "lng": -73.785622
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=15+Church+Restaurant+Saratoga+Springs+NY",
     "match_reason": "Fine dining with seasonal menu",
     "rating": 4.7,
     "price_level": 4,
     "id": "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27",
     "description": "Fine dining with seasonal menu",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Sake Cafe",
     "cuisine": "Sushi",
     "address": "415 Broadway, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.081956,
+      "lng": -73.785438
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Sake+Cafe+415+Broadway+Saratoga+Springs+NY",
     "match_reason": "Popular sushi spot with creative rolls",
     "rating": 4.5,
     "price_level": 2,
     "id": "restaurant-sake-cafe-415-broadway-saratoga-springs-ny-28",
     "description": "Popular sushi spot with creative rolls",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Villa Valenti",
     "cuisine": "Italian",
     "address": "153 S Broadway, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.071384,
+      "lng": -73.78873
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Villa+Valenti+153+S+Broadway+Saratoga+Springs+NY",
     "match_reason": "Family-style Italian in historic building",
     "rating": 4.4,
     "price_level": 2,
     "id": "restaurant-villa-valenti-153-s-broadway-saratoga-springs-ny-29",
     "description": "Family-style Italian in historic building",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "The Wine Bar & Bistro",
     "cuisine": "American",
     "address": "417 Broadway, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.081911,
+      "lng": -73.785736
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=The+Wine+Bar+Bistro+417+Broadway+Saratoga+Springs+NY",
     "match_reason": "Cozy bistro with extensive wine list",
     "rating": 4.6,
     "price_level": 3,
     "id": "restaurant-the-wine-bar-bistro-417-broadway-saratoga-springs-ny-30",
     "description": "Cozy bistro with extensive wine list",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Hattie's Chicken Shack",
     "cuisine": "American",
     "address": "45 Phila St, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.080519,
+      "lng": -73.783463
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Hattie's+Chicken+Shack+45+Phila+St+Saratoga+Springs+NY",
     "match_reason": "Famous for fried chicken and Southern comfort food",
     "rating": 4.5,
     "price_level": 2,
     "id": "restaurant-hattie-s-chicken-shack-45-phila-st-saratoga-springs-ny-31",
     "description": "Famous for fried chicken and Southern comfort food",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Druthers Brewing Company",
     "cuisine": "American",
     "address": "381 Broadway, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.080875,
+      "lng": -73.786479
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Druthers+Brewing+Company+381+Broadway+Saratoga+Springs+NY",
     "match_reason": "Craft brewery with pub fare",
     "rating": 4.4,
     "price_level": 2,
     "id": "restaurant-druthers-brewing-company-381-broadway-saratoga-springs-ny-32",
     "description": "Craft brewery with pub fare",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Mouzon House",
     "cuisine": "American",
     "address": "1 York St, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.084807,
+      "lng": -73.782069
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Mouzon+House+1+York+St+Saratoga+Springs+NY",
     "match_reason": "Creole and Southern-inspired fine dining",
     "rating": 4.7,
     "price_level": 3,
     "id": "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33",
     "description": "Creole and Southern-inspired fine dining",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "name": "Jacob & Anthony's American Grille",
     "cuisine": "American",
     "address": "38 High Rock Ave, Saratoga Springs, NY",
+    "location": {
+      "lat": 43.08417,
+      "lng": -73.781812
+    },
     "url": "https://www.google.com/maps/search/?api=1&query=Jacob+Anthony's+American+Grille+38+High+Rock+Ave+Saratoga+Springs+NY",
     "match_reason": "Upscale American steakhouse",
     "rating": 4.6,
     "price_level": 3,
     "id": "restaurant-jacob-anthony-s-american-grille-38-high-rock-ave-saratoga-springs-ny-34",
     "description": "Upscale American steakhouse",
-    "neighborhood": "Saratoga Springs",
-    "location": {
-      "lat": 43.0831,
-      "lng": -73.7846
-    }
+    "neighborhood": "Saratoga Springs"
   },
   {
     "_meta": {
-      "items_hash": "b344b63a401425567abd56469aa1e78c6ba8b07576eca18d407ebb71edf7ef74",
-      "items_changed": false,
+      "items_hash": "db1e6c776f49703e8a206eda4baddb23c02c568bb4d8385dc4a8f8b446f4c640",
+      "items_changed": true,
       "item_count": 35
     }
   }
