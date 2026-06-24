@@ -8,7 +8,7 @@
  * - Inline bottom sheet for item detail (replaces full-page detail view)
  * - Plan view: multi-item itinerary builder with live distance, conflict detection,
  *   and pairing suggestions pulled from meta.json pairings data
- * - Timeline view: chronological display of events + restaurant hours across the week
+ * - Timeline view: chronological display of events across the week
  * - Saved view: localStorage-backed favorites with one-tap plan addition
  * - Pairing context shown lightly in Explore rows (max 2 pills, never dominates)
  * - Haversine distance calculation from simulated/real user location
@@ -575,7 +575,7 @@
     const days = buildWeekTimelineDays();
     const slots = days.flatMap((day) => day.slots);
     if (slots.length === 0) {
-      return `<div class="empty"><strong>No timeline items this week</strong><p>Events need dates, and restaurants need parseable hours.</p></div>`;
+      return `<div class="empty"><strong>No events this week</strong><p>Events need scheduled dates to appear here.</p></div>`;
     }
 
     return `
@@ -1431,8 +1431,8 @@
 
   function renderTimelineSlot(slot) {
     return `
-      <button class="timeline-slot ${slot.type}" type="button" data-action="open-sheet" data-type="${slot.type}" data-id="${escapeAttr(slot.item.id)}">
-        <span aria-hidden="true">${slot.type === "restaurant" ? "◌" : "◆"}</span>
+      <button class="timeline-slot event" type="button" data-action="open-sheet" data-type="event" data-id="${escapeAttr(slot.item.id)}">
+        <span aria-hidden="true">◆</span>
         <span>${escapeHTML(slot.item.name)}</span>
         <span class="timeline-duration">${escapeHTML(slot.duration)}</span>
       </button>
@@ -1441,7 +1441,7 @@
 
   function renderTimelineDay(day) {
     const dateLabel = day.date.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
-    const countLabel = `${day.slots.length} item${day.slots.length === 1 ? "" : "s"}`;
+    const countLabel = `${day.slots.length} event${day.slots.length === 1 ? "" : "s"}`;
     return `
       <section class="timeline-day" aria-label="${escapeAttr(dateLabel)}">
         <div class="timeline-day-header">
@@ -1452,7 +1452,7 @@
           ${
             day.slots.length
               ? day.slots.map(renderTimelineSlot).join("")
-              : `<div class="timeline-empty">No scheduled items</div>`
+              : `<div class="timeline-empty">No events scheduled</div>`
           }
         </div>
       </section>
@@ -1502,6 +1502,7 @@
     const end = addDays(start, days.length);
 
     const eventSlots = state.data.events
+      .filter((item) => item && item._type === "event")
       .map((item) => {
         const window = getTimeWindow(item, "event");
         if (!window || window.open < start || window.open >= end) return null;

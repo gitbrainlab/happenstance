@@ -175,6 +175,8 @@ test("timeline, saved, and plan views work from bottom tabs", async ({ page }) =
   await expect(page.locator("#tab-bar [data-view='timeline']")).toHaveAttribute("aria-current", "page");
   await expect(page.locator(".timeline-day")).toHaveCount(7);
   await expect(page.locator(".timeline-slot")).not.toHaveCount(0);
+  await expect(page.locator('.timeline-slot[data-type="restaurant"]')).toHaveCount(0);
+  await expect(page.locator(".timeline-day-header").first()).toContainText(/event/);
 
   await page.click("#tab-bar [data-view='saved']");
   await expect(page.locator("#tab-bar [data-view='saved']")).toHaveAttribute("aria-current", "page");
