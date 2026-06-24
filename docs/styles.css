@@ -759,6 +759,16 @@ a:hover {
   text-decoration: none;
 }
 
+.sheet-link-button.primary-link {
+  color: white;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.muted-note {
+  color: var(--color-text-muted) !important;
+}
+
 .pairing-list {
   display: flex;
   flex-direction: column;

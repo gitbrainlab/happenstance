@@ -252,6 +252,8 @@ def _restaurant_from_google_place(place: Dict, area: str) -> Dict:
         "cuisine": _infer_cuisine(place),
         "address": address,
         "url": url,
+        "menu_url": _menu_search_url(name, address),
+        "menu_status": "search",
         "match_reason": summary or f"Popular restaurant in {area}",
         "tags": type_labels,
     }
@@ -293,6 +295,11 @@ def _restaurant_from_google_place(place: Dict, area: str) -> Dict:
         restaurant["price_level"] = price_map.get(place["priceLevel"], 2)
 
     return restaurant
+
+
+def _menu_search_url(name: str, address: str) -> str:
+    query = f"{name} menu {address}".strip()
+    return f"https://www.google.com/search?q={urllib.parse.quote_plus(query)}"
 
 
 def _place_type_labels(place: Dict) -> List[str]:
@@ -448,7 +455,13 @@ def fetch_ticketmaster_events(
             "venue": venue_name,
             "location": location,
             "url": url,
+            "ticket_url": url,
+            "ticket_status": dates.get("status", {}).get("code") or "ticketed",
         }
+
+        price = _ticketmaster_price_summary(tm_event)
+        if price:
+            event.update(price)
 
         if address_line:
             event["address"] = ", ".join(part for part in [address_line, city_name, state_code] if part)
@@ -461,6 +474,42 @@ def fetch_ticketmaster_events(
         events.append(event)
     
     return events
+
+
+def _ticketmaster_price_summary(tm_event: Dict) -> Dict:
+    ranges = tm_event.get("priceRanges") or []
+    if not ranges:
+        return {}
+    first = ranges[0]
+    currency = first.get("currency", "USD")
+    minimum = first.get("min")
+    maximum = first.get("max")
+    payload: Dict[str, Any] = {"price_currency": currency}
+    if minimum is not None:
+        payload["price_min"] = minimum
+    if maximum is not None:
+        payload["price_max"] = maximum
+    if minimum is not None and maximum is not None:
+        if minimum == maximum:
+            payload["price_note"] = f"{_format_price(minimum, currency)}"
+        else:
+            payload["price_note"] = f"{_format_price(minimum, currency)}-{_format_price(maximum, currency)}"
+    elif minimum is not None:
+        payload["price_note"] = f"from {_format_price(minimum, currency)}"
+    elif maximum is not None:
+        payload["price_note"] = f"up to {_format_price(maximum, currency)}"
+    return payload
+
+
+def _format_price(value: Any, currency: str) -> str:
+    try:
+        amount = float(value)
+    except (TypeError, ValueError):
+        return str(value)
+    symbol = "$" if currency == "USD" else f"{currency} "
+    if amount.is_integer():
+        return f"{symbol}{int(amount)}"
+    return f"{symbol}{amount:.2f}"
 
 
 def fetch_eventbrite_events(
@@ -548,6 +597,8 @@ def fetch_eventbrite_events(
             "venue": location,
             "location": location,
             "url": url,
+            "ticket_url": url,
+            "ticket_status": "ticketed",
         }
         
         events.append(event)
@@ -1231,7 +1282,11 @@ def fetch_ai_events(
                         "venue": item.get("venue") or item.get("location", f"{city_name}"),
                         "location": item.get("location", f"{city_name}"),
                         "url": item.get("url", f"https://www.google.com/search?q={item.get('title', 'event').replace(' ', '+')}+{city_name.replace(' ', '+')}"),
+                        "ticket_url": item.get("ticket_url") or item.get("url"),
+                        "ticket_status": item.get("ticket_status", "event site"),
                     }
+                    if "price_note" in item:
+                        event["price_note"] = item["price_note"]
                     if "coordinates" in item:
                         event["coordinates"] = item["coordinates"]
                     if "location" in item and isinstance(item["location"], dict):

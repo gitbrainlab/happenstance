@@ -114,6 +114,8 @@ test("bottom sheet shows pairings for tapped rows", async ({ page }) => {
   await page.waitForSelector("body.sheet-open");
 
   await expect(page.locator(".bottom-sheet")).toContainText("Pairings");
+  await expect(page.locator(".bottom-sheet")).toContainText("Tickets");
+  await expect(page.locator(".bottom-sheet")).toContainText("Event details");
   await expect(page.locator(".pairing-list .pairing-card")).not.toHaveCount(0);
   await expect(page.locator(".bottom-sheet")).toContainText("Why this works");
   const longBlurbs = await page.evaluate(() => {
@@ -152,6 +154,7 @@ test("cluster plan button creates a restaurant plus event plan", async ({ page }
   await page.locator(".cluster-card .cluster-link").first().click();
   await page.waitForSelector("body.sheet-open");
   await expect(page.locator(".bottom-sheet")).toContainText("Address");
+  await expect(page.locator(".bottom-sheet")).toContainText("Menu");
   await page.click(".sheet-backdrop");
   await expect(page.locator("body")).not.toHaveClass(/sheet-open/);
 

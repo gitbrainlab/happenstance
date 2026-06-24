@@ -129,7 +129,8 @@ class TestGooglePlacesRestaurants:
                     "id": "place123",
                     "types": ["italian_restaurant"],
                     "rating": 4.5,
-                    "priceLevel": "PRICE_LEVEL_MODERATE"
+                    "priceLevel": "PRICE_LEVEL_MODERATE",
+                    "websiteUri": "https://example.com",
                 }
             ]
         }
@@ -141,6 +142,8 @@ class TestGooglePlacesRestaurants:
         assert restaurants[0]["cuisine"] == "Italian"
         assert restaurants[0]["rating"] == 4.5
         assert restaurants[0]["price_level"] == 2
+        assert "menu_url" in restaurants[0]
+        assert restaurants[0]["menu_status"] == "search"
 
     @patch.dict(os.environ, {"GOOGLE_PLACES_API_KEY": "test_key"})
     @patch("happenstance.sources._make_request")
@@ -208,7 +211,10 @@ class TestTicketmasterEvents:
                                 {"name": "Test Venue"}
                             ]
                         },
-                        "url": "https://www.ticketmaster.com/event/123"
+                        "url": "https://www.ticketmaster.com/event/123",
+                        "priceRanges": [
+                            {"type": "standard", "currency": "USD", "min": 25.0, "max": 75.0}
+                        ],
                     }
                 ]
             }
@@ -220,6 +226,8 @@ class TestTicketmasterEvents:
         assert events[0]["title"] == "Test Concert"
         assert events[0]["category"] == "live music"
         assert events[0]["location"] == "Test Venue"
+        assert events[0]["ticket_url"] == "https://www.ticketmaster.com/event/123"
+        assert events[0]["price_note"] == "$25-$75"
 
 
 class TestEventbriteEvents:

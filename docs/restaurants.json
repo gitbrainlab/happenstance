@@ -6,11 +6,13 @@
     "cuisine": "American",
     "address": "182 Washington Ave, Albany, NY 12210, USA",
     "url": "https://maps.google.com/?cid=2045058433553938197&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Iron+Gate+Cafe+menu+182+Washington+Ave%2C+Albany%2C+NY+12210%2C+USA",
+    "menu_status": "search",
     "match_reason": "Gated, serene garden seating area fronts this American breakfast/lunch spot in a sandstone mansion.",
     "tags": [
       "American Restaurant",
-      "Breakfast Restaurant",
       "Brunch Restaurant",
+      "Breakfast Restaurant",
       "Cafe",
       "Restaurant",
       "Food",
@@ -56,13 +58,15 @@
     "cuisine": "Restaurant",
     "address": "307 Broadway, Saratoga Springs, NY 12866, USA",
     "url": "https://maps.google.com/?cid=17140836676671361092&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Bunker+Saratoga+Springs+menu+307+Broadway%2C+Saratoga+Springs%2C+NY+12866%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Saratoga Springs",
     "tags": [
       "Sports Bar",
       "Indoor Golf Course",
-      "Bar",
       "Golf Course",
       "Athletic Field",
+      "Bar",
       "Sports Activity Location",
       "Restaurant",
       "Food"
@@ -105,6 +109,8 @@
     "cuisine": "Restaurant",
     "address": "112 N Greenbush Rd Ste F, Troy, NY 12180, USA",
     "url": "https://maps.google.com/?cid=8300119060246865935&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Roosevelt+Room+menu+112+N+Greenbush+Rd+Ste+F%2C+Troy%2C+NY+12180%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Troy",
     "tags": [
       "Restaurant",
@@ -150,6 +156,8 @@
     "cuisine": "Italian",
     "address": "1720 Union St, Schenectady, NY 12309, USA",
     "url": "https://maps.google.com/?cid=9630733463148388755&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Ritz+on+Union+menu+1720+Union+St%2C+Schenectady%2C+NY+12309%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Schenectady",
     "tags": [
       "Italian Restaurant",
@@ -196,16 +204,18 @@
     "cuisine": "BBQ",
     "address": "2321 Nott St E, Niskayuna, NY 12309, USA",
     "url": "https://maps.google.com/?cid=809904872203648522&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Meat+%26+Company+menu+2321+Nott+St+E%2C+Niskayuna%2C+NY+12309%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Niskayuna",
     "tags": [
       "Barbecue Restaurant",
       "Sandwich Shop",
       "Catering Service",
       "Food Delivery",
+      "Service",
       "Restaurant",
       "Food",
-      "Point Of Interest",
-      "Service"
+      "Point Of Interest"
     ],
     "location": {
       "lat": 42.816378,
@@ -246,6 +256,8 @@
     "cuisine": "Mediterranean",
     "address": "309 Clifton Park Center Rd Ste. 8, Clifton Park, NY 12065, USA",
     "url": "https://maps.google.com/?cid=15378374019168504026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Pita+and+Olive+menu+309+Clifton+Park+Center+Rd+Ste.+8%2C+Clifton+Park%2C+NY+12065%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Clifton Park",
     "tags": [
       "Mediterranean Restaurant",
@@ -293,6 +305,8 @@
     "cuisine": "Restaurant",
     "address": "1540 Central Ave, Colonie, NY 12205, USA",
     "url": "https://maps.google.com/?cid=221518354355834977&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Halal+Bites+Albany+menu+1540+Central+Ave%2C+Colonie%2C+NY+12205%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Colonie",
     "tags": [
       "Restaurant",
@@ -338,6 +352,8 @@
     "cuisine": "Restaurant",
     "address": "4 Kurosaka Ln, Lake George, NY 12845, USA",
     "url": "https://maps.google.com/?cid=8341312006034378331&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Lighthouse+Grill+menu+4+Kurosaka+Ln%2C+Lake+George%2C+NY+12845%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Lake George",
     "tags": [
       "Restaurant",
@@ -384,6 +400,8 @@
     "cuisine": "Cafe",
     "address": "16 Exchange St, Glens Falls, NY 12801, USA",
     "url": "https://maps.google.com/?cid=7983921458581284494&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Kitch+A+Vibe+menu+16+Exchange+St%2C+Glens+Falls%2C+NY+12801%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Glens Falls",
     "tags": [
       "Cafe",
@@ -433,6 +451,8 @@
     "cuisine": "Restaurant",
     "address": "925 US-9, Queensbury, NY 12804, USA",
     "url": "https://maps.google.com/?cid=7279557296431486142&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Spargel+on+9+menu+925+US-9%2C+Queensbury%2C+NY+12804%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Queensbury",
     "tags": [
       "German Restaurant",
@@ -480,11 +500,13 @@
     "cuisine": "Cafe",
     "address": "36 Front St, Ballston Spa, NY 12020, USA",
     "url": "https://maps.google.com/?cid=16610285782574921693&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Iron+Roost+menu+36+Front+St%2C+Ballston+Spa%2C+NY+12020%2C+USA",
+    "menu_status": "search",
     "match_reason": "Cheery cafe with exposed-brick walls dispensing homestyle breakfast fare, plus sandwiches & salads.",
     "tags": [
       "Breakfast Restaurant",
-      "Brunch Restaurant",
       "Coffee Shop",
+      "Brunch Restaurant",
       "Family Restaurant",
       "Cafe",
       "Food Store",
@@ -524,47 +546,50 @@
     "neighborhood": "Ballston Spa"
   },
   {
-    "id": "ChIJ-z-vQqZFDhMR8h9JjBd-1Gw",
-    "google_place_id": "ChIJ-z-vQqZFDhMR8h9JjBd-1Gw",
-    "name": "AZAR",
+    "id": "ChIJAxh6xkNFDhMRAL--neGzlDQ",
+    "google_place_id": "ChIJAxh6xkNFDhMRAL--neGzlDQ",
+    "name": "Georgia Restaurant",
     "cuisine": "Restaurant",
-    "address": "Triq Manwel Dimech Tas-Sliema, Sliema SLM 1055, Malta",
-    "url": "https://maps.google.com/?cid=7842031490761826290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "address": "123 Main Street, St Julian's STJ 1011, Malta",
+    "url": "https://maps.google.com/?cid=3788850968120966912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Georgia+Restaurant+menu+123+Main+Street%2C+St+Julian%27s+STJ+1011%2C+Malta",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Malta",
     "tags": [
       "Restaurant",
+      "Eastern European Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 35.9100463,
-      "lng": 14.497973600000002
+      "lat": 35.9186207,
+      "lng": 14.490726100000002
     },
-    "phone": "9939 3876",
-    "website": "https://www.azarrestaurant.com/",
+    "phone": "9937 5363",
+    "website": "http://www.georgianmalta.com/",
     "hours": [
-      "Monday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Tuesday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Wednesday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Thursday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Friday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Saturday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Sunday: 6:30\u2009\u2013\u20099:30\u202fPM"
+      "Monday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Tuesday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Wednesday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Thursday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Friday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Saturday: 6:30\u2009\u2013\u20099:30\u202fPM",
-      "Sunday: 6:30\u2009\u2013\u20099:30\u202fPM"
+      "Monday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u200911:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
     "rating": 4.9,
-    "review_count": 589,
+    "review_count": 3052,
     "description": "Popular restaurant in Malta",
     "neighborhood": "Malta"
   },
@@ -575,11 +600,13 @@
     "cuisine": "Restaurant",
     "address": "710 Loudon Rd, Latham, NY 12110, USA",
     "url": "https://maps.google.com/?cid=1829481256664485086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Las+Margaritas+Mexican+Cantina+menu+710+Loudon+Rd%2C+Latham%2C+NY+12110%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Latham",
     "tags": [
       "Restaurant",
-      "Point Of Interest",
       "Food",
+      "Point Of Interest",
       "Establishment"
     ],
     "location": {
@@ -620,16 +647,18 @@
     "cuisine": "Pizza",
     "address": "93 Ontario St, Cohoes, NY 12047, USA",
     "url": "https://maps.google.com/?cid=13908572214528239319&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Island+Eatz+menu+93+Ontario+St%2C+Cohoes%2C+NY+12047%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Cohoes",
     "tags": [
       "Restaurant",
+      "Pizza Restaurant",
       "Gyro Restaurant",
       "Pizza Delivery",
-      "Pizza Restaurant",
+      "Italian Restaurant",
       "Meal Delivery",
-      "Food Delivery",
       "Meal Takeaway",
-      "Italian Restaurant"
+      "Food Delivery"
     ],
     "location": {
       "lat": 42.773190799999995,
@@ -669,6 +698,8 @@
     "cuisine": "Restaurant",
     "address": "1297 Broadway, Watervliet, NY 12189, USA",
     "url": "https://maps.google.com/?cid=13684442842519594407&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Quechua+Peruvian+Restaurant+menu+1297+Broadway%2C+Watervliet%2C+NY+12189%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Watervliet",
     "tags": [
       "Restaurant",
@@ -714,6 +745,8 @@
     "cuisine": "BBQ",
     "address": "30503 E Line Rd, Delmar, MD 21875, USA",
     "url": "https://maps.google.com/?cid=2000641312786022879&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Groove+menu+30503+E+Line+Rd%2C+Delmar%2C+MD+21875%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Delmar",
     "tags": [
       "Barbecue Restaurant",
@@ -762,6 +795,8 @@
     "cuisine": "Restaurant",
     "address": "39 Voorheesville Ave, Voorheesville, NY 12186, USA",
     "url": "https://maps.google.com/?cid=3238559475895928724&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Pretty+Alright+Breakfast+Club+menu+39+Voorheesville+Ave%2C+Voorheesville%2C+NY+12186%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Guilderland",
     "tags": [
       "Breakfast Restaurant",
@@ -809,6 +844,8 @@
     "cuisine": "Restaurant",
     "address": "70 Broadway, Fort Edward, NY 12828, USA",
     "url": "https://maps.google.com/?cid=8513951006378308089&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Kerrie%27s+On+Broadway+menu+70+Broadway%2C+Fort+Edward%2C+NY+12828%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Fort Edward",
     "tags": [
       "Diner",
@@ -857,6 +894,8 @@
     "cuisine": "Italian",
     "address": "818 Central Ave, Albany, NY 12206, USA",
     "url": "https://maps.google.com/?cid=212563844486080307&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Grappa+%2772+menu+818+Central+Ave%2C+Albany%2C+NY+12206%2C+USA",
+    "menu_status": "search",
     "match_reason": "Elegant eatery, tucked away in a strip mall, featuring classic Italian fare, music & grappa.",
     "tags": [
       "Italian Restaurant",
@@ -907,6 +946,8 @@
     "cuisine": "Bar & Grill",
     "address": "942 Broadway, Albany, NY 12207, USA",
     "url": "https://maps.google.com/?cid=16106660197221478328&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Lost+%26+Found+Bar+%26+Kitchen+menu+942+Broadway%2C+Albany%2C+NY+12207%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Albany",
     "tags": [
       "Bar & Grill",
@@ -950,15 +991,68 @@
     "neighborhood": "Albany"
   },
   {
-    "id": "ChIJ-QP97GI33okR164n9U7ZKAU",
-    "google_place_id": "ChIJ-QP97GI33okR164n9U7ZKAU",
-    "name": "Olde Bryan Inn",
+    "id": "ChIJm4xRdto53okRho4LkTFzdkE",
+    "google_place_id": "ChIJm4xRdto53okRho4LkTFzdkE",
+    "name": "Osteria Danny",
+    "cuisine": "Italian",
+    "address": "26 Henry St, Saratoga Springs, NY 12866, USA",
+    "url": "https://maps.google.com/?cid=4717084316441218694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Osteria+Danny+menu+26+Henry+St%2C+Saratoga+Springs%2C+NY+12866%2C+USA",
+    "menu_status": "search",
+    "match_reason": "Trattoria featuring modern & classic Italian fare, including pastas & mains, in a convivial space.",
+    "tags": [
+      "Italian Restaurant",
+      "Restaurant",
+      "Food",
+      "Point Of Interest",
+      "Establishment"
+    ],
+    "location": {
+      "lat": 43.079745599999995,
+      "lng": -73.7829299
+    },
+    "phone": "(518) 709-5221",
+    "website": "http://www.osteriadanny.com/",
+    "hours": [
+      "Monday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 5:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 5:00\u2009\u2013\u200910:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 5:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 5:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 5:00\u2009\u2013\u200910:00\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.7,
+    "review_count": 609,
+    "price_level": 3,
+    "description": "Trattoria featuring modern & classic Italian fare, including pastas & mains, in a convivial space.",
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "ChIJu7CgtmrEJIgRhQMr9TmWUMU",
+    "google_place_id": "ChIJu7CgtmrEJIgRhQMr9TmWUMU",
+    "name": "Sedona Taphouse",
     "cuisine": "American",
-    "address": "123 Maple Ave, Saratoga Springs, NY 12866, USA",
-    "url": "https://maps.google.com/?cid=371785902401760983&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "match_reason": "Old stone house with Revolutionary-era ties now supplying sandwiches, steaks & hearty American fare.",
+    "address": "198 E Big Beaver Rd, Troy, MI 48083, USA",
+    "url": "https://maps.google.com/?cid=14218029199279195013&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Sedona+Taphouse+menu+198+E+Big+Beaver+Rd%2C+Troy%2C+MI+48083%2C+USA",
+    "menu_status": "search",
+    "match_reason": "Popular restaurant in Troy",
     "tags": [
       "American Restaurant",
+      "Cocktail Bar",
+      "Wine Bar",
       "Bar",
       "Restaurant",
       "Food",
@@ -966,85 +1060,35 @@
       "Establishment"
     ],
     "location": {
-      "lat": 43.0870878,
-      "lng": -73.7809592
+      "lat": 42.5621856,
+      "lng": -83.1432133
     },
-    "phone": "(518) 587-2990",
-    "website": "http://www.oldebryaninn.com/",
+    "phone": "(248) 422-6167",
+    "website": "https://sedonataphouse.com/locations/troy-mi/",
     "hours": [
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
-      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM"
+      "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
-      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM"
-    ],
-    "business_status": "OPERATIONAL",
-    "rating": 4.6,
-    "review_count": 3283,
-    "price_level": 2,
-    "description": "Old stone house with Revolutionary-era ties now supplying sandwiches, steaks & hearty American fare.",
-    "neighborhood": "Saratoga Springs"
-  },
-  {
-    "id": "ChIJm0I2GKYP3okRmnb0byFKApY",
-    "google_place_id": "ChIJm0I2GKYP3okRmnb0byFKApY",
-    "name": "Dinosaur Bar-B-Que",
-    "cuisine": "BBQ",
-    "address": "377 River St, Troy, NY 12180, USA",
-    "url": "https://maps.google.com/?cid=10809283563115280026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "match_reason": "Barbecue chain serving Southern-style meats & draft brews in a retro setting (most have live music).",
-    "tags": [
-      "Barbecue Restaurant",
-      "Catering Service",
-      "Food Delivery",
-      "American Restaurant",
-      "Restaurant",
-      "Food",
-      "Point Of Interest",
-      "Service"
-    ],
-    "location": {
-      "lat": 42.7345623,
-      "lng": -73.6892422
-    },
-    "phone": "(518) 308-0400",
-    "website": "https://dinosaurbarbque.com/locations/troy",
-    "hours": [
-      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
-    ],
-    "open_now": false,
-    "current_hours": [
-      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM"
     ],
     "business_status": "OPERATIONAL",
     "rating": 4.5,
-    "review_count": 5379,
+    "review_count": 4363,
     "price_level": 2,
-    "description": "Barbecue chain serving Southern-style meats & draft brews in a retro setting (most have live music).",
+    "description": "Popular restaurant in Troy",
     "neighborhood": "Troy"
   },
   {
@@ -1054,6 +1098,8 @@
     "cuisine": "American",
     "address": "512 State St, Schenectady, NY 12305, USA",
     "url": "https://maps.google.com/?cid=9391586660657564413&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Nest+menu+512+State+St%2C+Schenectady%2C+NY+12305%2C+USA",
+    "menu_status": "search",
     "match_reason": "Fashionable restaurant offering high-end dishes, brunch & wines, plus cocktails.",
     "tags": [
       "Restaurant",
@@ -1100,6 +1146,8 @@
     "cuisine": "Korean",
     "address": "2309 Nott St E, Niskayuna, NY 12309, USA",
     "url": "https://maps.google.com/?cid=1919694076635990340&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=VOLCANO+Asian+BBQ+and+Hot+Pot+menu+2309+Nott+St+E%2C+Niskayuna%2C+NY+12309%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Niskayuna",
     "tags": [
       "Korean Restaurant",
@@ -1149,12 +1197,14 @@
     "cuisine": "American",
     "address": "675 Grooms Rd, Clifton Park, NY 12065, USA",
     "url": "https://maps.google.com/?cid=12929682023899125374&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Flats+Restaurant+%26+Tavern+menu+675+Grooms+Rd%2C+Clifton+Park%2C+NY+12065%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Clifton Park",
     "tags": [
       "Restaurant",
       "Meal Takeaway",
-      "American Restaurant",
       "Bar",
+      "American Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
@@ -1195,18 +1245,20 @@
     "id": "ChIJbwX4mnUN3okRl_RO0otpKuw",
     "google_place_id": "ChIJbwX4mnUN3okRl_RO0otpKuw",
     "name": "MOSU",
-    "cuisine": "Sushi",
+    "cuisine": "Korean",
     "address": "111 Wolf Rd Ste 1, Albany, NY 12205, USA",
     "url": "https://maps.google.com/?cid=17017530191222600855&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=MOSU+menu+111+Wolf+Rd+Ste+1%2C+Albany%2C+NY+12205%2C+USA",
+    "menu_status": "search",
     "match_reason": "Asian-style BBQ & Chinese hot pot are matched by craft cocktails at this upscale, artful restaurant.",
     "tags": [
       "Asian Restaurant",
-      "Yakiniku Restaurant",
-      "Hot Pot Restaurant",
       "Korean Barbecue Restaurant",
-      "Japanese Restaurant",
+      "Hot Pot Restaurant",
+      "Yakiniku Restaurant",
       "Korean Restaurant",
       "Bar",
+      "Japanese Restaurant",
       "Restaurant"
     ],
     "location": {
@@ -1247,6 +1299,8 @@
     "cuisine": "Seafood",
     "address": "1484 US-9, Lake George, NY 12845, USA",
     "url": "https://maps.google.com/?cid=6839264210777226088&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Log+Jam+Restaurant+menu+1484+US-9%2C+Lake+George%2C+NY+12845%2C+USA",
+    "menu_status": "search",
     "match_reason": "Log cabin with stone fireplaces turning out American fare from a large salad bar to steaks.",
     "tags": [
       "Steak House",
@@ -1290,47 +1344,54 @@
     "neighborhood": "Lake George"
   },
   {
-    "id": "ChIJQQe4ZcjR34kRsJ_pKdQBv5s",
-    "google_place_id": "ChIJQQe4ZcjR34kRsJ_pKdQBv5s",
-    "name": "Bastard Restobar",
+    "id": "ChIJQQkGpfbR34kRBSVPp1cqRpQ",
+    "google_place_id": "ChIJQQkGpfbR34kRBSVPp1cqRpQ",
+    "name": "Common Roots Brewing Company",
     "cuisine": "Restaurant",
-    "address": "72 South St, Glens Falls, NY 12801, USA",
-    "url": "https://maps.google.com/?cid=11222690807178436528&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "address": "58 Saratoga Ave, South Glens Falls, NY 12803, USA",
+    "url": "https://maps.google.com/?cid=10684273721940583685&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Common+Roots+Brewing+Company+menu+58+Saratoga+Ave%2C+South+Glens+Falls%2C+NY+12803%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Glens Falls",
     "tags": [
+      "Brewpub",
+      "Event Venue",
+      "Pub",
+      "Bar",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 43.3087394,
-      "lng": -73.6473433
+      "lat": 43.2952392,
+      "lng": -73.6365465
     },
-    "phone": "(518) 223-0290",
-    "website": "https://bastardrestobar.com/",
+    "phone": "(518) 409-8248",
+    "website": "http://www.commonrootsbrewing.com/",
     "hours": [
-      "Monday: 4:30\u2009\u2013\u20098:00\u202fPM",
-      "Tuesday: Closed",
-      "Wednesday: Closed",
-      "Thursday: 4:30\u2009\u2013\u20098:00\u202fPM",
-      "Friday: 4:30\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 4:30\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 3:30\u2009\u2013\u20097:30\u202fPM"
+      "Monday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 12:00\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 4:30\u2009\u2013\u20098:00\u202fPM",
-      "Tuesday: Closed",
-      "Wednesday: Closed",
-      "Thursday: 4:30\u2009\u2013\u20098:00\u202fPM",
-      "Friday: 4:30\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 4:30\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 3:30\u2009\u2013\u20097:30\u202fPM"
+      "Monday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 12:00\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.9,
-    "review_count": 158,
+    "rating": 4.6,
+    "review_count": 1009,
+    "price_level": 2,
     "description": "Popular restaurant in Glens Falls",
     "neighborhood": "Glens Falls"
   },
@@ -1341,6 +1402,8 @@
     "cuisine": "Restaurant",
     "address": "537 Aviation Rd, Queensbury, NY 12804, USA",
     "url": "https://maps.google.com/?cid=14159585746350597192&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Silo+Restaurant+%26+Gift+Shop+menu+537+Aviation+Rd%2C+Queensbury%2C+NY+12804%2C+USA",
+    "menu_status": "search",
     "match_reason": "Set in a transplanted barn, this daytime cafe offers country fare, fudge & a shop with local crafts.",
     "tags": [
       "Restaurant",
@@ -1387,6 +1450,8 @@
     "cuisine": "Restaurant",
     "address": "51 Front St, Ballston Spa, NY 12020, USA",
     "url": "https://maps.google.com/?cid=11502197455190000213&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Next+Door+Kitchen+and+Bar+menu+51+Front+St%2C+Ballston+Spa%2C+NY+12020%2C+USA",
+    "menu_status": "search",
     "match_reason": "Locally sourced comfort food & wine served in a rustic-chic eatery with reclaimed-wood decor.",
     "tags": [
       "Restaurant",
@@ -1428,52 +1493,49 @@
     "neighborhood": "Ballston Spa"
   },
   {
-    "id": "ChIJWYEUHPhODhMRe_8HbZSpjow",
-    "google_place_id": "ChIJWYEUHPhODhMRe_8HbZSpjow",
-    "name": "Venus Restaurant",
-    "cuisine": "Seafood",
-    "address": "il, Triq Gandoffli, St Paul's Bay SPB10, Malta",
-    "url": "https://maps.google.com/?cid=10128219066952318843&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "id": "ChIJ-z-vQqZFDhMR8h9JjBd-1Gw",
+    "google_place_id": "ChIJ-z-vQqZFDhMR8h9JjBd-1Gw",
+    "name": "AZAR",
+    "cuisine": "Restaurant",
+    "address": "Triq Manwel Dimech Tas-Sliema, Sliema SLM 1055, Malta",
+    "url": "https://maps.google.com/?cid=7842031490761826290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=AZAR+menu+Triq+Manwel+Dimech+Tas-Sliema%2C+Sliema+SLM+1055%2C+Malta",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Malta",
     "tags": [
-      "Seafood Restaurant",
-      "Fine Dining Restaurant",
-      "Steak House",
-      "Mediterranean Restaurant",
-      "European Restaurant",
-      "Italian Restaurant",
       "Restaurant",
-      "Food"
+      "Food",
+      "Point Of Interest",
+      "Establishment"
     ],
     "location": {
-      "lat": 35.95095310000001,
-      "lng": 14.4141205
+      "lat": 35.9100463,
+      "lng": 14.497973600000002
     },
-    "phone": "9984 6767",
-    "website": "http://venusrestaurantmalta.com/",
+    "phone": "9939 3876",
+    "website": "https://www.azarrestaurant.com/",
     "hours": [
-      "Monday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Tuesday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Wednesday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Thursday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Friday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Saturday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Sunday: 6:00\u2009\u2013\u200910:30\u202fPM"
+      "Monday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Tuesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Wednesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Thursday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Friday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: 6:30\u2009\u2013\u20099:30\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Tuesday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Wednesday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Thursday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Friday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Saturday: 6:00\u2009\u2013\u200910:30\u202fPM",
-      "Sunday: 6:00\u2009\u2013\u200910:30\u202fPM"
+      "Monday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Tuesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Wednesday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Thursday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Friday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 6:30\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: 6:30\u2009\u2013\u20099:30\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.8,
-    "review_count": 1894,
-    "price_level": 2,
+    "rating": 4.9,
+    "review_count": 589,
     "description": "Popular restaurant in Malta",
     "neighborhood": "Malta"
   },
@@ -1484,14 +1546,16 @@
     "cuisine": "Bar & Grill",
     "address": "185 Old Loudon Rd, Latham, NY 12110, USA",
     "url": "https://maps.google.com/?cid=15972850691585045786&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Tipsy+Moose+Tap+%26+Tavern+menu+185+Old+Loudon+Rd%2C+Latham%2C+NY+12110%2C+USA",
+    "menu_status": "search",
     "match_reason": "Cozy, rustic tavern featuring a menu of pub grub & craft beers, plus a patio & weekend brunch.",
     "tags": [
       "Bar & Grill",
       "Bar And Grill",
       "Bar",
       "Restaurant",
-      "Point Of Interest",
       "Food",
+      "Point Of Interest",
       "Establishment"
     ],
     "location": {
@@ -1533,6 +1597,8 @@
     "cuisine": "American",
     "address": "182 Remsen St, Cohoes, NY 12047, USA",
     "url": "https://maps.google.com/?cid=8301276678018822843&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Daisy+Bar+and+Kitchen+menu+182+Remsen+St%2C+Cohoes%2C+NY+12047%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Cohoes",
     "tags": [
       "American Restaurant",
@@ -1581,6 +1647,8 @@
     "cuisine": "Bar & Grill",
     "address": "795 3rd Ave, Watervliet, NY 12189, USA",
     "url": "https://maps.google.com/?cid=10375079769628979208&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Arsenal+Reserve+menu+795+3rd+Ave%2C+Watervliet%2C+NY+12189%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Watervliet",
     "tags": [
       "Restaurant",
@@ -1629,6 +1697,8 @@
     "cuisine": "Seafood",
     "address": "1660 Coast Blvd, Del Mar, CA 92014, USA",
     "url": "https://maps.google.com/?cid=10596977904993984561&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Jake%27s+Del+Mar+menu+1660+Coast+Blvd%2C+Del+Mar%2C+CA+92014%2C+USA",
+    "menu_status": "search",
     "match_reason": "Seaside eatery & bar with floor-to-ceiling windows has an upscale menu, Sunday brunch & grand views.",
     "tags": [
       "Seafood Restaurant",
@@ -1679,6 +1749,8 @@
     "cuisine": "Italian",
     "address": "2080 Western Ave, Guilderland, NY 12084, USA",
     "url": "https://maps.google.com/?cid=13317023613409159498&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Caffe+Italia+Ristorante+menu+2080+Western+Ave%2C+Guilderland%2C+NY+12084%2C+USA",
+    "menu_status": "search",
     "match_reason": "A veteran family-run standby for classic Italian dishes, from zuppa di pesce to veal parmigiana.",
     "tags": [
       "Italian Restaurant",
@@ -1726,6 +1798,8 @@
     "cuisine": "Restaurant",
     "address": "3011 US-4, Hudson Falls, NY 12839, USA",
     "url": "https://maps.google.com/?cid=3462412897267749991&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Vested+Veteran+Grill+menu+3011+US-4%2C+Hudson+Falls%2C+NY+12839%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Fort Edward",
     "tags": [
       "Restaurant",
@@ -1771,6 +1845,8 @@
     "cuisine": "American",
     "address": "324 Central Ave, Albany, NY 12206, USA",
     "url": "https://maps.google.com/?cid=12845794220332637407&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Nash+%26+Smashed+%28Albany%2C+NY%29+menu+324+Central+Ave%2C+Albany%2C+NY+12206%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Capital Region, NY",
     "tags": [
       "Hamburger Restaurant",
@@ -1818,6 +1894,8 @@
     "cuisine": "American",
     "address": "79 N Pearl St, Albany, NY 12207, USA",
     "url": "https://maps.google.com/?cid=2124253614074873021&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Hollow+Bar+%2B+Kitchen+menu+79+N+Pearl+St%2C+Albany%2C+NY+12207%2C+USA",
+    "menu_status": "search",
     "match_reason": "Hip spot in a historic building offering updated American eats, rotating craft beers & live music.",
     "tags": [
       "American Restaurant",
@@ -1862,62 +1940,17 @@
     "neighborhood": "Albany"
   },
   {
-    "id": "ChIJ-7NnDjk53okREX6JRluvX9Q",
-    "google_place_id": "ChIJ-7NnDjk53okREX6JRluvX9Q",
-    "name": "Kindred",
-    "cuisine": "Restaurant",
-    "address": "84 Henry St, Saratoga Springs, NY 12866, USA",
-    "url": "https://maps.google.com/?cid=15303142865388535313&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "match_reason": "Popular restaurant in Saratoga Springs",
-    "tags": [
-      "Restaurant",
-      "Food",
-      "Point Of Interest",
-      "Establishment"
-    ],
-    "location": {
-      "lat": 43.0822088,
-      "lng": -73.782121
-    },
-    "phone": "(518) 886-1198",
-    "website": "https://www.kindredsaratoga.com/",
-    "hours": [
-      "Monday: Closed",
-      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Thursday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Friday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
-      "Saturday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
-      "Sunday: Closed"
-    ],
-    "open_now": false,
-    "current_hours": [
-      "Monday: Closed",
-      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Thursday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-      "Friday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
-      "Saturday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
-      "Sunday: Closed"
-    ],
-    "business_status": "OPERATIONAL",
-    "rating": 4.8,
-    "review_count": 130,
-    "description": "Popular restaurant in Saratoga Springs",
-    "neighborhood": "Saratoga Springs"
-  },
-  {
-    "id": "ChIJu7CgtmrEJIgRhQMr9TmWUMU",
-    "google_place_id": "ChIJu7CgtmrEJIgRhQMr9TmWUMU",
-    "name": "Sedona Taphouse",
+    "id": "ChIJ-QP97GI33okR164n9U7ZKAU",
+    "google_place_id": "ChIJ-QP97GI33okR164n9U7ZKAU",
+    "name": "Olde Bryan Inn",
     "cuisine": "American",
-    "address": "198 E Big Beaver Rd, Troy, MI 48083, USA",
-    "url": "https://maps.google.com/?cid=14218029199279195013&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "match_reason": "Popular restaurant in Troy",
+    "address": "123 Maple Ave, Saratoga Springs, NY 12866, USA",
+    "url": "https://maps.google.com/?cid=371785902401760983&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Olde+Bryan+Inn+menu+123+Maple+Ave%2C+Saratoga+Springs%2C+NY+12866%2C+USA",
+    "menu_status": "search",
+    "match_reason": "Old stone house with Revolutionary-era ties now supplying sandwiches, steaks & hearty American fare.",
     "tags": [
       "American Restaurant",
-      "Wine Bar",
-      "Cocktail Bar",
       "Bar",
       "Restaurant",
       "Food",
@@ -1925,83 +1958,136 @@
       "Establishment"
     ],
     "location": {
-      "lat": 42.5621856,
-      "lng": -83.1432133
+      "lat": 43.0870878,
+      "lng": -73.7809592
     },
-    "phone": "(248) 422-6167",
-    "website": "https://sedonataphouse.com/locations/troy-mi/",
+    "phone": "(518) 587-2990",
+    "website": "http://www.oldebryaninn.com/",
     "hours": [
-      "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
-      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM"
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u200911:30\u202fPM",
-      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM"
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20098:30\u202fPM"
+    ],
+    "business_status": "OPERATIONAL",
+    "rating": 4.6,
+    "review_count": 3283,
+    "price_level": 2,
+    "description": "Old stone house with Revolutionary-era ties now supplying sandwiches, steaks & hearty American fare.",
+    "neighborhood": "Saratoga Springs"
+  },
+  {
+    "id": "ChIJm0I2GKYP3okRmnb0byFKApY",
+    "google_place_id": "ChIJm0I2GKYP3okRmnb0byFKApY",
+    "name": "Dinosaur Bar-B-Que",
+    "cuisine": "BBQ",
+    "address": "377 River St, Troy, NY 12180, USA",
+    "url": "https://maps.google.com/?cid=10809283563115280026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Dinosaur+Bar-B-Que+menu+377+River+St%2C+Troy%2C+NY+12180%2C+USA",
+    "menu_status": "search",
+    "match_reason": "Barbecue chain serving Southern-style meats & draft brews in a retro setting (most have live music).",
+    "tags": [
+      "Barbecue Restaurant",
+      "American Restaurant",
+      "Restaurant",
+      "Catering Service",
+      "Food Delivery",
+      "Food",
+      "Point Of Interest",
+      "Service"
+    ],
+    "location": {
+      "lat": 42.7345623,
+      "lng": -73.6892422
+    },
+    "phone": "(518) 308-0400",
+    "website": "https://dinosaurbarbque.com/locations/troy",
+    "hours": [
+      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
+    ],
+    "open_now": false,
+    "current_hours": [
+      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
     "rating": 4.5,
-    "review_count": 4363,
+    "review_count": 5379,
     "price_level": 2,
-    "description": "Popular restaurant in Troy",
+    "description": "Barbecue chain serving Southern-style meats & draft brews in a retro setting (most have live music).",
     "neighborhood": "Troy"
   },
   {
-    "id": "ChIJEXeY0zpv3okRwb0hsLACiBU",
-    "google_place_id": "ChIJEXeY0zpv3okRwb0hsLACiBU",
-    "name": "Zaffron Kitchen Schenectady",
-    "cuisine": "Mediterranean",
-    "address": "183 Nott Terrace, Schenectady, NY 12308, USA",
-    "url": "https://maps.google.com/?cid=1551493029521636801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "id": "ChIJJUEkcn5v3okRkWleHYCcNb0",
+    "google_place_id": "ChIJJUEkcn5v3okRkWleHYCcNb0",
+    "name": "The River Road House",
+    "cuisine": "American",
+    "address": "989 River Rd, Schenectady, NY 12306, USA",
+    "url": "https://maps.google.com/?cid=13633975520996518289&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+River+Road+House+menu+989+River+Rd%2C+Schenectady%2C+NY+12306%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Schenectady",
     "tags": [
-      "Mediterranean Restaurant",
-      "Afghani Restaurant",
-      "Falafel Restaurant",
-      "Middle Eastern Restaurant",
-      "Kebab Shop",
+      "American Restaurant",
+      "Bar",
       "Restaurant",
       "Food",
-      "Point Of Interest"
+      "Point Of Interest",
+      "Establishment"
     ],
     "location": {
-      "lat": 42.811223399999996,
-      "lng": -73.93640479999999
+      "lat": 42.8600553,
+      "lng": -74.02818169999999
     },
-    "phone": "(518) 579-0009",
-    "website": "https://zaffronk.com/schenectady?utm_source=google",
+    "phone": "(518) 214-4136",
+    "website": "https://www.facebook.com/RiverRoadHouseBandG/",
     "hours": [
-      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Monday: Closed",
       "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
       "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
       "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM",
-      "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
+      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20098:00\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Monday: Closed",
       "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
       "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
       "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u20099:30\u202fPM",
-      "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
+      "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20098:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.8,
-    "review_count": 186,
+    "rating": 4.6,
+    "review_count": 636,
+    "price_level": 2,
     "description": "Popular restaurant in Schenectady",
     "neighborhood": "Schenectady"
   },
@@ -2009,14 +2095,16 @@
     "id": "ChIJxf9QhJ9t3okRRc4bvFOGYHY",
     "google_place_id": "ChIJxf9QhJ9t3okRRc4bvFOGYHY",
     "name": "Catrinas Mexican Grill & Bar",
-    "cuisine": "Spanish",
+    "cuisine": "Mexican",
     "address": "2305 Nott St E, Schenectady, NY 12309, USA",
     "url": "https://maps.google.com/?cid=8529965388436065861&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Catrinas+Mexican+Grill+%26+Bar+menu+2305+Nott+St+E%2C+Schenectady%2C+NY+12309%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Niskayuna",
     "tags": [
       "Restaurant",
-      "Spanish Restaurant",
       "Mexican Restaurant",
+      "Spanish Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
@@ -2059,15 +2147,17 @@
     "cuisine": "Bar & Grill",
     "address": "1021 NY-146, Clifton Park, NY 12065, USA",
     "url": "https://maps.google.com/?cid=2341501422613538758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Ravenswood+menu+1021+NY-146%2C+Clifton+Park%2C+NY+12065%2C+USA",
+    "menu_status": "search",
     "match_reason": "Classic tavern with wood paneling featuring pub fare & draft beer, plus live entertainment.",
     "tags": [
       "Bar & Grill",
       "Bar And Grill",
       "Sports Bar",
       "Banquet Hall",
-      "Live Music Venue",
       "Pub",
       "Bar",
+      "Live Music Venue",
       "Event Venue"
     ],
     "location": {
@@ -2109,6 +2199,8 @@
     "cuisine": "Restaurant",
     "address": "1553 Central Ave, Albany, NY 12205, USA",
     "url": "https://maps.google.com/?cid=12188760310891891522&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Delmonico%27s+Italian+Steakhouse+menu+1553+Central+Ave%2C+Albany%2C+NY+12205%2C+USA",
+    "menu_status": "search",
     "match_reason": "Italian chain serving steak, classic entrees & cocktails in a traditional setting.",
     "tags": [
       "Restaurant",
@@ -2152,14 +2244,16 @@
     "id": "ChIJJZieAzfF34kRHSQNwibCIME",
     "google_place_id": "ChIJJZieAzfF34kRHSQNwibCIME",
     "name": "The Lagoon",
-    "cuisine": "Bar & Grill",
+    "cuisine": "Pizza",
     "address": "204 Canada St, Lake George, NY 12845, USA",
     "url": "https://maps.google.com/?cid=13916336320295019549&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Lagoon+menu+204+Canada+St%2C+Lake+George%2C+NY+12845%2C+USA",
+    "menu_status": "search",
     "match_reason": "Laid-back eatery offering pizzas, seafood & American favorites, plus lake views & entertainment.",
     "tags": [
       "Restaurant",
-      "Bar And Grill",
       "Pizza Restaurant",
+      "Bar And Grill",
       "Bar",
       "Food",
       "Point Of Interest",
@@ -2198,52 +2292,49 @@
     "neighborhood": "Lake George"
   },
   {
-    "id": "ChIJcxGYVEHR34kR5aTXxESsxiI",
-    "google_place_id": "ChIJcxGYVEHR34kR5aTXxESsxiI",
-    "name": "Mint",
-    "cuisine": "Vegan",
-    "address": "80 Warren St, Glens Falls, NY 12801, USA",
-    "url": "https://maps.google.com/?cid=2505879654038480101&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "id": "ChIJQQe4ZcjR34kRsJ_pKdQBv5s",
+    "google_place_id": "ChIJQQe4ZcjR34kRsJ_pKdQBv5s",
+    "name": "Bastard Restobar",
+    "cuisine": "Restaurant",
+    "address": "72 South St, Glens Falls, NY 12801, USA",
+    "url": "https://maps.google.com/?cid=11222690807178436528&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Bastard+Restobar+menu+72+South+St%2C+Glens+Falls%2C+NY+12801%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Glens Falls",
     "tags": [
-      "Cocktail Bar",
-      "Vegan Restaurant",
-      "Vegetarian Restaurant",
-      "Bar",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 43.3102735,
-      "lng": -73.6404297
+      "lat": 43.3087394,
+      "lng": -73.6473433
     },
-    "phone": "(518) 741-0584",
-    "website": "http://www.mint518.com/",
+    "phone": "(518) 223-0290",
+    "website": "https://bastardrestobar.com/",
     "hours": [
-      "Monday: 5:00\u2009\u2013\u20098:00\u202fPM",
-      "Tuesday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Wednesday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Thursday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
+      "Monday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 3:30\u2009\u2013\u20097:30\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 5:00\u2009\u2013\u20098:00\u202fPM",
-      "Tuesday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Wednesday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Thursday: 12:00\u2009\u2013\u20098:00\u202fPM",
-      "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
+      "Monday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 4:30\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 4:30\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 3:30\u2009\u2013\u20097:30\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.7,
-    "review_count": 401,
-    "price_level": 2,
+    "rating": 4.9,
+    "review_count": 158,
     "description": "Popular restaurant in Glens Falls",
     "neighborhood": "Glens Falls"
   },
@@ -2254,6 +2345,8 @@
     "cuisine": "Bar & Grill",
     "address": "982 NY-149, Queensbury, NY 12804, USA",
     "url": "https://maps.google.com/?cid=13034389255347207112&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Adirondack+Bar+and+Grill+menu+982+NY-149%2C+Queensbury%2C+NY+12804%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Queensbury",
     "tags": [
       "Bar & Grill",
@@ -2303,11 +2396,13 @@
     "cuisine": "Dining",
     "address": "11-13 Washington St, Ballston Spa, NY 12020, USA",
     "url": "https://maps.google.com/?cid=7466139852365731921&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Speckled+Pig+Brewing+Co.+menu+11-13+Washington+St%2C+Ballston+Spa%2C+NY+12020%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Ballston Spa",
     "tags": [
       "Brewery",
-      "Food",
       "Manufacturer",
+      "Food",
       "Point Of Interest",
       "Service",
       "Establishment"
@@ -2350,6 +2445,8 @@
     "cuisine": "Restaurant",
     "address": "103 Dawret -il - Gzejer, San Pawl il-Ba\u0127ar, Malta",
     "url": "https://maps.google.com/?cid=7892435680987475000&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Tava+Terrace+menu+103+Dawret+-il+-+Gzejer%2C+San+Pawl+il-Ba%C4%A7ar%2C+Malta",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Malta",
     "tags": [
       "Steak House",
@@ -2400,12 +2497,14 @@
     "cuisine": "American",
     "address": "1214 Troy-Schenectady Rd, Latham, NY 12110, USA",
     "url": "https://maps.google.com/?cid=2269124258403836933&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Innovo+Kitchen+menu+1214+Troy-Schenectady+Rd%2C+Latham%2C+NY+12110%2C+USA",
+    "menu_status": "search",
     "match_reason": "Polished, industrial-chic outpost for burgers, brunch, New American mains & innovative cocktails.",
     "tags": [
       "American Restaurant",
       "Restaurant",
-      "Point Of Interest",
       "Food",
+      "Point Of Interest",
       "Establishment"
     ],
     "location": {
@@ -2447,6 +2546,8 @@
     "cuisine": "Restaurant",
     "address": "86 Remsen St, Cohoes, NY 12047, USA",
     "url": "https://maps.google.com/?cid=3269041943294935100&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Tacos+N%27+Stuff+menu+86+Remsen+St%2C+Cohoes%2C+NY+12047%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Cohoes",
     "tags": [
       "Restaurant",
@@ -2492,6 +2593,8 @@
     "cuisine": "Bar & Grill",
     "address": "310 19th St, Watervliet, NY 12189, USA",
     "url": "https://maps.google.com/?cid=776975081303962327&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Black+Bear+Inn+menu+310+19th+St%2C+Watervliet%2C+NY+12189%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Watervliet",
     "tags": [
       "Restaurant",
@@ -2541,6 +2644,8 @@
     "cuisine": "Restaurant",
     "address": "360 Delaware Ave, Delmar, NY 12054, USA",
     "url": "https://maps.google.com/?cid=1257837396416118065&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=CORAY+KITCHEN+menu+360+Delaware+Ave%2C+Delmar%2C+NY+12054%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Delmar",
     "tags": [
       "Restaurant",
@@ -2586,6 +2691,8 @@
     "cuisine": "Restaurant",
     "address": "2080 Western Ave, Guilderland, NY 12084, USA",
     "url": "https://maps.google.com/?cid=7639896208629926688&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Junior%27s+Bar+%26+Grill+menu+2080+Western+Ave%2C+Guilderland%2C+NY+12084%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Guilderland",
     "tags": [
       "Restaurant",
@@ -2632,6 +2739,8 @@
     "cuisine": "Pizza",
     "address": "159 Broadway, Fort Edward, NY 12828, USA",
     "url": "https://maps.google.com/?cid=1627104668469736122&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Grumbellies+menu+159+Broadway%2C+Fort+Edward%2C+NY+12828%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Fort Edward",
     "tags": [
       "Pizza Restaurant",
@@ -2679,6 +2788,8 @@
     "cuisine": "Seafood",
     "address": "1470 Western Ave, Albany, NY 12203, USA",
     "url": "https://maps.google.com/?cid=7873367353003562454&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=black+%26+blue+Steak+and+Crab%2C+Albany%2C+NY+menu+1470+Western+Ave%2C+Albany%2C+NY+12203%2C+USA",
+    "menu_status": "search",
     "match_reason": "Upscale surf 'n' turf meals complement the extensive wine list at this stylish steakhouse.",
     "tags": [
       "Steak House",
@@ -2721,53 +2832,50 @@
     "neighborhood": "Albany"
   },
   {
-    "id": "ChIJP-GoINE53okRMhKuV5jYycY",
-    "google_place_id": "ChIJP-GoINE53okRMhKuV5jYycY",
-    "name": "Druthers Brewing Company",
+    "id": "ChIJ-7NnDjk53okREX6JRluvX9Q",
+    "google_place_id": "ChIJ-7NnDjk53okREX6JRluvX9Q",
+    "name": "Kindred",
     "cuisine": "Restaurant",
-    "address": "381 Broadway, Saratoga Springs, NY 12866, USA",
-    "url": "https://maps.google.com/?cid=14324218238646227506&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "match_reason": "Lively brew pub serving its own craft beers & an eclectic food menu sourced from local ingredients.",
+    "address": "84 Henry St, Saratoga Springs, NY 12866, USA",
+    "url": "https://maps.google.com/?cid=15303142865388535313&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Kindred+menu+84+Henry+St%2C+Saratoga+Springs%2C+NY+12866%2C+USA",
+    "menu_status": "search",
+    "match_reason": "Popular restaurant in Saratoga Springs",
     "tags": [
-      "Brewpub",
-      "Pub",
-      "Brewery",
-      "Bar",
-      "Manufacturer",
       "Restaurant",
       "Food",
-      "Point Of Interest"
+      "Point Of Interest",
+      "Establishment"
     ],
     "location": {
-      "lat": 43.0808898,
-      "lng": -73.7860269
+      "lat": 43.0822088,
+      "lng": -73.782121
     },
-    "phone": "(518) 306-5275",
-    "website": "http://www.druthersbrewing.com/",
+    "phone": "(518) 886-1198",
+    "website": "https://www.kindredsaratoga.com/",
     "hours": [
-      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      "Monday: Closed",
+      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
+      "Saturday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
+      "Sunday: Closed"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Saturday: 11:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 11:30\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      "Monday: Closed",
+      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
+      "Saturday: 4:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
+      "Sunday: Closed"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.4,
-    "review_count": 1258,
-    "price_level": 2,
-    "description": "Lively brew pub serving its own craft beers & an eclectic food menu sourced from local ingredients.",
+    "rating": 4.8,
+    "review_count": 130,
+    "description": "Popular restaurant in Saratoga Springs",
     "neighborhood": "Saratoga Springs"
   },
   {
@@ -2777,6 +2885,8 @@
     "cuisine": "Restaurant",
     "address": "458 Broadway, Troy, NY 12180, USA",
     "url": "https://maps.google.com/?cid=15375694589366388169&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Oregano+Thyme+menu+458+Broadway%2C+Troy%2C+NY+12180%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Troy",
     "tags": [
       "Restaurant",
@@ -2816,50 +2926,51 @@
     "neighborhood": "Troy"
   },
   {
-    "id": "ChIJ3Y2xDgZu3okR6vVCsXvND18",
-    "google_place_id": "ChIJ3Y2xDgZu3okR6vVCsXvND18",
-    "name": "Johnny's",
-    "cuisine": "Italian",
-    "address": "433 State St, Schenectady, NY 12305, USA",
-    "url": "https://maps.google.com/?cid=6849919489392440810&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "match_reason": "Casual joint serving homemade pasta & Italian staples is a draw for happy hour & pre-theater meals.",
+    "id": "ChIJ5y2e6Whz3okRNXN86mQhQwY",
+    "google_place_id": "ChIJ5y2e6Whz3okRNXN86mQhQwY",
+    "name": "Grill Mediterranean Cuisine",
+    "cuisine": "Mediterranean",
+    "address": "1016 State St, Schenectady, NY 12307, USA",
+    "url": "https://maps.google.com/?cid=451241104981652277&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Grill+Mediterranean+Cuisine+menu+1016+State+St%2C+Schenectady%2C+NY+12307%2C+USA",
+    "menu_status": "search",
+    "match_reason": "Popular restaurant in Schenectady",
     "tags": [
-      "Italian Restaurant",
+      "Mediterranean Restaurant",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 42.812776,
-      "lng": -73.94134369999999
+      "lat": 42.80222320000001,
+      "lng": -73.9293857
     },
-    "phone": "(518) 982-5657",
-    "website": "https://www.johnnysdowntown.com/",
+    "phone": "(518) 419-8452",
+    "website": "http://grillmediterraneancuisine.com/",
     "hours": [
-      "Monday: Closed",
-      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: Closed"
+      "Monday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: Closed",
-      "Tuesday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Saturday: 5:00\u2009\u2013\u20099:00\u202fPM",
-      "Sunday: Closed"
+      "Monday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.5,
-    "review_count": 1137,
-    "price_level": 2,
-    "description": "Casual joint serving homemade pasta & Italian staples is a draw for happy hour & pre-theater meals.",
+    "rating": 4.9,
+    "review_count": 93,
+    "description": "Popular restaurant in Schenectady",
     "neighborhood": "Schenectady"
   },
   {
@@ -2869,6 +2980,8 @@
     "cuisine": "Restaurant",
     "address": "2 Freemans Bridge Rd, Glenville, NY 12302, USA",
     "url": "https://maps.google.com/?cid=11440173891645826069&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Max410+at+The+Waters+Edge+menu+2+Freemans+Bridge+Rd%2C+Glenville%2C+NY+12302%2C+USA",
+    "menu_status": "search",
     "match_reason": "19th-century farmhouse turned elegant American eatery with a cabana bar pitching daily happy hour.",
     "tags": [
       "Restaurant",
@@ -2915,6 +3028,8 @@
     "cuisine": "Italian",
     "address": "54 Clifton Country Rd, Clifton Park, NY 12065, USA",
     "url": "https://maps.google.com/?cid=15398660918414011798&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Sofia%27s+of+Clifton+Park+menu+54+Clifton+Country+Rd%2C+Clifton+Park%2C+NY+12065%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Clifton Park",
     "tags": [
       "Italian Restaurant",
@@ -2961,11 +3076,13 @@
     "cuisine": "American",
     "address": "480 Sand Creek Rd, Colonie, NY 12205, USA",
     "url": "https://maps.google.com/?cid=5451744548159217388&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Barnsider+menu+480+Sand+Creek+Rd%2C+Colonie%2C+NY+12205%2C+USA",
+    "menu_status": "search",
     "match_reason": "Aged beef & fresh fish in a fine American establishment with rustic elements & an open kitchen.",
     "tags": [
       "Steak House",
-      "Event Venue",
       "American Restaurant",
+      "Event Venue",
       "Restaurant",
       "Food",
       "Point Of Interest",
@@ -3005,94 +3122,104 @@
     "neighborhood": "Colonie"
   },
   {
-    "id": "ChIJLZDyknTb34kRCYbpEaSr1S4",
-    "google_place_id": "ChIJLZDyknTb34kRCYbpEaSr1S4",
-    "name": "Antonio's Bayside Bistro",
-    "cuisine": "Italian",
-    "address": "2999 NY-9L, Lake George, NY 12845, USA",
-    "url": "https://maps.google.com/?cid=3374792216947557897&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "match_reason": "Popular restaurant in Lake George",
+    "id": "ChIJO251AVDE34kR-yAPd-1WX30",
+    "google_place_id": "ChIJO251AVDE34kR-yAPd-1WX30",
+    "name": "Lake George Beach Club",
+    "cuisine": "American",
+    "address": "3 Montcalm St, Lake George, NY 12845, USA",
+    "url": "https://maps.google.com/?cid=9034034955433222395&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Lake+George+Beach+Club+menu+3+Montcalm+St%2C+Lake+George%2C+NY+12845%2C+USA",
+    "menu_status": "search",
+    "match_reason": "Lively 2-story haunt on the water featuring classic American dishes, live music & TVs for sports.",
     "tags": [
-      "Italian Restaurant",
+      "American Restaurant",
+      "Bar",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 43.441549599999995,
-      "lng": -73.6496198
+      "lat": 43.424354199999996,
+      "lng": -73.7122791
     },
-    "phone": "(518) 656-5225",
-    "website": "https://antoniosbayside.com/",
+    "phone": "(518) 685-5418",
+    "website": "http://www.lakegeorgebeachclub.com/",
     "hours": [
-      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      "Monday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Saturday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Sunday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-      "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-      "Sunday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      "Monday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Tuesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Wednesday: 4:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Thursday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Friday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Saturday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+      "Sunday: 12:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.5,
-    "review_count": 225,
-    "description": "Popular restaurant in Lake George",
+    "rating": 4.3,
+    "review_count": 1901,
+    "price_level": 2,
+    "description": "Lively 2-story haunt on the water featuring classic American dishes, live music & TVs for sports.",
     "neighborhood": "Lake George"
   },
   {
-    "id": "ChIJQai6OgDR34kRbukUk0bUEtk",
-    "google_place_id": "ChIJQai6OgDR34kRbukUk0bUEtk",
-    "name": "Scratch Kitchen",
-    "cuisine": "American",
-    "address": "21 Ridge St, Glens Falls, NY 12801, USA",
-    "url": "https://maps.google.com/?cid=15641797855391574382&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "id": "ChIJcxGYVEHR34kR5aTXxESsxiI",
+    "google_place_id": "ChIJcxGYVEHR34kR5aTXxESsxiI",
+    "name": "Mint",
+    "cuisine": "Vegan",
+    "address": "80 Warren St, Glens Falls, NY 12801, USA",
+    "url": "https://maps.google.com/?cid=2505879654038480101&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Mint+menu+80+Warren+St%2C+Glens+Falls%2C+NY+12801%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Glens Falls",
     "tags": [
-      "American Restaurant",
+      "Cocktail Bar",
+      "Vegan Restaurant",
+      "Vegetarian Restaurant",
+      "Bar",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 43.310193299999995,
-      "lng": -73.6437332
+      "lat": 43.3102735,
+      "lng": -73.6404297
     },
-    "phone": "(518) 338-3641",
-    "website": "https://www.scratchgardenskitchen.com/menu?menu=lunch-menu-1#1",
+    "phone": "(518) 741-0584",
+    "website": "http://www.mint518.com/",
     "hours": [
-      "Monday: Closed",
-      "Tuesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
-      "Wednesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
-      "Thursday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
-      "Friday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
-      "Saturday: 9:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
-      "Sunday: Closed"
+      "Monday: 5:00\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Thursday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: Closed",
-      "Tuesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
-      "Wednesday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
-      "Thursday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
-      "Friday: 7:30\u202fAM\u2009\u2013\u20092:30\u202fPM",
-      "Saturday: 9:30\u202fAM\u2009\u2013\u20092:00\u202fPM",
-      "Sunday: Closed"
+      "Monday: 5:00\u2009\u2013\u20098:00\u202fPM",
+      "Tuesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Wednesday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Thursday: 12:00\u2009\u2013\u20098:00\u202fPM",
+      "Friday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20099:00\u202fPM",
+      "Sunday: 12:00\u2009\u2013\u20097:00\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.8,
-    "review_count": 150,
+    "rating": 4.7,
+    "review_count": 401,
+    "price_level": 2,
     "description": "Popular restaurant in Glens Falls",
     "neighborhood": "Glens Falls"
   },
@@ -3103,6 +3230,8 @@
     "cuisine": "Restaurant",
     "address": "1066 US-9, Queensbury, NY 12804, USA",
     "url": "https://maps.google.com/?cid=4807498702218526377&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Uncle+Mario%27s+Garage+menu+1066+US-9%2C+Queensbury%2C+NY+12804%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Queensbury",
     "tags": [
       "Restaurant",
@@ -3149,6 +3278,8 @@
     "cuisine": "Restaurant",
     "address": "20 Prospect St Apt 111, Ballston Spa, NY 12020, USA",
     "url": "https://maps.google.com/?cid=880725792362724859&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Factory+Eatery+%26+Spirits+menu+20+Prospect+St+Apt+111%2C+Ballston+Spa%2C+NY+12020%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Ballston Spa",
     "tags": [
       "Restaurant",
@@ -3195,6 +3326,8 @@
     "cuisine": "Restaurant",
     "address": "2476 US-9, Malta, NY 12020, USA",
     "url": "https://maps.google.com/?cid=10625013733121134971&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Ugly+Rooster+Cafe+menu+2476+US-9%2C+Malta%2C+NY+12020%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Malta",
     "tags": [
       "Restaurant",
@@ -3241,12 +3374,14 @@
     "cuisine": "Restaurant",
     "address": "813 Loudon Rd, Latham, NY 12110, USA",
     "url": "https://maps.google.com/?cid=959306540438612316&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Dinertime+menu+813+Loudon+Rd%2C+Latham%2C+NY+12110%2C+USA",
+    "menu_status": "search",
     "match_reason": "Classic throwback with a retro ambiance providing homestyle American staples, plus a bakery counter.",
     "tags": [
       "Diner",
       "Restaurant",
-      "Point Of Interest",
       "Food",
+      "Point Of Interest",
       "Establishment"
     ],
     "location": {
@@ -3288,6 +3423,8 @@
     "cuisine": "American",
     "address": "171 Remsen St, Cohoes, NY 12047, USA",
     "url": "https://maps.google.com/?cid=17152371738324179657&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Smith%27s+Public+House+menu+171+Remsen+St%2C+Cohoes%2C+NY+12047%2C+USA",
+    "menu_status": "search",
     "match_reason": "Old-fashioned American restaurant with a long wood bar & vintage decor in a building dating to 1873.",
     "tags": [
       "American Restaurant",
@@ -3336,6 +3473,8 @@
     "cuisine": "Restaurant",
     "address": "8567 Red Arrow Hwy, Watervliet, MI 49098, USA",
     "url": "https://maps.google.com/?cid=13493647680322121380&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=NOLA+ROUX+%232+Casual+Cajun+Eatery+menu+8567+Red+Arrow+Hwy%2C+Watervliet%2C+MI+49098%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Watervliet",
     "tags": [
       "Restaurant",
@@ -3382,6 +3521,8 @@
     "cuisine": "Italian",
     "address": "384 Kenwood Ave, Delmar, NY 12054, USA",
     "url": "https://maps.google.com/?cid=11508402388527197830&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Pastina+menu+384+Kenwood+Ave%2C+Delmar%2C+NY+12054%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Delmar",
     "tags": [
       "Italian Restaurant",
@@ -3428,6 +3569,8 @@
     "cuisine": "Restaurant",
     "address": "2080 Western Ave, Guilderland, NY 12084, USA",
     "url": "https://maps.google.com/?cid=8580531397049821158&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Tacos+Diablo+%28Guilderland%29+menu+2080+Western+Ave%2C+Guilderland%2C+NY+12084%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Guilderland",
     "tags": [
       "Restaurant",
@@ -3474,6 +3617,8 @@
     "cuisine": "Restaurant",
     "address": "49 Broadway, Fort Edward, NY 12828, USA",
     "url": "https://maps.google.com/?cid=4257226432539407298&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Cue+and+Brew+LLC+menu+49+Broadway%2C+Fort+Edward%2C+NY+12828%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Fort Edward",
     "tags": [
       "Sports Complex",
@@ -3522,6 +3667,8 @@
     "cuisine": "Restaurant",
     "address": "300 Delaware Ave, Albany, NY 12209, USA",
     "url": "https://maps.google.com/?cid=18003650625135101729&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Delaware+Restaurant+%26+Bar+menu+300+Delaware+Ave%2C+Albany%2C+NY+12209%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Albany",
     "tags": [
       "Restaurant",
@@ -3567,6 +3714,8 @@
     "cuisine": "American",
     "address": "139 Union Ave, Saratoga Springs, NY 12866, USA",
     "url": "https://maps.google.com/?cid=2141262978574356810&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Brook+Tavern+menu+139+Union+Ave%2C+Saratoga+Springs%2C+NY+12866%2C+USA",
+    "menu_status": "search",
     "match_reason": "Steak & seafood served in a former 19th-century horse carriage factory with traditional decor.",
     "tags": [
       "American Restaurant",
@@ -3616,6 +3765,8 @@
     "cuisine": "Restaurant",
     "address": "62 Vandenburgh Ave, Troy, NY 12180, USA",
     "url": "https://maps.google.com/?cid=17284819458758400993&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Tipsy+Moose+Tap+%26+Tavern+menu+62+Vandenburgh+Ave%2C+Troy%2C+NY+12180%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Troy",
     "tags": [
       "Restaurant",
@@ -3658,48 +3809,49 @@
     "neighborhood": "Troy"
   },
   {
-    "id": "ChIJ5y2e6Whz3okRNXN86mQhQwY",
-    "google_place_id": "ChIJ5y2e6Whz3okRNXN86mQhQwY",
-    "name": "Grill Mediterranean Cuisine",
-    "cuisine": "Mediterranean",
-    "address": "1016 State St, Schenectady, NY 12307, USA",
-    "url": "https://maps.google.com/?cid=451241104981652277&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "id": "ChIJaz_6Yuxv3okR64NHFgkiHHk",
+    "google_place_id": "ChIJaz_6Yuxv3okR64NHFgkiHHk",
+    "name": "Milas Restaurant & Bar",
+    "cuisine": "Restaurant",
+    "address": "500 State St, Schenectady, NY 12305, USA",
+    "url": "https://maps.google.com/?cid=8726887600361014251&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Milas+Restaurant+%26+Bar+menu+500+State+St%2C+Schenectady%2C+NY+12305%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Schenectady",
     "tags": [
-      "Mediterranean Restaurant",
       "Restaurant",
       "Food",
       "Point Of Interest",
       "Establishment"
     ],
     "location": {
-      "lat": 42.80222320000001,
-      "lng": -73.9293857
+      "lat": 42.811775100000006,
+      "lng": -73.94071939999999
     },
-    "phone": "(518) 419-8452",
-    "website": "http://grillmediterraneancuisine.com/",
+    "phone": "(518) 353-7970",
+    "website": "https://www.milas-518.com/",
     "hours": [
-      "Monday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Tuesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Wednesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Thursday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Friday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Saturday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Sunday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      "Monday: Closed",
+      "Tuesday: 4:45\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 4:45\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 4:45\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 4:45\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 4:45\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: 4:45\u2009\u2013\u20098:30\u202fPM"
     ],
     "open_now": false,
     "current_hours": [
-      "Monday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Tuesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Wednesday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Thursday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Friday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Saturday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM",
-      "Sunday: 10:15\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      "Monday: Closed",
+      "Tuesday: 4:45\u2009\u2013\u20099:00\u202fPM",
+      "Wednesday: 4:45\u2009\u2013\u20099:00\u202fPM",
+      "Thursday: 4:45\u2009\u2013\u20099:00\u202fPM",
+      "Friday: 4:45\u2009\u2013\u20099:30\u202fPM",
+      "Saturday: 4:45\u2009\u2013\u20099:30\u202fPM",
+      "Sunday: 4:45\u2009\u2013\u20098:30\u202fPM"
     ],
     "business_status": "OPERATIONAL",
-    "rating": 4.9,
-    "review_count": 93,
+    "rating": 4.7,
+    "review_count": 247,
     "description": "Popular restaurant in Schenectady",
     "neighborhood": "Schenectady"
   },
@@ -3710,6 +3862,8 @@
     "cuisine": "Restaurant",
     "address": "2209 Nott St, Niskayuna, NY 12309, USA",
     "url": "https://maps.google.com/?cid=8519138884096817088&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=The+Broken+Inn+menu+2209+Nott+St%2C+Niskayuna%2C+NY+12309%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Niskayuna",
     "tags": [
       "Restaurant",
@@ -3756,6 +3910,8 @@
     "cuisine": "Restaurant",
     "address": "1475 US-9, Clifton Park, NY 12065, USA",
     "url": "https://maps.google.com/?cid=509279111869158354&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "menu_url": "https://www.google.com/search?q=Emma+Jayne%E2%80%99s+Restaurant+menu+1475+US-9%2C+Clifton+Park%2C+NY+12065%2C+USA",
+    "menu_status": "search",
     "match_reason": "Popular restaurant in Clifton Park",
     "tags": [
       "Restaurant",
@@ -3797,7 +3953,7 @@
   },
   {
     "_meta": {
-      "items_hash": "c12183f80181527fc599997485b3475850b100e5502a7d17d4176611dce3c313",
+      "items_hash": "c91176409e62c6e7c1d1efa1688bf128a92af5d707e1fa79a6159263f2e92acb",
       "items_changed": true,
       "item_count": 80
     }

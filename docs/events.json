@@ -20,6 +20,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -47,6 +48,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -74,6 +76,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -102,6 +105,8 @@
       "classic rock",
       "schenectady"
     ],
+    "ticket_url": "https://www.timesunion.com/music/article/chicago-band-coming-upstate-new-york-tour-21858163.php",
+    "ticket_status": "event site",
     "neighborhood": "Schenectady"
   },
   {
@@ -125,6 +130,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -152,6 +158,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.3536,
       "lng": -73.6772
@@ -179,6 +186,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -206,6 +214,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -233,6 +242,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
     "coordinates": {
       "lat": 43.0009,
       "lng": -73.8496
@@ -260,6 +270,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -287,6 +298,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
     "coordinates": {
       "lat": 42.9715,
       "lng": -73.7929
@@ -314,6 +326,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.4262,
       "lng": -73.7123
@@ -341,6 +354,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -368,6 +382,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Schuylerville"
   },
   {
@@ -391,6 +406,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.9715,
       "lng": -73.7929
@@ -418,6 +434,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -445,6 +462,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -472,6 +490,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7179,
       "lng": -73.8335
@@ -499,6 +518,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -526,6 +546,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -553,6 +574,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "neighborhood": "Warrensburgh"
   },
   {
@@ -576,6 +598,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -603,6 +626,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0009,
       "lng": -73.8496
@@ -630,6 +654,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -657,6 +682,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -684,6 +710,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Menands"
   },
   {
@@ -707,6 +734,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -734,6 +762,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -761,6 +790,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -788,6 +818,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -815,6 +846,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -842,6 +874,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -869,6 +902,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -896,6 +930,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -923,6 +958,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -950,6 +986,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -977,6 +1014,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -1004,6 +1042,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -1031,6 +1070,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -1058,6 +1098,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -1085,6 +1126,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -1112,6 +1154,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -1139,6 +1182,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -1166,6 +1210,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.267,
       "lng": -73.5846
@@ -1193,6 +1238,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -1220,6 +1266,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -1247,6 +1294,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.747,
       "lng": -73.759
@@ -1274,6 +1322,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -1301,6 +1350,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -1328,6 +1378,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7301,
       "lng": -73.7012
@@ -1355,6 +1406,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -1382,6 +1434,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -1411,6 +1464,8 @@
       "albany",
       "afrobeats"
     ],
+    "ticket_url": "https://www.timesunion.com/music/article/b-o-b-alive-at-five-albany-22309982.php",
+    "ticket_status": "event site",
     "neighborhood": "Albany"
   },
   {
@@ -1434,6 +1489,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -1461,6 +1517,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -1488,6 +1545,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -1515,6 +1573,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.4262,
       "lng": -73.7123
@@ -1542,6 +1601,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.3536,
       "lng": -73.6772
@@ -1569,6 +1629,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -1596,6 +1657,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -1623,6 +1685,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -1650,6 +1713,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -1677,6 +1741,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -1704,6 +1769,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -1731,6 +1797,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -1758,6 +1825,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "coordinates": {
       "lat": 42.7179,
       "lng": -73.8335
@@ -1785,6 +1853,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "coordinates": {
       "lat": 42.622,
       "lng": -73.8326
@@ -1812,6 +1881,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "neighborhood": "Voorheesville"
   },
   {
@@ -1835,6 +1905,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -1862,6 +1933,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
     "coordinates": {
       "lat": 42.9715,
       "lng": -73.7929
@@ -1889,6 +1961,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -1916,6 +1989,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "neighborhood": "Bolton Landing"
   },
   {
@@ -1939,6 +2013,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Mechanicville"
   },
   {
@@ -1962,6 +2037,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Schuylerville"
   },
   {
@@ -1985,6 +2061,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -2012,6 +2089,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -2039,6 +2117,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -2066,6 +2145,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Mechanicville"
   },
   {
@@ -2089,6 +2169,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -2116,6 +2197,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "coordinates": {
       "lat": 42.7742,
       "lng": -73.7001
@@ -2143,6 +2225,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
     "neighborhood": "Schaghticoke"
   },
   {
@@ -2166,6 +2249,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -2193,6 +2277,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.747,
       "lng": -73.759
@@ -2220,6 +2305,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.267,
       "lng": -73.5846
@@ -2247,6 +2333,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -2274,6 +2361,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -2301,6 +2389,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Queensberry"
   },
   {
@@ -2324,6 +2413,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Cambridge"
   },
   {
@@ -2347,6 +2437,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -2374,6 +2465,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Rotterdam"
   },
   {
@@ -2397,6 +2489,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -2424,6 +2517,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Fort Ann"
   },
   {
@@ -2447,6 +2541,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Hoosic Falls"
   },
   {
@@ -2470,6 +2565,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -2497,6 +2593,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Glenville"
   },
   {
@@ -2520,6 +2617,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Valatie"
   },
   {
@@ -2543,6 +2641,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.622,
       "lng": -73.8326
@@ -2570,6 +2669,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0009,
       "lng": -73.8496
@@ -2597,6 +2697,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -2624,6 +2725,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.4262,
       "lng": -73.7123
@@ -2651,6 +2753,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Queensberry"
   },
   {
@@ -2674,6 +2777,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -2701,6 +2805,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7742,
       "lng": -73.7001
@@ -2728,6 +2833,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -2755,6 +2861,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -2782,6 +2889,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Lathem"
   },
   {
@@ -2805,6 +2913,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Schaghticoke"
   },
   {
@@ -2828,6 +2937,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -2855,6 +2965,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -2882,6 +2993,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -2909,6 +3021,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -2936,6 +3049,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -2963,6 +3077,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -2990,6 +3105,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -3017,6 +3133,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -3044,6 +3161,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -3071,6 +3189,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7301,
       "lng": -73.7012
@@ -3098,6 +3217,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -3125,6 +3245,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7179,
       "lng": -73.8335
@@ -3152,6 +3273,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -3179,6 +3301,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3206,6 +3329,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3233,6 +3357,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3261,6 +3386,8 @@
       "opening",
       "troy"
     ],
+    "ticket_url": "https://www.timesunion.com/preview/article/events-albany-area-les-claypool-capital-pride-22297802.php",
+    "ticket_status": "event site",
     "neighborhood": "Troy"
   },
   {
@@ -3284,6 +3411,8 @@
       "theater",
       "glens falls"
     ],
+    "ticket_url": "https://www.timesunion.com/preview/article/events-albany-area-les-claypool-capital-pride-22297802.php",
+    "ticket_status": "event site",
     "neighborhood": "Glens Falls"
   },
   {
@@ -3307,6 +3436,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "neighborhood": "Voorheesville"
   },
   {
@@ -3330,6 +3460,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.4262,
       "lng": -73.7123
@@ -3357,6 +3488,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.4262,
       "lng": -73.7123
@@ -3384,6 +3516,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3411,6 +3544,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "neighborhood": "Voorheesville"
   },
   {
@@ -3434,6 +3568,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
     "neighborhood": "Nassau"
   },
   {
@@ -3457,6 +3592,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "neighborhood": "Granville"
   },
   {
@@ -3480,6 +3616,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "neighborhood": "North Creek"
   },
   {
@@ -3503,6 +3640,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3530,6 +3668,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3557,6 +3696,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3584,6 +3724,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3611,6 +3752,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3638,6 +3780,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3665,6 +3808,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3692,6 +3836,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3719,6 +3864,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -3746,6 +3892,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -3773,6 +3920,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -3800,6 +3948,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -3827,6 +3976,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "coordinates": {
       "lat": 42.747,
       "lng": -73.759
@@ -3854,6 +4004,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/albany-county-weekly-live-music",
     "neighborhood": "Voorheesville"
   },
   {
@@ -3877,6 +4028,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -3904,6 +4056,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -3931,6 +4084,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
     "neighborhood": "Galway"
   },
   {
@@ -3954,6 +4108,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
     "neighborhood": "Gansevoort"
   },
   {
@@ -3977,6 +4132,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
     "coordinates": {
       "lat": 42.9715,
       "lng": -73.7929
@@ -4004,6 +4160,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -4031,6 +4188,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.4262,
       "lng": -73.7123
@@ -4058,6 +4216,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.3536,
       "lng": -73.6772
@@ -4085,6 +4244,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "neighborhood": "Warrensburgh"
   },
   {
@@ -4108,6 +4268,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -4135,6 +4296,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Hudson July 19Th"
   },
   {
@@ -4158,6 +4320,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4185,6 +4348,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4212,6 +4376,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
     "neighborhood": "East & North Greenbush"
   },
   {
@@ -4235,6 +4400,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/rensselaer-county-weekly-live-music",
     "coordinates": {
       "lat": 42.7284,
       "lng": -73.6918
@@ -4262,6 +4428,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.3536,
       "lng": -73.6772
@@ -4289,6 +4456,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -4316,6 +4484,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4343,6 +4512,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4370,6 +4540,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4397,6 +4568,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4424,6 +4596,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4451,6 +4624,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4478,6 +4652,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/fulton-county-weekly-live-music",
     "neighborhood": "Broadalbin"
   },
   {
@@ -4501,6 +4676,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/fulton-county-weekly-live-music",
     "neighborhood": "Gloversville"
   },
   {
@@ -4524,6 +4700,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-county-weekly-live-music",
     "coordinates": {
       "lat": 42.8656,
       "lng": -73.7709
@@ -4551,6 +4728,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -4578,6 +4756,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "neighborhood": "Lake Luzerne"
   },
   {
@@ -4601,6 +4780,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -4628,6 +4808,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.267,
       "lng": -73.5846
@@ -4655,6 +4836,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.267,
       "lng": -73.5846
@@ -4682,6 +4864,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4709,6 +4892,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -4736,6 +4920,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4763,6 +4948,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4790,6 +4976,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4817,6 +5004,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -4844,6 +5032,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/schenectady-county-weekly-live-music",
     "coordinates": {
       "lat": 42.8142,
       "lng": -73.9396
@@ -4871,6 +5060,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -4898,6 +5088,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -4925,6 +5116,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -4952,6 +5144,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.3095,
       "lng": -73.644
@@ -4979,6 +5172,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -5006,6 +5200,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/saratoga-springs-weekly-live-music",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -5033,6 +5228,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.4262,
       "lng": -73.7123
@@ -5060,6 +5256,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/warren-county-weekly-live-music",
     "coordinates": {
       "lat": 43.4262,
       "lng": -73.7123
@@ -5087,6 +5284,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/dj-events",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -5114,6 +5312,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/dj-events",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -5141,6 +5340,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/dj-events",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -5168,6 +5368,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.4262,
       "lng": -73.7123
@@ -5195,6 +5396,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.6526,
       "lng": -73.7562
@@ -5222,6 +5424,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 43.0831,
       "lng": -73.7846
@@ -5249,6 +5452,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "neighborhood": "Rotterdam"
   },
   {
@@ -5272,6 +5476,7 @@
     ],
     "ticket_status": "check venue",
     "price_note": "Check venue",
+    "ticket_url": "https://www.barpeople.com/bar-events-1",
     "coordinates": {
       "lat": 42.7742,
       "lng": -73.7001
@@ -5300,6 +5505,8 @@
       "exhibition",
       "albany"
     ],
+    "ticket_url": "https://www.timesunion.com/preview/article/events-albany-area-les-claypool-capital-pride-22297802.php",
+    "ticket_status": "event site",
     "neighborhood": "Albany"
   },
   {
@@ -5324,6 +5531,8 @@
       "gallery",
       "troy"
     ],
+    "ticket_url": "https://www.timesunion.com/preview/article/events-albany-area-les-claypool-capital-pride-22297802.php",
+    "ticket_status": "event site",
     "neighborhood": "Troy"
   },
   {
@@ -5348,6 +5557,8 @@
       "spac",
       "saratoga"
     ],
+    "ticket_url": "https://www.timesunion.com/theater/article/new-york-city-ballet-brings-new-tiler-peck-work-21349620.php",
+    "ticket_status": "event site",
     "neighborhood": "Saratoga Springs"
   },
   {
@@ -5372,6 +5583,8 @@
       "spac",
       "saratoga"
     ],
+    "ticket_url": "https://www.timesunion.com/theater/article/new-york-city-ballet-brings-new-tiler-peck-work-21349620.php",
+    "ticket_status": "event site",
     "neighborhood": "Saratoga Springs"
   },
   {
@@ -5396,6 +5609,8 @@
       "saratoga",
       "skidmore"
     ],
+    "ticket_url": "https://www.timesunion.com/music/article/spac-announces-lincoln-center-summer-season-21199168.php",
+    "ticket_status": "event site",
     "neighborhood": "Saratoga Springs"
   },
   {
@@ -5420,6 +5635,8 @@
       "spac",
       "saratoga"
     ],
+    "ticket_url": "https://www.timesunion.com/music/article/train-barenaked-ladies-tour-saratoga-2026-21152353.php",
+    "ticket_status": "event site",
     "neighborhood": "Saratoga Springs"
   },
   {
@@ -5445,12 +5662,14 @@
       "spac",
       "saratoga"
     ],
+    "ticket_url": "https://www.timesunion.com/music/article/guns-n-roses-bring-world-tour-spac-2026-21204762.php",
+    "ticket_status": "event site",
     "neighborhood": "Saratoga Springs"
   },
   {
     "_meta": {
-      "items_hash": "67e8047f4c430be97ceef148e1982924b5cd17f700f06f15ab5f2a5d57d76ab4",
-      "items_changed": false,
+      "items_hash": "9abb6e1912d6334e71c7009c281dd7c6937bf8d0c661567acb210b775488b11a",
+      "items_changed": true,
       "item_count": 208
     }
   }

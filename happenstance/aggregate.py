@@ -149,6 +149,12 @@ def _normalize_events(events: List[Dict], cfg: Mapping) -> List[Dict]:
         event.setdefault("category", "entertainment")
         event.setdefault("venue", str(location_label or cfg.get("region", "")))
         event.setdefault("url", f"https://www.google.com/search?q={urllib.parse.quote(title)}")
+        event.setdefault("ticket_url", event.get("url"))
+        if event.get("source") == "BarPeople":
+            event.setdefault("ticket_status", "check venue")
+            event.setdefault("price_note", "Check venue")
+        elif event.get("url"):
+            event.setdefault("ticket_status", "event site")
         if not event.get("time"):
             event["time"] = _parse_event_time(str(event.get("date", "")))
         coords = _item_coords(event)

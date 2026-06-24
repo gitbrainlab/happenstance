@@ -762,6 +762,7 @@
           : ""
       }
       ${type === "restaurant" ? renderRestaurantContact(item) : ""}
+      ${type === "event" ? renderEventTickets(item) : ""}
       ${
         hours
           ? `<section class="sheet-section">
@@ -792,6 +793,9 @@
   function renderRestaurantContact(item) {
     const reviewSummary = formatReviewSummary(item);
     const links = [];
+    if (item.menu_url) {
+      links.push(`<a class="sheet-link-button primary-link" href="${escapeAttr(item.menu_url)}" target="_blank" rel="noopener">Menu</a>`);
+    }
     if (item.website) {
       links.push(`<a class="sheet-link-button" href="${escapeAttr(item.website)}" target="_blank" rel="noopener">Website</a>`);
     }
@@ -808,6 +812,30 @@
       <section class="sheet-section restaurant-contact">
         <h3>Google Places</h3>
         ${reviewSummary ? `<p>${escapeHTML(reviewSummary)}</p>` : ""}
+        ${links.length ? `<div class="sheet-link-list">${links.join("")}</div>` : ""}
+      </section>
+    `;
+  }
+
+  function renderEventTickets(item) {
+    const summary = formatTicketSummary(item);
+    const links = [];
+    const ticketUrl = item.ticket_url || item.url;
+    if (ticketUrl) {
+      const label = item.ticket_status === "ticketed" || item.ticket_status === "onsale" ? "Tickets" : "Event details";
+      links.push(`<a class="sheet-link-button primary-link" href="${escapeAttr(ticketUrl)}" target="_blank" rel="noopener">${escapeHTML(label)}</a>`);
+    }
+    if (item.source_url && item.source_url !== ticketUrl) {
+      links.push(`<a class="sheet-link-button" href="${escapeAttr(item.source_url)}" target="_blank" rel="noopener">Source</a>`);
+    }
+
+    if (!summary && !links.length && !item.source_note) return "";
+
+    return `
+      <section class="sheet-section event-tickets">
+        <h3>Tickets</h3>
+        ${summary ? `<p>${escapeHTML(summary)}</p>` : ""}
+        ${item.source_note ? `<p class="muted-note">${escapeHTML(item.source_note)}</p>` : ""}
         ${links.length ? `<div class="sheet-link-list">${links.join("")}</div>` : ""}
       </section>
     `;
@@ -1420,9 +1448,14 @@
 
   function eventDate(item) {
     if (!item || !item.date) return null;
+    const direct = new Date(item.date);
+    if (String(item.date).includes("T") && !Number.isNaN(direct.getTime())) return direct;
     const datePart = String(item.date).slice(0, 10);
-    const timePart = item.time || extractTime(item.date) || "00:00";
-    const parsed = datePart ? new Date(`${datePart}T${timePart}:00`) : new Date(item.date);
+    const parsed = datePart ? new Date(`${datePart}T00:00:00`) : direct;
+    const timePart = parseTime(item.time || extractTime(item.date) || "00:00");
+    if (timePart && !Number.isNaN(parsed.getTime())) {
+      parsed.setHours(timePart.getHours(), timePart.getMinutes(), 0, 0);
+    }
     return Number.isNaN(parsed.getTime()) ? null : parsed;
   }
 
@@ -1649,13 +1682,8 @@
   }
 
   function formatTimeString(value) {
-    const [hourText, minuteText] = String(value).split(":");
-    const hour = Number(hourText);
-    const minute = Number(minuteText || 0);
-    if (!Number.isFinite(hour) || !Number.isFinite(minute)) return "";
-    const date = new Date();
-    date.setHours(hour, minute, 0, 0);
-    return formatTime(date);
+    const parsed = parseTime(value);
+    return parsed ? formatTime(parsed) : "";
   }
 
   function formatTime(date) {
@@ -1685,6 +1713,25 @@
       ? `${reviewCount.toLocaleString()} Google review${reviewCount === 1 ? "" : "s"}`
       : "";
     return [ratingLabel, reviewLabel].filter(Boolean).join(" from ");
+  }
+
+  function formatTicketSummary(item) {
+    const parts = [];
+    if (item.price_note) parts.push(item.price_note);
+    const status = ticketStatusLabel(item.ticket_status);
+    if (status) parts.push(status);
+    return parts.join(" · ");
+  }
+
+  function ticketStatusLabel(value) {
+    const status = String(value || "").toLowerCase().trim();
+    if (!status) return "";
+    if (status === "check venue") return "Check venue before you go";
+    if (status === "event site") return "Details on event site";
+    if (status === "onsale" || status === "on sale") return "Tickets on sale";
+    if (status === "ticketed") return "Ticketed event";
+    if (status === "offsale") return "Off sale";
+    return status.replace(/\b\w/g, (char) => char.toUpperCase());
   }
 
   function phoneHref(phone) {
