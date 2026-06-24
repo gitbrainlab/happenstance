@@ -66,6 +66,16 @@ test("explore renders clusters, dense rows, and real event data", async ({ page 
   await page.screenshot({ path: path.join(ARTIFACT_DIR, "01-explore.png"), fullPage: false });
 });
 
+test("search ahead keeps focus while typing", async ({ page }) => {
+  await page.click("#filter-toggle");
+  const search = page.locator('[data-action="search"]');
+
+  await search.pressSequentially("saratoga", { delay: 15 });
+
+  await expect(search).toHaveValue("saratoga");
+  await expect(search).toBeFocused();
+});
+
 test("pwa metadata and service worker are available", async ({ page }) => {
   await expect(page.locator('link[rel="manifest"]')).toHaveAttribute("href", "manifest.webmanifest");
   await expect(page.locator('link[rel="apple-touch-icon"]')).toHaveAttribute("href", "apple-touch-icon.png");

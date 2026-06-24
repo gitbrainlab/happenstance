@@ -1156,9 +1156,24 @@
     render();
   }
 
-  function handleSearchInput(query) {
+  function restoreSearchFocus(selectionStart, selectionEnd) {
+    requestAnimationFrame(() => {
+      const input = document.querySelector('[data-action="search"]');
+      if (!input) return;
+      input.focus({ preventScroll: true });
+      if (typeof input.setSelectionRange === "function") {
+        input.setSelectionRange(selectionStart, selectionEnd);
+      }
+    });
+  }
+
+  function handleSearchInput(input) {
+    const query = input.value;
+    const selectionStart = input.selectionStart ?? query.length;
+    const selectionEnd = input.selectionEnd ?? selectionStart;
     state.searchQuery = query;
     render();
+    restoreSearchFocus(selectionStart, selectionEnd);
   }
 
   function handleTargetInput(query) {
@@ -1987,7 +2002,7 @@
     });
 
     document.addEventListener("input", (event) => {
-      if (event.target.matches('[data-action="search"]')) handleSearchInput(event.target.value);
+      if (event.target.matches('[data-action="search"]')) handleSearchInput(event.target);
       if (event.target.matches('[data-action="target-input"]')) handleTargetInput(event.target.value);
     });
 
