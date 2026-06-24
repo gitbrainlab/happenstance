@@ -1,57 +1,101 @@
-name: Validate Published JSON
+name: Validate Published Site
 
 on:
   workflow_dispatch:
-  push:
-    branches: ["main"]
+  workflow_run:
+    workflows: ["Pages Deploy"]
+    types: [completed]
   schedule:
-    - cron: "30 7 * * *"
+    - cron: "15 12 * * *"
+    - cron: "15 22 * * *"
 
 permissions:
   contents: read
 
 jobs:
   validate:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Validate endpoints
+      - uses: actions/checkout@v4
+      - name: Validate endpoints and freshness
         env:
-          BASE_URL: "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          SITE_BASE_URL: ${{ vars.SITE_BASE_URL }}
+          FALLBACK_BASE_URL: "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
         run: |
+          set -euo pipefail
+          base_url="${SITE_BASE_URL:-}"
+          if [ -z "$base_url" ] && [ -f docs/CNAME ]; then
+            cname="$(tr -d '[:space:]' < docs/CNAME)"
+            if [ -n "$cname" ]; then
+              base_url="https://$cname"
+            fi
+          fi
+          if [ -z "$base_url" ]; then
+            base_url="$FALLBACK_BASE_URL"
+          fi
+          base_url="${base_url%/}"
+          echo "Validating $base_url"
+
           files=(events.json restaurants.json config.json meta.json)
           for f in "${files[@]}"; do
-            status=$(curl -s -w "%{http_code}" -o "/tmp/$f" "$BASE_URL/$f")
+            status=$(curl -fsS -w "%{http_code}" -o "/tmp/$f" "$base_url/$f" || true)
             if [ "$status" != "200" ]; then
-              echo "Endpoint $BASE_URL/$f unavailable (status $status). If Pages is not published yet, deploy it first."
+              echo "Endpoint $base_url/$f unavailable (status ${status:-curl-failed})."
               exit 1
             fi
           done
+
           python - <<'PY'
-import json, sys, pathlib
-base = pathlib.Path("/tmp")
-events = json.loads(base.joinpath("events.json").read_text())
-restaurants = json.loads(base.joinpath("restaurants.json").read_text())
-config = json.loads(base.joinpath("config.json").read_text())
-meta = json.loads(base.joinpath("meta.json").read_text())
+          import json
+          import sys
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
 
-def check_list(name, data, required):
-    if not isinstance(data, list):
-        sys.exit(f"{name} is not a list")
-    if not data:
-        if not meta.get(name, {}).get("item_count"):
-            sys.exit(f"{name} empty without meta explanation")
-        return
-    *items, last = data
-    for idx, item in enumerate(items):
-        for field in required:
-            if field not in item:
-                sys.exit(f"{name} item {idx} missing field {field}")
-    if "_meta" not in last:
-        sys.exit(f"{name} missing meta sentinel")
+          base = Path("/tmp")
+          events = json.loads(base.joinpath("events.json").read_text())
+          restaurants = json.loads(base.joinpath("restaurants.json").read_text())
+          config = json.loads(base.joinpath("config.json").read_text())
+          meta = json.loads(base.joinpath("meta.json").read_text())
 
-check_list("events", events, ["title", "category", "date"])
-check_list("restaurants", restaurants, ["name", "cuisine", "url"])
-if "branding" not in config or "pairing_rules" not in config:
-    sys.exit("config missing branding or pairing_rules")
-print("Validation passed")
-PY
+          def check_list(name, data, required):
+              if not isinstance(data, list):
+                  sys.exit(f"{name} is not a list")
+              if not data:
+                  sys.exit(f"{name} is empty")
+              *items, last = data
+              if "_meta" not in last:
+                  sys.exit(f"{name} missing meta sentinel")
+              for idx, item in enumerate(items):
+                  for field in required:
+                      if field not in item:
+                          sys.exit(f"{name} item {idx} missing field {field}")
+              return items
+
+          event_items = check_list("events", events, ["id", "title", "category", "date", "url"])
+          check_list("restaurants", restaurants, ["id", "name", "cuisine", "url"])
+          if "branding" not in config or "pairing_rules" not in config:
+              sys.exit("config missing branding or pairing_rules")
+          if not meta.get("pairings"):
+              sys.exit("meta missing pairings")
+          if not meta.get("clusters"):
+              sys.exit("meta missing clusters")
+
+          now = datetime.now(timezone.utc)
+          generated_at = datetime.fromisoformat(meta["generated_at"].replace("Z", "+00:00"))
+          if now - generated_at > timedelta(hours=36):
+              sys.exit(f"published data is stale: generated_at={generated_at.isoformat()}")
+
+          parsed = []
+          for item in event_items:
+              dt = datetime.fromisoformat(item["date"].replace("Z", "+00:00"))
+              if dt.tzinfo is None:
+                  dt = dt.replace(tzinfo=timezone.utc)
+              parsed.append(dt)
+          if max(parsed) < now:
+              sys.exit("published event feed has no future events")
+          if not any(now - timedelta(hours=12) <= dt <= now + timedelta(days=45) for dt in parsed):
+              sys.exit("published event feed has no near-term events")
+
+          print("Published validation passed")
+          PY

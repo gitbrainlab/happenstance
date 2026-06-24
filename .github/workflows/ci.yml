@@ -16,13 +16,24 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
-      - run: python -m happenstance.cli aggregate
+      - name: Generate data
+        env:
+          RESTAURANT_SOURCE: auto
+          EVENT_SOURCE: auto
+          TARGET_AREA: Capital Region
+          SEARCH_RADIUS_MILES: "25"
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+          EVENTBRITE_API_KEY: ${{ secrets.EVENTBRITE_API_KEY }}
+          AI_RESTAURANTS_DATA: ${{ secrets.AI_RESTAURANTS_DATA }}
+          AI_EVENTS_DATA: ${{ secrets.AI_EVENTS_DATA }}
+        run: python -m happenstance.cli aggregate
       - run: ruff check .
       - run: pytest
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - run: npm install
+      - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - name: Upload journey artifacts

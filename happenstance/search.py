@@ -6,8 +6,10 @@ def build_live_search_params(config: Mapping) -> Dict:
     params = {
         "mode": live_cfg.get("mode", "local"),
         "radius_km": live_cfg.get("radius_km", 5),
+        "radius_miles": live_cfg.get("radius_miles", live_cfg.get("radius_km", 5) / 1.609344),
         "limit": live_cfg.get("limit", 10),
     }
-    if "query" in live_cfg:
-        params["query"] = live_cfg["query"]
+    for key in ["query", "target_area", "target_zip", "center"]:
+        if key in live_cfg:
+            params[key] = live_cfg[key]
     return params

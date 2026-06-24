@@ -4,8 +4,34 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+    inputs:
+      target_area:
+        description: "Target area label, for example Saratoga Springs"
+        required: false
+        default: "Capital Region"
+      target_zip:
+        description: "Optional ZIP to center the generated search"
+        required: false
+        default: ""
+      search_radius_miles:
+        description: "Search radius in miles"
+        required: false
+        default: "25"
+      restaurant_source:
+        description: "Restaurant source"
+        required: false
+        type: choice
+        default: "auto"
+        options: ["auto", "google_places", "ai", "fixtures"]
+      event_source:
+        description: "Event source"
+        required: false
+        type: choice
+        default: "auto"
+        options: ["auto", "ticketmaster", "eventbrite", "ai", "fixtures"]
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "30 10 * * *"
+    - cron: "30 20 * * *"
 
 permissions:
   contents: read
@@ -27,6 +53,12 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Generate data using real APIs
         env:
+          PROFILE: ${{ vars.PROFILE || 'default' }}
+          RESTAURANT_SOURCE: ${{ inputs.restaurant_source || vars.RESTAURANT_SOURCE || 'auto' }}
+          EVENT_SOURCE: ${{ inputs.event_source || vars.EVENT_SOURCE || 'auto' }}
+          TARGET_AREA: ${{ inputs.target_area || vars.TARGET_AREA || 'Capital Region' }}
+          TARGET_ZIP: ${{ inputs.target_zip || vars.TARGET_ZIP }}
+          SEARCH_RADIUS_MILES: ${{ inputs.search_radius_miles || vars.SEARCH_RADIUS_MILES || '25' }}
           # API keys for real data sources
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
@@ -38,6 +70,42 @@ jobs:
           AI_RESTAURANTS_DATA: ${{ secrets.AI_RESTAURANTS_DATA }}
           AI_EVENTS_DATA: ${{ secrets.AI_EVENTS_DATA }}
         run: python -m happenstance.cli aggregate
+      - name: Validate generated freshness
+        run: |
+          python - <<'PY'
+          import json
+          import sys
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+
+          events = json.loads(Path("docs/events.json").read_text())
+          meta = json.loads(Path("docs/meta.json").read_text())
+          items = [item for item in events if "_meta" not in item]
+          if not items:
+              sys.exit("No events generated; refusing to deploy stale/empty feed")
+
+          now = datetime.now(timezone.utc)
+          cutoff = now + timedelta(days=45)
+          parsed = []
+          for item in items:
+              try:
+                  dt = datetime.fromisoformat(item["date"].replace("Z", "+00:00"))
+                  if dt.tzinfo is None:
+                      dt = dt.replace(tzinfo=timezone.utc)
+              except Exception as exc:
+                  sys.exit(f"Invalid event date for {item.get('title')}: {exc}")
+              parsed.append(dt)
+
+          if max(parsed) < now:
+              sys.exit("Generated events are all in the past")
+          if not any(now - timedelta(hours=12) <= dt <= cutoff for dt in parsed):
+              sys.exit("Generated feed has no near-term upcoming events")
+
+          generated_at = datetime.fromisoformat(meta["generated_at"].replace("Z", "+00:00"))
+          if now - generated_at > timedelta(hours=2):
+              sys.exit("Generated metadata timestamp is stale")
+          print(f"Freshness validation passed for {len(items)} events")
+          PY
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

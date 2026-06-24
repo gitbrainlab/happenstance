@@ -124,6 +124,11 @@ def fetch_google_places_restaurants(
     headers = {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": api_key,
+        "X-Goog-FieldMask": (
+            "places.id,places.displayName,places.formattedAddress,places.types,"
+            "places.rating,places.priceLevel,places.location,places.regularOpeningHours,"
+            "places.nationalPhoneNumber,places.websiteUri,places.googleMapsUri"
+        ),
     }
     
     # Build search query
@@ -152,17 +157,33 @@ def fetch_google_places_restaurants(
         name = place.get("displayName", {}).get("text", "Unknown")
         address = place.get("formattedAddress", f"{city}")
         place_id = place.get("id", "")
+        place_location = place.get("location", {})
         
         # Build Google Maps URL
-        url = f"https://www.google.com/maps/place/?q=place_id:{place_id}" if place_id else f"https://www.google.com/search?q={urllib.parse.quote(name)}+{urllib.parse.quote(city)}"
+        url = place.get("googleMapsUri") or (
+            f"https://www.google.com/maps/place/?q=place_id:{place_id}" if place_id else f"https://www.google.com/search?q={urllib.parse.quote(name)}+{urllib.parse.quote(city)}"
+        )
         
         restaurant = {
+            "id": place_id or _stable_id("restaurant", name, address),
             "name": name,
             "cuisine": _infer_cuisine(place),
             "address": address,
             "url": url,
             "match_reason": f"Popular restaurant in {city}",
         }
+
+        if "latitude" in place_location and "longitude" in place_location:
+            restaurant["location"] = {
+                "lat": place_location["latitude"],
+                "lng": place_location["longitude"],
+            }
+        if place.get("nationalPhoneNumber"):
+            restaurant["phone"] = place["nationalPhoneNumber"]
+        if place.get("websiteUri"):
+            restaurant["website"] = place["websiteUri"]
+        if place.get("regularOpeningHours", {}).get("weekdayDescriptions"):
+            restaurant["hours"] = place["regularOpeningHours"]["weekdayDescriptions"]
         
         # Add rating if available
         if "rating" in place:
@@ -216,6 +237,7 @@ def fetch_ticketmaster_events(
     categories: List[str] | None = None,
     days_ahead: int = 30,
     count: int = 20,
+    state_code: str | None = None,
 ) -> List[Dict]:
     """
     Fetch events from Ticketmaster API.
@@ -247,6 +269,9 @@ def fetch_ticketmaster_events(
         "size": min(count, 200),  # API limit
         "sort": "date,asc",
     }
+    state_code = state_code or os.getenv("TICKETMASTER_STATE_CODE")
+    if state_code:
+        params["stateCode"] = state_code
     
     # Add classification filter if categories specified
     if categories:
@@ -276,7 +301,13 @@ def fetch_ticketmaster_events(
         
         # Get venue information
         venues = tm_event.get("_embedded", {}).get("venues", [])
-        location = venues[0].get("name", city) if venues else city
+        venue = venues[0] if venues else {}
+        venue_name = venue.get("name", city)
+        city_name = venue.get("city", {}).get("name")
+        state_code = venue.get("state", {}).get("stateCode")
+        address_line = venue.get("address", {}).get("line1")
+        location_parts = [part for part in [venue_name, city_name, state_code] if part]
+        location = ", ".join(location_parts) or city
         
         # Get event date
         dates = tm_event.get("dates", {})
@@ -294,12 +325,24 @@ def fetch_ticketmaster_events(
         url = tm_event.get("url", f"https://www.ticketmaster.com/search?q={urllib.parse.quote(title)}")
         
         event = {
+            "id": tm_event.get("id") or _stable_id("event", title, date_iso, location),
+            "name": title,
             "title": title,
             "category": _categorize_event(tm_event),
             "date": date_iso,
+            "time": start.get("localTime", ""),
+            "venue": venue_name,
             "location": location,
             "url": url,
         }
+
+        if address_line:
+            event["address"] = ", ".join(part for part in [address_line, city_name, state_code] if part)
+        if venue.get("location", {}).get("latitude") and venue.get("location", {}).get("longitude"):
+            event["coordinates"] = {
+                "lat": float(venue["location"]["latitude"]),
+                "lng": float(venue["location"]["longitude"]),
+            }
         
         events.append(event)
     
@@ -383,9 +426,12 @@ def fetch_eventbrite_events(
             category = "family"
         
         event = {
+            "id": eb_event.get("id") or _stable_id("event", title, date_str, location),
+            "name": title,
             "title": title,
             "category": category,
             "date": date_str,
+            "venue": location,
             "location": location,
             "url": url,
         }
@@ -577,12 +623,20 @@ def fetch_ai_events(
             for item in data[:count]:
                 if isinstance(item, dict) and "title" in item:
                     event = {
+                        "id": item.get("id") or _stable_id("event", item.get("title", "Unknown Event"), item.get("date", ""), item.get("location", "")),
+                        "name": item.get("name") or item.get("title", "Unknown Event"),
                         "title": item.get("title", "Unknown Event"),
                         "category": item.get("category", "entertainment"),
                         "date": item.get("date", datetime.now(timezone.utc).isoformat()),
+                        "time": item.get("time", ""),
+                        "venue": item.get("venue") or item.get("location", f"{city_name}"),
                         "location": item.get("location", f"{city_name}"),
                         "url": item.get("url", f"https://www.google.com/search?q={item.get('title', 'event').replace(' ', '+')}+{city_name.replace(' ', '+')}"),
                     }
+                    if "coordinates" in item:
+                        event["coordinates"] = item["coordinates"]
+                    if "location" in item and isinstance(item["location"], dict):
+                        event["coordinates"] = item["location"]
                     events.append(event)
             
             if events:
@@ -593,3 +647,44 @@ def fetch_ai_events(
         
     except Exception as e:
         raise ValueError(f"Failed to fetch events using AI: {e}") from e
+
+
+def _stable_id(*parts: str) -> str:
+    value = "-".join(str(part) for part in parts if part)
+    return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")[:96] or "item"
+
+
+def _roll_static_events_forward(events: List[Dict], days_ahead: int = 30) -> List[Dict]:
+    """Move baked fallback events into the current window while preserving order and times."""
+    now = datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0)
+    if not events:
+        return []
+
+    parsed: List[tuple[Dict, datetime]] = []
+    for item in events:
+        try:
+            dt = datetime.fromisoformat(str(item.get("date", "")).replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+        except ValueError:
+            dt = now
+        parsed.append((item, dt))
+
+    cutoff = now + timedelta(days=days_ahead)
+    if any(now <= dt <= cutoff for _, dt in parsed):
+        return [dict(item) for item, _ in parsed]
+
+    rolled = []
+    span = max(1, min(days_ahead, len(parsed) + 2))
+    for index, (item, old_dt) in enumerate(parsed):
+        new_dt = now + timedelta(days=index % span)
+        new_dt = new_dt.replace(hour=old_dt.hour, minute=old_dt.minute, second=0, microsecond=0)
+        if new_dt < now:
+            new_dt += timedelta(days=1)
+        copy = dict(item)
+        copy["date"] = new_dt.isoformat()
+        if old_dt.hour or old_dt.minute:
+            copy["time"] = f"{old_dt.hour:02d}:{old_dt.minute:02d}"
+        copy.setdefault("match_reason", "Rolled forward from local demo seed data")
+        rolled.append(copy)
+    return rolled

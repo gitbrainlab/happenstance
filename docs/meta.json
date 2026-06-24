@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-29T15:27:20.323498+00:00",
+  "generated_at": "2026-06-24T04:34:43.240463+00:00",
   "profile": "default",
   "region": "Capital Region, NY",
   "branding": {
@@ -15,100 +15,608 @@
   "search": {
     "mode": "local",
     "radius_km": 40,
-    "limit": 10
+    "radius_miles": 25,
+    "limit": 10,
+    "target_area": "Capital Region",
+    "center": {
+      "lat": 42.6526,
+      "lng": -73.7562
+    }
   },
-  "gap_bullets": [],
+  "target_areas": [
+    {
+      "id": "capital-region",
+      "name": "Capital Region",
+      "aliases": [
+        "capital region",
+        "near me"
+      ],
+      "zips": [],
+      "center": {
+        "lat": 42.6526,
+        "lng": -73.7562
+      }
+    },
+    {
+      "id": "albany",
+      "name": "Albany",
+      "aliases": [
+        "downtown albany",
+        "lark street"
+      ],
+      "zips": [
+        "12203",
+        "12207",
+        "12210"
+      ],
+      "center": {
+        "lat": 42.6526,
+        "lng": -73.7562
+      }
+    },
+    {
+      "id": "saratoga",
+      "name": "Saratoga Springs",
+      "aliases": [
+        "saratoga",
+        "downtown saratoga"
+      ],
+      "zips": [
+        "12866"
+      ],
+      "center": {
+        "lat": 43.0831,
+        "lng": -73.7846
+      }
+    },
+    {
+      "id": "troy",
+      "name": "Troy",
+      "aliases": [
+        "downtown troy"
+      ],
+      "zips": [
+        "12180"
+      ],
+      "center": {
+        "lat": 42.7284,
+        "lng": -73.6918
+      }
+    },
+    {
+      "id": "schenectady",
+      "name": "Schenectady",
+      "aliases": [
+        "downtown schenectady",
+        "proctors"
+      ],
+      "zips": [
+        "12305",
+        "12308"
+      ],
+      "center": {
+        "lat": 42.8142,
+        "lng": -73.9396
+      }
+    },
+    {
+      "id": "niskayuna",
+      "name": "Niskayuna",
+      "aliases": [
+        "nisky"
+      ],
+      "zips": [
+        "12309"
+      ],
+      "center": {
+        "lat": 42.7798,
+        "lng": -73.8457
+      }
+    },
+    {
+      "id": "clifton-park",
+      "name": "Clifton Park",
+      "aliases": [],
+      "zips": [
+        "12065"
+      ],
+      "center": {
+        "lat": 42.8656,
+        "lng": -73.7709
+      }
+    },
+    {
+      "id": "colonie",
+      "name": "Colonie",
+      "aliases": [
+        "wolf road"
+      ],
+      "zips": [
+        "12205"
+      ],
+      "center": {
+        "lat": 42.7179,
+        "lng": -73.8335
+      }
+    },
+    {
+      "id": "lake-george",
+      "name": "Lake George",
+      "aliases": [
+        "adirondack"
+      ],
+      "zips": [
+        "12845"
+      ],
+      "center": {
+        "lat": 43.4262,
+        "lng": -73.7123
+      }
+    }
+  ],
+  "gap_bullets": [
+    "Add more options for family.",
+    "Add more options for sports."
+  ],
   "events": {
-    "items_hash": "81df52e5f4157ebfaa4f7a0ebda760c94c9130b8f6d9b89ffb973c16564c5fad",
+    "items_hash": "9b114544c6a4e869c2bd8584437c69632965b850f99ff842c40228942b39c07e",
     "items_changed": false,
-    "item_count": 9
+    "item_count": 11
   },
   "restaurants": {
-    "items_hash": "e1ed0eb3c16c9706e9f032c43a6913d3454bfedbdf1b3dcf38e9ede362b4abb2",
+    "items_hash": "b344b63a401425567abd56469aa1e78c6ba8b07576eca18d407ebb71edf7ef74",
     "items_changed": false,
     "item_count": 35
   },
   "pairings": [
     {
-      "event": "New Year's Eve Comedy Show",
-      "restaurant": "Hiro's Japanese Restaurant",
-      "match_reason": "Located in Albany; Sushi open for evening dining",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=The+Egg+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Hiro's+Japanese+Restaurant+193+Lark+St+Albany+NY",
-      "event_date": "2025-12-31T20:00:00+00:00",
-      "event_location": "The Egg, Albany, NY"
-    },
-    {
-      "event": "First Night Saratoga",
-      "restaurant": "Osteria Danny",
-      "match_reason": "Nearby in Downtown Saratoga Springs area; Family-friendly italian; \u2b50 4.8 rating",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Downtown+Saratoga+Springs+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Osteria+Danny+26+Henry+St+Saratoga+Springs+NY",
-      "event_date": "2025-12-31T18:00:00+00:00",
-      "event_location": "Downtown Saratoga Springs, NY"
-    },
-    {
-      "event": "New Year's Eve Gala at The Desmond",
-      "restaurant": "Delmonico's Italian Steakhouse",
-      "match_reason": "Located in Albany",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=The+Desmond+Hotel+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Delmonico's+Italian+Steakhouse+1553+Central+Ave+Albany+NY",
-      "event_date": "2025-12-31T21:00:00+00:00",
-      "event_location": "The Desmond Hotel, Albany, NY"
-    },
-    {
-      "event": "Winter Jazz Festival",
-      "restaurant": "Hiro's Japanese Restaurant",
-      "match_reason": "Located in Albany; Sushi pairs well with live music; Sushi open for evening dining",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=The+Hollow+Bar+Kitchen+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Hiro's+Japanese+Restaurant+193+Lark+St+Albany+NY",
-      "event_date": "2026-01-10T19:00:00+00:00",
-      "event_location": "The Hollow Bar + Kitchen, Albany, NY"
-    },
-    {
-      "event": "Albany Institute of History & Art Exhibition",
-      "restaurant": "Toro Cantina",
-      "match_reason": "Located in Albany",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Albany+Institute+History+Art+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Toro+Cantina+111+Washington+Ave+Ext+Albany+NY",
-      "event_date": "2026-01-05T10:00:00+00:00",
-      "event_location": "Albany Institute of History & Art, Albany, NY"
-    },
-    {
-      "event": "Siena Saints Basketball",
-      "restaurant": "Thai Thai Bistro",
-      "match_reason": "Located in Albany; \u2b50 4.7 rating",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=MVP+Arena+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Thai+Thai+Bistro+254+Lark+St+Albany+NY",
-      "event_date": "2026-01-08T19:00:00+00:00",
-      "event_location": "MVP Arena, Albany, NY"
-    },
-    {
-      "event": "Troy Night Out",
-      "restaurant": "Dinosaur Bar-B-Que",
-      "match_reason": "Nearby in Downtown Troy area",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Downtown+Troy+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Dinosaur+Bar-B-Que+377+River+St+Troy+NY",
-      "event_date": "2026-01-09T17:00:00+00:00",
-      "event_location": "Downtown Troy, NY"
-    },
-    {
-      "event": "Schenectady County Winter Farmers Market",
+      "event_id": "event-chicago-proctors-2026-06-24",
+      "restaurant_id": "restaurant-blue-ribbon-restaurant-bakery-1801-state-st-schenectady-ny-7",
+      "event": "Chicago at Proctors",
       "restaurant": "Blue Ribbon Restaurant & Bakery",
-      "match_reason": "Located in Schenectady; Family-friendly american",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Proctors+Theatre+Schenectady+NY",
+      "score": 21,
+      "match_reason": "Located in Schenectady; 0.0 mi - walking distance; American pairs well with live music",
+      "reason": "Located in Schenectady; 0.0 mi - walking distance; American pairs well with live music",
+      "event_url": "https://www.timesunion.com/music/article/chicago-band-coming-upstate-new-york-tour-21858163.php",
       "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Blue+Ribbon+Restaurant+Bakery+Schenectady+NY",
-      "event_date": "2026-01-11T09:00:00+00:00",
-      "event_location": "Proctors Theatre, Schenectady, NY"
+      "event_date": "2026-06-24T19:30:00+00:00",
+      "event_location": "Proctors Theatre, Schenectady, NY",
+      "distance_miles": 0.0,
+      "distance_km": 0.0,
+      "walk_minutes": 1
     },
     {
-      "event": "Ice Skating at Empire State Plaza",
-      "restaurant": "Lark Street Collective Kitchen",
-      "match_reason": "Located in Albany",
-      "event_url": "https://www.google.com/maps/search/?api=1&query=Empire+State+Plaza+Albany+NY",
-      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Lark+Street+Collective+Kitchen+258+Lark+St+Albany+NY",
-      "event_date": "2026-01-03T10:00:00+00:00",
-      "event_location": "Empire State Plaza, Albany, NY"
+      "event_id": "event-alive-at-five-afrobeats-2026-06-25",
+      "restaurant_id": "restaurant-delmonico-s-italian-steakhouse-1553-central-ave-albany-ny-9",
+      "event": "Alive at Five: Afrobeats Night",
+      "restaurant": "Delmonico's Italian Steakhouse",
+      "score": 18,
+      "match_reason": "Located in Albany; 1.0 mi - very close; Italian pairs well with live music",
+      "reason": "Located in Albany; 1.0 mi - very close; Italian pairs well with live music",
+      "event_url": "https://www.timesunion.com/music/article/b-o-b-alive-at-five-albany-22309982.php",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Delmonico's+Italian+Steakhouse+1553+Central+Ave+Albany+NY",
+      "event_date": "2026-06-25T17:00:00+00:00",
+      "event_location": "Warehouse District, Albany, NY",
+      "distance_miles": 1.0,
+      "distance_km": 1.58,
+      "walk_minutes": 19
+    },
+    {
+      "event_id": "event-fence-2026-reception-2026-06-26",
+      "restaurant_id": "restaurant-dinosaur-bar-b-que-377-river-st-troy-ny-11",
+      "event": "Fence 2026 Opening Reception",
+      "restaurant": "Dinosaur Bar-B-Que",
+      "score": 18,
+      "match_reason": "Located in Troy; 0.0 mi - walking distance",
+      "reason": "Located in Troy; 0.0 mi - walking distance",
+      "event_url": "https://www.timesunion.com/preview/article/events-albany-area-les-claypool-capital-pride-22297802.php",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Dinosaur+Bar-B-Que+377+River+St+Troy+NY",
+      "event_date": "2026-06-26T18:00:00+00:00",
+      "event_location": "The Arts Center of the Capital Region, Troy, NY",
+      "distance_miles": 0.0,
+      "distance_km": 0.0,
+      "walk_minutes": 1
+    },
+    {
+      "event_id": "event-job-adirondack-theatre-festival-2026-06-26",
+      "restaurant_id": "restaurant-mario-s-restaurant-pizzeria-2850-river-rd-niskayuna-ny",
+      "event": "Adirondack Theatre Festival: Job",
+      "restaurant": "Mario's Restaurant & Pizzeria",
+      "score": 3,
+      "match_reason": "Upscale italian for art events",
+      "reason": "Upscale italian for art events",
+      "event_url": "https://www.timesunion.com/preview/article/events-albany-area-les-claypool-capital-pride-22297802.php",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Mario's+Restaurant+Pizzeria+2850+River+Rd+Niskayuna+NY",
+      "event_date": "2026-06-26T19:30:00+00:00",
+      "event_location": "Charles R. Wood Theater, Glens Falls, NY",
+      "distance_miles": 38.0,
+      "distance_km": 61.14,
+      "walk_minutes": 734
+    },
+    {
+      "event_id": "event-albany-institute-blanche-lazzell-2026-06-27",
+      "restaurant_id": "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
+      "event": "Blanche Lazzell: Becoming an American Modernist",
+      "restaurant": "Hiro's Japanese Restaurant",
+      "score": 19,
+      "match_reason": "Located in Albany; 0.0 mi - walking distance",
+      "reason": "Located in Albany; 0.0 mi - walking distance",
+      "event_url": "https://www.timesunion.com/preview/article/events-albany-area-les-claypool-capital-pride-22297802.php",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Hiro's+Japanese+Restaurant+193+Lark+St+Albany+NY",
+      "event_date": "2026-06-27T10:00:00+00:00",
+      "event_location": "Albany Institute of History & Art, Albany, NY",
+      "distance_miles": 0.0,
+      "distance_km": 0.0,
+      "walk_minutes": 1
+    },
+    {
+      "event_id": "event-fence-2026-exhibition-2026-06-27",
+      "restaurant_id": "restaurant-dinosaur-bar-b-que-377-river-st-troy-ny-11",
+      "event": "Fence 2026 Exhibition",
+      "restaurant": "Dinosaur Bar-B-Que",
+      "score": 15,
+      "match_reason": "Located in Troy; 0.0 mi - walking distance",
+      "reason": "Located in Troy; 0.0 mi - walking distance",
+      "event_url": "https://www.timesunion.com/preview/article/events-albany-area-les-claypool-capital-pride-22297802.php",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Dinosaur+Bar-B-Que+377+River+St+Troy+NY",
+      "event_date": "2026-06-27T12:00:00+00:00",
+      "event_location": "The Arts Center of the Capital Region, Troy, NY",
+      "distance_miles": 0.0,
+      "distance_km": 0.0,
+      "walk_minutes": 1
+    },
+    {
+      "event_id": "event-nycb-innovators-icons-spac-2026-07-08",
+      "restaurant_id": "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
+      "event": "New York City Ballet: Innovators & Icons",
+      "restaurant": "Osteria Danny",
+      "score": 15,
+      "match_reason": "Located in Saratoga Springs; 2.2 mi away; Upscale italian for art events; \u2b50 4.8 rating",
+      "reason": "Located in Saratoga Springs; 2.2 mi away; Upscale italian for art events; \u2b50 4.8 rating",
+      "event_url": "https://www.timesunion.com/theater/article/new-york-city-ballet-brings-new-tiler-peck-work-21349620.php",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Osteria+Danny+26+Henry+St+Saratoga+Springs+NY",
+      "event_date": "2026-07-08T19:30:00+00:00",
+      "event_location": "Saratoga Performing Arts Center, Saratoga Springs, NY",
+      "distance_miles": 2.2,
+      "distance_km": 3.53,
+      "walk_minutes": 42
+    },
+    {
+      "event_id": "event-nycb-midsummer-spac-2026-07-09",
+      "restaurant_id": "restaurant-the-copper-crow-2-division-st-saratoga-springs-ny-25",
+      "event": "New York City Ballet: A Midsummer Night's Dream",
+      "restaurant": "The Copper Crow",
+      "score": 15,
+      "match_reason": "Located in Saratoga Springs; 2.2 mi away; Upscale american for art events",
+      "reason": "Located in Saratoga Springs; 2.2 mi away; Upscale american for art events",
+      "event_url": "https://www.timesunion.com/theater/article/new-york-city-ballet-brings-new-tiler-peck-work-21349620.php",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=The+Copper+Crow+2+Division+St+Saratoga+Springs+NY",
+      "event_date": "2026-07-09T19:30:00+00:00",
+      "event_location": "Saratoga Performing Arts Center, Saratoga Springs, NY",
+      "distance_miles": 2.2,
+      "distance_km": 3.53,
+      "walk_minutes": 42
+    },
+    {
+      "event_id": "event-cms-dvorak-spac-2026-07-12",
+      "restaurant_id": "restaurant-sushi-thai-garden-1808-us-9-saratoga-springs-ny-18",
+      "event": "Chamber Music Society: Dvorak Quintet",
+      "restaurant": "Sushi Thai Garden",
+      "score": 19,
+      "match_reason": "Located in Saratoga Springs; 0.9 mi - very close; Sushi pairs well with live music; Sushi open for evening dining",
+      "reason": "Located in Saratoga Springs; 0.9 mi - very close; Sushi pairs well with live music; Sushi open for evening dining",
+      "event_url": "https://www.timesunion.com/music/article/spac-announces-lincoln-center-summer-season-21199168.php",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Sushi+Thai+Garden+1808+US-9+Saratoga+Springs+NY",
+      "event_date": "2026-07-12T19:00:00+00:00",
+      "event_location": "Arthur Zankel Music Center, Saratoga Springs, NY",
+      "distance_miles": 0.9,
+      "distance_km": 1.47,
+      "walk_minutes": 18
+    },
+    {
+      "event_id": "event-train-barenaked-ladies-spac-2026-07-22",
+      "restaurant_id": "restaurant-sake-cafe-415-broadway-saratoga-springs-ny-28",
+      "event": "Train and Barenaked Ladies",
+      "restaurant": "Sake Cafe",
+      "score": 16,
+      "match_reason": "Located in Saratoga Springs; 2.2 mi away; Sushi pairs well with live music; Sushi open for evening dining",
+      "reason": "Located in Saratoga Springs; 2.2 mi away; Sushi pairs well with live music; Sushi open for evening dining",
+      "event_url": "https://www.timesunion.com/music/article/train-barenaked-ladies-tour-saratoga-2026-21152353.php",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Sake+Cafe+415+Broadway+Saratoga+Springs+NY",
+      "event_date": "2026-07-22T19:00:00+00:00",
+      "event_location": "Saratoga Performing Arts Center, Saratoga Springs, NY",
+      "distance_miles": 2.2,
+      "distance_km": 3.53,
+      "walk_minutes": 42
+    },
+    {
+      "event_id": "event-guns-n-roses-spac-2026-07-26",
+      "restaurant_id": "restaurant-max-london-s-restaurant-bar-466-broadway-saratoga-springs-ny-26",
+      "event": "Guns N' Roses at SPAC",
+      "restaurant": "Max London's Restaurant + Bar",
+      "score": 15,
+      "match_reason": "Located in Saratoga Springs; 2.2 mi away; American pairs well with live music",
+      "reason": "Located in Saratoga Springs; 2.2 mi away; American pairs well with live music",
+      "event_url": "https://www.timesunion.com/music/article/guns-n-roses-bring-world-tour-spac-2026-21204762.php",
+      "restaurant_url": "https://www.google.com/maps/search/?api=1&query=Max+London's+Restaurant+Bar+466+Broadway+Saratoga+Springs+NY",
+      "event_date": "2026-07-26T19:00:00+00:00",
+      "event_location": "Saratoga Performing Arts Center, Saratoga Springs, NY",
+      "distance_miles": 2.2,
+      "distance_km": 3.53,
+      "walk_minutes": 42
+    }
+  ],
+  "clusters": [
+    {
+      "id": "cluster-schenectady-2026-06-24",
+      "title": "Head to Schenectady tonight",
+      "area": "Schenectady",
+      "date": "2026-06-24",
+      "starts_at": "2026-06-24T19:30:00+00:00",
+      "center": {
+        "lat": 42.8142,
+        "lng": -73.9396
+      },
+      "score": 40,
+      "reason": "1 event nearby: Chicago at Proctors",
+      "event_ids": [
+        "event-chicago-proctors-2026-06-24"
+      ],
+      "restaurant_ids": [
+        "restaurant-blue-ribbon-restaurant-bakery-1801-state-st-schenectady-ny-7",
+        "restaurant-maya-thai-bistro-2015-rosa-rd-schenectady-ny-3",
+        "restaurant-new-china-restaurant-1334-gerling-st-schenectady-ny-5",
+        "restaurant-volcano-asian-bbq-hot-pot-2309-nott-st-e-niskayuna-ny-4",
+        "restaurant-meat-company-2321-nott-st-e-niskayuna-ny-1"
+      ],
+      "distance_km_from_target": 23.4,
+      "distance_miles_from_target": 14.5
+    },
+    {
+      "id": "cluster-albany-2026-06-27",
+      "title": "Head to Albany Sat, Jun 27",
+      "area": "Albany",
+      "date": "2026-06-27",
+      "starts_at": "2026-06-27T10:00:00+00:00",
+      "center": {
+        "lat": 42.6526,
+        "lng": -73.7562
+      },
+      "score": 40.0,
+      "reason": "1 event nearby: Blanche Lazzell: Becoming an American Modernist",
+      "event_ids": [
+        "event-albany-institute-blanche-lazzell-2026-06-27"
+      ],
+      "restaurant_ids": [
+        "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
+        "restaurant-thai-thai-bistro-254-lark-st-albany-ny-13",
+        "restaurant-lark-street-collective-kitchen-258-lark-st-albany-ny-16",
+        "restaurant-delmonico-s-italian-steakhouse-1553-central-ave-albany-ny-9",
+        "restaurant-toro-cantina-111-washington-ave-ext-albany-ny-12"
+      ],
+      "distance_km_from_target": 0.0,
+      "distance_miles_from_target": 0.0
+    },
+    {
+      "id": "cluster-albany-2026-06-25",
+      "title": "Head to Albany tomorrow",
+      "area": "Albany",
+      "date": "2026-06-25",
+      "starts_at": "2026-06-25T17:00:00+00:00",
+      "center": {
+        "lat": 42.6642,
+        "lng": -73.7451
+      },
+      "score": 38.42,
+      "reason": "1 event nearby: Alive at Five: Afrobeats Night",
+      "event_ids": [
+        "event-alive-at-five-afrobeats-2026-06-25"
+      ],
+      "restaurant_ids": [
+        "restaurant-delmonico-s-italian-steakhouse-1553-central-ave-albany-ny-9",
+        "restaurant-thai-thai-bistro-254-lark-st-albany-ny-13",
+        "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
+        "restaurant-lark-street-collective-kitchen-258-lark-st-albany-ny-16",
+        "restaurant-toro-cantina-111-washington-ave-ext-albany-ny-12"
+      ],
+      "distance_km_from_target": 1.58,
+      "distance_miles_from_target": 1.0
+    },
+    {
+      "id": "cluster-troy-2026-06-26",
+      "title": "Head to Troy Fri, Jun 26",
+      "area": "Troy",
+      "date": "2026-06-26",
+      "starts_at": "2026-06-26T18:00:00+00:00",
+      "center": {
+        "lat": 42.7284,
+        "lng": -73.6918
+      },
+      "score": 30.06,
+      "reason": "1 event nearby: Fence 2026 Opening Reception",
+      "event_ids": [
+        "event-fence-2026-reception-2026-06-26"
+      ],
+      "restaurant_ids": [
+        "restaurant-dinosaur-bar-b-que-377-river-st-troy-ny-11",
+        "restaurant-thai-thai-bistro-254-lark-st-albany-ny-13",
+        "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
+        "restaurant-lark-street-collective-kitchen-258-lark-st-albany-ny-16",
+        "restaurant-delmonico-s-italian-steakhouse-1553-central-ave-albany-ny-9"
+      ],
+      "distance_km_from_target": 9.94,
+      "distance_miles_from_target": 6.2
+    },
+    {
+      "id": "cluster-troy-2026-06-27",
+      "title": "Head to Troy Sat, Jun 27",
+      "area": "Troy",
+      "date": "2026-06-27",
+      "starts_at": "2026-06-27T12:00:00+00:00",
+      "center": {
+        "lat": 42.7284,
+        "lng": -73.6918
+      },
+      "score": 30.06,
+      "reason": "1 event nearby: Fence 2026 Exhibition",
+      "event_ids": [
+        "event-fence-2026-exhibition-2026-06-27"
+      ],
+      "restaurant_ids": [
+        "restaurant-dinosaur-bar-b-que-377-river-st-troy-ny-11",
+        "restaurant-thai-thai-bistro-254-lark-st-albany-ny-13",
+        "restaurant-hiro-s-japanese-restaurant-193-lark-st-albany-ny-10",
+        "restaurant-lark-street-collective-kitchen-258-lark-st-albany-ny-16",
+        "restaurant-delmonico-s-italian-steakhouse-1553-central-ave-albany-ny-9"
+      ],
+      "distance_km_from_target": 9.94,
+      "distance_miles_from_target": 6.2
+    },
+    {
+      "id": "cluster-saratoga-springs-2026-07-08",
+      "title": "Head to Saratoga Springs Wed, Jul 8",
+      "area": "Saratoga Springs",
+      "date": "2026-07-08",
+      "starts_at": "2026-07-08T19:30:00+00:00",
+      "center": {
+        "lat": 43.0554,
+        "lng": -73.8059
+      },
+      "score": 20,
+      "reason": "1 event nearby: New York City Ballet: Innovators & Icons",
+      "event_ids": [
+        "event-nycb-innovators-icons-spac-2026-07-08"
+      ],
+      "restaurant_ids": [
+        "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
+        "restaurant-karavalli-regional-cuisine-of-india-47-caroline-st-saratoga-springs-ny-23",
+        "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27",
+        "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33",
+        "restaurant-pj-s-bar-b-qsa-1-kaydeross-ave-w-saratoga-springs-ny-19"
+      ],
+      "distance_km_from_target": 44.97,
+      "distance_miles_from_target": 27.9
+    },
+    {
+      "id": "cluster-saratoga-springs-2026-07-09",
+      "title": "Head to Saratoga Springs Thu, Jul 9",
+      "area": "Saratoga Springs",
+      "date": "2026-07-09",
+      "starts_at": "2026-07-09T19:30:00+00:00",
+      "center": {
+        "lat": 43.0554,
+        "lng": -73.8059
+      },
+      "score": 20,
+      "reason": "1 event nearby: New York City Ballet: A Midsummer Night's Dream",
+      "event_ids": [
+        "event-nycb-midsummer-spac-2026-07-09"
+      ],
+      "restaurant_ids": [
+        "restaurant-the-copper-crow-2-division-st-saratoga-springs-ny-25",
+        "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
+        "restaurant-karavalli-regional-cuisine-of-india-47-caroline-st-saratoga-springs-ny-23",
+        "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27",
+        "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33"
+      ],
+      "distance_km_from_target": 44.97,
+      "distance_miles_from_target": 27.9
+    },
+    {
+      "id": "cluster-saratoga-springs-2026-07-12",
+      "title": "Head to Saratoga Springs Sun, Jul 12",
+      "area": "Saratoga Springs",
+      "date": "2026-07-12",
+      "starts_at": "2026-07-12T19:00:00+00:00",
+      "center": {
+        "lat": 43.0963,
+        "lng": -73.786
+      },
+      "score": 20,
+      "reason": "1 event nearby: Chamber Music Society: Dvorak Quintet",
+      "event_ids": [
+        "event-cms-dvorak-spac-2026-07-12"
+      ],
+      "restaurant_ids": [
+        "restaurant-sushi-thai-garden-1808-us-9-saratoga-springs-ny-18",
+        "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
+        "restaurant-karavalli-regional-cuisine-of-india-47-caroline-st-saratoga-springs-ny-23",
+        "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27",
+        "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33"
+      ],
+      "distance_km_from_target": 49.4,
+      "distance_miles_from_target": 30.7
+    },
+    {
+      "id": "cluster-saratoga-springs-2026-07-22",
+      "title": "Head to Saratoga Springs Wed, Jul 22",
+      "area": "Saratoga Springs",
+      "date": "2026-07-22",
+      "starts_at": "2026-07-22T19:00:00+00:00",
+      "center": {
+        "lat": 43.0554,
+        "lng": -73.8059
+      },
+      "score": 20,
+      "reason": "1 event nearby: Train and Barenaked Ladies",
+      "event_ids": [
+        "event-train-barenaked-ladies-spac-2026-07-22"
+      ],
+      "restaurant_ids": [
+        "restaurant-sake-cafe-415-broadway-saratoga-springs-ny-28",
+        "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
+        "restaurant-karavalli-regional-cuisine-of-india-47-caroline-st-saratoga-springs-ny-23",
+        "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27",
+        "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33"
+      ],
+      "distance_km_from_target": 44.97,
+      "distance_miles_from_target": 27.9
+    },
+    {
+      "id": "cluster-saratoga-springs-2026-07-26",
+      "title": "Head to Saratoga Springs Sun, Jul 26",
+      "area": "Saratoga Springs",
+      "date": "2026-07-26",
+      "starts_at": "2026-07-26T19:00:00+00:00",
+      "center": {
+        "lat": 43.0554,
+        "lng": -73.8059
+      },
+      "score": 20,
+      "reason": "1 event nearby: Guns N' Roses at SPAC",
+      "event_ids": [
+        "event-guns-n-roses-spac-2026-07-26"
+      ],
+      "restaurant_ids": [
+        "restaurant-max-london-s-restaurant-bar-466-broadway-saratoga-springs-ny-26",
+        "restaurant-osteria-danny-26-henry-st-saratoga-springs-ny-17",
+        "restaurant-karavalli-regional-cuisine-of-india-47-caroline-st-saratoga-springs-ny-23",
+        "restaurant-15-church-restaurant-15-church-st-saratoga-springs-ny-27",
+        "restaurant-mouzon-house-1-york-st-saratoga-springs-ny-33"
+      ],
+      "distance_km_from_target": 44.97,
+      "distance_miles_from_target": 27.9
+    },
+    {
+      "id": "cluster-glens-falls-2026-06-26",
+      "title": "Head to Glens Falls Fri, Jun 26",
+      "area": "Glens Falls",
+      "date": "2026-06-26",
+      "starts_at": "2026-06-26T19:30:00+00:00",
+      "center": {
+        "lat": 43.3095,
+        "lng": -73.644
+      },
+      "score": 12,
+      "reason": "1 event nearby: Adirondack Theatre Festival: Job",
+      "event_ids": [
+        "event-job-adirondack-theatre-festival-2026-06-26"
+      ],
+      "restaurant_ids": [
+        "restaurant-mario-s-restaurant-pizzeria-2850-river-rd-niskayuna-ny"
+      ],
+      "distance_km_from_target": 73.62,
+      "distance_miles_from_target": 45.7
     }
   ],
   "guidance": "Spread recommendations across the next 2 months when available."

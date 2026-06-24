@@ -2,35 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Happenstance</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="brand">
-        <h1 id="brand-title">Happenstance</h1>
-        <p id="brand-tagline">Plan your weekend</p>
-      </div>
-      <div class="controls">
-        <button data-view="restaurants" class="active">Restaurants</button>
-        <button data-view="events">Events</button>
-        <button data-view="paired">Paired</button>
-        <input type="text" id="filter-input" placeholder="Filter by keyword or category" />
-        <select id="layout-select">
-          <option value="cards">Cards</option>
-          <option value="table">Table</option>
-        </select>
-      </div>
+    <header class="app-header">
+      <h1 id="app-title">Happenstance</h1>
+      <button id="filter-toggle" class="icon-button" type="button" aria-expanded="false" aria-controls="view-root">
+        <span aria-hidden="true">☰</span>
+        <span>Filters</span>
+      </button>
     </header>
-    <main id="content">
-      <section id="restaurants-view" class="view"></section>
-      <section id="events-view" class="view hidden"></section>
-      <section id="paired-view" class="view hidden"></section>
-    </main>
-    <footer>
-      <p id="meta-info"></p>
-    </footer>
-    <script src="app.js" type="module"></script>
+
+    <main id="view-root" tabindex="-1"></main>
+
+    <nav id="tab-bar" aria-label="Primary">
+      <button class="tab-item active" type="button" data-view="explore" aria-current="page">
+        <span aria-hidden="true">⌕</span>
+        <span>Explore</span>
+      </button>
+      <button class="tab-item" type="button" data-view="timeline">
+        <span aria-hidden="true">◷</span>
+        <span>Timeline</span>
+      </button>
+      <button class="tab-item" type="button" data-view="plan">
+        <span aria-hidden="true">＋</span>
+        <span>Plan</span>
+      </button>
+      <button class="tab-item" type="button" data-view="saved">
+        <span aria-hidden="true">♡</span>
+        <span>Saved</span>
+      </button>
+    </nav>
   </body>
 </html>

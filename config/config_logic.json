@@ -13,24 +13,25 @@
         "Keep late-night shows close to late-night kitchens."
       ],
       "data_sources": {
-        "restaurants": "ai",
-        "events": "ai"
+        "restaurants": "auto",
+        "events": "auto"
       },
       "api_config": {
         "google_places": {
-          "city": "San Francisco",
-          "count": 20
+          "city": "Capital Region, NY",
+          "count": 40
         },
         "ticketmaster": {
-          "city": "San Francisco",
-          "count": 20
+          "city": "Albany",
+          "state_code": "NY",
+          "count": 40
         },
         "eventbrite": {
-          "city": "San Francisco",
-          "count": 20
+          "city": "Capital Region, NY",
+          "count": 40
         },
         "ai": {
-          "city": "Niskayuna, NY",
+          "city": "Capital Region, NY",
           "restaurant_count": 35,
           "event_count": 30
         }
@@ -38,10 +39,82 @@
       "live_search": {
         "mode": "local",
         "radius_km": 40,
-        "limit": 10
+        "radius_miles": 25,
+        "limit": 10,
+        "target_area": "Capital Region",
+        "center": {
+          "lat": 42.6526,
+          "lng": -73.7562
+        }
       },
+      "target_areas": [
+        {
+          "id": "capital-region",
+          "name": "Capital Region",
+          "aliases": ["capital region", "near me"],
+          "zips": [],
+          "center": {"lat": 42.6526, "lng": -73.7562}
+        },
+        {
+          "id": "albany",
+          "name": "Albany",
+          "aliases": ["downtown albany", "lark street"],
+          "zips": ["12203", "12207", "12210"],
+          "center": {"lat": 42.6526, "lng": -73.7562}
+        },
+        {
+          "id": "saratoga",
+          "name": "Saratoga Springs",
+          "aliases": ["saratoga", "downtown saratoga"],
+          "zips": ["12866"],
+          "center": {"lat": 43.0831, "lng": -73.7846}
+        },
+        {
+          "id": "troy",
+          "name": "Troy",
+          "aliases": ["downtown troy"],
+          "zips": ["12180"],
+          "center": {"lat": 42.7284, "lng": -73.6918}
+        },
+        {
+          "id": "schenectady",
+          "name": "Schenectady",
+          "aliases": ["downtown schenectady", "proctors"],
+          "zips": ["12305", "12308"],
+          "center": {"lat": 42.8142, "lng": -73.9396}
+        },
+        {
+          "id": "niskayuna",
+          "name": "Niskayuna",
+          "aliases": ["nisky"],
+          "zips": ["12309"],
+          "center": {"lat": 42.7798, "lng": -73.8457}
+        },
+        {
+          "id": "clifton-park",
+          "name": "Clifton Park",
+          "aliases": [],
+          "zips": ["12065"],
+          "center": {"lat": 42.8656, "lng": -73.7709}
+        },
+        {
+          "id": "colonie",
+          "name": "Colonie",
+          "aliases": ["wolf road"],
+          "zips": ["12205"],
+          "center": {"lat": 42.7179, "lng": -73.8335}
+        },
+        {
+          "id": "lake-george",
+          "name": "Lake George",
+          "aliases": ["adirondack"],
+          "zips": ["12845"],
+          "center": {"lat": 43.4262, "lng": -73.7123}
+        }
+      ],
       "target_cuisines": ["Italian", "Sushi", "BBQ", "Vegan", "Mexican", "Thai", "Chinese", "Indian"],
       "target_categories": ["live music", "art", "family", "sports"],
+      "event_window_days": 45,
       "base_url": "https://evcatalyst.github.io/happenstance"
     }
   }

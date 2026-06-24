@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import math
 import os
+import re
 import time
 import urllib.parse
 from datetime import datetime, timedelta, timezone
@@ -28,6 +29,7 @@ from .validate import filter_events_by_window
 # Constants for nearby restaurant search
 NEARBY_RESTAURANT_RADIUS_METERS = 800.0  # ~0.5 miles
 MAX_NEARBY_RESTAURANTS_PER_EVENT = 3
+KM_PER_MILE = 1.609344
 
 # Pairing algorithm constants
 EVENING_HOUR_THRESHOLD = 19  # 7 PM in 24-hour format
@@ -41,6 +43,131 @@ PRICE_LEVEL_MAP = {
     "PRICE_LEVEL_EXPENSIVE": 3,
     "PRICE_LEVEL_VERY_EXPENSIVE": 4,
 }
+
+
+def _stable_id(kind: str, *parts: object) -> str:
+    raw = "-".join(str(part) for part in parts if part)
+    slug = re.sub(r"[^a-z0-9]+", "-", raw.lower()).strip("-")
+    return f"{kind}-{slug[:88]}" if slug else f"{kind}-item"
+
+
+def _parse_event_time(date_str: str | None) -> str:
+    if not date_str:
+        return ""
+    match = re.search(r"T(\d{2}:\d{2})", date_str)
+    return match.group(1) if match else ""
+
+
+def _coords_from_value(value: Any) -> Dict[str, float] | None:
+    if not isinstance(value, Mapping):
+        return None
+    lat = value.get("lat", value.get("latitude"))
+    lng = value.get("lng", value.get("lon", value.get("longitude")))
+    try:
+        return {"lat": float(lat), "lng": float(lng)}
+    except (TypeError, ValueError):
+        return None
+
+
+def _known_area_for_text(text: str, cfg: Mapping) -> Mapping | None:
+    needle = (text or "").lower()
+    if not needle:
+        return None
+    matches: list[tuple[int, Mapping]] = []
+    for area in cfg.get("target_areas", []):
+        names = [area.get("id", ""), area.get("name", ""), *area.get("aliases", []), *area.get("zips", [])]
+        for name in names:
+            label = str(name).strip().lower()
+            if label and label in needle:
+                matches.append((len(label), area))
+    if not matches:
+        return None
+
+    specific = [match for match in matches if str(match[1].get("id", "")) != "capital-region"]
+    return max(specific or matches, key=lambda match: match[0])[1]
+
+
+def _known_coords_for_text(text: str, cfg: Mapping) -> Dict[str, float] | None:
+    area = _known_area_for_text(text, cfg)
+    return _coords_from_value(area.get("center")) if area else None
+
+
+def _area_name_for_text(text: str, cfg: Mapping) -> str:
+    area = _known_area_for_text(text, cfg)
+    if area:
+        return str(area.get("name", ""))
+    city = _extract_city(text)
+    return city.title() if city else ""
+
+
+def _item_coords(item: Mapping, cfg: Mapping | None = None) -> Dict[str, float] | None:
+    direct = (
+        _coords_from_value(item.get("location"))
+        or _coords_from_value(item.get("coordinates"))
+        or _coords_from_value(item.get("coords"))
+    )
+    if direct:
+        return direct
+    if cfg:
+        return _known_coords_for_text(str(item.get("address") or item.get("location") or item.get("venue") or ""), cfg)
+    return None
+
+
+def _distance_km(a: Mapping | None, b: Mapping | None) -> float | None:
+    if not a or not b:
+        return None
+    return _calculate_distance(float(a["lat"]), float(a["lng"]), float(b["lat"]), float(b["lng"])) * KM_PER_MILE
+
+
+def _walk_minutes(km: float | None) -> int | None:
+    if km is None:
+        return None
+    return max(1, round((km / 5) * 60))
+
+
+def _normalize_restaurants(restaurants: List[Dict], cfg: Mapping) -> List[Dict]:
+    normalized: List[Dict] = []
+    for idx, item in enumerate(restaurants):
+        restaurant = dict(item)
+        name = str(restaurant.get("name") or "Unknown restaurant")
+        address = str(restaurant.get("address") or "")
+        restaurant.setdefault("id", _stable_id("restaurant", name, address, idx))
+        restaurant.setdefault("cuisine", "Restaurant")
+        restaurant.setdefault("url", _build_google_maps_url(None, name, address or cfg.get("region", "")))
+        if restaurant.get("description") is None and restaurant.get("match_reason"):
+            restaurant["description"] = restaurant["match_reason"]
+        area_name = _area_name_for_text(address, cfg)
+        if area_name:
+            restaurant.setdefault("neighborhood", area_name)
+        coords = _item_coords(restaurant, cfg)
+        if coords:
+            restaurant["location"] = coords
+        normalized.append(restaurant)
+    return normalized
+
+
+def _normalize_events(events: List[Dict], cfg: Mapping) -> List[Dict]:
+    normalized: List[Dict] = []
+    for idx, item in enumerate(events):
+        event = dict(item)
+        title = str(event.get("title") or event.get("name") or "Unknown event")
+        location_label = event.get("location") if isinstance(event.get("location"), str) else event.get("venue") or event.get("address") or cfg.get("region", "")
+        event.setdefault("id", _stable_id("event", title, event.get("date", ""), location_label, idx))
+        event.setdefault("name", title)
+        event.setdefault("title", title)
+        event.setdefault("category", "entertainment")
+        event.setdefault("venue", str(location_label or cfg.get("region", "")))
+        event.setdefault("url", f"https://www.google.com/search?q={urllib.parse.quote(title)}")
+        if not event.get("time"):
+            event["time"] = _parse_event_time(str(event.get("date", "")))
+        coords = _item_coords(event, cfg)
+        if coords:
+            event["coordinates"] = coords
+        area_name = _area_name_for_text(str(location_label), cfg)
+        if area_name:
+            event.setdefault("neighborhood", area_name)
+        normalized.append(event)
+    return normalized
 
 
 def _build_google_maps_url(place_id: str | None, name: str, location: str) -> str:
@@ -163,7 +290,7 @@ def _fetch_nearby_restaurants(event_location: str, region: str = "San Francisco"
     headers = {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": api_key,
-        "X-Goog-FieldMask": "places.displayName,places.formattedAddress,places.types,places.rating,places.priceLevel,places.id",
+        "X-Goog-FieldMask": "places.displayName,places.formattedAddress,places.types,places.rating,places.priceLevel,places.id,places.location",
     }
     
     body = {
@@ -197,12 +324,18 @@ def _fetch_nearby_restaurants(event_location: str, region: str = "San Francisco"
         url = _build_google_maps_url(place_id, name, event_location)
         
         restaurant = {
+            "id": place_id or _stable_id("restaurant", name, address),
             "name": name,
             "cuisine": _infer_cuisine(place),
             "address": address,
             "url": url,
             "match_reason": "Near event location",
         }
+        if place.get("location", {}).get("latitude") and place.get("location", {}).get("longitude"):
+            restaurant["location"] = {
+                "lat": float(place["location"]["latitude"]),
+                "lng": float(place["location"]["longitude"]),
+            }
         
         # Add rating if available
         if "rating" in place:
@@ -476,11 +609,13 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
     for event in events:
         event_location = event.get("location", "")
         
-        # Get event coordinates (try geocoding but continue without if it fails)
-        event_coords = None
-        if event_location and event_location not in location_cache:
+        # Get event coordinates from normalized data first; geocode only as fallback.
+        event_coord_map = _item_coords(event, cfg)
+        event_coords = (event_coord_map["lat"], event_coord_map["lng"]) if event_coord_map else None
+        if event_coords is None and event_location and event_location not in location_cache:
             location_cache[event_location] = _geocode_address(event_location, region=region)
-        event_coords = location_cache.get(event_location)
+        if event_coords is None:
+            event_coords = location_cache.get(event_location)
         
         # Fetch nearby restaurants for this event (only if API key available)
         nearby_restaurants = _fetch_nearby_restaurants(event_location, region=region, count=MAX_NEARBY_RESTAURANTS_PER_EVENT)
@@ -527,16 +662,17 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
             
             # Calculate distance if both coordinates are available
             distance_miles = None
-            if event_coords and restaurant_address:
+            restaurant_coord_map = _item_coords(restaurant, cfg)
+            restaurant_coords = (restaurant_coord_map["lat"], restaurant_coord_map["lng"]) if restaurant_coord_map else None
+            if event_coords and restaurant_coords is None and restaurant_address:
                 if restaurant_address not in location_cache:
                     location_cache[restaurant_address] = _geocode_address(restaurant_address, region=region)
                 restaurant_coords = location_cache.get(restaurant_address)
-                
-                if restaurant_coords:
-                    distance_miles = _calculate_distance(
-                        event_coords[0], event_coords[1],
-                        restaurant_coords[0], restaurant_coords[1]
-                    )
+            if event_coords and restaurant_coords:
+                distance_miles = _calculate_distance(
+                    event_coords[0], event_coords[1],
+                    restaurant_coords[0], restaurant_coords[1]
+                )
             
             # Get current use count for this restaurant
             use_count = restaurant_use_count.get(restaurant_name, 0)
@@ -554,9 +690,13 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
             restaurant_use_count[restaurant_name] = restaurant_use_count.get(restaurant_name, 0) + 1
         
         pairing = {
+            "event_id": event.get("id"),
+            "restaurant_id": best_restaurant.get("id") if best_restaurant else None,
             "event": event["title"],
             "restaurant": best_restaurant["name"] if best_restaurant else "",
+            "score": best_score if best_score != float("-inf") else 0,
             "match_reason": best_reason,
+            "reason": best_reason,
             "event_url": event.get("url"),
             "restaurant_url": best_restaurant.get("url") if best_restaurant else None,
             "event_date": event.get("date"),  # Add event date to pairing
@@ -566,6 +706,9 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
         # Add distance if available
         if best_distance is not None:
             pairing["distance_miles"] = round(best_distance, 1)
+            distance_km = best_distance * KM_PER_MILE
+            pairing["distance_km"] = round(distance_km, 2)
+            pairing["walk_minutes"] = _walk_minutes(distance_km)
         
         # Add nearby restaurant options
         if nearby_restaurants:
@@ -584,13 +727,149 @@ def _build_pairings(events: List[Dict], restaurants: List[Dict], cfg: Mapping) -
     return pairings
 
 
+def _event_datetime(event: Mapping) -> datetime | None:
+    try:
+        dt = datetime.fromisoformat(str(event.get("date", "")).replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
+    except ValueError:
+        return None
+
+
+def _date_label(dt: datetime, now: datetime) -> str:
+    if dt.date() == now.date():
+        return "tonight" if dt.hour >= 16 else "today"
+    if dt.date() == (now + timedelta(days=1)).date():
+        return "tomorrow"
+    return dt.strftime("%a, %b %-d") if os.name != "nt" else dt.strftime("%a, %b %#d")
+
+
+def _same_area(item: Mapping, area: str) -> bool:
+    if not area:
+        return False
+    fields = [item.get("neighborhood"), item.get("address"), item.get("location"), item.get("venue")]
+    return any(area.lower() in str(field).lower() for field in fields if field)
+
+
+def _cluster_restaurants(area: str, event_items: List[Mapping], restaurants: List[Mapping], pairing_restaurant_ids: set[str], cfg: Mapping) -> List[Mapping]:
+    event_coords = [_item_coords(event, cfg) for event in event_items]
+    event_coords = [coords for coords in event_coords if coords]
+
+    candidates: list[tuple[float, Mapping]] = []
+    for restaurant in restaurants:
+        rid = str(restaurant.get("id", ""))
+        score = 0.0
+        if rid in pairing_restaurant_ids:
+            score += 20
+        if _same_area(restaurant, area):
+            score += 10
+        rcoords = _item_coords(restaurant, cfg)
+        distances = [_distance_km(rcoords, ecoords) for ecoords in event_coords]
+        distances = [km for km in distances if km is not None]
+        if distances:
+            nearest = min(distances)
+            if nearest <= 1.5:
+                score += 8
+            elif nearest <= 4:
+                score += 4
+            score -= nearest / 10
+        if restaurant.get("rating"):
+            score += float(restaurant["rating"]) / 2
+        if score > 0:
+            candidates.append((score, restaurant))
+
+    candidates.sort(key=lambda row: row[0], reverse=True)
+    seen: set[str] = set()
+    result = []
+    for _, restaurant in candidates:
+        rid = str(restaurant.get("id"))
+        if rid in seen:
+            continue
+        seen.add(rid)
+        result.append(restaurant)
+        if len(result) >= 5:
+            break
+    return result
+
+
+def _build_clusters(events: List[Dict], restaurants: List[Dict], pairings: List[Dict], cfg: Mapping) -> List[Dict]:
+    now = datetime.now(timezone.utc)
+    grouped: Dict[tuple[str, str], List[Dict]] = {}
+    for event in events:
+        dt = _event_datetime(event)
+        if not dt:
+            continue
+        area = str(event.get("neighborhood") or _area_name_for_text(str(event.get("location") or event.get("venue") or ""), cfg) or cfg.get("region", "Nearby"))
+        grouped.setdefault((area, dt.date().isoformat()), []).append(event)
+
+    target_center = _coords_from_value(cfg.get("live_search", {}).get("center"))
+    pairing_restaurants_by_event: Dict[str, set[str]] = {}
+    for pairing in pairings:
+        event_id = str(pairing.get("event_id", ""))
+        restaurant_id = str(pairing.get("restaurant_id", ""))
+        if event_id and restaurant_id:
+            pairing_restaurants_by_event.setdefault(event_id, set()).add(restaurant_id)
+
+    clusters: List[Dict] = []
+    for (area, date_key), event_items in grouped.items():
+        event_items.sort(key=lambda event: _event_datetime(event) or now)
+        paired_ids: set[str] = set()
+        for event in event_items:
+            paired_ids.update(pairing_restaurants_by_event.get(str(event.get("id", "")), set()))
+        restaurant_items = _cluster_restaurants(area, event_items, restaurants, paired_ids, cfg)
+        if not restaurant_items:
+            continue
+
+        first_dt = _event_datetime(event_items[0]) or now
+        center = _item_coords(event_items[0], cfg) or _known_coords_for_text(area, cfg)
+        target_km = _distance_km(target_center, center) if target_center and center else None
+        label = _date_label(first_dt, now)
+        score = len(event_items) * 10 + len(restaurant_items) * 2
+        if label in {"tonight", "today"}:
+            score += 20
+        if target_km is not None:
+            score += max(0, 20 - target_km)
+
+        event_names = ", ".join(event["title"] for event in event_items[:2])
+        clusters.append(
+            {
+                "id": _stable_id("cluster", area, date_key),
+                "title": f"Head to {area} {label}",
+                "area": area,
+                "date": date_key,
+                "starts_at": first_dt.isoformat(),
+                "center": center,
+                "score": round(score, 2),
+                "reason": f"{len(event_items)} event{'s' if len(event_items) != 1 else ''} nearby: {event_names}",
+                "event_ids": [event["id"] for event in event_items],
+                "restaurant_ids": [restaurant["id"] for restaurant in restaurant_items],
+                "distance_km_from_target": round(target_km, 2) if target_km is not None else None,
+                "distance_miles_from_target": round(target_km / KM_PER_MILE, 1) if target_km is not None else None,
+            }
+        )
+
+    clusters.sort(key=lambda cluster: (-cluster["score"], cluster["starts_at"]))
+    return clusters[:20]
+
+
 def _fetch_restaurants(cfg: Mapping) -> List[Dict]:
     """Fetch restaurants based on configured data source."""
     data_sources = cfg.get("data_sources", {})
     restaurant_source = data_sources.get("restaurants", "fixtures")
     region = cfg["region"]
     
-    if restaurant_source == "fixtures":
+    if restaurant_source == "auto":
+        for source in ["google_places", "ai", "fixtures"]:
+            if source == "google_places" and not os.getenv("GOOGLE_PLACES_API_KEY"):
+                continue
+            trial_cfg = dict(cfg)
+            trial_cfg["data_sources"] = {**data_sources, "restaurants": source}
+            restaurants = _fetch_restaurants(trial_cfg)
+            if restaurants:
+                return restaurants
+        return _fixture_restaurants(region)
+    elif restaurant_source == "fixtures":
         print(f"Using fixture data for restaurants in {region}")
         return _fixture_restaurants(region)
     elif restaurant_source == "google_places":
@@ -634,7 +913,19 @@ def _fetch_events(cfg: Mapping) -> List[Dict]:
     region = cfg["region"]
     days_ahead = cfg.get("event_window_days", 30)
     
-    if event_source == "fixtures":
+    if event_source == "auto":
+        for source in ["ticketmaster", "eventbrite", "ai", "fixtures"]:
+            if source == "ticketmaster" and not os.getenv("TICKETMASTER_API_KEY"):
+                continue
+            if source == "eventbrite" and not os.getenv("EVENTBRITE_API_KEY"):
+                continue
+            trial_cfg = dict(cfg)
+            trial_cfg["data_sources"] = {**data_sources, "events": source}
+            events = _fetch_events(trial_cfg)
+            if events:
+                return events
+        return _fixture_events(region)
+    elif event_source == "fixtures":
         print(f"Using fixture data for events in {region}")
         return _fixture_events(region)
     elif event_source == "ticketmaster":
@@ -648,6 +939,7 @@ def _fetch_events(cfg: Mapping) -> List[Dict]:
                 categories=cfg.get("target_categories"),
                 days_ahead=days_ahead,
                 count=api_config.get("count", 20),
+                state_code=api_config.get("state_code"),
             )
         except ValueError as e:
             print(f"Warning: Failed to fetch from Ticketmaster API: {e}")
@@ -693,8 +985,8 @@ def aggregate(profile: str | None = None) -> Dict[str, Mapping]:
     cfg = load_config(profile)
     
     # Fetch data from configured sources
-    restaurants = _fetch_restaurants(cfg)
-    events = filter_events_by_window(_fetch_events(cfg), cfg["event_window_days"])
+    restaurants = _normalize_restaurants(_fetch_restaurants(cfg), cfg)
+    events = _normalize_events(filter_events_by_window(_fetch_events(cfg), cfg["event_window_days"]), cfg)
 
     gap_cuisines = [c for c in cfg.get("target_cuisines", []) if c not in {r["cuisine"] for r in restaurants}]
     gap_categories = [c for c in cfg.get("target_categories", []) if c not in {e["category"] for e in events}]
@@ -704,6 +996,8 @@ def aggregate(profile: str | None = None) -> Dict[str, Mapping]:
 
     restaurants_meta = compute_meta(restaurants, previous_meta.get("restaurants", {}))
     events_meta = compute_meta(events, previous_meta.get("events", {}))
+    pairings = _build_pairings(events, restaurants, cfg)
+    clusters = _build_clusters(events, restaurants, pairings, cfg)
 
     meta_payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -712,10 +1006,12 @@ def aggregate(profile: str | None = None) -> Dict[str, Mapping]:
         "branding": cfg.get("branding", {}),
         "pairing_rules": cfg.get("pairing_rules", []),
         "search": build_live_search_params(cfg),
+        "target_areas": cfg.get("target_areas", []),
         "gap_bullets": gap_bullets,
         "events": events_meta,
         "restaurants": restaurants_meta,
-        "pairings": _build_pairings(events, restaurants, cfg),
+        "pairings": pairings,
+        "clusters": clusters,
         "guidance": month_spread_guidance(),
     }
 
