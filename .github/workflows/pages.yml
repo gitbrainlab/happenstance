@@ -30,8 +30,7 @@ on:
         default: "auto"
         options: ["auto", "ticketmaster", "eventbrite", "barpeople", "ai", "fixtures"]
   schedule:
-    - cron: "30 10 * * *"
-    - cron: "30 20 * * *"
+    - cron: "17 * * * *"
 
 permissions:
   contents: read
@@ -103,7 +102,7 @@ jobs:
               sys.exit("Generated feed has no near-term upcoming events")
 
           generated_at = datetime.fromisoformat(meta["generated_at"].replace("Z", "+00:00"))
-          if now - generated_at > timedelta(hours=2):
+          if now - generated_at > timedelta(minutes=75):
               sys.exit("Generated metadata timestamp is stale")
           print(f"Freshness validation passed for {len(items)} events")
           PY
