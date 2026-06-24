@@ -301,6 +301,7 @@ class TestBarPeopleEvents:
             "Capital Region, NY",
             pages=[{"kind": "bar_events", "area": "Capital Region", "url": "https://www.barpeople.com/bar", "html": html}],
             now=datetime(2026, 6, 24, 12, tzinfo=timezone.utc),
+            days_ahead=2,
         )
 
         assert [event["title"] for event in events] == [
@@ -310,6 +311,23 @@ class TestBarPeopleEvents:
         assert [event["category"] for event in events] == ["karaoke", "trivia"]
         assert events[0]["date"].startswith("2026-06-24T20:00:00")
         assert events[1]["date"].startswith("2026-06-25T18:00:00")
+
+    def test_fetch_barpeople_weekly_events_expand_across_window(self):
+        html = """
+        <h2>Bar Events</h2>
+        <h3>Karaoke</h3>
+        <p>Wednesday:</p>
+        <p>8:00 PM Saratoga Wine Bar- (Saratoga Springs)</p>
+        """
+        events = fetch_barpeople_events(
+            "Capital Region, NY",
+            pages=[{"kind": "bar_events", "area": "Capital Region", "url": "https://www.barpeople.com/bar", "html": html}],
+            now=datetime(2026, 6, 24, 12, tzinfo=timezone.utc),
+            days_ahead=16,
+        )
+
+        assert [event["date"][:10] for event in events] == ["2026-06-24", "2026-07-01", "2026-07-08"]
+        assert {event["title"] for event in events} == {"Karaoke at Saratoga Wine Bar"}
 
     def test_fetch_barpeople_dj_events(self):
         html = """
@@ -322,6 +340,7 @@ class TestBarPeopleEvents:
             "Capital Region, NY",
             pages=[{"kind": "dj", "area": "Saratoga Springs", "url": "https://www.barpeople.com/dj", "html": html}],
             now=datetime(2026, 6, 24, 12, tzinfo=timezone.utc),
+            days_ahead=4,
         )
 
         assert [event["title"] for event in events] == ["DJ night at Sound Bar", "DJ night at Sound Bar"]

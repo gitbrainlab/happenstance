@@ -105,7 +105,7 @@ jobs:
               sys.exit("No restaurants generated; refusing to deploy stale/empty feed")
 
           now = datetime.now(timezone.utc)
-          cutoff = now + timedelta(days=45)
+          cutoff = now + timedelta(days=90)
           parsed = []
           for item in items:
               try:

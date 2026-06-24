@@ -28,6 +28,7 @@
 
   const KM_PER_MILE = 1.609344;
   const NEARBY_MILES = 1;
+  const EXPLORE_ROW_LIMIT = 180;
   const pairingInsights = window.HappenstancePairingInsights;
 
   const state = {
@@ -63,6 +64,13 @@
     activeSheet: null,
     loading: true,
     error: null,
+  };
+
+  const indexes = {
+    eventsById: new Map(),
+    restaurantsById: new Map(),
+    eventPairings: new Map(),
+    restaurantPairings: new Map(),
   };
 
   const els = {
@@ -117,6 +125,7 @@
         ...(cleanMeta.branding || {}),
         ...((config && config.branding) || {}),
       };
+      rebuildIndexes();
       applyInitialTarget();
       state.loading = false;
       state.error = null;
@@ -133,29 +142,53 @@
   }
 
   function getItem(type, id) {
-    const list = type === "event" ? state.data.events : state.data.restaurants;
-    return list.find((item) => item.id === id) || null;
+    const map = type === "event" ? indexes.eventsById : indexes.restaurantsById;
+    return map.get(String(id)) || null;
   }
 
   function getPairingsFor(type, id) {
     const item = getItem(type, id);
     if (!item) return [];
-
-    return state.data.pairings.filter((pairing) => {
-      if (type === "restaurant") {
-        return (
-          sameValue(pairing.restaurant_id, item.id) ||
-          sameValue(pairing.restaurant, item.name) ||
-          sameValue(pairing.restaurant_url, item.url)
-        );
-      }
-
-      return (
-        sameValue(pairing.event_id, item.id) ||
-        sameValue(pairing.event, item.name) ||
-        sameValue(pairing.event_url, item.url)
-      );
+    const map = type === "restaurant" ? indexes.restaurantPairings : indexes.eventPairings;
+    const pairings = new Map();
+    [item.id, item.name, item.url].forEach((key) => {
+      asArray(map.get(indexKey(key))).forEach((pairing) => pairings.set(pairingKey(pairing), pairing));
     });
+    return [...pairings.values()];
+  }
+
+  function rebuildIndexes() {
+    indexes.eventsById = new Map(state.data.events.map((item) => [String(item.id), item]));
+    indexes.restaurantsById = new Map(state.data.restaurants.map((item) => [String(item.id), item]));
+    indexes.eventPairings = new Map();
+    indexes.restaurantPairings = new Map();
+
+    state.data.pairings.forEach((pairing) => {
+      addPairingIndex(indexes.eventPairings, pairing.event_id, pairing);
+      addPairingIndex(indexes.eventPairings, pairing.event, pairing);
+      addPairingIndex(indexes.eventPairings, pairing.event_url, pairing);
+      addPairingIndex(indexes.restaurantPairings, pairing.restaurant_id, pairing);
+      addPairingIndex(indexes.restaurantPairings, pairing.restaurant, pairing);
+      addPairingIndex(indexes.restaurantPairings, pairing.restaurant_url, pairing);
+    });
+  }
+
+  function addPairingIndex(map, value, pairing) {
+    const key = indexKey(value);
+    if (!key) return;
+    const existing = map.get(key) || [];
+    existing.push(pairing);
+    map.set(key, existing);
+  }
+
+  function indexKey(value) {
+    return String(value || "").trim().toLowerCase();
+  }
+
+  function pairingKey(pairing) {
+    return [pairing.event_id || pairing.event || pairing.event_url, pairing.restaurant_id || pairing.restaurant || pairing.restaurant_url]
+      .map(indexKey)
+      .join("::");
   }
 
   // LOCATION
@@ -512,7 +545,9 @@
 
   function renderExplore() {
     const rows = applyFilters(getUnifiedItems());
-    const itemRows = rows.map(({ item, type, preferenceLabels }) => renderItemRow(item, type, { preferenceLabels })).join("");
+    const visibleRows = rows.slice(0, EXPLORE_ROW_LIMIT);
+    const itemRows = visibleRows.map(({ item, type, preferenceLabels }) => renderItemRow(item, type, { preferenceLabels })).join("");
+    const overflowCount = Math.max(0, rows.length - visibleRows.length);
     return `
       ${renderFilterPanel()}
       <section aria-label="Explore">
@@ -527,6 +562,7 @@
         ${renderClusterPanel()}
         <div class="item-list">
           ${itemRows || `<div class="empty"><strong>No matches</strong><p>Adjust filters or search terms.</p></div>`}
+          ${overflowCount ? `<div class="list-note">Top ${visibleRows.length} shown · ${overflowCount} more available.</div>` : ""}
         </div>
       </section>
     `;

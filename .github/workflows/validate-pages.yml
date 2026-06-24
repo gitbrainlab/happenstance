@@ -94,7 +94,7 @@ jobs:
               parsed.append(dt)
           if max(parsed) < now:
               sys.exit("published event feed has no future events")
-          if not any(now - timedelta(hours=12) <= dt <= now + timedelta(days=45) for dt in parsed):
+          if not any(now - timedelta(hours=12) <= dt <= now + timedelta(days=90) for dt in parsed):
               sys.exit("published event feed has no near-term events")
 
           print("Published validation passed")

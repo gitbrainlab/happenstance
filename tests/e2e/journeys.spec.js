@@ -144,7 +144,7 @@ test("bottom sheet shows pairings for tapped rows", async ({ page }) => {
   });
   expect(longBlurbs).toHaveLength(0);
 
-  await page.click(".sheet-backdrop");
+  await page.getByLabel("Close").click();
   await expect(page.locator("body")).not.toHaveClass(/sheet-open/);
   await page.screenshot({ path: path.join(ARTIFACT_DIR, "03-sheet-pairings.png"), fullPage: false });
 });
@@ -174,7 +174,7 @@ test("cluster plan button creates a restaurant plus event plan", async ({ page }
   await page.waitForSelector("body.sheet-open");
   await expect(page.locator(".bottom-sheet")).toContainText("Address");
   await expect(page.locator(".bottom-sheet")).toContainText("Menu");
-  await page.click(".sheet-backdrop");
+  await page.getByLabel("Close").click();
   await expect(page.locator("body")).not.toHaveClass(/sheet-open/);
 
   await page.locator(".cluster-card [data-action='add-cluster-plan']").first().click();

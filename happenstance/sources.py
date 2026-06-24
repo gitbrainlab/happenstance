@@ -701,7 +701,7 @@ def fetch_barpeople_events(
 
     events = _dedupe_events(events)
     events.sort(key=lambda event: event["date"])
-    return events[:count]
+    return _limit_barpeople_horizon(events, count, now, days_ahead)
 
 
 def _html_to_text_lines(html: str) -> list[str]:
@@ -709,6 +709,64 @@ def _html_to_text_lines(html: str) -> list[str]:
     parser.feed(html)
     parser.close()
     return parser.lines()
+
+
+def _limit_barpeople_horizon(events: list[Dict], count: int, now: datetime, days_ahead: int) -> list[Dict]:
+    if len(events) <= count:
+        return events
+
+    near_cutoff = now + timedelta(days=14)
+    near_events: list[Dict] = []
+    later_events: list[Dict] = []
+    for event in events:
+        event_dt = _parse_iso_datetime(str(event.get("date", "")))
+        if event_dt and event_dt <= near_cutoff:
+            near_events.append(event)
+        else:
+            later_events.append(event)
+
+    near_limit = min(len(near_events), max(count // 2, min(300, count)))
+    selected = near_events[:near_limit]
+    remaining = count - len(selected)
+    selected.extend(_spread_barpeople_later_events(later_events, remaining))
+    selected.sort(key=lambda event: event["date"])
+    return selected
+
+
+def _spread_barpeople_later_events(events: list[Dict], count: int) -> list[Dict]:
+    if count <= 0 or not events:
+        return []
+    if len(events) <= count:
+        return events
+
+    by_day: dict[str, list[Dict]] = {}
+    for event in events:
+        by_day.setdefault(str(event.get("date", ""))[:10], []).append(event)
+
+    selected: list[Dict] = []
+    while len(selected) < count and by_day:
+        empty_days: list[str] = []
+        for day, day_events in by_day.items():
+            if not day_events:
+                empty_days.append(day)
+                continue
+            selected.append(day_events.pop(0))
+            if len(selected) >= count:
+                break
+        for day in empty_days:
+            by_day.pop(day, None)
+    selected.sort(key=lambda event: event["date"])
+    return selected
+
+
+def _parse_iso_datetime(value: str) -> datetime | None:
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        return parsed.replace(tzinfo=timezone.utc)
+    return parsed
 
 
 def _parse_barpeople_listing_page(lines: list[str], page: Dict, now: datetime, days_ahead: int) -> list[Dict]:
@@ -742,7 +800,7 @@ def _parse_barpeople_listing_page(lines: list[str], page: Dict, now: datetime, d
             continue
 
         if current_weekday is not None:
-            weekly = _parse_barpeople_weekly_line(
+            weekly_events = _parse_barpeople_weekly_line(
                 line,
                 current_area,
                 current_activity,
@@ -751,8 +809,8 @@ def _parse_barpeople_listing_page(lines: list[str], page: Dict, now: datetime, d
                 now,
                 days_ahead,
             )
-            if weekly:
-                events.append(weekly)
+            if weekly_events:
+                events.extend(weekly_events)
 
     return events
 
@@ -769,8 +827,7 @@ def _parse_barpeople_dj_page(lines: list[str], page: Dict, now: datetime, days_a
             continue
         if "friday" in lower and "saturday" in lower and "night" in lower and venue:
             for weekday in (WEEKDAYS["friday"], WEEKDAYS["saturday"]):
-                event_dt = _next_weekday_datetime(now, weekday, datetime_time(21, 0))
-                if _in_barpeople_window(event_dt, now, days_ahead):
+                for event_dt in _weekly_barpeople_datetimes(now, weekday, datetime_time(21, 0), days_ahead):
                     events.append(
                         _barpeople_event(
                             title=f"DJ night at {venue}",
@@ -837,23 +894,23 @@ def _parse_barpeople_weekly_line(
     page_url: str,
     now: datetime,
     days_ahead: int,
-) -> Dict | None:
+) -> list[Dict]:
     match = TIME_RE.search(line)
     if not match:
-        return None
+        return []
     event_time = _parse_barpeople_time(match.group("time"))
     if not event_time:
-        return None
-    event_dt = _next_weekday_datetime(now, weekday, event_time)
-    if not _in_barpeople_window(event_dt, now, days_ahead):
-        return None
+        return []
+    event_datetimes = _weekly_barpeople_datetimes(now, weekday, event_time, days_ahead)
+    if not event_datetimes:
+        return []
 
     before = _clean_barpeople_line(line[: match.start()].strip(" -"))
     after = _clean_barpeople_line(line[match.end() :].strip(" -"))
     area = _parenthetical_area(line) or current_area
     detail = _strip_parenthetical_area(_clean_barpeople_line(" ".join(part for part in [before, after] if part)))
     if not detail:
-        return None
+        return []
 
     if activity == "live music":
         performer, venue = _split_barpeople_live_detail(detail)
@@ -865,18 +922,21 @@ def _parse_barpeople_weekly_line(
         title = _barpeople_title(category, descriptor, venue)
 
     if not venue:
-        return None
-    return _barpeople_event(
-        title=title,
-        category=category,
-        event_dt=event_dt,
-        time_label=_format_barpeople_time(event_time),
-        venue=venue,
-        area=area,
-        url=page_url,
-        description=f"Recurring {category} listing from BarPeople. {BARPEOPLE_SOURCE_NOTE}",
-        tags=["barpeople", category, "recurring"],
-    )
+        return []
+    return [
+        _barpeople_event(
+            title=title,
+            category=category,
+            event_dt=event_dt,
+            time_label=_format_barpeople_time(event_time),
+            venue=venue,
+            area=area,
+            url=page_url,
+            description=f"Recurring {category} listing from BarPeople. {BARPEOPLE_SOURCE_NOTE}",
+            tags=["barpeople", category, "recurring"],
+        )
+        for event_dt in event_datetimes
+    ]
 
 
 def _barpeople_event(
@@ -926,6 +986,21 @@ def _next_weekday_datetime(now: datetime, weekday: int, event_time: datetime_tim
     if candidate < now:
         candidate += timedelta(days=7)
     return candidate
+
+
+def _weekly_barpeople_datetimes(
+    now: datetime,
+    weekday: int,
+    event_time: datetime_time,
+    days_ahead: int,
+) -> list[datetime]:
+    event_dt = _next_weekday_datetime(now, weekday, event_time)
+    cutoff = now + timedelta(days=days_ahead)
+    dates: list[datetime] = []
+    while event_dt <= cutoff:
+        dates.append(event_dt)
+        event_dt += timedelta(days=7)
+    return dates
 
 
 def _in_barpeople_window(event_dt: datetime, now: datetime, days_ahead: int) -> bool:

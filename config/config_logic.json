@@ -24,19 +24,19 @@
         "ticketmaster": {
           "city": "Albany",
           "state_code": "NY",
-          "count": 40
+          "count": 80
         },
         "eventbrite": {
           "city": "Capital Region, NY",
-          "count": 40
+          "count": 80
         },
         "barpeople": {
-          "count": 200
+          "count": 900
         },
         "ai": {
           "city": "Capital Region, NY",
           "restaurant_count": 35,
-          "event_count": 30
+          "event_count": 60
         }
       },
       "live_search": {
@@ -187,7 +187,7 @@
       ],
       "target_cuisines": ["Italian", "Sushi", "BBQ", "Vegan", "Mexican", "Thai", "Chinese", "Indian"],
       "target_categories": ["live music", "dj", "karaoke", "open mic", "trivia", "bar event", "art", "family", "sports"],
-      "event_window_days": 45,
+      "event_window_days": 90,
       "base_url": "https://evcatalyst.github.io/happenstance"
     }
   }
