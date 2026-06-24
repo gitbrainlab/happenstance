@@ -117,13 +117,19 @@ test("preference chips rerank results, highlight matches, and persist", async ({
 
 test("target ZIP sorts by miles and surfaces Saratoga clusters", async ({ page }) => {
   await page.click("#filter-toggle");
+  await expect(page.getByRole("button", { name: "Car", exact: true })).toHaveAttribute("aria-pressed", "true");
   await page.fill('[data-action="target-input"]', "12866");
   await page.click('[data-action="apply-target"]');
 
   await expect(page.locator('[data-action="sort"]')).toHaveValue("distance");
   await expect(page.locator(".cluster-card").first()).toContainText("Saratoga Springs");
   await expect(page.locator(".distance").first()).toContainText("mi");
+  await expect(page.locator(".distance").first()).toContainText("drive");
   await expect(page.locator(".distance").first()).not.toContainText("km");
+
+  await page.getByRole("button", { name: "Uber", exact: true }).click();
+  await expect(page.getByRole("button", { name: "Uber", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator(".distance").first()).toContainText("ride");
 
   await page.screenshot({ path: path.join(ARTIFACT_DIR, "02-saratoga-target.png"), fullPage: false });
 });
@@ -137,6 +143,11 @@ test("bottom sheet shows pairings for tapped rows", async ({ page }) => {
   await expect(page.locator(".bottom-sheet")).toContainText("Event details");
   await expect(page.locator(".pairing-list .pairing-card")).not.toHaveCount(0);
   await expect(page.locator(".bottom-sheet")).toContainText("Why this works");
+  await expect(page.locator(".bottom-sheet")).toContainText("drive");
+  await page.locator(".transport-details").first().click();
+  await expect(page.locator(".bottom-sheet")).toContainText("Uber");
+  await expect(page.locator(".bottom-sheet")).toContainText("parking");
+  await expect(page.locator(".pairing-list")).not.toContainText("min walk");
   const longBlurbs = await page.evaluate(() => {
     return [...document.querySelectorAll(".bottom-sheet .why-blurb p")]
       .map((node) => node.textContent.trim().split(/\s+/).filter(Boolean).length)

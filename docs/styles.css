@@ -235,11 +235,19 @@ a:hover {
   padding: var(--space-2) var(--space-4) 0;
 }
 
+.transport-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-1);
+  padding: var(--space-2) var(--space-4) 0;
+}
+
 .filter-search input,
 .filter-search select,
 .filter-search button,
 .target-search input,
-.target-search button {
+.target-search button,
+.transport-toggle button {
   width: 100%;
   height: var(--tap-min);
   min-width: 0;
@@ -248,6 +256,12 @@ a:hover {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-2);
   padding: 0 var(--space-3);
+}
+
+.transport-toggle button.active {
+  color: white;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .filter-chips {
@@ -568,6 +582,42 @@ a:hover {
   color: var(--color-text-muted);
   font-size: var(--text-xs);
   white-space: nowrap;
+}
+
+.transport-details {
+  margin-top: var(--space-2);
+  color: var(--color-text);
+}
+
+.transport-details summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-2);
+  cursor: pointer;
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.transport-details summary span + span {
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.transport-detail-body {
+  display: grid;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+  padding: var(--space-2);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-1);
+}
+
+.transport-detail-body p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
 }
 
 .status-badge {

@@ -23,12 +23,14 @@
     density: "hs_density",
     view: "hs_view",
     target: "hs_target",
+    transport: "hs_transport",
     preferences: "happenstance_prefs",
   };
 
   const KM_PER_MILE = 1.609344;
   const NEARBY_MILES = 1;
   const EXPLORE_ROW_LIMIT = 180;
+  const TRANSPORT_MODES = ["car", "uber"];
   const pairingInsights = window.HappenstancePairingInsights;
 
   const state = {
@@ -49,6 +51,7 @@
     targetAreaName: "",
     targetLocation: null,
     userLocation: null,
+    transportMode: "car",
     preferences: [],
     data: {
       restaurants: [],
@@ -404,9 +407,9 @@
       const previous = index > 0 ? getItem(state.plan[index - 1].type, state.plan[index - 1].id) : null;
       if (previous && isClosingSoon(item)) {
         const km = haversineKm(getCoords(previous), getCoords(item));
-        const walk = walkMinutes(km) || 0;
+        const travelMinutes = selectedTravelMinutes(km) || 0;
         const window = getTimeWindow(item, planItem.type);
-        const buffer = window ? (window.close.getTime() - Date.now()) / 60000 - walk : Infinity;
+        const buffer = window ? (window.close.getTime() - Date.now()) / 60000 - travelMinutes : Infinity;
         if (buffer < 15) conflicts.push({ index, reason: `Cutting it close - closes at ${formatTime(window.close)}` });
       }
     });
@@ -419,9 +422,9 @@
       const currentWindow = getTimeWindow(current, state.plan[i].type);
       const nextWindow = getTimeWindow(next, state.plan[i + 1].type);
       const km = haversineKm(getCoords(current), getCoords(next));
-      const walk = walkMinutes(km) || 0;
-      if (currentWindow && nextWindow && currentWindow.close.getTime() + walk * 60000 > nextWindow.open.getTime()) {
-        conflicts.push({ index: i + 1, reason: "Leaves no time to walk there" });
+      const travelMinutes = selectedTravelMinutes(km) || 0;
+      if (currentWindow && nextWindow && currentWindow.close.getTime() + travelMinutes * 60000 > nextWindow.open.getTime()) {
+        conflicts.push({ index: i + 1, reason: `Leaves no time to ${transportVerb()} there` });
       }
     }
 
@@ -783,7 +786,7 @@
       <section class="sheet-section">
         <h3>Status</h3>
         ${renderOpenStatus(item)}
-        ${renderDistance(item) ? `<p>${escapeHTML(renderDistance(item))} away</p>` : ""}
+        ${renderItemTransportDetails(item)}
       </section>
       <section class="sheet-section">
         <h3>Details</h3>
@@ -919,7 +922,156 @@
   function renderDistance(item) {
     const ref = referenceLocation();
     const km = ref ? haversineKm(ref, getCoords(item)) : null;
-    return Number.isFinite(km) ? formatMiles(kmToMiles(km)) : "";
+    return Number.isFinite(km) ? compactRouteSummary(km, state.transportMode) : "";
+  }
+
+  function renderItemTransportDetails(item) {
+    const ref = referenceLocation();
+    const km = ref ? haversineKm(ref, getCoords(item)) : null;
+    if (!Number.isFinite(km)) return "";
+    return renderTransportDetails({
+      km,
+      primaryItem: item,
+      context: `From ${targetLabel()}`,
+      parkingItems: [{ label: item._type === "event" ? "Venue" : "Restaurant", item }],
+    });
+  }
+
+  function renderPairingTransportDetails(pairing, event, restaurant) {
+    const km = pairingDistanceKm(pairing, event, restaurant);
+    if (!Number.isFinite(km)) return "";
+    return renderTransportDetails({
+      km,
+      primaryItem: event || restaurant,
+      context: "Between event and restaurant",
+      parkingItems: [
+        event ? { label: "Event", item: event } : null,
+        restaurant ? { label: "Restaurant", item: restaurant } : null,
+      ].filter(Boolean),
+    });
+  }
+
+  function renderTransportDetails({ km, primaryItem, context, parkingItems }) {
+    const mode = state.transportMode;
+    const altMode = mode === "car" ? "uber" : "car";
+    const title = `Click for ${transportModeLabel(altMode)} estimate`;
+    return `
+      <details class="transport-details" title="${escapeAttr(title)}">
+        <summary>
+          <span>${escapeHTML(routeSummary(km, mode))}</span>
+          <span>${escapeHTML(context)}</span>
+        </summary>
+        <div class="transport-detail-body">
+          <p>${escapeHTML(transportModeLabel(altMode))}: ${escapeHTML(routeSummary(km, altMode))}</p>
+          ${mode === "car" ? `<p>${escapeHTML(uberFinePrint(km))}</p>` : `<p>${escapeHTML(carFinePrint(km, primaryItem))}</p>`}
+          ${parkingItems.map(({ label, item }) => `<p>${escapeHTML(label)} parking: ${escapeHTML(parkingNote(item))}</p>`).join("")}
+        </div>
+      </details>
+    `;
+  }
+
+  function pairingDistanceKm(pairing, event, restaurant) {
+    const directKm = Number(pairing && pairing.distance_km);
+    if (Number.isFinite(directKm)) return directKm;
+    const directMiles = Number(pairing && pairing.distance_miles);
+    if (Number.isFinite(directMiles)) return directMiles * KM_PER_MILE;
+    return haversineKm(getCoords(event), getCoords(restaurant));
+  }
+
+  function routeSummary(km, mode) {
+    const estimate = routeEstimate(km);
+    if (!estimate) return "travel estimate unavailable";
+    if (mode === "uber") {
+      return `${formatMiles(estimate.driveMiles)} ride · ${formatMinuteRange(estimate.uberMinutes)} · ${formatCurrencyRange(estimate.uberCost)}`;
+    }
+    return `${formatMiles(estimate.driveMiles)} drive · ${formatMinuteRange(estimate.driveMinutes)}`;
+  }
+
+  function compactRouteSummary(km, mode) {
+    const estimate = routeEstimate(km);
+    if (!estimate) return "";
+    return mode === "uber" ? `${formatMiles(estimate.driveMiles)} ride` : `${formatMiles(estimate.driveMiles)} drive`;
+  }
+
+  function routeEstimate(km) {
+    if (!Number.isFinite(km)) return null;
+    const directMiles = kmToMiles(km);
+    const driveMiles = Math.max(0.1, directMiles * roadFactor(directMiles));
+    const mph = driveMiles < 3 ? 18 : driveMiles < 12 ? 24 : driveMiles < 35 ? 32 : 42;
+    const overhead = driveMiles < 3 ? 4 : driveMiles < 12 ? 6 : 8;
+    const mid = Math.max(3, Math.round((driveMiles / mph) * 60 + overhead));
+    const driveMinutes = [Math.max(3, mid - 2), mid + (driveMiles < 12 ? 4 : 6)];
+    const uberMinutes = [driveMinutes[0] + 4, driveMinutes[1] + 8];
+    const uberCost = [
+      Math.max(9, Math.round(4 + driveMiles * 1.75 + driveMinutes[0] * 0.25)),
+      Math.max(12, Math.round(7 + driveMiles * 2.5 + driveMinutes[1] * 0.4)),
+    ];
+    if (uberCost[1] <= uberCost[0]) uberCost[1] = uberCost[0] + 3;
+    return { driveMiles, driveMinutes, uberMinutes, uberCost };
+  }
+
+  function roadFactor(miles) {
+    if (miles < 1) return 1.35;
+    if (miles < 8) return 1.25;
+    if (miles < 25) return 1.18;
+    return 1.12;
+  }
+
+  function selectedTravelMinutes(km) {
+    const estimate = routeEstimate(km);
+    if (!estimate) return null;
+    return state.transportMode === "uber" ? estimate.uberMinutes[1] : estimate.driveMinutes[1];
+  }
+
+  function transportVerb() {
+    return state.transportMode === "uber" ? "ride" : "drive";
+  }
+
+  function transportModeLabel(mode) {
+    return mode === "uber" ? "Uber" : "Car";
+  }
+
+  function carFinePrint(km, item) {
+    const estimate = routeEstimate(km);
+    if (!estimate) return "Estimate unavailable";
+    return `Estimated driving distance is ${formatMiles(estimate.driveMiles)}; ${parkingNote(item)}`;
+  }
+
+  function uberFinePrint(km) {
+    const estimate = routeEstimate(km);
+    if (!estimate) return "Estimate unavailable";
+    return `Uber estimate includes pickup and excludes surge, tolls, and tip.`;
+  }
+
+  function parkingNote(item) {
+    const text = [
+      item && item.name,
+      item && item.venue,
+      item && item.address,
+      item && item.location,
+      item && item.neighborhood,
+    ].filter(Boolean).join(" ").toLowerCase();
+    if (!text) return "Parking details unavailable; check Maps or the venue site.";
+    if (/spac|saratoga performing arts|fairgrounds|park|farmers market|beach|casino|rivers casino|mall|arena/.test(text)) {
+      return "On-site or event-lot parking likely; confirm event rules before arrival.";
+    }
+    if (/proctors|theatre|theater|downtown|lark|albany|troy|schenectady|saratoga|glens falls|lake george/.test(text)) {
+      return "Street, garage, or municipal-lot parking likely; allow extra time.";
+    }
+    if (item && item._type === "restaurant") {
+      return "Restaurant parking varies; check Maps for lot, street, or valet details.";
+    }
+    return "Parking availability varies; check Maps or the venue site.";
+  }
+
+  function formatMinuteRange(range) {
+    if (!Array.isArray(range) || range.length < 2) return "";
+    return `${range[0]}-${range[1]} min`;
+  }
+
+  function formatCurrencyRange(range) {
+    if (!Array.isArray(range) || range.length < 2) return "";
+    return `$${range[0]}-${range[1]}`;
   }
 
   function renderPriceLevel(item) {
@@ -983,6 +1135,13 @@
   function handleDensityToggle() {
     state.densityMode = state.densityMode === "compact" ? "comfortable" : "compact";
     localStorage.setItem(STORAGE_KEYS.density, state.densityMode);
+    render();
+  }
+
+  function handleTransportMode(mode) {
+    if (!TRANSPORT_MODES.includes(mode)) return;
+    state.transportMode = mode;
+    localStorage.setItem(STORAGE_KEYS.transport, mode);
     render();
   }
 
@@ -1164,6 +1323,17 @@
           <button type="button" data-action="apply-target">Apply</button>
           <button type="button" data-action="use-location">GPS</button>
         </div>
+        <div class="transport-toggle" aria-label="Transport mode">
+          ${TRANSPORT_MODES.map((mode) => `
+            <button
+              type="button"
+              data-action="transport-mode"
+              data-mode="${escapeAttr(mode)}"
+              class="${state.transportMode === mode ? "active" : ""}"
+              aria-pressed="${state.transportMode === mode ? "true" : "false"}"
+            >${escapeHTML(transportModeLabel(mode))}</button>
+          `).join("")}
+        </div>
         <div class="filter-chips">
           ${state.data.targetAreas
             .slice(0, 6)
@@ -1231,14 +1401,14 @@
     const paired = getPairedItem(pairing, fromType);
     const name = paired ? paired.item.name : fromType === "restaurant" ? pairing.event : pairing.restaurant;
     const reason = pairing.reason || pairing.match_reason || "Pairs well";
-    const walk = pairing.walk_minutes ? ` · ${pairing.walk_minutes} min walk` : "";
     const event = fromType === "event" ? getItem("event", pairing.event_id) : paired && paired.type === "event" ? paired.item : getItem("event", pairing.event_id);
     const restaurant = fromType === "restaurant" ? getItem("restaurant", pairing.restaurant_id) : paired && paired.type === "restaurant" ? paired.item : getItem("restaurant", pairing.restaurant_id);
     const blurb = event && restaurant ? pairingBlurb(pairing, event, restaurant) : "";
     return `
       <li class="pairing-card">
         <div class="pairing-card-title">→ ${escapeHTML(name || "Suggestion")}</div>
-        <p>${escapeHTML(reason)}${escapeHTML(walk)}</p>
+        <p>${escapeHTML(reason)}</p>
+        ${renderPairingTransportDetails(pairing, event, restaurant)}
         ${blurb ? renderWhyBlurb(blurb) : ""}
       </li>
     `;
@@ -1276,11 +1446,8 @@
 
   function renderPlanConnector(current, next) {
     const km = haversineKm(getCoords(current), getCoords(next));
-    if (!Number.isFinite(km)) return `<div class="connector">Walk time unavailable</div>`;
-    const minutes = walkMinutes(km);
-    const miles = kmToMiles(km);
-    const warning = miles > 2 ? " ⚠️ consider a ride" : "";
-    return `<div class="connector">${minutes} min · ${formatMiles(miles)}${warning}</div>`;
+    if (!Number.isFinite(km)) return `<div class="connector">Travel estimate unavailable</div>`;
+    return `<div class="connector">${escapeHTML(routeSummary(km, state.transportMode))}</div>`;
   }
 
   function renderSuggestion(suggestion) {
@@ -1302,13 +1469,13 @@
 
   function renderPlanSummary(livePlan) {
     const totalKm = getPlanDistance();
-    const totalWalk = Number.isFinite(totalKm) ? `${walkMinutes(totalKm)} min walk` : "walk time pending";
+    const travel = Number.isFinite(totalKm) ? routeSummary(totalKm, state.transportMode) : "travel pending";
     const windows = livePlan
       .map((planItem) => getTimeWindow(planItem.item, planItem.type))
       .filter(Boolean)
       .sort((a, b) => a.open - b.open);
     const range = windows.length ? `${formatTime(windows[0].open)} → ${formatTime(windows[windows.length - 1].close)}` : "timing pending";
-    return `${livePlan.length} item${livePlan.length === 1 ? "" : "s"} · ${totalWalk} · ${range}`;
+    return `${livePlan.length} item${livePlan.length === 1 ? "" : "s"} · ${travel} · ${range}`;
   }
 
   function buildWeekTimelineDays() {
@@ -1765,8 +1932,10 @@
   function readPreferences() {
     const storedView = localStorage.getItem(STORAGE_KEYS.view);
     const storedDensity = localStorage.getItem(STORAGE_KEYS.density);
+    const storedTransport = localStorage.getItem(STORAGE_KEYS.transport);
     if (["explore", "timeline", "plan", "saved"].includes(storedView)) state.view = storedView;
     if (["compact", "comfortable"].includes(storedDensity)) state.densityMode = storedDensity;
+    if (TRANSPORT_MODES.includes(storedTransport)) state.transportMode = storedTransport;
   }
 
   function loadPreferenceChipsFromStorage() {
@@ -1803,6 +1972,7 @@
       if (action === "toggle-save") handleAddToSaved(target.dataset.type, target.dataset.id);
       if (action === "remove-plan") removeFromPlan(Number(target.dataset.index));
       if (action === "density") handleDensityToggle();
+      if (action === "transport-mode") handleTransportMode(target.dataset.mode || "car");
       if (action === "change-tab") handleTabChange(target.dataset.viewTarget);
       if (action === "apply-target") handleTargetApply();
       if (action === "use-location") requestLocation();
