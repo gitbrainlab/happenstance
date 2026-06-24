@@ -66,6 +66,25 @@ test("explore renders clusters, dense rows, and real event data", async ({ page 
   await page.screenshot({ path: path.join(ARTIFACT_DIR, "01-explore.png"), fullPage: false });
 });
 
+test("pwa metadata and service worker are available", async ({ page }) => {
+  await expect(page.locator('link[rel="manifest"]')).toHaveAttribute("href", "manifest.webmanifest");
+  await expect(page.locator('link[rel="apple-touch-icon"]')).toHaveAttribute("href", "apple-touch-icon.png");
+  const manifest = await page.evaluate(async () => {
+    const response = await fetch("manifest.webmanifest");
+    return response.json();
+  });
+  expect(manifest.display).toBe("standalone");
+  expect(manifest.name).toContain("Happenstance");
+  expect(manifest.icons.some((icon) => icon.src === "icon-192.png" && icon.type === "image/png")).toBe(true);
+
+  const registered = await page.evaluate(async () => {
+    if (!("serviceWorker" in navigator)) return false;
+    await navigator.serviceWorker.ready;
+    return Boolean(await navigator.serviceWorker.getRegistration());
+  });
+  expect(registered).toBe(true);
+});
+
 test("preference chips rerank results, highlight matches, and persist", async ({ page }) => {
   await page.getByRole("button", { name: "Art & Culture", exact: true }).click();
 

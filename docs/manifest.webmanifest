@@ -1,0 +1,40 @@
+{
+  "name": "Happenstance - Capital Region",
+  "short_name": "Happenstance",
+  "description": "A mobile planner for live events, bar happenings, and nearby restaurants across the Capital Region.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f1117",
+  "theme_color": "#181c27",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "entertainment", "travel"],
+  "shortcuts": [
+    {
+      "name": "Explore",
+      "short_name": "Explore",
+      "url": "./index.html",
+      "description": "Open the current event and restaurant feed."
+    }
+  ]
+}

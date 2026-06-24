@@ -315,6 +315,8 @@ a:hover {
   gap: var(--space-2);
   overflow-x: auto;
   padding: var(--space-2) var(--space-4);
+  scroll-padding-inline: var(--space-4);
+  scroll-snap-type: x mandatory;
   scrollbar-width: none;
 }
 
@@ -324,6 +326,7 @@ a:hover {
 
 .cluster-card {
   flex: 0 0 min(310px, 82vw);
+  scroll-snap-align: start;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;

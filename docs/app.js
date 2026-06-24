@@ -1283,22 +1283,6 @@
     }));
     const end = addDays(start, days.length);
 
-    const restaurantSlots = state.data.restaurants.flatMap((item) => {
-      const hours = parseHours(item.hours);
-      if (!hours) return [];
-      return days.map((day) => {
-        const open = copyTimeToDay(day.date, hours.open);
-        const close = copyTimeToDay(day.date, hours.close);
-        if (close <= open) close.setDate(close.getDate() + 1);
-        return {
-          type: "restaurant",
-          item,
-          start: open,
-          duration: `${formatTime(open)}-${formatTime(close)}`,
-        };
-      });
-    });
-
     const eventSlots = state.data.events
       .map((item) => {
         const window = getTimeWindow(item, "event");
@@ -1307,12 +1291,12 @@
           type: "event",
           item,
           start: window.open,
-          duration: item.duration_minutes ? `${item.duration_minutes} min` : displayTimeForEvent(item),
+          duration: displayTimeForEvent(item) || (item.duration_minutes ? `${item.duration_minutes} min` : ""),
         };
       })
       .filter(Boolean);
 
-    [...restaurantSlots, ...eventSlots]
+    eventSlots
       .sort((a, b) => a.start - b.start || a.item.name.localeCompare(b.item.name))
       .forEach((slot) => {
         const index = Math.round((startOfLocalDay(slot.start) - start) / 86400000);
@@ -1675,12 +1659,6 @@
     return copy;
   }
 
-  function copyTimeToDay(day, time) {
-    const copy = new Date(day);
-    copy.setHours(time.getHours(), time.getMinutes(), 0, 0);
-    return copy;
-  }
-
   function formatTimeString(value) {
     const parsed = parseTime(value);
     return parsed ? formatTime(parsed) : "";
@@ -1764,6 +1742,15 @@
     } catch {
       state.preferences = [];
     }
+  }
+
+  function registerServiceWorker() {
+    if (!("serviceWorker" in navigator) || window.location.protocol === "file:") return;
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("service-worker.js").catch((err) => {
+        console.warn("Service worker registration failed", err);
+      });
+    });
   }
 
   function bindEvents() {
@@ -1873,5 +1860,6 @@
   loadSavedFromStorage();
   loadPreferenceChipsFromStorage();
   bindEvents();
+  registerServiceWorker();
   fetchAllData();
 })();
