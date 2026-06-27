@@ -14,18 +14,16 @@ ENV_ALIASES = {
 def load_project_env(path: Path | None = None) -> None:
     """Load simple KEY=VALUE pairs from a project .env file without overriding env."""
     env_path = path or DEFAULT_ENV_PATH
-    if not env_path.exists():
-        return
-
-    for raw_line in env_path.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        key, value = line.split("=", 1)
-        key = key.strip()
-        value = _clean_value(value)
-        if key and key not in os.environ:
-            os.environ[key] = value
+    if env_path.exists():
+        for raw_line in env_path.read_text(encoding="utf-8").splitlines():
+            line = raw_line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            key = key.strip()
+            value = _clean_value(value)
+            if key and key not in os.environ:
+                os.environ[key] = value
 
     for source, target in ENV_ALIASES.items():
         if source in os.environ and target not in os.environ:

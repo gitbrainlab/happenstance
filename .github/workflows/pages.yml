@@ -72,7 +72,7 @@ jobs:
           SEARCH_RADIUS_MILES: ${{ inputs.search_radius_miles || vars.SEARCH_RADIUS_MILES || '25' }}
           # API keys for real data sources
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY || secrets.GOOGLE_API_KEY }}
           GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID || vars.GOOGLE_CSE_ID }}
           GOOGLE_SEARCH_ENGINE_ID: ${{ secrets.GOOGLE_SEARCH_ENGINE_ID || vars.GOOGLE_SEARCH_ENGINE_ID }}
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}

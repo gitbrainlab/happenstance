@@ -26,3 +26,13 @@ def test_load_project_env_sets_alias_without_overriding(monkeypatch, tmp_path):
     assert os.environ["GOOGLE_PLACES_API_KEY"] == "local-google-key"
     assert os.environ["RESTAURANT_SOURCE"] == "google_places"
     assert os.environ["EXISTING_VALUE"] == "from-env"
+
+
+def test_load_project_env_sets_alias_without_env_file(monkeypatch, tmp_path):
+    missing_env_file = tmp_path / ".env"
+    monkeypatch.setenv("GOOGLE_API_KEY", "ci-google-key")
+    monkeypatch.delenv("GOOGLE_PLACES_API_KEY", raising=False)
+
+    load_project_env(missing_env_file)
+
+    assert os.environ["GOOGLE_PLACES_API_KEY"] == "ci-google-key"
